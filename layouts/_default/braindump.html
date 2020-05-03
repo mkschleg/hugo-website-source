@@ -1,0 +1,54 @@
+{{ partial "header.html" . }}
+{{ partial "masthead_hero.html" . }}
+
+  <!-- {{ with .Title }}<h1>{{ . }}</h1>{{ end }} -->
+<div id="main" role="main">
+  {{ partial "sidebar.html" . }}
+  <article class="page">
+  <div class="page_container">
+    <section class="page_content">
+      
+      {{ partial "masthead_nav.html" . }}
+      <article class="post" itemscope itemtype="http://schema.org/Article">
+        <div class="post-container">
+          {{ if .Title }}
+          <!-- <h1> {{ .Title }} </h1> -->
+          <h1 itemprop="name"><a href="{{ .Permalink }}">{{ .Title }}</a></h1>
+          {{ else }}
+          <h1 itemprop="name"><a href="{{ .Permalink }}">{{ .CurrentSection }}</a></h1>
+          <!-- <h1 itemprop="name"> {{ .CurrentSection }} </h1> -->
+          {{ end }}
+          <h2> Topics </h2>
+          <!-- {{ $paginator := .Paginate .Data.Pages }} -->
+          {{ range .Pages.ByTitle  }}
+          {{ if eq .Params.notetype "topic" }}
+          <div>
+            <h2><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
+          </div>
+          {{ end }}
+          {{ end }}
+
+          <h2> Notes </h2>
+          {{ range .Pages.ByTitle  }}
+          {{ if eq .Params.notetype "note" }}
+          <div>
+            <h2><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
+          </div>
+          {{ end }}
+          {{ end }}
+        </div>
+      </article>
+    </section>
+  </div>
+  </article>
+</div> 
+
+{{ with .Content }}
+<div class="post-style" itemprop="articleBody">{{ . }}</div>
+{{ end }}
+
+
+
+</div>
+{{ partial "footer_container.html" . }}
+{{ partial "footer.html" . }}

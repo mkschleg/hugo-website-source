@@ -1,0 +1,41 @@
+{{ partial "header.html" . }}
+{{ partial "masthead_hero.html" . }}
+
+
+<div id="main" role="main">
+  {{ partial "sidebar.html" . }}
+  <article class="page">
+    <div class="page_container">
+      <section class="page_content">
+	{{ partial "masthead_nav.html" . }}
+        <article class="post" itemscope itemtype="http://schema.org/Article">
+          <div class="post-container">
+            <h1 itemprop="name"><a href="{{ .Permalink }}">{{ .Title }}</a></h1>
+            
+            <div>
+              <h2> In Progress </h2>
+              {{ range (sort $.Site.Data.publications.inprogress "year" "desc")}}
+              {{ partial "paper.html" . }}
+              {{ end }}
+            </div>
+            <div>
+              <h2> Published papers </h2>
+              {{ range (sort $.Site.Data.publications.published "year" "desc")}}
+              {{ partial "paper.html" . }}
+              {{ end }}
+            </div>
+            <div>
+              <h2> Other papers </h2>
+              {{ range (sort $.Site.Data.publications.other "year" "desc")}}
+              {{ partial "paper.html" . }}
+              {{ end }}
+            </div>
+          </div>
+        </article>
+      </section>
+    </div>
+  </article>
+</div> 
+
+{{ partial "footer_container.html" . }}
+{{ partial "footer.html" . }}

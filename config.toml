@@ -1,0 +1,197 @@
+baseURL = "http://example.org/"
+languageCode = "en-us"
+title = "Matthew Schlegel"
+# author = "Matthew Schlegel"
+
+theme = "minimal-academic"
+enableEmoji = true
+footnotereturnlinkcontents = "<sup>^</sup>"
+ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
+#preserveTaxonomyNames = true
+paginate = 10
+
+# Enable comments by entering your Disqus shortname
+disqusShortname = ""
+
+# Enable analytics by entering your Google Analytics tracking ID
+googleAnalytics = ""
+
+# Get last modified date for content from Git?
+enableGitInfo = false
+
+[taxonomies]
+  tag = "tags"
+  collection = "collections"
+
+[outputs]
+  home = [ "HTML", "CSS", "RSS" ]
+  section = [ "HTML", "RSS" ]
+
+# Configure BlackFriday Markdown rendering.
+#   See: https://gohugo.io/readfiles/bfconfig/
+[blackfriday]
+  hrefTargetBlank = true  # `true` opens external links in a new tab.
+  fractions = true  # `false` disables smart fractions (e.g. 5/12 formatted as a fraction).
+  smartypants = true  # `false` disables all smart punctuation substitutions (e.g. smart quotes, dashes, fractions).
+
+[params]
+  # Your details.
+  name = "Matthew Schlegel"
+  bio = "Lover of Espresso; PhD student at Amii, RLAI and UofA; Works on how machines perceive their world."
+
+  avatar = "me.jpg"  # Specify an avatar image (in `static/img/` folder) or delete value to disable avatar.
+
+  location = "Edmonton, Alberta"
+
+  # Discussion link (e.g. link to a forum, mailing list, or chat).
+  #   Uncomment line below to use.
+    # discussion = { name = "Discuss", url = "https://discourse.gohugo.io" }
+
+  # Date and time format (refer to Go's date format: http://fuckinggodateformat.com )
+  #   Examples: "Mon, Jan 2, 2006" or "2006-01-02"
+  date_format = "Jan 2, 2006"
+  #   Examples: "3:04 pm" or "15:04"
+  time_format = "3:04 PM"
+
+  # Display comment count? Requires commenting to be enabled.
+  comment_count = true
+
+  # Enable native social sharing buttons?
+  sharing = true
+
+  # Privacy pack
+  #   Show a cookie consent message to visitors
+  #   Anonymize IP in Google Analytics (if enabled)
+  privacy_pack = false
+
+  custom_css = ["header.css"]
+
+  # Social links
+  # Shown in sidebar, icons from Font Awesome
+  # [[params.social]]
+  #   icon = "instagram"
+  #   icon_pack = "fa"
+  #   link = "//instagram.com/joshuahu.io"
+  #   text = "Instagram"
+
+  [[params.social]]
+    icon = "linkedin"
+    icon_pack = "fa"
+    link = "//linkedin.com/in/mkschleg"
+    text = "LinkedIn"
+
+  [[params.social]]
+    icon = "twitter"
+    icon_pack = "fa"
+    link = "//twitter.com/mattschleg"
+    text = "Twitter"
+
+  [[params.social]]
+    icon = "github"
+    icon_pack = "fa"
+    link = "//github.com/mkschleg"
+    text = "Github"
+
+  [[params.taxonomy]]
+    icon = "tag"
+    icon_pack = "fa"
+    link = "/tags"
+    text = "Tags"
+  [[params.taxonomy]]
+    icon = "folder"
+    icon_pack = "fa"
+    link = "/collections"
+    text = "Collections"
+
+  # Header menu links
+  [[params.menu]]
+    link = "/"
+    text = "Home"
+
+  [[params.menu]]
+    link = "/about"
+    text = "About"
+
+  [[params.menu]]
+    link = "/publications"
+    text = "Publications"
+
+  [[params.menu]]
+    link = "/post"
+    text = "Posts"
+
+  [[params.menu]]
+    link = "/coffee"
+    text = "Coffee"
+
+# [[menu.main]]
+# name = "Home"
+# url = "/"
+# weight = 1
+
+# [[menu.main]]
+# name = "About"
+# url = "/about"
+# weight = 2
+
+# [[menu.main]]
+# name = "Publications"
+# url = "/publications"
+# weight = 3
+
+# [[menu.main]]
+# name = "Posts"
+# url = "/post"
+# weight = 4
+
+# [[menu.main]]
+# name = "Coffee"
+# url = "/coffee"
+# weight = 5
+
+
+
+# [taxonomies]
+# 	tag = "tags"
+# 	category = "categories"
+
+# [params]
+#   dateform        = "Jan 2, 2006"
+#   dateformShort   = "Jan 2"
+#   dateformNum     = "2006-01-02"
+#   dateformNumTime = "2006-01-02 15:04 -0700"
+
+#   # Metadata mostly used in document's head
+#   # description = ""
+#   # images = [""]
+#   themeColor = "#494f5c"
+#   authorimage = "me.jpg"
+#   homeSubtitle = "A coffee enthusiast and reinforcement learning researcher."
+#   footerCopyright = ' &#183; <a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a>'
+#   # bgImg = ""  # Homepage background-image URL
+
+#   # Prefix of link to the git commit detail page. GitInfo must be enabled.
+#   # gitUrl = "https://github.com/username/repository/commit/"
+
+#   # Toggling this option needs to rebuild SCSS, requires Hugo extended version
+#   justifyContent = false  # Set "text-align: justify" to `.content`.
+
+#   relatedPosts = false  # Add a related content section to all single posts page
+
+#   code_copy_button = true # Turn on/off the code-copy-button for code-fields
+
+#   math = true
+#   # Add custom css
+#   customCSS = ["css/avatar.css"]
+
+#   # Social Icons
+#   # Check https://github.com/Track3/hermit#social-icons for more info.
+#   [[params.social]]
+#     name = "twitter"
+#     url = "https://twitter.com/mattschleg"
+
+#   [[params.social]]
+#     name = "github"
+#     url = "https://github.com/mkschleg"
+
+
