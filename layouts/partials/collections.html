@@ -1,0 +1,11 @@
+{{ if isset $.Params "collections" }}
+{{ $colLen := len $.Params.collections }}
+{{ if gt $colLen 0 }}
+<div class="post-tags">
+  <h4> Collections: </h4>
+  {{ range $k, $v := $.Params.collections }}
+  <a href="{{ (printf "%s/%s" ($.Site.GetPage "tags").Permalink $v) | relURL }}">{{ . }}</a>
+  {{ end }}
+</div>
+{{ end }}
+{{ end }}

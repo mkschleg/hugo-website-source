@@ -22,8 +22,8 @@
           <!-- {{ $paginator := .Paginate .Data.Pages }} -->
           {{ range .Pages.ByTitle  }}
           {{ if eq .Params.notetype "topic" }}
-          <div>
-            <h2><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
+          <div class="braindump-note">
+            <h3><a href="{{ .Permalink }}">{{ .Title }}</a></h3>
           </div>
           {{ end }}
           {{ end }}
@@ -31,8 +31,8 @@
           <h2> Notes </h2>
           {{ range .Pages.ByTitle  }}
           {{ if eq .Params.notetype "note" }}
-          <div>
-            <h2><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
+          <div class="braindump-note">
+            <h3><a href="{{ .Permalink }}">{{ .Title }}</a></h3>
           </div>
           {{ end }}
           {{ end }}

@@ -1,0 +1,10 @@
+<div class="post_card">
+  <h2><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
+  <div class="post-style">
+    {{ if .Params.summary }}
+    {{ printf "%s" .Params.summary | markdownify }}
+    {{ else if .Truncated }}
+    {{ printf "%s" .Summary | markdownify }}
+    {{ end }}
+  </div>
+</div>

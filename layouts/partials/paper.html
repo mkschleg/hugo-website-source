@@ -11,5 +11,4 @@
     {{$split_auth := ( split $author ", " )}}
     {{index $split_auth 1}} {{index $split_auth 0}}{{if lt $index (sub $num_authors 1)}},{{end}}    {{end}}{{end}}.
     {{ .publication }}, {{ .year }}. </p>
-  <!-- <p class="paper-abstract"> {{.abstract}} </p> -->
 </div>

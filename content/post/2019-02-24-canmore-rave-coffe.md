@@ -1,9 +1,10 @@
 ---
 layout: post
 title: Raving for Rave Coffee
-feature-img: "assets/img/coffee/canmore-rave_coffee/mountains_opt.jpg"
-thumbnail: "assets/img/coffee/canmore-rave_coffee/mountains_opt.jpg"
+feature-img: "/img/coffee/canmore-rave_coffee/mountains_opt.jpg"
+thumbnail: "/img/coffee/canmore-rave_coffee/mountains_opt.jpg"
 tags: [coffee]
+collections: [CoffeeShop]
 date: "2019-02-24"
 ---
 
@@ -12,8 +13,7 @@ This weekend we---my partner, Jess, and me---made a trip to a small town between
 
 # Espresso
 
-![Image of the espresso at Rave Coffee Roasters]({{ site.baseurl }}/assets/img/coffee/canmore-rave_coffee/espresso_opt.jpg){:style="float: left; width: 50%; border-radius: 25px;"}
-
+{{< figure src="/img/coffee/canmore-rave_coffee/espresso_opt.jpg" alt="display of something" class="float-left fifty-perc">}}
 
 The first thing I noticed as I carried the espresso to my table were the fruity aromas wafting from the brew. While the aromas were fruity and sweet, upon first taste this was not a sweet espresso. The primary notes are chocolatey, without an overly bitter afterbite. The bitterness has a warming effect and there is just enough to give you the sense that you've just taken a bite of 75% cacao chocolate. The secondary tones were much lighter and give the espresso immense complexity, filling out the chocolate with a subtle nuttiness. Every sip leaves you with the feeling that you have buried your noise in a freshly opened bag of espresso beans, experiencing the roast and bean to its fullest.
 
@@ -32,8 +32,7 @@ As an aside, while I don't normally enjoy my espresso with milk, Jess mentioned 
 
 # Pour over - India roast
 
-![Image of the pour over at Rave Coffee Roasters]({{ site.baseurl }}/assets/img/coffee/canmore-rave_coffee/pour-over_opt.jpg){:width=50%}
-
+{{< figure src="/img/coffee/canmore-rave_coffee/pour-over_opt.jpg" alt="Image of pour over at Rave Coffee" caption="(right) India roast pour over and (right) Rave coffee cappuccino" class="fifty-perc">}}
 
 While I enjoyed the espresso, Rave offers a number of single origin roasts for their pour over and I couldn't resist. I chose a roast which was sourced from India, with the promise of chocolate and smokey overtones. This was an amazing cup of coffee. The overall body was robust but not overly forward with smoke, with a balancing of a full bodied chocolate. The bitter notes where smoothed over entirely from the smoke.
 

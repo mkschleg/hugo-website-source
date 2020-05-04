@@ -1,0 +1,10 @@
+name = "Transcend"
+location = "Ritchie Market"
+visits = 1
+[ratings]
+    espresso = 5
+    pourover = 9
+    overall = 8
+[geolocation]
+    latitude=53.512417
+    longitude=-113.476171

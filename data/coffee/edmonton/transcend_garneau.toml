@@ -1,0 +1,10 @@
+name = "Transcend"
+location = "Garneau"
+visits = 1
+[ratings]
+    espresso = 5
+    pourover = 9
+    overall = 8
+[geolocation]
+    latitude=53.523039
+    longitude=-113.512415

@@ -1,7 +1,11 @@
 <div class="sidebar sticky" itemprop="author" itemscope itemtype="http://schema.org/Person">
   <div class="author-avatar">
     <a href="{{ "/" | relURL }}">
+      {{ if or (in .Params.tags "coffee") (eq .Title "coffee") }}
+      <img src="{{ (printf "/img/%s" $.Site.Params.avatar_coffee) | relURL }}" alt="{{ $.Site.Params.name }}" itemprop="image" style="background-color: #c1fec1">
+      {{ else }}
       <img src="{{ (printf "/img/%s" $.Site.Params.avatar) | relURL }}" alt="{{ $.Site.Params.name }}" itemprop="image">
+      {{ end }}
     </a>
   </div>
   <div class="author-content">

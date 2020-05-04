@@ -1,14 +1,14 @@
 +++
 title = "Zettelkasten method"
 author = ["Matthew Schlegel"]
-lastmod = 2020-05-03T15:23:30-06:00
+lastmod = 2020-05-03T23:33:08-06:00
 slug = "zettelkasten_method"
 draft = false
 notetype = "note"
 +++
 
 tags
-: [R:Note-Taking]({{< relref "note_taking" >}})
+: [Note-Taking]({{< relref "note_taking" >}})
 
 This is a method for note taking developed by [Niklas Luhmann](https://en.wikipedia.org/wiki/Niklas%5FLuhmann). There are several principles under which the method derives it's workflow:
 
@@ -26,4 +26,4 @@ More information can be found at [zettelkasten.de](https://zettelkasten.de).
 
 ### [How to Take Smart Notes with Org-mode]({{< relref "how_to_take_smart_notes_with_org_mode" >}}) {#how-to-take-smart-notes-with-org-mode}
 
-Instead consider if you had another brain, which you could organize and have topics surface when you need them. This is the idea behind the [R:Zettelkasten method]({{< relref "zettelkasten_method" >}}). This is where org-roam comes in.
+Instead consider if you had another brain, which you could organize and have topics surface when you need them. This is the idea behind the [Zettelkasten method]({{< relref "zettelkasten_method" >}}). This is where org-roam comes in.

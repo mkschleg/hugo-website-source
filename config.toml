@@ -1,4 +1,4 @@
-baseURL = "http://example.org/"
+baseURL = "https://mkschleg.github.io"
 languageCode = "en-us"
 title = "Matthew Schlegel"
 # author = "Matthew Schlegel"
@@ -40,6 +40,7 @@ enableGitInfo = false
   bio = "Lover of Espresso; PhD student at Amii, RLAI and UofA; Works on how machines perceive their world."
 
   avatar = "me.jpg"  # Specify an avatar image (in `static/img/` folder) or delete value to disable avatar.
+  avatar_coffee = "icon.png"
 
   location = "Edmonton, Alberta"
 
@@ -64,15 +65,7 @@ enableGitInfo = false
   #   Anonymize IP in Google Analytics (if enabled)
   privacy_pack = false
 
-  custom_css = ["header.css"]
-
-  # Social links
-  # Shown in sidebar, icons from Font Awesome
-  # [[params.social]]
-  #   icon = "instagram"
-  #   icon_pack = "fa"
-  #   link = "//instagram.com/joshuahu.io"
-  #   text = "Instagram"
+  custom_css = ["header.css", "img.css", "braindump.css", "main.css"]
 
   [[params.social]]
     icon = "linkedin"
@@ -97,6 +90,7 @@ enableGitInfo = false
     icon_pack = "fa"
     link = "/tags"
     text = "Tags"
+    
   [[params.taxonomy]]
     icon = "folder"
     icon_pack = "fa"
@@ -120,9 +114,9 @@ enableGitInfo = false
     link = "/post"
     text = "Posts"
 
-  [[params.menu]]
-    link = "/coffee"
-    text = "Coffee"
+  # [[params.menu]]
+  #   link = "/coffee"
+  #   text = "Coffee"
 
 # [[menu.main]]
 # name = "Home"

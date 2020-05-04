@@ -4,38 +4,30 @@
   <!-- {{ with .Title }}<h1>{{ . }}</h1>{{ end }} -->
 <div id="main" role="main">
   {{ partial "sidebar.html" . }}
-
-  <div class="page_container">
-    <section class="page_content">
+  <article class="page">
+    <div class="page_container">
+      <section class="page_content">
       
-      {{ partial "masthead_nav.html" . }}
-      <article class="post" itemscope itemtype="http://schema.org/Article">
-        <div class="post-container">
-          {{ if .Title }}
-          <!-- <h1> {{ .Title }} </h1> -->
-          <h1 itemprop="name"><a href="{{ .Permalink }}">{{ .Title }}</a></h1>
-          {{ else }}
-          <h1 itemprop="name"><a href="{{ .Permalink }}">{{ .CurrentSection }}</a></h1>
-          <!-- <h1 itemprop="name"> {{ .CurrentSection }} </h1> -->
-          {{ end }}
-          {{ $paginator := .Paginate .Data.Pages }}
-          {{ range $paginator.Pages }}
-          <div>
-            <h2><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
-            <div class="post-style">
-              {{ if .Params.summary }}
-              {{ printf "%s" .Params.summary | markdownify }}
-              {{ else if .Truncated }}
-              {{ printf "%s" .Summary | markdownify }}
-              {{ end }}
-            </div>
+        {{ partial "masthead_nav.html" . }}
+        <article class="post" itemscope itemtype="http://schema.org/Article">
+          <div class="post-container">
+            {{ if .Title }}
+            <!-- <h1> {{ .Title }} </h1> -->
+            <h1 itemprop="name"><a href="{{ .Permalink }}">{{ .Title }}</a></h1>
+            {{ else }}
+            <h1 itemprop="name"><a href="{{ .Permalink }}">{{ .CurrentSection }}</a></h1>
+            <!-- <h1 itemprop="name"> {{ .CurrentSection }} </h1> -->
+            {{ end }}
+            {{ $paginator := .Paginate .Data.Pages }}
+            {{ range $paginator.Pages }}
+            {{ partial "post_card.html" .}}
+            {{ end }}
           </div>
-          {{ end }}
-        </div>
-      </article>
-    </section>
-  </div>
-</div> 
+        </article>
+      </section>
+    </div>
+  </article>
+</div>
 
 {{ with .Content }}
 <div class="post-style" itemprop="articleBody">{{ . }}</div>

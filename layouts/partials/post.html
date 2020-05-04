@@ -12,7 +12,11 @@
     </div>
 
     {{ if not .Params.notags }}
-      {{ partial "tags.html" . }}
+    {{ partial "tags.html" . }}
+    {{ end }}
+
+    {{ if not .Params.nocollections }}
+    {{ partial "collections.html" . }}
     {{ end }}
 
     {{ if not .Params.noshare }}

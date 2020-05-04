@@ -2,6 +2,7 @@
 layout: post
 title: Creed(o) of Procrastination
 tags: [coffee]
+collections: [CoffeeShop]
 date: "2018-11-13"
 ---
 
@@ -11,7 +12,7 @@ Ok. Look. I procrastinate. I procrastinate a lot. I have a reasonably sized talk
 
 ## The Espresso
 
-![Image of the crema at Credo Coffee]({{ site.baseurl }}/assets/img/coffee/credo_close.jpeg){:width=50%}
+{{< figure src="/img/coffee/credo_close.jpeg" alt="Closeup of Credo espresso" caption="The glorious crema" class="seventyfive-perc">}}
 
 The first thing I noticed about this espresso was the crema. It was a nice, maybe not as much as I typically would like, but it was a good amount and persistent. After stirring, which you should always do with a nice espresso, I always take the... the remnants... Wait. You don't stir your espresso do you... 
 
@@ -21,7 +22,7 @@ Ok, look. You can say this diatribe only exists as a mad attempt to procrastinat
 
 Back to it. I always take the remnants of the stir on the spoon and have an initial taste. Here the crema hits hard. It is bright, and slightly acidic in the best ways. I dig into the body, and find a full bodied more savory taste. It matches well with the acidic overtones. It is a solid experience, and well worth the trip.
 
-![Image of the espresso at Credo Coffee]({{ site.baseurl }}/assets/img/coffee/credo_full_cup.jpeg)
+{{< figure src="/img/coffee/credo_full_cup.jpeg" alt="credo full cup" class="seventyfive-perc" >}}
 
 ## The Cafe
 
