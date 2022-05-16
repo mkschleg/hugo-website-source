@@ -18,10 +18,12 @@
             <h1 itemprop="name"><a href="{{ .Permalink }}">{{ .CurrentSection }}</a></h1>
             <!-- <h1 itemprop="name"> {{ .CurrentSection }} </h1> -->
             {{ end }}
-            {{ $paginator := .Paginate .Data.Pages }}
-            {{ range $paginator.Pages }}
-            {{ partial "post_card.html" .}}
-            {{ end }}
+            <div class="postcard-container">
+              {{ $paginator := .Paginate .Data.Pages }}
+              {{ range $paginator.Pages }}
+              {{ partial "post_card.html" .}}
+              {{ end }}
+            </div>
           </div>
         </article>
       </section>

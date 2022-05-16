@@ -19,11 +19,11 @@
     {{ partial "collections.html" . }}
     {{ end }}
 
-    {{ if not .Params.noshare }}
+    {{ if and (not .Params.noshare) (not (eq .Section "braindump")) }}
       {{ partial "share.html" . }}
     {{ end }}
 
-    {{ if not .Params.nocomments }}
+    {{ if and (not .Params.nocomments) (not (eq .Section "braindump")) }}
       {{ partial "disqus.html" . }}
     {{ end }}
 

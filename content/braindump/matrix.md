@@ -1,14 +1,14 @@
 +++
 title = "Matrix"
 author = ["Matthew Schlegel"]
-lastmod = 2020-05-03T15:23:06-06:00
+lastmod = 2021-09-13T14:17:28-06:00
 slug = "matrix"
 draft = false
 notetype = "note"
 +++
 
 tags
-: [Linear Algebra]({{< relref "linear_algebra" >}}), [Math]({{< relref "math" >}})
+: [Linear Algebra]({{<relref "linear_algebra.md#" >}}), [Math]({{<relref "math.md#" >}})
 
 We star with a set of equations with nine coefficients, three unknowns, and three right-hand sides.
 
@@ -91,7 +91,7 @@ We can also define a product between two matrices \\(\mathbf{A}: n \times m\\) a
 
 <!--list-separator-->
 
--  Hadamard Product
+-  [Hadamard product]({{<relref "hadamard_product.md#" >}})
 
     The Hadamard product is often used in machine learning. It is quite simply the element-wise produce between two matrices: \\(\mathcal{A}, \mathcal{B}: n \times m\\).
 

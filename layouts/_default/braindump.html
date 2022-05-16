@@ -18,6 +18,9 @@
           <h1 itemprop="name"><a href="{{ .Permalink }}">{{ .CurrentSection }}</a></h1>
           <!-- <h1 itemprop="name"> {{ .CurrentSection }} </h1> -->
           {{ end }}
+
+          <p> My current zettle. Comments and opinions are my own. No guarantees on correctness. </p>
+          
           <h2> Topics </h2>
           <!-- {{ $paginator := .Paginate .Data.Pages }} -->
           {{ range .Pages.ByTitle  }}
@@ -36,6 +39,34 @@
           </div>
           {{ end }}
           {{ end }}
+
+          <h2> Books </h2>
+          {{ range .Pages.ByTitle  }}
+          {{ if eq .Params.notetype "book" }}
+          <div class="braindump-note">
+            <h3><a href="{{ .Permalink }}">{{ .Title }}</a></h3>
+          </div>
+          {{ end }}
+          {{ end }}
+
+          <h2> Papers </h2>
+          {{ range .Pages.ByTitle  }}
+          {{ if eq .Params.notetype "paper" }}
+          <div class="braindump-note">
+            <h3><a href="{{ .Permalink }}">{{ .Title }}</a></h3>
+          </div>
+          {{ end }}
+          {{ end }}
+
+          <h2> Websites </h2>
+          {{ range .Pages.ByTitle  }}
+          {{ if eq .Params.notetype "website" }}
+          <div class="braindump-note">
+            <h3><a href="{{ .Permalink }}">{{ .Title }}</a></h3>
+          </div>
+          {{ end }}
+          {{ end }}
+
         </div>
       </article>
     </section>

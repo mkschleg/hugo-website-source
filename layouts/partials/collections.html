@@ -4,7 +4,7 @@
 <div class="post-tags">
   <h4> Collections: </h4>
   {{ range $k, $v := $.Params.collections }}
-  <a href="{{ (printf "%s/%s" ($.Site.GetPage "tags").Permalink $v) | relURL }}">{{ . }}</a>
+  <a href="{{ (printf "%s/%s" ($.Site.GetPage "collections").Permalink (lower $v)) | relURL }}">{{ . }}</a>
   {{ end }}
 </div>
 {{ end }}

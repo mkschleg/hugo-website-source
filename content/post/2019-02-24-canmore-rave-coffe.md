@@ -2,10 +2,11 @@
 layout: post
 title: Raving for Rave Coffee
 feature-img: "/img/coffee/canmore-rave_coffee/mountains_opt.jpg"
-thumbnail: "/img/coffee/canmore-rave_coffee/mountains_opt.jpg"
+thumbnail: "/img/coffee/canmore-rave_coffee/mountains_opt_crop.jpg"
 tags: [coffee]
 collections: [CoffeeShop]
 date: "2019-02-24"
+summary: "A caffeine induced rave about Rave"
 ---
 
 

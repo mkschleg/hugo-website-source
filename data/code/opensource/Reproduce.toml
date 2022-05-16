@@ -1,0 +1,5 @@
+title="Reproduce.jl"
+author="Schlegel, Matthew and Jacobsen, Andrew"
+year="2020"
+url="https://github.com/mkschleg/Reproduce.jl"
+abstract="How did I get these results? A framework for managing hyper-parameter settings, and running experiments. Lightly based on litetracer from Borealis."

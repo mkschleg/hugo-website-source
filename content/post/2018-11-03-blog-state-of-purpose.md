@@ -1,8 +1,6 @@
 ---
 layout: post
 title: Why am I blogging?
-feature-img: "assets/img/coffee/versus_toronto.jpeg"
-thumbnail: "assets/img/coffee/versus_toronto.jpeg"
 date: "2018-11-03"
 tags: [Meta, About]
 ---

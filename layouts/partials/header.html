@@ -4,6 +4,10 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  {{if eq .Section "braindump"}}
+  <meta name="robots" content="noindex">
+  <meta name="googlebot" content="noindex">
+  {{end}}
   <!-- <meta name="theme" content="hugo-academic"> -->
   {{ .Hugo.Generator }}
   {{ with .Site.Params.name }}<meta name="author" content="{{ . }}">{{ end }}
@@ -16,7 +20,7 @@
   <link rel="stylesheet" href="{{ "/css/" | relURL }}{{ . }}">
   {{ end }}
 
-  {{ if .Site.GoogleAnalytics }}
+  {{ if and .Site.GoogleAnalytics (not (eq .Section "braindump")) }}
     <script>
       window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
       ga('create', '{{ .Site.GoogleAnalytics }}', 'auto');
@@ -30,7 +34,7 @@
     <script async src="//cdnjs.cloudflare.com/ajax/libs/autotrack/2.4.1/autotrack.js"></script>
   {{ end }}
 
-  {{ if or .Site.RSSLink .RSSLink }}
+  {{ if and (or .Site.RSSLink .RSSLink) (not (eq .Section "braindump"))}}
   <link rel="alternate" href="{{ .RSSLink | default .Site.RSSLink  }}" type="application/rss+xml" title="{{ .Site.Title }}">
   <link rel="feed" href="{{ .RSSLink | default .Site.RSSLink }}" type="application/rss+xml" title="{{ .Site.Title }}">
   {{ end }}
