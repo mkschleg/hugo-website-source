@@ -1,20 +1,20 @@
 +++
 title = "sutton2011: Horde: A Scalable Real-time Architecture for Learning Knowledge from Unsupervised Sensorimotor Interaction"
 author = ["Matthew Schlegel"]
-lastmod = 2021-09-13T14:17:38-06:00
+lastmod = 2022-10-27T20:21:16-06:00
 slug = "sutton2011"
 draft = false
 notetype = "paper"
 +++
 
 tags
-: [Reinforcement Learning]({{<relref "reinforcement_learning.md#" >}}), [General Value Functions]({{<relref "general_value_functions.md#" >}})
+: [Reinforcement Learning]({{< relref "reinforcement_learning.md" >}}), [General Value Functions]({{< relref "general_value_functions.md" >}})
 
 source
-: [paper](http://www.ifaamas.org/Proceedings/aamas2011/papers/A6%5FR70.pdf)
+: [paper](http://www.ifaamas.org/Proceedings/aamas2011/papers/A6_R70.pdf)
 
 authors
-: Sutton, R. S., Modayil, J., Delp, M., Degris, T., Pilarski, P. M., White, A., & Precup, D.
+: Sutton, R. S., Modayil, J., Delp, M., Degris, T., Pilarski, P. M., White, A., &amp; Precup, D.
 
 year
 : 2011
@@ -24,10 +24,10 @@ This paper focuses on building world knowledge through value function prediction
 
 ## The Problem of Expressive and Learnable Knowledge {#the-problem-of-expressive-and-learnable-knowledge}
 
-They make the claim that knowledge representation is hard, which is a reasonable claim and one I agree with. They posit that prior approaches are either limited from their abstraction away from the data stream (first-order predicate logic), or lack of generality (differential equations and state-transition matrices). They argue that a class of value predictions will produce a more general form of knowledge (predictive knowledge), which will better encapsulate the agent's knowledge of the world. Several other approaches and theories of the representation of knowledge learned through the sensorimotor stream have been proposed including: <sup id="6559eff0f05dfd4be9c8d6726d937b72"><a href="#drescher1991" title="Drescher, Made-{{Up Minds}} : {{A Constructivist Approach}} to {{Artificial Intelligence}}, {The MIT Press} (1991).">drescher1991</a></sup>, <sup id="5b398cfbcb2305295f2d74a4f0698fd0"><a href="#cunningham2013intelligence" title="Cunningham, Intelligence: {{Its}} Organization and Development, {Elsevier} (2013).">cunningham2013intelligence</a></sup>, <sup id="de504f8eba81fc76f28f894ea7b665dd"><a href="#becker1973model" title="Becker, A {{Model}} for the {{Encoding}} of {{Experiential Information}}. {{Computer Models}} of {{Thought}} and {{Language}}. {{RC Schank}} and {{KM Colby}}, v(), (1973).">becker1973model</a></sup>.
+They make the claim that knowledge representation is hard, which is a reasonable claim and one I agree with. They posit that prior approaches are either limited from their abstraction away from the data stream (first-order predicate logic), or lack of generality (differential equations and state-transition matrices). They argue that a class of value predictions will produce a more general form of knowledge (predictive knowledge), which will better encapsulate the agent's knowledge of the world. Several other approaches and theories of the representation of knowledge learned through the sensorimotor stream have been proposed including: (<a href="#citeproc_bib_item_3">Drescher 1991</a>), (<a href="#citeproc_bib_item_2">Cunningham 2013</a>), (<a href="#citeproc_bib_item_1">Becker 1973</a>).
 
--   <sup id="6559eff0f05dfd4be9c8d6726d937b72"><a href="#drescher1991" title="Drescher, Made-{{Up Minds}} : {{A Constructivist Approach}} to {{Artificial Intelligence}}, {The MIT Press} (1991).">drescher1991</a></sup> explored a simulated robot baby learning conditional probability tables for boolean events
--   <sup id="87e79d486dd48b577ba1a9f855458a30"><a href="#ring1997" title="Ring, {{CHILD}}: {{A First Step Towards Continual Learning}}, {Machine Learning}, v(), (1997).">ring1997</a></sup> explored continual learning of a hierarchical representation of sequences
+-   (<a href="#citeproc_bib_item_3">Drescher 1991</a>) explored a simulated robot baby learning conditional probability tables for boolean events
+-   (<a href="#citeproc_bib_item_4">Ring 1997</a>) explored continual learning of a hierarchical representation of sequences
 
 These systems among others learned knowledge but remained far from learning from sensorimotor data. They claim that a knowledge representation built on predictions made from value functions will provide a broader knowledge representation.
 
@@ -92,11 +92,10 @@ They show they can learn a policy to maximize a signal.
 -   They also tacitly imply that value functions are the only form of knowledge looked at which has semantic meaning in the data (which I'm unclear if this is accurate).
 
 
-# Bibliography
-<a id="drescher1991"></a>[drescher1991] Drescher, Made-Up Minds : A Constructivist Approach to Artificial Intelligence, The MIT Press (1991). [↩](#6559eff0f05dfd4be9c8d6726d937b72)
 
-<a id="cunningham2013intelligence"></a>[cunningham2013intelligence] Cunningham, Intelligence: Its Organization and Development, Elsevier (2013). [↩](#5b398cfbcb2305295f2d74a4f0698fd0)
-
-<a id="becker1973model"></a>[becker1973model] Becker, A Model for the Encoding of Experiential Information. Computer Models of Thought and Language. RC Schank and KM Colby, <i></i>,  (1973). [↩](#de504f8eba81fc76f28f894ea7b665dd)
-
-<a id="ring1997"></a>[ring1997] Ring, CHILD: A First Step Towards Continual Learning, <i>Machine Learning</i>,  (1997). [↩](#87e79d486dd48b577ba1a9f855458a30)
+<style>.csl-entry{text-indent: -1.5em; margin-left: 1.5em;}</style><div class="csl-bib-body">
+  <div class="csl-entry"><a id="citeproc_bib_item_1"></a>Becker, JD. 1973. “A Model for the Encoding of Experiential Information. Computer Models of Thought and Language. RC Schank and KM Colby.” San Francisco, WH Freeman: 454 p.</div>
+  <div class="csl-entry"><a id="citeproc_bib_item_2"></a>Cunningham, Michael. 2013. <i>Intelligence: Its Organization and Development</i>. Elsevier.</div>
+  <div class="csl-entry"><a id="citeproc_bib_item_3"></a>Drescher, Gary L. 1991. <i>Made-Up Minds : A Constructivist Approach to Artificial Intelligence</i>. Artificial Intelligence. Cambridge, Mass: The MIT Press.</div>
+  <div class="csl-entry"><a id="citeproc_bib_item_4"></a>Ring, Mark B. 1997. “CHILD: A First Step Towards Continual Learning.” <i>Machine Learning</i>.</div>
+</div>

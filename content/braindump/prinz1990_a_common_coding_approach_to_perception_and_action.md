@@ -1,24 +1,24 @@
 +++
 title = "prinz1990: A Common Coding Approach to Perception and Action"
 author = ["Matthew Schlegel"]
-lastmod = 2021-09-13T14:17:31-06:00
+lastmod = 2022-10-27T20:20:27-06:00
 slug = "prinz1990"
 draft = false
 notetype = "paper"
 +++
 
 tags
-: [Perception]({{<relref "perception.md#" >}}), [Brain]({{<relref "brain.md#" >}})
+: [Perception]({{< relref "perception.md" >}}), [Brain]({{< relref "brain.md" >}})
 
-    In this chapter, Prinz goes over evidence suggesting a shared coding between action and perception. He lays out empirical and theoretical evidence for a shared coding, and criticism for the separate coding approach. This is more directly linked to the [Ideomotor Principle]({{<relref "ideomotor_principle.md#" >}}), and is some good evidence for having perception being dependent or apart of the behavioral responses.
+    In this chapter, Prinz goes over evidence suggesting a shared coding between action and perception. He lays out empirical and theoretical evidence for a shared coding, and criticism for the separate coding approach. This is more directly linked to the [Ideomotor Principle]({{< relref "ideomotor_principle.md" >}}), and is some good evidence for having perception being dependent or apart of the behavioral responses.
 
 
 ## Separate Coding {#separate-coding}
 
 This view holds that the afferent and efferent codes are incommensurate at all levels of the coding.
 
--   [Afferent Codes]({{<relref "afferent_codes.md#" >}}) The perceptions (recieve, input, sense...)
--   [Efferent Codes]({{<relref "efferent_codes.md#" >}}) the actions (act, react, behavior...)
+-   [Afferent Codes]({{< relref "afferent_codes.md" >}}) The perceptions (recieve, input, sense...)
+-   [Efferent Codes]({{< relref "efferent_codes.md" >}}) the actions (act, react, behavior...)
 
 The most direct consequence of such a view is that there needs to be some type of transformation to couple the incommensurate codes.
 

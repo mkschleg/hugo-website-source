@@ -14,7 +14,7 @@
 
             {{if $.Site.Data.publications.inprogress}}
             <div>
-              <h2> In Progress </h2>
+              <h2> In Progress (as me for a copy) </h2>
               {{ range (sort $.Site.Data.publications.inprogress "year" "desc")}}
               {{ partial "paper.html" . }}
               {{ end }}

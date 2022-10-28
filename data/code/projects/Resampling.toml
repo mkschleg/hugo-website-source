@@ -1,0 +1,5 @@
+title="Importance Resampling for Off-policy Prediction"
+author="Schlegel, Matthew"
+year="2019"
+url="https://github.com/mkschleg/Resampling.jl"
+abstract="The code base for ''Importance Resampling for Off-policy Prediction''."

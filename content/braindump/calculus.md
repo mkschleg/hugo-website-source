@@ -1,11 +1,41 @@
 +++
 title = "Calculus"
 author = ["Matthew Schlegel"]
-lastmod = 2021-09-13T14:17:12-06:00
+lastmod = 2022-10-27T20:18:25-06:00
 slug = "calculus"
 draft = false
 notetype = "topic"
 +++
+
+<div class="ox-hugo-toc toc">
+
+<div class="heading">Table of Contents</div>
+
+- [Introduction](#introduction)
+    - [Resources used while making these notes:](#resources-used-while-making-these-notes)
+- [Differential Calculus](#CFMLR:DIFF)
+    - [Single variate derivatives](#single-variate-derivatives)
+    - [The Gradient Operator](#the-gradient-operator)
+    - [Gradients over vector fields](#gradients-over-vector-fields)
+    - [Higher Order Operators](#higher-order-operators)
+    - [Finding Extrema](#finding-extrema)
+    - [Subgradients](#subgradients)
+    - [Some useful techniques](#some-useful-techniques)
+    - [Derivatives of common functions](#derivatives-of-common-functions)
+- [Integral Calculus](#CFMLR:INT)
+    - [Riemmanian sums](#riemmanian-sums)
+    - [Line Integrals (Riemmanian Integrals)](#line-integrals--riemmanian-integrals)
+    - [Fundamental Theorem of Calculus](#fundamental-theorem-of-calculus)
+    - ["Anti-derivative"](#anti-derivative)
+    - [Useful techniques](#useful-techniques)
+- [Calculus for Machine Learning](#CFMLR:ML)
+    - [Critical Points and Optimization](#critical-points-and-optimization)
+    - [Projection](#projection)
+    - [Probability](#probability)
+    - [Deep Learning](#deep-learning)
+
+</div>
+<!--endtoc-->
 
 \\( \newcommand{\states}{\mathcal{S}}
 \newcommand{\actions}{\mathcal{A}}
@@ -15,7 +45,11 @@ notetype = "topic"
 \newcommand{\transition}{P}
 \newcommand{\reals}{\mathbb{R}}
 \newcommand{\naturals}{\mathbb{N}}
+\newcommand{\complexs}{\mathbb{C}}
+\newcommand{\field}{\mathbb{F}}
+\newcommand{\numfield}{\mathbb{F}}
 \newcommand{\expected}{\mathbb{E}}
+\newcommand{\var}{\mathbb{V}}
 \newcommand{\by}{\times}
 \newcommand{\partialderiv}[2]{\frac{\partial #1}{\partial #2}}
 \newcommand{\defineq}{\stackrel{{\tiny\mbox{def}}}{=}}
@@ -31,15 +65,21 @@ notetype = "topic"
 \newcommand{\cvec}{\mathbf{c}}
 \newcommand{\dvec}{\mathbf{d}}
 \newcommand{\evec}{\mathbf{e}}
+\newcommand{\fvec}{\mathbf{f}}
 \newcommand{\gvec}{\mathbf{g}}
 \newcommand{\hvec}{\mathbf{h}}
+\newcommand{\ivec}{\mathbf{i}}
+\newcommand{\jvec}{\mathbf{j}}
+\newcommand{\kvec}{\mathbf{k}}
 \newcommand{\lvec}{\mathbf{l}}
 \newcommand{\mvec}{\mathbf{m}}
 \newcommand{\nvec}{\mathbf{n}}
+\newcommand{\ovec}{\mathbf{o}}
 \newcommand{\pvec}{\mathbf{p}}
 \newcommand{\qvec}{\mathbf{q}}
 \newcommand{\rvec}{\mathbf{r}}
 \newcommand{\svec}{\mathbf{s}}
+\newcommand{\tvec}{\mathbf{t}}
 \newcommand{\uvec}{\mathbf{u}}
 \newcommand{\vvec}{\mathbf{v}}
 \newcommand{\wvec}{\mathbf{w}}
@@ -52,25 +92,39 @@ notetype = "topic"
 \newcommand{\Dmat}{\mathbf{D}}
 \newcommand{\Emat}{\mathbf{E}}
 \newcommand{\Fmat}{\mathbf{F}}
+\newcommand{\Gmat}{\mathbf{G}}
+\newcommand{\Hmat}{\mathbf{H}}
 \newcommand{\Imat}{\mathbf{I}}
+\newcommand{\Jmat}{\mathbf{J}}
+\newcommand{\Kmat}{\mathbf{K}}
+\newcommand{\Lmat}{\mathbf{L}}
+\newcommand{\Mmat}{\mathbf{M}}
+\newcommand{\Nmat}{\mathbf{N}}
+\newcommand{\Omat}{\mathbf{O}}
 \newcommand{\Pmat}{\mathbf{P}}
+\newcommand{\Qmat}{\mathbf{Q}}
+\newcommand{\Rmat}{\mathbf{R}}
+\newcommand{\Smat}{\mathbf{S}}
+\newcommand{\Tmat}{\mathbf{T}}
 \newcommand{\Umat}{\mathbf{U}}
 \newcommand{\Vmat}{\mathbf{V}}
 \newcommand{\Wmat}{\mathbf{W}}
 \newcommand{\Xmat}{\mathbf{X}}
-\newcommand{\Qmat}{\mathbf{Q}}
+\newcommand{\Ymat}{\mathbf{Y}}
+\newcommand{\Zmat}{\mathbf{Z}}
+\newcommand{\Sigmamat}{\boldsymbol{\Sigma}}
+\newcommand{\identity}{\Imat}
 \newcommand{\thetavec}{\boldsymbol{\theta}}
 \newcommand{\phivec}{\boldsymbol{\phi}}
 \newcommand{\muvec}{\boldsymbol{\mu}}
 \newcommand{\sigmavec}{\boldsymbol{\sigma}}
 \newcommand{\jacobian}{\mathbf{J}}
+\newcommand{\ind}{\perp\!\!\!\!\perp}
+\newcommand{\bigoh}{\text{O}}
 \\)
 
 tags
-: [Math]({{<relref "math.md#" >}})
-
-source
-:
+: [Math]({{< relref "math.md" >}})
 
 
 ## Introduction {#introduction}
@@ -83,7 +137,7 @@ In these notes, I assume you have been exposed to several concepts in mathematic
 -   Limits (including L'Hopital's rule)
 -   Geometry
 
-In the final section (section [CFMLR:ML](#CFMLR:ML)), there will be many topics discussed that are critical for doing machine learning research. We assume some passing knowledge of these topics
+In the final section (section <CFMLR:ML>), there will be many topics discussed that are critical for doing machine learning research. We assume some passing knowledge of these topics
 
 -   Probability and Statistics
 -   Deep Learning
@@ -126,14 +180,11 @@ We will then move to higher dimensional functions, discuss higher order (more th
 
 Lets start by thinking about a hard ball being dropped from a reasonable distance, say at the top of a ladder. Say we wanted to come up with some function of how long the ball will fall in a certain amount of time. One way to do this (requiring the least amount of experimental setup) would be to measure the time a ball dropped at varying heights and then fit this data to some function of time. If we were to take these measurements, the simplest function (approximating the distance rather well) is a parabola
 
-\\[\text{Distance the ball travels after dropping} = f(t) = c t^2 \quad \text{where } c \in \reals, t \ge 0\\].
+\\[\text{Distance the ball travels after dropping} = f(t) = c t^2 \quad \text{where } c \in \reals, t \ge 0.\\]
 
 <aside>
-  <aside></aside>
 
 You may be asking where does the ball hit the ground (i.e. what is my stopping condition?). The stopping condition will be the distance the ball has to travel to hit the ground, or the initial position of the ball relative to the release point. While this could be modeled in the above equation, it is easier to just ignore this and reason about a ball that is falling infinitely (with no air resistance) with gravity set at sea level. Trust me when I say these assumptions make the calculations significantly easier to manage, and are more than reasonable for our purposes here.
-
-\vspace{0.2cm}
 
 You may also be wondering about what the constant is representing. Well under normal conditions on earth (i.e. sea level) \\(c\approx \frac{1}{2} \* 9.8\frac{m}{s}\\).  You can derive this quantity from your measurements to a reasonable amount of accuracy.
 
@@ -141,20 +192,19 @@ You may also be wondering about what the constant is representing. Well under no
 
 Given this equations, we could ask ourselves how much further has the ball fallen at some time \\(t=2\\). This is quite easy to calculate \\(f(t=2) = c \* 4\\). At \\(t=0\\), we trivially shouldn't fall any distance \\(f(t=0) = c\*0 = 0\\). We may also ask, starting at a certain time \\(t\\), how much distance will I fall after some amount of time \\(dt\\). Many of you may be thinking "isn't this related to the velocity or speed of the ball?", and the answer is a resounding YES! But obviously not the velocity of the ball at time \\(t\\) or at time \\(t+dt\\). So what would the velocity be? Well if you remember from algebra, we can find the rate of change between two points as the slope of the line intersecting both points
 
-\\[\text{Rate of change} = \frac{f(t+dt) - f(t)}{t + dt - t} = \frac{f(t+dt) - f(t)}{dt}\\].
+\\[\text{Rate of change} = \frac{f(t+dt) - f(t)}{t + dt - t} = \frac{f(t+dt) - f(t)}{dt}.\\]
 
 This will give us the average rate of change or average velocity of the ball over the interval \\([t+dt,t]\\). Another reasonable question you may ask yourself is, "how would I get the exact velocity of the ball at time \\(t\\)?". This means what happens to my velocity equation as my change in time decreases to zero. We can't just set \\(dt=0\\) and substitute in, as this would be undefined! Instead we must look at the trend of the function as \\(dt\\) approaches 0. This is known as a limit, leading us to
 
-\\[\text{velocity}(t) = \lim\_{dt \rightarrow 0} \frac{f(t+dt)-f(t)}{dt} \\].
+\\[\text{velocity}(t) = \lim\_{dt \rightarrow 0} \frac{f(t+dt)-f(t)}{dt}. \\]
 
 This is the exact definition of a derivative, and we can state
 
-\\[\frac{d f(t)}{dt} = f^\prime(t) = \dot{f}(t) = \lim\_{dt \rightarrow 0} \frac{f(t+dt)-f(t)}{dt} \\].
+\\[\frac{d f(t)}{dt} = f^\prime(t) = \dot{f}(t) = \lim\_{dt \rightarrow 0} \frac{f(t+dt)-f(t)}{dt}. \\]
 
 <aside>
-  <aside></aside>
 
-\textbf{A Note on Notation}: We will mostly be using Leibniz's notation (\\(\frac{d f(t)}{dt}\\)) as this easily transitions to higher dimensional functions. But it would be good to know several notation conventions exist and are widely used:
+**A Note on Notation**: We will mostly be using Leibniz's notation (\\(\frac{d f(t)}{dt}\\)) as this easily transitions to higher dimensional functions. But it would be good to know several notation conventions exist and are widely used:
 
 -   Newton Notation: \\(\dot{f}(t) \defeq \frac{d f(t)}{dt}\\)
 -   Lagrange Notation: \\(f^\prime(t) \defeq \frac{d f(t)}{dt}\\)
@@ -166,18 +216,17 @@ It should be clear why Leibniz's notation is preferred, as it clearly denotes th
 You can imagine the two points you are drawing a line through getting extremely close together until they become the same point! This quantity specifies the slope of the tangent line to the function \\(f(t)\\). We can now calculate our first derivative together (using our parabola function)
 
 \begin{align\*}
-\frac{d f(t)}{dt} &= \lim\_{dt \rightarrow 0} \frac{f(t+dt)-f(t)}{dt} \\\\\\
-&= \lim\_{dt \rightarrow 0} \frac{c(t+dt)^2-ct^2}{dt}	\\\\\\
-&= \lim\_{dt \rightarrow 0} \frac{ct^2+ 2ct\*dt + dt^2-ct^2}{dt}\\\\\\
-&= \lim\_{dt \rightarrow 0} \frac{2ct\*dt + dt^2}{dt}\\\\\\
-&= \lim\_{dt \rightarrow 0} 2ct + dt\\\\\\
+\frac{d f(t)}{dt} &= \lim\_{dt \rightarrow 0} \frac{f(t+dt)-f(t)}{dt} \\\\
+&= \lim\_{dt \rightarrow 0} \frac{c(t+dt)^2-ct^2}{dt}	\\\\
+&= \lim\_{dt \rightarrow 0} \frac{ct^2+ 2ct\*dt + dt^2-ct^2}{dt}\\\\
+&= \lim\_{dt \rightarrow 0} \frac{2ct\*dt + dt^2}{dt}\\\\
+&= \lim\_{dt \rightarrow 0} 2ct + dt\\\\
 \frac{d f(t)}{dt} &= 2ct
 \end{align\*}
 
 Because we used a variable \\(t\\) instead of an actual value, we can now ask what velocity our ball is at any place along the parabola!
 
 <aside>
-  <aside></aside>
 
 Another way of thinking about a derivative is to consider \\(dx\\) as some perturbation to our function \\(f(x)\\). The derivative tells us for a given input \\(x\\), how \\(f(x)\\) will vary over these perturbations (i.e. how f(x) will vary along the tangent line). This is an incredibly useful value for machine learning as we will see later, and tells us the best search direction in optimizing our function approximators.
 
@@ -185,11 +234,10 @@ Another way of thinking about a derivative is to consider \\(dx\\) as some pertu
 
 We can now make this a little bit more formal (although we have covered all the important bits above).
 
-<div class="definition">
-  <div></div>
+<div title="Derivative" class="definition">
 
-\textbf{Derivative: } Given a continuous, smooth function \\(f: \reals \mapsto \reals\\). We say \\(f(x)\\) is differentiable at \\(x=a\\) if and only if
-\\[\lim\_{dx->0^-} \frac{f(a+dx) - f(a)}{dx} = \lim\_{dx->0^+} \frac{f(a+dx) - f(a)}{dx}\\].
+Given a continuous, smooth function \\(f: \reals \mapsto \reals\\). We say \\(f(x)\\) is differentiable at \\(x=a\\) if and only if
+\\[\lim\_{dx->0^-} \frac{f(a+dx) - f(a)}{dx} = \lim\_{dx->0^+} \frac{f(a+dx) - f(a)}{dx}.\\]
 
 We say \\(f(x)\\) is of differentiability class \\(C^{k>1}\\) if it is differentiable at all \\(a \in domain(f)\\). We define the derivative with respect to its input \\(x\\) as:
 \\[\frac{d f(x)}{dx} = \lim\_{dx->0} \frac{f(x+dx) - f(x)}{dx}\\]
@@ -204,22 +252,20 @@ We say \\(f(x)\\) is of differentiability class \\(C^{k>1}\\) if it is different
 
     If we vary the parameter of our function \\(f(t)\\) from left to right, the double derivative gives us a sense of the trend of the function. If the double derivative is positive we would expect the velocity of our function to be increasing meaning our function should eventually be heading towards positive infinity. The inverse is true when the double derivative is negative. In more concrete terms, the second derivative is measuring the **concavity** of our function.
 
-    <div class="definition">
-      <div></div>
+    <div title="Concavity" class="definition">
 
-    \textbf{Concavity} The concavity (or convexity) of a function is an important concept for machine learning and optimization.
+    The concavity (or convexity) of a function is an important concept for machine learning and optimization.
 
     </div>
 
     We can determine if our function \\(f(x)\\) is concave up (convex) or concave down  at any point in its domain \\(x^\prime\\) using the value of the second derivative. This is a very simple procedure: if the second derivative is positive \\(\frac{d^2 f(x^\prime)}{dx^2} > 0\\) then the function is concave up (also known as convex), if the second derivative is negative \\(\frac{d^2 f(x^\prime)}{dx^2} < 0\\) the second derivative is concave down. What if the second derivative is zero \\(\frac{d^2 f(x^\prime)}{dx^2} = 0\\)?
 
-    <div class="definition">
-      <div></div>
+    <div title="Inflection Point" class="definition">
 
-    \textbf{Inflection point} any point where the second derivative of our function is zero and there is a sign change. A bit more formally with \\(\epsilon\\) as a small positive real number, \\(x^\prime\\) is an inflection point of a function \\(f(x)\\) if
+    An inflection point is any point where the second derivative of our function is zero and there is a sign change. A bit more formally with \\(\epsilon\\) as a small positive real number, \\(x^\prime\\) is an inflection point of a function \\(f(x)\\) if
 
     \begin{align\*}
-    &\frac{d^2 f(x^\prime)}{dx^2} = 0 \\\\\\
+    &\frac{d^2 f(x^\prime)}{dx^2} = 0 \\\\
     &sign(\frac{d^2 f(x^\prime + \epsilon)}{dx^2}) \neq sign(\frac{d^2 f(x^\prime - \epsilon)}{dx^2})
     \end{align\*}
 
@@ -228,7 +274,6 @@ We say \\(f(x)\\) is of differentiability class \\(C^{k>1}\\) if it is different
     </div>
 
     <aside>
-      <aside></aside>
 
     We can start constructing classes of functions according to their derivatives, which we denote as differentiability class or smoothness class. We first start with the \\(C^{0}\\) set of functions which contains all continuous functions. The next class \\(C^{1}\\) contains all functions such that their derivatives are in \\(C^{0}\\) (i.e. continuous). We can define the kth class as \\(C^{k}\\) with functions whose \\([1, 2, \ldots, kth]\\) -derivatives are continuous. We declare a function smooth if it is infinitely differentiable and of the set \\(C^{\infty}\\). One such function is the exponential, also the cosine and sinusoidal functions.
 
@@ -259,7 +304,7 @@ We now know how to take the derivative with respect to a single variable, and ac
 Now that the we have our assumptions specified, lets think about what a derivative may mean with higher dimensional domains. How might we do this? We could imagine perturbing each dimension jointly. Say for a two parameter function \\(f(x,y)\\), we could perturb along the vector \\([dx, dy]\\) and take the limits together using the above formulation (assuming our space follows the Euclidean metric)
 
 \\[\lim\_{dx \rightarrow 0} \lim\_{dy \rightarrow 0} \frac{f(x+dx, y+dy) - f(x,y)}{\sqrt{(x+dx - x)^2 + (y+dy - y)^2}}
-   = \lim\_{dx \rightarrow 0} \lim\_{dy \rightarrow 0}\frac{f(x+dx, y+dy) - f(x,y)}{\sqrt{(dx)^2 + (dy)^2}}\\].
+= \lim\_{dx \rightarrow 0} \lim\_{dy \rightarrow 0}\frac{f(x+dx, y+dy) - f(x,y)}{\sqrt{(dx)^2 + (dy)^2}}\\].
 
 Something you may notice is the inner limit can be immediately applied, as the denominator will not become problematic until both limits are applied. We then recover our usual notion of a gradient, but for a single variable of our multi-variate function. This is called a **partial derivative**
 
@@ -271,30 +316,28 @@ Intuitively this gives us how much the function will change if we only apply a p
 
 Now that we have derivatives representing the rate of change of each variable we can construct vectors from the partial derivatives to get the exact direction the function is moving in the space. We have finally come to one definition of the gradient!
 
-\\[\text{Gradient of $f(x,y)$} \defeq \begin{bmatrix} \frac{\partial}{\partial x} f(x,y) \\ \frac{\partial}{\partial y} f(x,y)\end{bmatrix} = \begin{bmatrix} \frac{\partial}{\partial x} \\ \frac{\partial}{\partial y} \end{bmatrix} f(x,y) = \vec{\nabla} f(x,y) = \nabla f(x,y)\\]
+\\[\text{Gradient of $f(x,y)$} \defeq \begin{bmatrix} \frac{\partial}{\partial x} f(x,y) \\\ \frac{\partial}{\partial y} f(x,y)\end{bmatrix} = \begin{bmatrix} \frac{\partial}{\partial x} \\\ \frac{\partial}{\partial y} \end{bmatrix} f(x,y) = \vec{\nabla} f(x,y) = \nabla f(x,y)\\]
 
 Notice that the gradient operator is a vector operator it self, and is sometimes referred as the _vector differential operator_ or _del_. By convention we leave off the vector identification and always assume the gradient is a vector with the same length as the number of parameters our function takes. Another convention is the operator always appearing on the left of a scalar function (or really any function). If you are familiar with linear algebra, you should see why (i.e. a left product _could_ be different from a right product). We will also treat the gradient as a column vector from here on out.
 
 Thus far we have defined the gradient over only two dimensions, but of course we can easily extend this to n dimensions.
 
-\\[\nabla \defeq \begin{bmatrix} \partialderiv{}{x\_1}\\ \vdots \\ \partialderiv{}{x\_n} \end{bmatrix}\\]
+\\[\nabla \defeq \begin{bmatrix} \partialderiv{}{x\_1}\\\ \vdots \\\ \partialderiv{}{x\_n} \end{bmatrix}\\]
 
 
 ### Gradients over vector fields {#gradients-over-vector-fields}
 
 The functions we have been considering thus far have been **scalar fields** where \\(f: A \subset \reals^n \rightarrow \reals\\). Now that we know how gradients work over scalar functions, we will look at how gradients will work over vector fields.
 
-<div class="definition">
-  <div></div>
+<div title="Vector Field" class="definition">
 
-\textbf{Vector Fields}: a \textbf{vector field} in \\(\reals^n\\) is a map \\(\mathbf{F}: A \subset \reals^n \mapsto \reals^n\\) that assigns to each point \\(\xvec\\) in its domain A a vector \\(\mathbf{F}(\xvec)\\). If n = 2, \\(\mathbf{F}\\) is called a \textbf{vector field in the plane}, and if n=3, \\(\mathbf{F}\\) is a \textbf{vector field in space}.
+A **vector field** in \\(\reals^n\\) is a map \\(\mathbf{F}: A \subset \reals^n \mapsto \reals^n\\) that assigns to each point \\(\xvec\\) in its domain A a vector \\(\mathbf{F}(\xvec)\\). If n = 2, \\(\mathbf{F}\\) is called a \textbf{vector field in the plane}, and if n=3, \\(\mathbf{F}\\) is a \textbf{vector field in space}.
 
 We have already covertly encountered a vector field in these notes! Specifically, the gradient of any scalar function is a vector field over the domain of the scalar function!
 
 </div>
 
 <aside>
-  <aside></aside>
 
 We are only considering vector fields in these notes, but you could imagine functional maps such as \\(\mathbf{F}: A \subset \reals^n \mapsto \reals^m\\). We revisit this type of function in our study of the Jacobian (to make the definition more general). There are several interesting properties which pop up when we consider functions of this form, but leave a discussion on these as beyond the scope of these notes.
 
@@ -309,12 +352,12 @@ There are three ways the gradient operator can interact with a vector field. We 
     The Jacobian is the outer product of the gradient operator and our vector field. More concretely
 
     \\[\text{The Jacobian: } \jacobian \defeq \nabla \otimes \Fmat =
-        \left[\partialderiv{\Fmat}{x\_1}, \cdots, \partialderiv{\Fmat}{x\_n}\right] =
-        \left[\begin{array}{ccc}{
-         \frac{\partial \Fmat\_{1}}{\partial x\_{1}}} & {\cdots} & {\frac{\partial \Fmat\_{1}}{\partial x\_{n}}} \\\\\\
-         {\vdots} & {\ddots} & {\vdots} \\\\\\
-         {\frac{\partial \Fmat\_{m}}{\partial x\_{1}}} & {\cdots} & {\frac{\partial \Fmat\_{m}}{\partial x\_{n}}}
-        \end{array}\right]\\]
+    \left[\partialderiv{\Fmat}{x\_1}, \cdots, \partialderiv{\Fmat}{x\_n}\right] =
+    \left[\begin{array}{ccc}{
+    \frac{\partial \Fmat\_{1}}{\partial x\_{1}}} & {\cdots} & {\frac{\partial \Fmat\_{1}}{\partial x\_{n}}} \\\\
+    {\vdots} & {\ddots} & {\vdots} \\\\
+    {\frac{\partial \Fmat\_{m}}{\partial x\_{1}}} & {\cdots} & {\frac{\partial \Fmat\_{m}}{\partial x\_{n}}}
+    \end{array}\right]\\]
 
     Some properties:
 
@@ -337,10 +380,10 @@ There are three ways the gradient operator can interact with a vector field. We 
     The curl is the cross product of the gradient operator and a vector field \\(\Fmat\\). We will only consider the curl up to three dimensions for simplicity.
 
     \\[\text{The Curl: } curl(\Fmat) \defeq \nabla \times \Fmat =
-        \left|\begin{array}{ccc}
-        {\hat{\imath}} & {\hat{\jmath}} & {\hat{k}} \\\\\\
-        {\frac{\partial}{\partial x}} & {\frac{\partial}{\partial y}} & {\frac{\partial}{\partial z}} \\\\\\
-        {\Fmat\_{x}} & {\Fmat\_{y}} & {\Fmat\_{z}}\end{array}\right|\\]
+    \left|\begin{array}{ccc}
+    {\hat{\imath}} & {\hat{\jmath}} & {\hat{k}} \\\\
+    {\frac{\partial}{\partial x}} & {\frac{\partial}{\partial y}} & {\frac{\partial}{\partial z}} \\\\
+    {\Fmat\_{x}} & {\Fmat\_{y}} & {\Fmat\_{z}}\end{array}\right|\\]
 
 
 ### Higher Order Operators {#higher-order-operators}
@@ -351,7 +394,7 @@ Now that we have covered a gradients interactions with vector fields we can cons
 
 -  Hessian
 
-    The Hessian is an important construct for machine learning, particularly in optimization and step-size adaptation where the Hessian is often evoked (although not computed). We will look at Newtonian methods in section [CFMLR:ML](#CFMLR:ML).
+    The Hessian is an important construct for machine learning, particularly in optimization and step-size adaptation where the Hessian is often evoked (although not computed). We will look at Newtonian methods in section <CFMLR:ML>.
 
     To construct the Hessian, we will simply take the Jacobian of the gradient of our function.
 
@@ -364,47 +407,54 @@ Now that we have covered a gradients interactions with vector fields we can cons
 
 ### Finding Extrema {#finding-extrema}
 
-We look for extrema in the multi-variate case just as we did for the single variate case. We look for points which have gradients equal to the zero vector. We then use the multi-variate second derivative test.
+We look for extrema in the multi-variate case just as we did for the single variate case. We look for points which have gradients equal to the zero vector. We then use the multi-variate second derivative test. This is also known as the [Optimization]({{< relref "optimization.md" >}}) problem.
 
 
-### Sub-gradients {#sub-gradients}
+### Subgradients {#subgradients}
 
 -   Non-continuous functions (absolute value, relu).
 
 
-### Some useful techniques and derivatives {#some-useful-techniques-and-derivatives}
+### Some useful techniques {#some-useful-techniques}
 
 We will look at several useful techniques and formulas for calculating derivatives. While not an exhaustive list, many of these techniques consistently appear in machine learning.
 
-<!--list-separator-->
+<div title="Product Rule" class="definition">
 
--  Product Rule
+\\[\nabla\_{\xvec} f(\xvec)g(\xvec) = f(\xvec) \nabla\_{\xvec} g(\xvec) + g(\xvec) \nabla\_{\xvec} f(\xvec)\\]
 
-    \\[\nabla\_{\xvec} f(\xvec)g(\xvec) = f(\xvec) \nabla\_{\xvec} g(\xvec) + g(\xvec) \nabla\_{\xvec} f(\xvec)\\]
+</div>
 
-<!--list-separator-->
+<div title="Chain Rule" class="definition">
 
--  Chain Rule
+\\[\nabla\_{\xvec} (f \circ g)(\xvec) = \nabla\_g f(g(\xvec)) \nabla\_{\xvec}g(\xvec)\\]
 
-    \\[\nabla\_{\xvec} (f \circ g)(\xvec) = \nabla\_g f(g(\xvec)) \nabla\_{\xvec}g(\xvec)\\]
+</div>
 
-<!--list-separator-->
+<div title="Implicit Differentiation" class="definition">
 
--  Implicit Differentiation
+Implicit differentiation is finding the derivative of functions or variables when there isn't a clear form like \\(y=f(x)\\). This is best explained through an example. We want to find the derivative \\(\frac{dy}{dx}\\) from the function \\(x^2 + y^2 = 1\\).
 
-<!--list-separator-->
+If we can solve for \\(y\\) (which would be simple here \\(y = \mp \sqrt{1 - x^2}\\)) this can be done easily. But for this example lets assume we cant. Instead, we can take the derivative from the starting function
 
--  Useful Derivatives
+\begin{align\*}
+\frac{d}{dx} (x^2 + y^2) &= \frac{d}{dx} (1) \quad &\text{Take the derivative.}\\\\
+2x + 2y \frac{dy}{dx} &= 0 \quad &\text{Distribute the derivative.}\\\\
+\frac{dy}{dx} &= -\frac{x}{y} \quad &\text{Solve for $\frac{dy}{dx}$}
+\end{align\*}
 
-    -   \\(x^n\\)
-        \\[\partialderiv{}{x} x^n = nx^{n-1} \quad \triangleright \quad n \neq 0, n\in\reals\\]
-    -   \\(e^x\\)
-        \\[\partialderiv{}{x} e^x = e^x\\]
-        \\[\partialderiv{}{x} a^x = \ln(a)\*a^x \quad \triangleright \quad a > 0\\]
-    -   \\(ln(x)\\)
-        \\[\partialderiv{}{x} \ln(x) = \frac{1}{x}\\]
-        \\[\partialderiv{}{x} \log\_{a}(x) = \frac{1}{x\ln(a)} \quad \triangleright \quad a > 0\\]
-    -   trig
+</div>
+
+
+### Derivatives of common functions {#derivatives-of-common-functions}
+
+\\[\partialderiv{}{x} x^n = nx^{n-1} \quad \triangleright \quad n \neq 0, n\in\reals\\]
+\\[\partialderiv{}{x} e^x = e^x\\]
+\\[\partialderiv{}{x} a^x = \ln(a)\*a^x \quad \triangleright \quad a > 0\\]
+\\[\partialderiv{}{x} \ln(x) = \frac{1}{x}\\]
+\\[\partialderiv{}{x} \log\_{a}(x) = \frac{1}{x\ln(a)} \quad \triangleright \quad a > 0\\]
+\\[\partialderiv{}{x} \sin(x) = \cos(x)\\]
+\\[\partialderiv{}{x} \cos(x) = -\sin(x)\\]
 
 
 ## Integral Calculus {#CFMLR:INT}

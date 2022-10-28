@@ -1,7 +1,7 @@
 +++
 title = "Atari"
 author = ["Matthew Schlegel"]
-lastmod = 2021-09-13T14:17:09-06:00
+lastmod = 2022-10-27T20:18:08-06:00
 slug = "atari"
 draft = false
 notetype = "note"
@@ -15,7 +15,11 @@ notetype = "note"
 \newcommand{\transition}{P}
 \newcommand{\reals}{\mathbb{R}}
 \newcommand{\naturals}{\mathbb{N}}
+\newcommand{\complexs}{\mathbb{C}}
+\newcommand{\field}{\mathbb{F}}
+\newcommand{\numfield}{\mathbb{F}}
 \newcommand{\expected}{\mathbb{E}}
+\newcommand{\var}{\mathbb{V}}
 \newcommand{\by}{\times}
 \newcommand{\partialderiv}[2]{\frac{\partial #1}{\partial #2}}
 \newcommand{\defineq}{\stackrel{{\tiny\mbox{def}}}{=}}
@@ -31,15 +35,21 @@ notetype = "note"
 \newcommand{\cvec}{\mathbf{c}}
 \newcommand{\dvec}{\mathbf{d}}
 \newcommand{\evec}{\mathbf{e}}
+\newcommand{\fvec}{\mathbf{f}}
 \newcommand{\gvec}{\mathbf{g}}
 \newcommand{\hvec}{\mathbf{h}}
+\newcommand{\ivec}{\mathbf{i}}
+\newcommand{\jvec}{\mathbf{j}}
+\newcommand{\kvec}{\mathbf{k}}
 \newcommand{\lvec}{\mathbf{l}}
 \newcommand{\mvec}{\mathbf{m}}
 \newcommand{\nvec}{\mathbf{n}}
+\newcommand{\ovec}{\mathbf{o}}
 \newcommand{\pvec}{\mathbf{p}}
 \newcommand{\qvec}{\mathbf{q}}
 \newcommand{\rvec}{\mathbf{r}}
 \newcommand{\svec}{\mathbf{s}}
+\newcommand{\tvec}{\mathbf{t}}
 \newcommand{\uvec}{\mathbf{u}}
 \newcommand{\vvec}{\mathbf{v}}
 \newcommand{\wvec}{\mathbf{w}}
@@ -52,29 +62,46 @@ notetype = "note"
 \newcommand{\Dmat}{\mathbf{D}}
 \newcommand{\Emat}{\mathbf{E}}
 \newcommand{\Fmat}{\mathbf{F}}
+\newcommand{\Gmat}{\mathbf{G}}
+\newcommand{\Hmat}{\mathbf{H}}
 \newcommand{\Imat}{\mathbf{I}}
+\newcommand{\Jmat}{\mathbf{J}}
+\newcommand{\Kmat}{\mathbf{K}}
+\newcommand{\Lmat}{\mathbf{L}}
+\newcommand{\Mmat}{\mathbf{M}}
+\newcommand{\Nmat}{\mathbf{N}}
+\newcommand{\Omat}{\mathbf{O}}
 \newcommand{\Pmat}{\mathbf{P}}
+\newcommand{\Qmat}{\mathbf{Q}}
+\newcommand{\Rmat}{\mathbf{R}}
+\newcommand{\Smat}{\mathbf{S}}
+\newcommand{\Tmat}{\mathbf{T}}
 \newcommand{\Umat}{\mathbf{U}}
 \newcommand{\Vmat}{\mathbf{V}}
 \newcommand{\Wmat}{\mathbf{W}}
 \newcommand{\Xmat}{\mathbf{X}}
-\newcommand{\Qmat}{\mathbf{Q}}
+\newcommand{\Ymat}{\mathbf{Y}}
+\newcommand{\Zmat}{\mathbf{Z}}
+\newcommand{\Sigmamat}{\boldsymbol{\Sigma}}
+\newcommand{\identity}{\Imat}
 \newcommand{\thetavec}{\boldsymbol{\theta}}
 \newcommand{\phivec}{\boldsymbol{\phi}}
 \newcommand{\muvec}{\boldsymbol{\mu}}
 \newcommand{\sigmavec}{\boldsymbol{\sigma}}
 \newcommand{\jacobian}{\mathbf{J}}
+\newcommand{\ind}{\perp\!\!\!\!\perp}
+\newcommand{\bigoh}{\text{O}}
 \\)
 
-The set of atari games used heavily in [Deep Reinforcement Learning]({{<relref "deep_reinforcement_learning.md#" >}}) research. See more details in <sup id="b73dabcd50cb59db9f72d72aceedb4e3"><a href="#bellemare2013" title="Bellemare, Naddaf, Veness \&amp; Bowling, The {{Arcade Learning Environment}}: {{An Evaluation Platform}} for {{General Agents}}, {Journal of Artificial Intelligence Research}, v(), (2013).">bellemare2013</a></sup>. The experimental design in <sup id="b418008d392eb4ce22034bd3e0ff50d9"><a href="#mnih2015" title="Mnih, Kavukcuoglu, Silver, Rusu, Veness, Bellemare, Graves, Riedmiller, Fidjeland, Ostrovski, Petersen, Beattie, Sadik, Antonoglou, King, Kumaran, Wierstra, Legg \&amp; Hassabis, Human-Level Control through Deep Reinforcement Learning, {Nature}, v(), (2015).">mnih2015</a></sup> has lead to several issues in the [DRL]({{<relref "deep_reinforcement_learning.md#" >}}) community detailed in <sup id="d78e008b348b7d7beaaf33d2759eb119"><a href="#machado2018" title="Machado, Bellemare, Talvitie, Veness, Hausknecht \&amp; Bowling, Revisiting the {{Arcade Learning Environment}}: {{Evaluation Protocols}} and {{Open Problems}} for {{General Agents}}, {Journal of Artificial Intelligence Research}, v(), (2018).">machado2018</a></sup>. The code for the arcade learning environment can be found at <https://github.com/mgbellemare/Arcade-Learning-Environment>.
+The set of atari games used heavily in [Deep Reinforcement Learning]({{< relref "deep_reinforcement_learning.md" >}}) research. See more details in (<a href="#citeproc_bib_item_1">Bellemare et al. 2013</a>). The experimental design in (<a href="#citeproc_bib_item_3">Mnih et al. 2015</a>) has lead to several issues in the [DRL]({{< relref "deep_reinforcement_learning.md" >}}) community detailed in (<a href="#citeproc_bib_item_2">Machado et al. 2018</a>). The code for the arcade learning environment can be found at <https://github.com/mgbellemare/Arcade-Learning-Environment>.
 
 
 ## References {#references}
 
 
-# Bibliography
-<a id="bellemare2013"></a>[bellemare2013] Bellemare, Naddaf, Veness & Bowling, The Arcade Learning Environment: An Evaluation Platform for General Agents, <i>Journal of Artificial Intelligence Research</i>,  (2013). [↩](#b73dabcd50cb59db9f72d72aceedb4e3)
 
-<a id="mnih2015"></a>[mnih2015] Mnih, Kavukcuoglu, Silver, Rusu, Veness, Bellemare, Graves, Riedmiller, Fidjeland, Ostrovski, Petersen, Beattie, Sadik, Antonoglou, King, Kumaran, Wierstra, Legg & Hassabis, Human-Level Control through Deep Reinforcement Learning, <i>Nature</i>,  (2015). [↩](#b418008d392eb4ce22034bd3e0ff50d9)
-
-<a id="machado2018"></a>[machado2018] Machado, Bellemare, Talvitie, Veness, Hausknecht & Bowling, Revisiting the Arcade Learning Environment: Evaluation Protocols and Open Problems for General Agents, <i>Journal of Artificial Intelligence Research</i>,  (2018). [↩](#d78e008b348b7d7beaaf33d2759eb119)
+<style>.csl-entry{text-indent: -1.5em; margin-left: 1.5em;}</style><div class="csl-bib-body">
+  <div class="csl-entry"><a id="citeproc_bib_item_1"></a>Bellemare, M. G., Y. Naddaf, J. Veness, and M. Bowling. 2013. “The Arcade Learning Environment: An Evaluation Platform for General Agents.” <i>Journal of Artificial Intelligence Research</i>.</div>
+  <div class="csl-entry"><a id="citeproc_bib_item_2"></a>Machado, Marlos C., Marc G. Bellemare, Erik Talvitie, Joel Veness, Matthew Hausknecht, and Michael Bowling. 2018. “Revisiting the Arcade Learning Environment: Evaluation Protocols and Open Problems for General Agents.” <i>Journal of Artificial Intelligence Research</i>.</div>
+  <div class="csl-entry"><a id="citeproc_bib_item_3"></a>Mnih, Volodymyr, Koray Kavukcuoglu, David Silver, Andrei A. Rusu, Joel Veness, Marc G. Bellemare, Alex Graves, et al. 2015. “Human-Level Control through Deep Reinforcement Learning.” <i>Nature</i>.</div>
+</div>

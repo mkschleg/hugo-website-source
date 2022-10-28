@@ -1,0 +1,5 @@
+title="MinimalRLCore.jl"
+author="Schlegel, Matthew"
+year="2019"
+url="https://github.com/mkschleg/MinimalRLCore.jl"
+abstract="A base library for running Reinforcement Learning experiments in Julia."

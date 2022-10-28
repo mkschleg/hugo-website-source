@@ -1,7 +1,7 @@
 +++
 title = "veeriah2019: Discovery of Useful Questions as Auxiliary Tasks"
 author = ["Matthew Schlegel"]
-lastmod = 2021-09-13T14:17:41-06:00
+lastmod = 2022-10-27T20:21:56-06:00
 slug = "veeriah2019"
 draft = false
 notetype = "paper"
@@ -15,7 +15,11 @@ notetype = "paper"
 \newcommand{\transition}{P}
 \newcommand{\reals}{\mathbb{R}}
 \newcommand{\naturals}{\mathbb{N}}
+\newcommand{\complexs}{\mathbb{C}}
+\newcommand{\field}{\mathbb{F}}
+\newcommand{\numfield}{\mathbb{F}}
 \newcommand{\expected}{\mathbb{E}}
+\newcommand{\var}{\mathbb{V}}
 \newcommand{\by}{\times}
 \newcommand{\partialderiv}[2]{\frac{\partial #1}{\partial #2}}
 \newcommand{\defineq}{\stackrel{{\tiny\mbox{def}}}{=}}
@@ -31,15 +35,21 @@ notetype = "paper"
 \newcommand{\cvec}{\mathbf{c}}
 \newcommand{\dvec}{\mathbf{d}}
 \newcommand{\evec}{\mathbf{e}}
+\newcommand{\fvec}{\mathbf{f}}
 \newcommand{\gvec}{\mathbf{g}}
 \newcommand{\hvec}{\mathbf{h}}
+\newcommand{\ivec}{\mathbf{i}}
+\newcommand{\jvec}{\mathbf{j}}
+\newcommand{\kvec}{\mathbf{k}}
 \newcommand{\lvec}{\mathbf{l}}
 \newcommand{\mvec}{\mathbf{m}}
 \newcommand{\nvec}{\mathbf{n}}
+\newcommand{\ovec}{\mathbf{o}}
 \newcommand{\pvec}{\mathbf{p}}
 \newcommand{\qvec}{\mathbf{q}}
 \newcommand{\rvec}{\mathbf{r}}
 \newcommand{\svec}{\mathbf{s}}
+\newcommand{\tvec}{\mathbf{t}}
 \newcommand{\uvec}{\mathbf{u}}
 \newcommand{\vvec}{\mathbf{v}}
 \newcommand{\wvec}{\mathbf{w}}
@@ -52,22 +62,39 @@ notetype = "paper"
 \newcommand{\Dmat}{\mathbf{D}}
 \newcommand{\Emat}{\mathbf{E}}
 \newcommand{\Fmat}{\mathbf{F}}
+\newcommand{\Gmat}{\mathbf{G}}
+\newcommand{\Hmat}{\mathbf{H}}
 \newcommand{\Imat}{\mathbf{I}}
+\newcommand{\Jmat}{\mathbf{J}}
+\newcommand{\Kmat}{\mathbf{K}}
+\newcommand{\Lmat}{\mathbf{L}}
+\newcommand{\Mmat}{\mathbf{M}}
+\newcommand{\Nmat}{\mathbf{N}}
+\newcommand{\Omat}{\mathbf{O}}
 \newcommand{\Pmat}{\mathbf{P}}
+\newcommand{\Qmat}{\mathbf{Q}}
+\newcommand{\Rmat}{\mathbf{R}}
+\newcommand{\Smat}{\mathbf{S}}
+\newcommand{\Tmat}{\mathbf{T}}
 \newcommand{\Umat}{\mathbf{U}}
 \newcommand{\Vmat}{\mathbf{V}}
 \newcommand{\Wmat}{\mathbf{W}}
 \newcommand{\Xmat}{\mathbf{X}}
-\newcommand{\Qmat}{\mathbf{Q}}
+\newcommand{\Ymat}{\mathbf{Y}}
+\newcommand{\Zmat}{\mathbf{Z}}
+\newcommand{\Sigmamat}{\boldsymbol{\Sigma}}
+\newcommand{\identity}{\Imat}
 \newcommand{\thetavec}{\boldsymbol{\theta}}
 \newcommand{\phivec}{\boldsymbol{\phi}}
 \newcommand{\muvec}{\boldsymbol{\mu}}
 \newcommand{\sigmavec}{\boldsymbol{\sigma}}
 \newcommand{\jacobian}{\mathbf{J}}
+\newcommand{\ind}{\perp\!\!\!\!\perp}
+\newcommand{\bigoh}{\text{O}}
 \\)
 
 tags
-: [General Value Functions]({{<relref "general_value_functions.md#" >}}), [Reinforcement Learning]({{<relref "reinforcement_learning.md#" >}})[Deep Reinforcement Learning]({{<relref "deep_reinforcement_learning.md#" >}})
+: [General Value Functions]({{< relref "general_value_functions.md" >}}), [Reinforcement Learning]({{< relref "reinforcement_learning.md" >}})[Deep Reinforcement Learning]({{< relref "deep_reinforcement_learning.md" >}})
 
 source
 : [link](http://papers.nips.cc/paper/9129-discovery-of-useful-questions-as-auxiliary-tasks)
@@ -78,7 +105,7 @@ authors
 year
 : 2019
 
-This paper considers how to "discover" a set of GVF questions for auxiliary tasks <sup id="b7fd6e9e5809238a69c909aefb245768"><a href="#jaderberg2017" title="Jaderberg, Mnih, Czarnecki, Schaul, Leibo, Silver \&amp; Kavukcuoglu, {{REINFORCEMENT LEARNING WITH UNSUPERVISED AUXILIARY TASKS}}, {International Conference on Representation Learning}, v(), (2017).">jaderberg2017</a></sup> using meta-gradient descent. They consider a multi-step meta-loss function (unlike previous approaches which only consider a single step function).
+This paper considers how to "discover" a set of GVF questions for auxiliary tasks (<a href="#citeproc_bib_item_1">Jaderberg et al. 2017</a>) using meta-gradient descent. They consider a multi-step meta-loss function (unlike previous approaches which only consider a single step function).
 
 They use two neural networks:
 
@@ -89,19 +116,7 @@ They argue the having the wait j-steps to learn the GVFs is reasonable as the qu
 
 They set up three loss functions (two normal losses and one meta-loss).
 
-1.  The canonical [DRL]({{<relref "deep_reinforcement_learning.md#" >}}) loss \\(\mathcal{L}^{RL}\\) which is used to find the main task policy \\(\pi\_t\\) (either directly through policy search algorithms <sup id="972b5cafcdddd5e9844535cdc7870538"><a href="#williams1992" title="@incollection{williams1992,
-      title = {Simple {{Statistical Gradient}}-{{Following Algorithms}} for {{Connectionist Reinforcement Learning}}},
-      booktitle = {Reinforcement {{Learning}}},
-      author = {Williams, Ronald J.},
-      year = {1992},
-      series = {The {{Springer International Series}} in {{Engineering}} and {{Computer Science}}},
-      publisher = {{Springer, Boston, MA}}
-    }">williams1992</a></sup> or through value function based approaches <sup id="813c364b402bc49c1d8af7f0e043bed4"><a href="#watkins1989learning" title="@phdthesis{watkins1989learning,
-      title = {Learning from Delayed Rewards},
-      author = {Watkins, Christopher John Cornish Hellaby},
-      year = {1989},
-      school = {King's College, Cambridge}
-    }">watkins1989learning</a></sup>).
+1.  The canonical [DRL]({{< relref "deep_reinforcement_learning.md" >}}) loss \\(\mathcal{L}^{RL}\\) which is used to find the main task policy \\(\pi\_t\\) (either directly through policy search algorithms (<a href="#citeproc_bib_item_3">Williams 1992</a>) or through value function based approaches (<a href="#citeproc_bib_item_2">Watkins 1989</a>)).
 2.  The auxiliary task loss function \\(\mathcal{L}^{ans}\\) which will likely take the form of a mini-batch semi-gradient TD (maybe multi-step) update.
 3.  The meta loss \\(m\\) which is the sum of the \\(\mathcal{L}^{RL}\\) associated with the main task updates \\(\mathcal{L}^{Meta} = \sum\_{k=1}^L \mathcal{L}^{RL}(\theta\_{t,k})\\)
 
@@ -127,9 +142,9 @@ In this paper they use actor-critic to learn the policy, semi-gradient mini-batc
 
 They Provide experiments in a few domains:
 
-1.  [Puddle World]({{<relref "puddle_world.md#" >}})
+1.  [Puddle World]({{< relref "puddle_world.md" >}})
 2.  Collect-objects domain: a four-room gridworld where the agent is rewarded for collection two objects in the right order. The agents moves deterministically in one of the four directions. The locations of the two objects are the same across episodes.
-3.  [Atari]({{<relref "atari.md#" >}})
+3.  [Atari]({{< relref "atari.md" >}})
 
 They show the usual minor improvements or similar results to previous experiments.
 
@@ -137,21 +152,9 @@ They show the usual minor improvements or similar results to previous experiment
 ## References {#references}
 
 
-# Bibliography
-<a id="jaderberg2017"></a>[jaderberg2017] Jaderberg, Mnih, Czarnecki, Schaul, Leibo, Silver & Kavukcuoglu, REINFORCEMENT LEARNING WITH UNSUPERVISED AUXILIARY TASKS, <i>International Conference on Representation Learning</i>,  (2017). [↩](#b7fd6e9e5809238a69c909aefb245768)
 
-<a id="williams1992"></a>[williams1992] @incollectionwilliams1992,
-  title = Simple Statistical Gradient-Following Algorithms for Connectionist Reinforcement Learning,
-  booktitle = Reinforcement Learning,
-  author = Williams, Ronald J.,
-  year = 1992,
-  series = The Springer International Series in Engineering and Computer Science,
-  publisher = Springer, Boston, MA
- [↩](#972b5cafcdddd5e9844535cdc7870538)
-
-<a id="watkins1989learning"></a>[watkins1989learning] @phdthesiswatkins1989learning,
-  title = Learning from Delayed Rewards,
-  author = Watkins, Christopher John Cornish Hellaby,
-  year = 1989,
-  school = King's College, Cambridge
- [↩](#813c364b402bc49c1d8af7f0e043bed4)
+<style>.csl-entry{text-indent: -1.5em; margin-left: 1.5em;}</style><div class="csl-bib-body">
+  <div class="csl-entry"><a id="citeproc_bib_item_1"></a>Jaderberg, Max, Volodymyr Mnih, Wojciech Marian Czarnecki, Tom Schaul, Joel Z Leibo, David Silver, and Koray Kavukcuoglu. 2017. “Reinforcement Learning with Unsupervised Auxiliary Tasks.” <i>International Conference on Representation Learning</i>.</div>
+  <div class="csl-entry"><a id="citeproc_bib_item_2"></a>Watkins, Christopher John Cornish Hellaby. 1989. “Learning from Delayed Rewards.” King’s College, Cambridge.</div>
+  <div class="csl-entry"><a id="citeproc_bib_item_3"></a>Williams, Ronald J. 1992. “Simple Statistical Gradient-Following Algorithms for Connectionist Reinforcement Learning.” In <i>Reinforcement Learning</i>. The Springer International Series in Engineering and Computer Science. Springer, Boston, MA.</div>
+</div>

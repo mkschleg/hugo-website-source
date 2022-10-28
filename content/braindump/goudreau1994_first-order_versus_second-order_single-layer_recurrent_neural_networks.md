@@ -1,20 +1,20 @@
 +++
 title = "goudreau1994: First-order versus second-order single-layer recurrent neural networks"
 author = ["Matthew Schlegel"]
-lastmod = 2021-09-13T14:17:19-06:00
+lastmod = 2022-10-27T20:19:04-06:00
 slug = "goudreau1994"
 draft = false
 notetype = "paper"
 +++
 
 tags
-: [Recurrent Neural Network]({{<relref "recurrent_neural_network.md#" >}}), [Machine Learning]({{<relref "machine_learning.md#" >}})
+: [Recurrent Neural Network]({{< relref "recurrent_neural_network.md" >}}), [Machine Learning]({{< relref "machine_learning.md" >}})
 
 source
-: [paper](https://ieeexplore.ieee.org/abstract/document/286928?casa%5Ftoken=E4AtxCXObRwAAAAA:zRCrX-jTWDkLzRKo7vz5JB6T-hrWO52VCzU1%5F5nON0MqQ9CgLMe0N5t0Wd6QhXKbXOwPHX3o8FY)
+: [paper](https://ieeexplore.ieee.org/abstract/document/286928?casa_token=E4AtxCXObRwAAAAA:zRCrX-jTWDkLzRKo7vz5JB6T-hrWO52VCzU1_5nON0MqQ9CgLMe0N5t0Wd6QhXKbXOwPHX3o8FY)
 
 authors
-: Goudreau, M., Giles, C., Chakradhar, S., & Chen, D.
+: Goudreau, M., Giles, C., Chakradhar, S., &amp; Chen, D.
 
 year
 : 1994
@@ -44,7 +44,7 @@ The second order RNN looks very similar to a tensor contraction across \\(\mathb
 
 \\[
 g(x) = \begin{cases}
-0 & \quad \text{if } x \leq 0\\\\\\
+0 & \quad \text{if } x \leq 0\\\\
 1 & \quad \text{if } x > 0
 \end{cases}
 \\]

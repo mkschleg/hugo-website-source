@@ -1,14 +1,14 @@
 +++
 title = "white2015: Developing a predictive approach to knowledge"
 author = ["Matthew Schlegel"]
-lastmod = 2021-09-13T14:17:41-06:00
+lastmod = 2022-10-27T20:21:59-06:00
 slug = "white2015"
 draft = false
 notetype = "paper"
 +++
 
 tags
-: [Reinforcement Learning]({{<relref "reinforcement_learning.md#" >}}), [General Value Functions]({{<relref "general_value_functions.md#" >}})
+: [Reinforcement Learning]({{< relref "reinforcement_learning.md" >}}), [General Value Functions]({{< relref "general_value_functions.md" >}})
 
 source
 : [thesis](https://sites.ualberta.ca/~amw8/phd.pdf)
@@ -22,7 +22,7 @@ year
 This is a thesis from Adam White encompassing and developing what predictive knowledge is, and how it can specify world knowledge. He develops a system, horde, which is a knowledge representation built from value function predictions. The main premise of this knowledge representation is that value-function predictions can encompass all forms of predictive knowledge.
 
 
-## Sensorimotor data streams and robots {#sec:white2015:sensorimotor}
+## Sensorimotor data streams and robots {#sensorimotor-data-streams-and-robots}
 
 This chapter describes learning predictions from and about low-level data produced by robots. They describe two robots capable of generating data suitable for this task and are used in later chapters.
 
@@ -41,7 +41,7 @@ The data will be a stream of instantaneous uninterpreted sensor readings generat
 The data collected is very complex, and the data can be arbitrarily different under different conditions and policies.
 
 
-## General Value Functions {#sec:white2015:gvfs}
+## General Value Functions {#general-value-functions}
 
 This chapter lays out the foundations of General Value Functions (GVFs). We will discuss this in detail, as the formulation is useful beyond the thesis.
 
@@ -68,7 +68,7 @@ This can also be defined in terms of action state value functions as expected.
 
 They use the usual approximate notation \\(\hat{v}(s, \mathbf{w}) \approx v(s; \pi, \gamma, z)\\). where \\(\mathbf{w} \in \mathbb{R}^n\\). This paper primarily uses linear function approximation \\(V\_t \triangleq \hat{v}(S\_t, \mathbf{w}\_t) = \mathbf{x}\_t^\top \mathbf{w}\\). Because of this formulation, we can learn any GVF using typical RL algorithms (TD(\\(\lambda\\)), GTD(\\(\lambda\\)), GQ(\\(\lambda\\)), \\(\ldots\\) ).
 
-Another important quality is that of Independence of Span  "[link](https://arxiv.org/abs/1508.04582)". We will not discuss this in detail, but at a basic level the TD algorithm (with some minor corrections) emerges from an analytical study looking for an algorithm to predict independent of span.
+Another important quality is that of Independence of Span (<a href="#citeproc_bib_item_1">Van Hasselt and Sutton 2015</a>). We will not discuss this in detail, but at a basic level the TD algorithm (with some minor corrections) emerges from an analytical study looking for an algorithm to predict independent of span.
 
 
 ### A Horde of Demons {#a-horde-of-demons}
@@ -76,25 +76,25 @@ Another important quality is that of Independence of Span  "[link](https://arxiv
 Parallel GVF learning, pretty straight forward.
 
 
-## Papers {#sec:white2015:papers}
+## Papers {#papers}
 
 
-### Nexting {#sec:white2015:nexting}
+### Nexting {#nexting}
 
-This is a term used in psychology to refer to the natural inclination of people and animals to continually predict what will happen next. This chapter goes into detail about the nexting paper  "[link](https://journals.sagepub.com/doi/full/10.1177/1059712313511648)". We will not discuss this in detail.
+This is a term used in psychology to refer to the natural inclination of people and animals to continually predict what will happen next. This chapter goes into detail about the nexting paper (<a href="#citeproc_bib_item_2">Modayil, White, and Sutton 2014</a>). We will not discuss this in detail.
 
 
-### Experiments with GVFs on robots {#sec:white2015:robots}
+### Experiments with GVFs on robots {#experiments-with-gvfs-on-robots}
 
 This provides more empirical evidence of GVF learning in real-time on a mobile robot, with many various signals and functions.
 
 
-### Estimating Off-policy progress {#sec:white2015:offpolicy-progress}
+### Estimating Off-policy progress {#estimating-off-policy-progress}
 
 This chapter describes RUPEE.
 
 
-### Adapting the behavior policy {#sec:white2015:behavior}
+### Adapting the behavior policy {#adapting-the-behavior-policy}
 
 This chapter describes how a policy can be changed based on the agents demons.
 
@@ -102,4 +102,8 @@ This chapter describes how a policy can be changed based on the agents demons.
 ## References {#references}
 
 
-</Users/Matt/GD/bib/full_library.bib>
+
+<style>.csl-entry{text-indent: -1.5em; margin-left: 1.5em;}</style><div class="csl-bib-body">
+  <div class="csl-entry"><a id="citeproc_bib_item_1"></a>Hasselt, Hado van, and Richard S. Sutton. 2015. “Learning to Predict Independent of Span.” <i>arXiv:1508.04582 [Cs]</i>. <a href="https://arxiv.org/abs/1508.04582">https://arxiv.org/abs/1508.04582</a>.</div>
+  <div class="csl-entry"><a id="citeproc_bib_item_2"></a>Modayil, Joseph, Adam White, and Richard S Sutton. 2014. “Multi-Timescale Nexting in a Reinforcement Learning Robot.” <i>Adaptive Behavior</i>.</div>
+</div>

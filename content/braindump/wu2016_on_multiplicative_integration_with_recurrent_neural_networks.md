@@ -1,19 +1,19 @@
 +++
 title = "wu2016: On Multiplicative Integration with Recurrent Neural Networks"
 author = ["Matthew Schlegel"]
-lastmod = 2021-09-13T14:17:42-06:00
+lastmod = 2022-10-27T20:22:02-06:00
 slug = "wu2016"
 draft = false
 notetype = "paper"
 +++
 
 tags
-: [Recurrent Neural Network]({{<relref "recurrent_neural_network.md#" >}}), [Neural Network]({{<relref "neural_network.md#" >}}), [Machine Learning]({{<relref "machine_learning.md#" >}})
+: [Recurrent Neural Network]({{< relref "recurrent_neural_network.md" >}}), [Neural Network]({{< relref "neural_network.md" >}}), [Machine Learning]({{< relref "machine_learning.md" >}})
 
 source
 : <http://papers.nips.cc/paper/6215-on-multiplicative-integration-with-recurrent-neural-networks>
 
-This paper explores a new architectural building block for recurrent neural networks, specifically one which integrates information from the internal state of the unit and the data stream through a multiplicative update. They use the [Hadamard product]({{<relref "hadamard_product.md#" >}}) to integrate this information together, although there are other choices here which they don't discuss (such as various tensor products).
+This paper explores a new architectural building block for recurrent neural networks, specifically one which integrates information from the internal state of the unit and the data stream through a multiplicative update. They use the [Hadamard product]({{< relref "hadamard_product.md" >}}) to integrate this information together, although there are other choices here which they don't discuss (such as various tensor products).
 
 **Additive building block**:
 
@@ -34,7 +34,7 @@ Do the experiments support the claims?
 
 Gradient Properties:
 
--   First they look at the gradients when the [RNNs]({{<relref "recurrent_neural_network.md#" >}}) have linear activation mappings (to focus on the internal mechanisms).  They measure the log of the L2-norm of the gradient for each epoch (averaged over the training set) using the Penn-Treebank dataset using the [ADAM]({{<relref "adam.md#" >}}) optimizer. They are able to show the norm of the gradient grows much more in vanilla architecture (using additive operations) vs what occurs in the new architecture.
+-   First they look at the gradients when the [RNNs]({{< relref "recurrent_neural_network.md" >}}) have linear activation mappings (to focus on the internal mechanisms).  They measure the log of the L2-norm of the gradient for each epoch (averaged over the training set) using the Penn-Treebank dataset using the [ADAM]({{< relref "adam.md" >}}) optimizer. They are able to show the norm of the gradient grows much more in vanilla architecture (using additive operations) vs what occurs in the new architecture.
 
 -   Lastly they look at the effects on activations by creating a histogram over activations for the training set using tanh activations. They show that the vanilla RNN is effectively fully saturated while the new version is not.
 

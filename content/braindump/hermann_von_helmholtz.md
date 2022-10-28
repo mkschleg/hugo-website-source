@@ -1,14 +1,14 @@
 +++
 title = "Hermann von Helmholtz"
 author = ["Matthew Schlegel"]
-lastmod = 2021-09-13T14:17:19-06:00
+lastmod = 2022-10-27T20:19:09-06:00
 slug = "hermann_von_helmholtz"
 draft = false
 notetype = "note"
 +++
 
 tags
-: [People]({{<relref "people.md#" >}})
+: [People]({{< relref "people.md" >}})
 
 source
 : <https://plato.stanford.edu/entries/hermann-helmholtz/>

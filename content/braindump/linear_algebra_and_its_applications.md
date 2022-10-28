@@ -1,14 +1,14 @@
 +++
 title = "Linear Algebra and its Applications"
 author = ["Matthew Schlegel"]
-lastmod = 2021-09-13T14:17:25-06:00
+lastmod = 2022-10-27T20:19:46-06:00
 slug = "linear_algebra_and_its_applications"
 draft = false
 notetype = "book"
 +++
 
 tags
-: [Linear Algebra]({{<relref "linear_algebra.md#" >}}), [Math]({{<relref "math.md#" >}})
+: [Linear Algebra]({{< relref "linear_algebra.md" >}}), [Math]({{< relref "math.md" >}})
 
 Author: Gilbert Strang
 Available at: [Biblio](https://www.biblio.com/linear-algebra-and-its-applications-by-strang-gilbert/work/1082045)

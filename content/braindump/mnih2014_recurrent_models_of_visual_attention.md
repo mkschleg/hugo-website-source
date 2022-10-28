@@ -1,7 +1,7 @@
 +++
 title = "mnih2014: Recurrent Models of Visual Attention"
 author = ["Matthew Schlegel"]
-lastmod = 2021-09-13T14:17:28-06:00
+lastmod = 2022-10-27T20:20:02-06:00
 slug = "mnih2014"
 draft = false
 notetype = "paper"
@@ -15,7 +15,11 @@ notetype = "paper"
 \newcommand{\transition}{P}
 \newcommand{\reals}{\mathbb{R}}
 \newcommand{\naturals}{\mathbb{N}}
+\newcommand{\complexs}{\mathbb{C}}
+\newcommand{\field}{\mathbb{F}}
+\newcommand{\numfield}{\mathbb{F}}
 \newcommand{\expected}{\mathbb{E}}
+\newcommand{\var}{\mathbb{V}}
 \newcommand{\by}{\times}
 \newcommand{\partialderiv}[2]{\frac{\partial #1}{\partial #2}}
 \newcommand{\defineq}{\stackrel{{\tiny\mbox{def}}}{=}}
@@ -31,15 +35,21 @@ notetype = "paper"
 \newcommand{\cvec}{\mathbf{c}}
 \newcommand{\dvec}{\mathbf{d}}
 \newcommand{\evec}{\mathbf{e}}
+\newcommand{\fvec}{\mathbf{f}}
 \newcommand{\gvec}{\mathbf{g}}
 \newcommand{\hvec}{\mathbf{h}}
+\newcommand{\ivec}{\mathbf{i}}
+\newcommand{\jvec}{\mathbf{j}}
+\newcommand{\kvec}{\mathbf{k}}
 \newcommand{\lvec}{\mathbf{l}}
 \newcommand{\mvec}{\mathbf{m}}
 \newcommand{\nvec}{\mathbf{n}}
+\newcommand{\ovec}{\mathbf{o}}
 \newcommand{\pvec}{\mathbf{p}}
 \newcommand{\qvec}{\mathbf{q}}
 \newcommand{\rvec}{\mathbf{r}}
 \newcommand{\svec}{\mathbf{s}}
+\newcommand{\tvec}{\mathbf{t}}
 \newcommand{\uvec}{\mathbf{u}}
 \newcommand{\vvec}{\mathbf{v}}
 \newcommand{\wvec}{\mathbf{w}}
@@ -52,28 +62,45 @@ notetype = "paper"
 \newcommand{\Dmat}{\mathbf{D}}
 \newcommand{\Emat}{\mathbf{E}}
 \newcommand{\Fmat}{\mathbf{F}}
+\newcommand{\Gmat}{\mathbf{G}}
+\newcommand{\Hmat}{\mathbf{H}}
 \newcommand{\Imat}{\mathbf{I}}
+\newcommand{\Jmat}{\mathbf{J}}
+\newcommand{\Kmat}{\mathbf{K}}
+\newcommand{\Lmat}{\mathbf{L}}
+\newcommand{\Mmat}{\mathbf{M}}
+\newcommand{\Nmat}{\mathbf{N}}
+\newcommand{\Omat}{\mathbf{O}}
 \newcommand{\Pmat}{\mathbf{P}}
+\newcommand{\Qmat}{\mathbf{Q}}
+\newcommand{\Rmat}{\mathbf{R}}
+\newcommand{\Smat}{\mathbf{S}}
+\newcommand{\Tmat}{\mathbf{T}}
 \newcommand{\Umat}{\mathbf{U}}
 \newcommand{\Vmat}{\mathbf{V}}
 \newcommand{\Wmat}{\mathbf{W}}
 \newcommand{\Xmat}{\mathbf{X}}
-\newcommand{\Qmat}{\mathbf{Q}}
+\newcommand{\Ymat}{\mathbf{Y}}
+\newcommand{\Zmat}{\mathbf{Z}}
+\newcommand{\Sigmamat}{\boldsymbol{\Sigma}}
+\newcommand{\identity}{\Imat}
 \newcommand{\thetavec}{\boldsymbol{\theta}}
 \newcommand{\phivec}{\boldsymbol{\phi}}
 \newcommand{\muvec}{\boldsymbol{\mu}}
 \newcommand{\sigmavec}{\boldsymbol{\sigma}}
 \newcommand{\jacobian}{\mathbf{J}}
+\newcommand{\ind}{\perp\!\!\!\!\perp}
+\newcommand{\bigoh}{\text{O}}
 \\)
 
 tags
-: [Perception]({{<relref "perception.md#" >}})
+: [Perception]({{< relref "perception.md" >}})
 
 source
 : <http://papers.nips.cc/paper/5542-recurrent-models-of-visual-attention>
 
 authors
-: Mnih, V., Heess, N., Graves, A., & kavukcuoglu, koray
+: Mnih, V., Heess, N., Graves, A., &amp; kavukcuoglu, koray
 
 year
 : 2014
@@ -108,25 +135,13 @@ The rewards structure is dictated by the environment in the usual RL way and is 
 
 ### Training {#training}
 
-The network is trained through the REINFORCE algorithm with a baseline of the average reward <sup id="f92357491a8e0e2eb96e86e338e23324"><a href="#sutton2000" title="@incollection{sutton2000,
-  title = {Policy {{Gradient Methods}} for {{Reinforcement Learning}} with {{Function Approximation}}},
-  booktitle = {Advances in {{Neural Information Processing Systems}} 12},
-  author = {Sutton, Richard S and McAllester, David A. and Singh, Satinder P. and Mansour, Yishay},
-  editor = {Solla, S. A. and Leen, T. K. and M{\u}ller, K.},
-  year = {2000},
-  publisher = {{MIT Press}}
-}">sutton2000</a></sup>. They also define a hybrid supervised loss for the object classification tasks.
+The network is trained through the REINFORCE algorithm with a baseline of the average reward (<a href="#citeproc_bib_item_1">Sutton et al. 2000</a>). They also define a hybrid supervised loss for the object classification tasks.
 
 
 ## References {#references}
 
 
-# Bibliography
-<a id="sutton2000"></a>[sutton2000] @incollectionsutton2000,
-  title = Policy Gradient Methods for Reinforcement Learning with Function Approximation,
-  booktitle = Advances in Neural Information Processing Systems 12,
-  author = Sutton, Richard S and McAllester, David A. and Singh, Satinder P. and Mansour, Yishay,
-  editor = Solla, S. A. and Leen, T. K. and M\"uller, K.,
-  year = 2000,
-  publisher = MIT Press
- [↩](#f92357491a8e0e2eb96e86e338e23324)
+
+<style>.csl-entry{text-indent: -1.5em; margin-left: 1.5em;}</style><div class="csl-bib-body">
+  <div class="csl-entry"><a id="citeproc_bib_item_1"></a>Sutton, Richard S, David A. McAllester, Satinder P. Singh, and Yishay Mansour. 2000. “Policy Gradient Methods for Reinforcement Learning with Function Approximation.” In <i>Advances in Neural Information Processing Systems 12</i>, edited by S. A. Solla, T. K. Leen, and K. Müller. MIT Press.</div>
+</div>

@@ -1,7 +1,7 @@
 +++
 title = "Hierarchical Predictive Coding"
 author = ["Matthew Schlegel"]
-lastmod = 2021-09-13T14:17:20-06:00
+lastmod = 2022-10-27T20:19:10-06:00
 slug = "hierarchical_predictive_coding"
 draft = false
 notetype = "note"
@@ -9,18 +9,18 @@ notetype = "note"
 
 ## Theory {#theory}
 
-Unconscious Inference: [Hermann von Helmholtz]({{<relref "hermann_von_helmholtz.md#" >}})
+Unconscious Inference: [Hermann von Helmholtz]({{< relref "hermann_von_helmholtz.md" >}})
 
-<sup id="7b979f5b998905dc446bf66499306a20"><a href="#rao1999" title="Rao \&amp; Ballard, Predictive Coding in the Visual Cortex: A Functional Interpretation of Some Extra-Classical Receptive-Field Effects, {Nature Neuroscience}, v(), (1999).">rao1999</a></sup>, <sup id="78ab1c5d45b1f35190fab8d62a7114a7"><a href="#huang2011" title="Huang \&amp; Rao, Predictive Coding, {Wiley Interdisciplinary Reviews: Cognitive Science}, v(), (2011).">huang2011</a></sup>, <sup id="19db81657bafbf8ac3aa2190806bad39"><a href="#spratling2017" title="Spratling, A Review of Predictive Coding Algorithms, {Brain and Cognition}, v(), (2017).">spratling2017</a></sup>, <sup id="698d970ef255723557f87d750db4a9c1"><a href="#spratling2017a" title="Spratling, A {{Hierarchical Predictive Coding Model}} of {{Object Recognition}} in {{Natural Images}}, {Cognitive Computation}, v(), (2017).">spratling2017a</a></sup>
+(<a href="#citeproc_bib_item_5">Rao and Ballard 1999</a>), (<a href="#citeproc_bib_item_3">Huang and Rao 2011</a>), (<a href="#citeproc_bib_item_7">Spratling 2017b</a>), (<a href="#citeproc_bib_item_6">Spratling 2017a</a>)
 
--   Understanding Predictive coding in the context of Efficient and Sparse Coding: <sup id="d03d408c59cfdeb3b4ad29f676a3efed"><a href="#chalk2017" title="Chalk, Marre \&amp; Tka\v cik, Towards a Unified Theory of Efficient, Predictive and Sparse Coding, {bioRxiv}, v(), (2017).">chalk2017</a></sup>
--   Problems with Predictive Coding and the Bayesian Brain: <sup id="6c8f61606966c98278d9946dd28911cd"><a href="#kwisthout2013predictive" title="Kwisthout \&amp; van Rooij, Predictive Coding and the {{Bayesian}} Brain: {{Intractability}} Hurdles That Are yet to Be Overcome., in in: {{{CogSci}}}, edited by (2013)">kwisthout2013predictive</a></sup>
+-   Understanding Predictive coding in the context of Efficient and Sparse Coding: (<a href="#citeproc_bib_item_1">Chalk, Marre, and Tkačik 2017</a>)
+-   Problems with Predictive Coding and the Bayesian Brain: (<a href="#citeproc_bib_item_4">Kwisthout and van Rooij 2013</a>)
 -
 
 
 ## Evidence {#evidence}
 
-<sup id="b4f6dcdfb943b9f19ef3a2c83ed0829e"><a href="#heilbron2018" title="Heilbron \&amp; Chait, Great {{Expectations}}: {{Is}} There {{Evidence}} for {{Predictive Coding}} in {{Auditory Cortex}}?, {Neuroscience}, v(), (2018).">heilbron2018</a></sup>, <sup id="78ab1c5d45b1f35190fab8d62a7114a7"><a href="#huang2011" title="Huang \&amp; Rao, Predictive Coding, {Wiley Interdisciplinary Reviews: Cognitive Science}, v(), (2011).">huang2011</a></sup>
+(<a href="#citeproc_bib_item_2">Heilbron and Chait 2018</a>), (<a href="#citeproc_bib_item_3">Huang and Rao 2011</a>)
 
 
 ## Implementations in ML and RL {#implementations-in-ml-and-rl}
@@ -35,17 +35,13 @@ Unconscious Inference: [Hermann von Helmholtz]({{<relref "hermann_von_helmholtz.
 ## References {#references}
 
 
-# Bibliography
-<a id="rao1999"></a>[rao1999] Rao & Ballard, Predictive Coding in the Visual Cortex: A Functional Interpretation of Some Extra-Classical Receptive-Field Effects, <i>Nature Neuroscience</i>,  (1999). [↩](#7b979f5b998905dc446bf66499306a20)
 
-<a id="huang2011"></a>[huang2011] Huang & Rao, Predictive Coding, <i>Wiley Interdisciplinary Reviews: Cognitive Science</i>,  (2011). [↩](#78ab1c5d45b1f35190fab8d62a7114a7)
-
-<a id="spratling2017"></a>[spratling2017] Spratling, A Review of Predictive Coding Algorithms, <i>Brain and Cognition</i>,  (2017). [↩](#19db81657bafbf8ac3aa2190806bad39)
-
-<a id="spratling2017a"></a>[spratling2017a] Spratling, A Hierarchical Predictive Coding Model of Object Recognition in Natural Images, <i>Cognitive Computation</i>,  (2017). [↩](#698d970ef255723557f87d750db4a9c1)
-
-<a id="chalk2017"></a>[chalk2017] Chalk, Marre & Tka\v cik, Towards a Unified Theory of Efficient, Predictive and Sparse Coding, <i>bioRxiv</i>,  (2017). [↩](#d03d408c59cfdeb3b4ad29f676a3efed)
-
-<a id="kwisthout2013predictive"></a>[kwisthout2013predictive] Kwisthout & van Rooij, Predictive Coding and the Bayesian Brain: Intractability Hurdles That Are yet to Be Overcome., in in: CogSci, edited by (2013) [↩](#6c8f61606966c98278d9946dd28911cd)
-
-<a id="heilbron2018"></a>[heilbron2018] Heilbron & Chait, Great Expectations: Is There Evidence for Predictive Coding in Auditory Cortex?, <i>Neuroscience</i>,  (2018). [↩](#b4f6dcdfb943b9f19ef3a2c83ed0829e)
+<style>.csl-entry{text-indent: -1.5em; margin-left: 1.5em;}</style><div class="csl-bib-body">
+  <div class="csl-entry"><a id="citeproc_bib_item_1"></a>Chalk, Matthew, Olivier Marre, and Gašper Tkačik. 2017. “Towards a Unified Theory of Efficient, Predictive and Sparse Coding.” <i>Biorxiv</i>.</div>
+  <div class="csl-entry"><a id="citeproc_bib_item_2"></a>Heilbron, Micha, and Maria Chait. 2018. “Great Expectations: Is There Evidence for Predictive Coding in Auditory Cortex?” <i>Neuroscience</i>, Sensory Sequence Processing in the Brain, .</div>
+  <div class="csl-entry"><a id="citeproc_bib_item_3"></a>Huang, Yanping, and Rajesh P. N. Rao. 2011. “Predictive Coding.” <i>Wiley Interdisciplinary Reviews: Cognitive Science</i>.</div>
+  <div class="csl-entry"><a id="citeproc_bib_item_4"></a>Kwisthout, Johan, and Iris van Rooij. 2013. “Predictive Coding and the Bayesian Brain: Intractability Hurdles That Are yet to Be Overcome.” In <i>CogSci</i>.</div>
+  <div class="csl-entry"><a id="citeproc_bib_item_5"></a>Rao, Rajesh P. N., and Dana H. Ballard. 1999. “Predictive Coding in the Visual Cortex: A Functional Interpretation of Some Extra-Classical Receptive-Field Effects.” <i>Nature Neuroscience</i>.</div>
+  <div class="csl-entry"><a id="citeproc_bib_item_6"></a>Spratling, M. W. 2017a. “A Hierarchical Predictive Coding Model of Object Recognition in Natural Images.” <i>Cognitive Computation</i>.</div>
+  <div class="csl-entry"><a id="citeproc_bib_item_7"></a>———. 2017b. “A Review of Predictive Coding Algorithms.” <i>Brain and Cognition</i>, Perspectives on Human Probabilistic Inferences and the ’Bayesian Brain’, .</div>
+</div>

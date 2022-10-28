@@ -1,7 +1,7 @@
 +++
 title = "mohamed2019: Monte Carlo Gradient Estimation in Machine Learning"
 author = ["Matthew Schlegel"]
-lastmod = 2021-09-13T14:17:29-06:00
+lastmod = 2022-10-27T20:20:05-06:00
 slug = "mohamed2019"
 draft = false
 notetype = "paper"
@@ -15,7 +15,11 @@ notetype = "paper"
 \newcommand{\transition}{P}
 \newcommand{\reals}{\mathbb{R}}
 \newcommand{\naturals}{\mathbb{N}}
+\newcommand{\complexs}{\mathbb{C}}
+\newcommand{\field}{\mathbb{F}}
+\newcommand{\numfield}{\mathbb{F}}
 \newcommand{\expected}{\mathbb{E}}
+\newcommand{\var}{\mathbb{V}}
 \newcommand{\by}{\times}
 \newcommand{\partialderiv}[2]{\frac{\partial #1}{\partial #2}}
 \newcommand{\defineq}{\stackrel{{\tiny\mbox{def}}}{=}}
@@ -31,15 +35,21 @@ notetype = "paper"
 \newcommand{\cvec}{\mathbf{c}}
 \newcommand{\dvec}{\mathbf{d}}
 \newcommand{\evec}{\mathbf{e}}
+\newcommand{\fvec}{\mathbf{f}}
 \newcommand{\gvec}{\mathbf{g}}
 \newcommand{\hvec}{\mathbf{h}}
+\newcommand{\ivec}{\mathbf{i}}
+\newcommand{\jvec}{\mathbf{j}}
+\newcommand{\kvec}{\mathbf{k}}
 \newcommand{\lvec}{\mathbf{l}}
 \newcommand{\mvec}{\mathbf{m}}
 \newcommand{\nvec}{\mathbf{n}}
+\newcommand{\ovec}{\mathbf{o}}
 \newcommand{\pvec}{\mathbf{p}}
 \newcommand{\qvec}{\mathbf{q}}
 \newcommand{\rvec}{\mathbf{r}}
 \newcommand{\svec}{\mathbf{s}}
+\newcommand{\tvec}{\mathbf{t}}
 \newcommand{\uvec}{\mathbf{u}}
 \newcommand{\vvec}{\mathbf{v}}
 \newcommand{\wvec}{\mathbf{w}}
@@ -52,28 +62,45 @@ notetype = "paper"
 \newcommand{\Dmat}{\mathbf{D}}
 \newcommand{\Emat}{\mathbf{E}}
 \newcommand{\Fmat}{\mathbf{F}}
+\newcommand{\Gmat}{\mathbf{G}}
+\newcommand{\Hmat}{\mathbf{H}}
 \newcommand{\Imat}{\mathbf{I}}
+\newcommand{\Jmat}{\mathbf{J}}
+\newcommand{\Kmat}{\mathbf{K}}
+\newcommand{\Lmat}{\mathbf{L}}
+\newcommand{\Mmat}{\mathbf{M}}
+\newcommand{\Nmat}{\mathbf{N}}
+\newcommand{\Omat}{\mathbf{O}}
 \newcommand{\Pmat}{\mathbf{P}}
+\newcommand{\Qmat}{\mathbf{Q}}
+\newcommand{\Rmat}{\mathbf{R}}
+\newcommand{\Smat}{\mathbf{S}}
+\newcommand{\Tmat}{\mathbf{T}}
 \newcommand{\Umat}{\mathbf{U}}
 \newcommand{\Vmat}{\mathbf{V}}
 \newcommand{\Wmat}{\mathbf{W}}
 \newcommand{\Xmat}{\mathbf{X}}
-\newcommand{\Qmat}{\mathbf{Q}}
+\newcommand{\Ymat}{\mathbf{Y}}
+\newcommand{\Zmat}{\mathbf{Z}}
+\newcommand{\Sigmamat}{\boldsymbol{\Sigma}}
+\newcommand{\identity}{\Imat}
 \newcommand{\thetavec}{\boldsymbol{\theta}}
 \newcommand{\phivec}{\boldsymbol{\phi}}
 \newcommand{\muvec}{\boldsymbol{\mu}}
 \newcommand{\sigmavec}{\boldsymbol{\sigma}}
 \newcommand{\jacobian}{\mathbf{J}}
+\newcommand{\ind}{\perp\!\!\!\!\perp}
+\newcommand{\bigoh}{\text{O}}
 \\)
 
 tags
-: [Machine Learning]({{<relref "machine_learning.md#" >}})
+: [Machine Learning]({{< relref "machine_learning.md" >}})
 
 source
 : <https://arxiv.org/abs/1906.10652>
 
 authors
-: Mohamed, S., Rosca, M., Figurnov, M., & Mnih, A.
+: Mohamed, S., Rosca, M., Figurnov, M., &amp; Mnih, A.
 
 year
 : 2019
@@ -120,7 +147,7 @@ This will be organized into several sections
 
 ### Monte Carlo Estimators {#monte-carlo-estimators}
 
-Consider the equation [eq:mohamed2019:mean_value_analysis_problem](#eq:mohamed2019:mean_value_analysis_problem). This integral is often not in known in a closed form. , and not amenable to evaluation using numerical methods!
+Consider the equation <eq:mohamed2019:mean_value_analysis_problem>. This integral is often not in known in a closed form. , and not amenable to evaluation using numerical methods!
 
 Instead we can estimate the integral using the monte-carlo method:
 
@@ -146,7 +173,7 @@ There are four properties we will consider with a monte carlo estimator:
 
 ### Stochastic Optimization {#stochastic-optimization}
 
-The gradient found in equation [eq:mohamed2019:mean_value_analysis_problem](#eq:mohamed2019:mean_value_analysis_problem) supports two computational tasks
+The gradient found in equation <eq:mohamed2019:mean_value_analysis_problem> supports two computational tasks
 
 1.  Explanation:
     This gradient is an useful tool to _explain_ the behavior of the probabilistic systm.
@@ -176,7 +203,7 @@ To make the problem more concrete, here are 5 areas in which these estimates are
 
     \\[\boldsymbol{\eta}=\nabla\_{\boldsymbol{\theta}} \mathbb{E}\_{p(\boldsymbol{\tau} ; \boldsymbol{\theta})}\left[\sum\_{t=0}^{T} \gamma^{t} r\left(\mathbf{s}\_{t}, \mathbf{a}\_{t}\right)\right]\\]
 
-    which again has the form of equation [eq:mohamed2019:mean_value_analysis_problem](#eq:mohamed2019:mean_value_analysis_problem).
+    which again has the form of equation <eq:mohamed2019:mean_value_analysis_problem>.
 
     -   **cost:** is the return over the trajectory, which is a weighted sum of rewards obtained at each time step.
     -   **measure**: is the joint distribution over states and actions \\(p(\mathbf{\tau};\mathbf{\theta})\prod\_{t=0}^{T} p\left(\mathbf{s}\_{t+1} | \mathbf{s}\_{t}, \mathbf{a}\_{t}\right) p\left(\mathbf{a}\_{t} | \mathbf{s}\_{t} ; \boldsymbol{\theta}\right)\\) which is the product of a state transition distribution and the policy distribution.
@@ -185,7 +212,7 @@ To make the problem more concrete, here are 5 areas in which these estimates are
 
 -  Sensitivity Analysis
 
-    Deals with the study of problems of the form [eq:mohamed2019:grad_mva](#eq:mohamed2019:grad_mva), and asks what the sensitivity (or gradient) of an expectation is to its input parameters.
+    Deals with the study of problems of the form <eq:mohamed2019:grad_mva>, and asks what the sensitivity (or gradient) of an expectation is to its input parameters.
 
 <!--list-separator-->
 
@@ -202,12 +229,12 @@ To make the problem more concrete, here are 5 areas in which these estimates are
 
 ## Intuitive Analysis of Gradient Estimators {#intuitive-analysis-of-gradient-estimators}
 
-The structure of the analysis problem [eq:mohamed2019:grad_mva](#eq:mohamed2019:grad_mva) directly suggests two possible computations for the gradients:
+The structure of the analysis problem <eq:mohamed2019:grad_mva> directly suggests two possible computations for the gradients:
 
 -   **Derivatives of Measure**: The gradient can be computed by differentiation of the measure \\(p(\mathbf{x};\boldsymbol{\theta})\\).
-    -   Examples: score function estimator [sec:mohamed2019:score_func_est](#sec:mohamed2019:score_func_est), measure-valued gradient [sec:mohamed2019:meas_valued_grads](#sec:mohamed2019:meas_valued_grads)
+    -   Examples: score function estimator <sec:mohamed2019:score_func_est>, measure-valued gradient <sec:mohamed2019:meas_valued_grads>
 -   **Derivatives of Path**: The gradient can be computed by differentiation of the cost \\(f(\mathbf{x})\\), which encodes the pathway from parameters \\(\boldsymbol{\theta}\\), through the random variable \\(\mathbf{x}\\), to the cost value.
-    -   Examples: Pathwise gradient [sec:mohamed2019:pathwise_grad_est](#sec:mohamed2019:pathwise_grad_est), harmonic gradient estimators, and Malliavin-weighted estimators.
+    -   Examples: Pathwise gradient <sec:mohamed2019:pathwise_grad_est>, harmonic gradient estimators, and Malliavin-weighted estimators.
 
 The paper then goes into some intuitive exploration of a simple problem
 \\[

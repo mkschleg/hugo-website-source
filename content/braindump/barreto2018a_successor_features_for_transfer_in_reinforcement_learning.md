@@ -1,8 +1,9 @@
 +++
 title = "barreto2018a: Successor Features for Transfer in Reinforcement Learning"
 author = ["Matthew Schlegel"]
-lastmod = 2021-09-13T14:17:10-06:00
+lastmod = 2022-10-27T20:18:14-06:00
 slug = "barreto2018a"
+tags = ["Reinforcement-Learning", "Representation"]
 draft = false
 notetype = "paper"
 +++
@@ -15,7 +16,11 @@ notetype = "paper"
 \newcommand{\transition}{P}
 \newcommand{\reals}{\mathbb{R}}
 \newcommand{\naturals}{\mathbb{N}}
+\newcommand{\complexs}{\mathbb{C}}
+\newcommand{\field}{\mathbb{F}}
+\newcommand{\numfield}{\mathbb{F}}
 \newcommand{\expected}{\mathbb{E}}
+\newcommand{\var}{\mathbb{V}}
 \newcommand{\by}{\times}
 \newcommand{\partialderiv}[2]{\frac{\partial #1}{\partial #2}}
 \newcommand{\defineq}{\stackrel{{\tiny\mbox{def}}}{=}}
@@ -31,15 +36,21 @@ notetype = "paper"
 \newcommand{\cvec}{\mathbf{c}}
 \newcommand{\dvec}{\mathbf{d}}
 \newcommand{\evec}{\mathbf{e}}
+\newcommand{\fvec}{\mathbf{f}}
 \newcommand{\gvec}{\mathbf{g}}
 \newcommand{\hvec}{\mathbf{h}}
+\newcommand{\ivec}{\mathbf{i}}
+\newcommand{\jvec}{\mathbf{j}}
+\newcommand{\kvec}{\mathbf{k}}
 \newcommand{\lvec}{\mathbf{l}}
 \newcommand{\mvec}{\mathbf{m}}
 \newcommand{\nvec}{\mathbf{n}}
+\newcommand{\ovec}{\mathbf{o}}
 \newcommand{\pvec}{\mathbf{p}}
 \newcommand{\qvec}{\mathbf{q}}
 \newcommand{\rvec}{\mathbf{r}}
 \newcommand{\svec}{\mathbf{s}}
+\newcommand{\tvec}{\mathbf{t}}
 \newcommand{\uvec}{\mathbf{u}}
 \newcommand{\vvec}{\mathbf{v}}
 \newcommand{\wvec}{\mathbf{w}}
@@ -52,38 +63,55 @@ notetype = "paper"
 \newcommand{\Dmat}{\mathbf{D}}
 \newcommand{\Emat}{\mathbf{E}}
 \newcommand{\Fmat}{\mathbf{F}}
+\newcommand{\Gmat}{\mathbf{G}}
+\newcommand{\Hmat}{\mathbf{H}}
 \newcommand{\Imat}{\mathbf{I}}
+\newcommand{\Jmat}{\mathbf{J}}
+\newcommand{\Kmat}{\mathbf{K}}
+\newcommand{\Lmat}{\mathbf{L}}
+\newcommand{\Mmat}{\mathbf{M}}
+\newcommand{\Nmat}{\mathbf{N}}
+\newcommand{\Omat}{\mathbf{O}}
 \newcommand{\Pmat}{\mathbf{P}}
+\newcommand{\Qmat}{\mathbf{Q}}
+\newcommand{\Rmat}{\mathbf{R}}
+\newcommand{\Smat}{\mathbf{S}}
+\newcommand{\Tmat}{\mathbf{T}}
 \newcommand{\Umat}{\mathbf{U}}
 \newcommand{\Vmat}{\mathbf{V}}
 \newcommand{\Wmat}{\mathbf{W}}
 \newcommand{\Xmat}{\mathbf{X}}
-\newcommand{\Qmat}{\mathbf{Q}}
+\newcommand{\Ymat}{\mathbf{Y}}
+\newcommand{\Zmat}{\mathbf{Z}}
+\newcommand{\Sigmamat}{\boldsymbol{\Sigma}}
+\newcommand{\identity}{\Imat}
 \newcommand{\thetavec}{\boldsymbol{\theta}}
 \newcommand{\phivec}{\boldsymbol{\phi}}
 \newcommand{\muvec}{\boldsymbol{\mu}}
 \newcommand{\sigmavec}{\boldsymbol{\sigma}}
 \newcommand{\jacobian}{\mathbf{J}}
+\newcommand{\ind}{\perp\!\!\!\!\perp}
+\newcommand{\bigoh}{\text{O}}
 \\)
 
 tags
-: [Reinforcement Learning]({{<relref "reinforcement_learning.md#" >}})
+: [Reinforcement Learning]({{< relref "reinforcement_learning.md" >}})
 
 source
 : <https://arxiv.org/abs/1606.05312>
 
 authors
-: Barreto, Andr\\'e, Dabney, W., Munos, R\\'emi, Hunt, J. J., Schaul, T., van Hasselt, Hado, & Silver, D.
+: Barreto, Andr\\'e, Dabney, W., Munos, R\\'emi, Hunt, J. J., Schaul, T., van Hasselt, Hado, &amp; Silver, D.
 
 year
 : 2018
 
 The two main ideas presented in this paper:
 
--   Successor features are an extension of <sup id="bc5263c9f3dd76d28c158c06782b4407"><a href="#dayan1993" title="Dayan, Improving {{Generalization}} for {{Temporal Difference Learning}}: {{The Successor Representation}}, {Neural Computation}, v(), (1993).">dayan1993</a></sup> Successor Representations to the non-tabular setting.
--   General Policy Improvement, a principled way to do [Policy Improvement]({{<relref "policy_improvement.md#" >}}) when you are learning multiple policies.
+-   Successor features are an extension of (<a href="#citeproc_bib_item_1">Dayan 1993</a>) Successor Representations to the non-tabular setting.
+-   General Policy Improvement, a principled way to do [Policy Improvement]({{< relref "policy_improvement.md" >}}) when you are learning multiple policies.
 
-These ideas are presented to do transfer in [Reinforcement Learning]({{<relref "reinforcement_learning.md#" >}}).
+These ideas are presented to do transfer in [Reinforcement Learning]({{< relref "reinforcement_learning.md" >}}).
 
 
 ## Successor Features {#successor-features}
@@ -94,8 +122,8 @@ The main assumption made to construct the successor features is the one-step rew
 where \\(\wvec\\) is a learned vector. If this is the case, we can rewrite the state-action value function as
 
 \begin{align\*}
-Q^\pi(s, a) &= \expected^\pi [ r\_{t+1} + \gamma\_{t+1} r\_{t+2} + \ldots | S\_t = s, A\_t = a] \\\\\\
-            &= \expected^\pi [ \phivec\_{t+1}^\trans \wvec + \gamma\_{t+1} \phivec\_{t+2}^\trans \wvec + \ldots | S\_t = s, A\_t = a] \\\\\\
+Q^\pi(s, a) &= \expected^\pi [ r\_{t+1} + \gamma\_{t+1} r\_{t+2} + \ldots | S\_t = s, A\_t = a] \\\\
+            &= \expected^\pi [ \phivec\_{t+1}^\trans \wvec + \gamma\_{t+1} \phivec\_{t+2}^\trans \wvec + \ldots | S\_t = s, A\_t = a] \\\\
             &= \expected^\pi [\sum\_{i=t}^\infty (\prod^i\_{j=t+1} \gamma\_{j+1}) \phi\_{i+1}] ^\trans \wvec = \psi^{\pi, \gamma}(s,a)
 \end{align\*}
 
@@ -104,7 +132,7 @@ With the successor feature vector \\(\psi^{\pi, \gamma}(s,a)\\), we can transfer
 
 ## GPI {#gpi}
 
-GPI extends the usual [Policy Improvement]({{<relref "policy_improvement.md#" >}}) theorem to the case when multiple policies are being learned simultaneously. The main idea is that if you have a collection of policies encoded as state-action value functions such that \\(|Q^{\pi\_i}(s,a) - \tilde{Q}^{\pi\_i}(s,a)| \leq \epsilon\\), and define your acting policy as \\(\pi(s) \in \argmax\_{a} \max\_{i} \tilde{Q}^{\pi\_i}(s, a)\\) then
+GPI extends the usual [Policy Improvement]({{< relref "policy_improvement.md" >}}) theorem to the case when multiple policies are being learned simultaneously. The main idea is that if you have a collection of policies encoded as state-action value functions such that \\(|Q^{\pi\_i}(s,a) - \tilde{Q}^{\pi\_i}(s,a)| \leq \epsilon\\), and define your acting policy as \\(\pi(s) \in \argmax\_{a} \max\_{i} \tilde{Q}^{\pi\_i}(s, a)\\) then
 \\[Q^{\pi}(s,a) \geq \max\_i Q^{\pi\_i}(s, a) - \frac{2}{1-\gamma}\epsilon\\].
 
 This is then applied to transfer when using successor features.
@@ -116,5 +144,7 @@ This is then applied to transfer when using successor features.
 ## References {#references}
 
 
-# Bibliography
-<a id="dayan1993"></a>[dayan1993] Dayan, Improving Generalization for Temporal Difference Learning: The Successor Representation, <i>Neural Computation</i>,  (1993). [↩](#bc5263c9f3dd76d28c158c06782b4407)
+
+<style>.csl-entry{text-indent: -1.5em; margin-left: 1.5em;}</style><div class="csl-bib-body">
+  <div class="csl-entry"><a id="citeproc_bib_item_1"></a>Dayan, Peter. 1993. “Improving Generalization for Temporal Difference Learning: The Successor Representation.” <i>Neural Computation</i>. MIT Press.</div>
+</div>

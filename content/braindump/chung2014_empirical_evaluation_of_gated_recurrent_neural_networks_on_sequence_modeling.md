@@ -1,7 +1,7 @@
 +++
 title = "chung2014: Empirical Evaluation of Gated Recurrent Neural Networks on Sequence Modeling"
 author = ["Matthew Schlegel"]
-lastmod = 2021-09-13T14:17:14-06:00
+lastmod = 2022-10-27T20:18:32-06:00
 slug = "chung2014"
 draft = false
 notetype = "paper"
@@ -15,7 +15,11 @@ notetype = "paper"
 \newcommand{\transition}{P}
 \newcommand{\reals}{\mathbb{R}}
 \newcommand{\naturals}{\mathbb{N}}
+\newcommand{\complexs}{\mathbb{C}}
+\newcommand{\field}{\mathbb{F}}
+\newcommand{\numfield}{\mathbb{F}}
 \newcommand{\expected}{\mathbb{E}}
+\newcommand{\var}{\mathbb{V}}
 \newcommand{\by}{\times}
 \newcommand{\partialderiv}[2]{\frac{\partial #1}{\partial #2}}
 \newcommand{\defineq}{\stackrel{{\tiny\mbox{def}}}{=}}
@@ -31,15 +35,21 @@ notetype = "paper"
 \newcommand{\cvec}{\mathbf{c}}
 \newcommand{\dvec}{\mathbf{d}}
 \newcommand{\evec}{\mathbf{e}}
+\newcommand{\fvec}{\mathbf{f}}
 \newcommand{\gvec}{\mathbf{g}}
 \newcommand{\hvec}{\mathbf{h}}
+\newcommand{\ivec}{\mathbf{i}}
+\newcommand{\jvec}{\mathbf{j}}
+\newcommand{\kvec}{\mathbf{k}}
 \newcommand{\lvec}{\mathbf{l}}
 \newcommand{\mvec}{\mathbf{m}}
 \newcommand{\nvec}{\mathbf{n}}
+\newcommand{\ovec}{\mathbf{o}}
 \newcommand{\pvec}{\mathbf{p}}
 \newcommand{\qvec}{\mathbf{q}}
 \newcommand{\rvec}{\mathbf{r}}
 \newcommand{\svec}{\mathbf{s}}
+\newcommand{\tvec}{\mathbf{t}}
 \newcommand{\uvec}{\mathbf{u}}
 \newcommand{\vvec}{\mathbf{v}}
 \newcommand{\wvec}{\mathbf{w}}
@@ -52,33 +62,50 @@ notetype = "paper"
 \newcommand{\Dmat}{\mathbf{D}}
 \newcommand{\Emat}{\mathbf{E}}
 \newcommand{\Fmat}{\mathbf{F}}
+\newcommand{\Gmat}{\mathbf{G}}
+\newcommand{\Hmat}{\mathbf{H}}
 \newcommand{\Imat}{\mathbf{I}}
+\newcommand{\Jmat}{\mathbf{J}}
+\newcommand{\Kmat}{\mathbf{K}}
+\newcommand{\Lmat}{\mathbf{L}}
+\newcommand{\Mmat}{\mathbf{M}}
+\newcommand{\Nmat}{\mathbf{N}}
+\newcommand{\Omat}{\mathbf{O}}
 \newcommand{\Pmat}{\mathbf{P}}
+\newcommand{\Qmat}{\mathbf{Q}}
+\newcommand{\Rmat}{\mathbf{R}}
+\newcommand{\Smat}{\mathbf{S}}
+\newcommand{\Tmat}{\mathbf{T}}
 \newcommand{\Umat}{\mathbf{U}}
 \newcommand{\Vmat}{\mathbf{V}}
 \newcommand{\Wmat}{\mathbf{W}}
 \newcommand{\Xmat}{\mathbf{X}}
-\newcommand{\Qmat}{\mathbf{Q}}
+\newcommand{\Ymat}{\mathbf{Y}}
+\newcommand{\Zmat}{\mathbf{Z}}
+\newcommand{\Sigmamat}{\boldsymbol{\Sigma}}
+\newcommand{\identity}{\Imat}
 \newcommand{\thetavec}{\boldsymbol{\theta}}
 \newcommand{\phivec}{\boldsymbol{\phi}}
 \newcommand{\muvec}{\boldsymbol{\mu}}
 \newcommand{\sigmavec}{\boldsymbol{\sigma}}
 \newcommand{\jacobian}{\mathbf{J}}
+\newcommand{\ind}{\perp\!\!\!\!\perp}
+\newcommand{\bigoh}{\text{O}}
 \\)
 
 tags
-: [Recurrent Neural Network]({{<relref "recurrent_neural_network.md#" >}}), [Machine Learning]({{<relref "machine_learning.md#" >}})
+: [Recurrent Neural Network]({{< relref "recurrent_neural_network.md" >}}), [Machine Learning]({{< relref "machine_learning.md" >}})
 
 source
 : [Paper](https://arxiv.org/abs/1412.3555)
 
 authors
-: Chung, J., Gulcehre, C., Cho, K., & Bengio, Y.
+: Chung, J., Gulcehre, C., Cho, K., &amp; Bengio, Y.
 
 year
 : 2014
 
-This paper does an empirical evaluation of several recurrent gates including [LSTM]({{<relref "lstm.md#" >}})s <sup id="c59a89800a027b3aa9da101668e63284"><a href="#hochreiter1997" title="Hochreiter \&amp; Urgen Schmidhuber, {{LONG SHORT}}-{{TERM MEMORY}}, {Neural Computation}, v(), (1997).">hochreiter1997</a></sup>, [GRU]({{<relref "lstm.md#" >}}) <sup id="95f0c4256ce447646943f9e9ec548f84"><a href="#cho2014" title="Cho, van Merri\enboer, Bahdanau \&amp; Bengio, On the {{Properties}} of {{Neural Machine Translation}}: {{Encoder}}\textendash{{Decoder Approaches}}, in in: {Proceedings of {{SSST}}-8, {{Eighth Workshop}} on {{Syntax}}, {{Semantics}} and {{Structure}} in {{Statistical Translation}}}, edited by {Association for Computational Linguistics} (2014)">cho2014</a></sup>, and Vanilla [RNN]({{<relref "recurrent_neural_network.md#" >}})s. The paper also provides descriptions for the different cells tested and a nice high level description of the generative model employed by RNNs.
+This paper does an empirical evaluation of several recurrent gates including [LSTM]({{< relref "lstm.md" >}})s (<a href="#citeproc_bib_item_2">Hochreiter and Urgen Schmidhuber 1997</a>), [GRU]({{< relref "lstm.md" >}}) (<a href="#citeproc_bib_item_1">Cho et al. 2014</a>), and Vanilla [RNN]({{< relref "recurrent_neural_network.md" >}})s. The paper also provides descriptions for the different cells tested and a nice high level description of the generative model employed by RNNs.
 
 **Results**
 

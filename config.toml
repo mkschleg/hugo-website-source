@@ -112,12 +112,20 @@ enableGitInfo = false
     text = "About"
 
   [[params.menu]]
+    link = "/CV.pdf"
+    text = "CV"
+
+  [[params.menu]]
     link = "/publications"
     text = "Publications"
 
   [[params.menu]]
-    link = "/post"
-    text = "Posts"
+    link = "/code"
+    text = "Code"
+
+  # [[params.menu]]
+  #   link = "/post"
+  #   text = "Posts"
 
 [privacy]
   [privacy.disqus]

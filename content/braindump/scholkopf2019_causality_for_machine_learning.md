@@ -1,8 +1,9 @@
 +++
 title = "scholkopf2019: Causality for Machine Learning"
 author = ["Matthew Schlegel"]
-lastmod = 2021-09-13T14:17:35-06:00
+lastmod = 2022-10-27T20:20:50-06:00
 slug = "causality_for_machine_learning"
+tags = ["Causality"]
 draft = false
 notetype = "paper"
 +++
@@ -15,7 +16,11 @@ notetype = "paper"
 \newcommand{\transition}{P}
 \newcommand{\reals}{\mathbb{R}}
 \newcommand{\naturals}{\mathbb{N}}
+\newcommand{\complexs}{\mathbb{C}}
+\newcommand{\field}{\mathbb{F}}
+\newcommand{\numfield}{\mathbb{F}}
 \newcommand{\expected}{\mathbb{E}}
+\newcommand{\var}{\mathbb{V}}
 \newcommand{\by}{\times}
 \newcommand{\partialderiv}[2]{\frac{\partial #1}{\partial #2}}
 \newcommand{\defineq}{\stackrel{{\tiny\mbox{def}}}{=}}
@@ -31,15 +36,21 @@ notetype = "paper"
 \newcommand{\cvec}{\mathbf{c}}
 \newcommand{\dvec}{\mathbf{d}}
 \newcommand{\evec}{\mathbf{e}}
+\newcommand{\fvec}{\mathbf{f}}
 \newcommand{\gvec}{\mathbf{g}}
 \newcommand{\hvec}{\mathbf{h}}
+\newcommand{\ivec}{\mathbf{i}}
+\newcommand{\jvec}{\mathbf{j}}
+\newcommand{\kvec}{\mathbf{k}}
 \newcommand{\lvec}{\mathbf{l}}
 \newcommand{\mvec}{\mathbf{m}}
 \newcommand{\nvec}{\mathbf{n}}
+\newcommand{\ovec}{\mathbf{o}}
 \newcommand{\pvec}{\mathbf{p}}
 \newcommand{\qvec}{\mathbf{q}}
 \newcommand{\rvec}{\mathbf{r}}
 \newcommand{\svec}{\mathbf{s}}
+\newcommand{\tvec}{\mathbf{t}}
 \newcommand{\uvec}{\mathbf{u}}
 \newcommand{\vvec}{\mathbf{v}}
 \newcommand{\wvec}{\mathbf{w}}
@@ -52,22 +63,39 @@ notetype = "paper"
 \newcommand{\Dmat}{\mathbf{D}}
 \newcommand{\Emat}{\mathbf{E}}
 \newcommand{\Fmat}{\mathbf{F}}
+\newcommand{\Gmat}{\mathbf{G}}
+\newcommand{\Hmat}{\mathbf{H}}
 \newcommand{\Imat}{\mathbf{I}}
+\newcommand{\Jmat}{\mathbf{J}}
+\newcommand{\Kmat}{\mathbf{K}}
+\newcommand{\Lmat}{\mathbf{L}}
+\newcommand{\Mmat}{\mathbf{M}}
+\newcommand{\Nmat}{\mathbf{N}}
+\newcommand{\Omat}{\mathbf{O}}
 \newcommand{\Pmat}{\mathbf{P}}
+\newcommand{\Qmat}{\mathbf{Q}}
+\newcommand{\Rmat}{\mathbf{R}}
+\newcommand{\Smat}{\mathbf{S}}
+\newcommand{\Tmat}{\mathbf{T}}
 \newcommand{\Umat}{\mathbf{U}}
 \newcommand{\Vmat}{\mathbf{V}}
 \newcommand{\Wmat}{\mathbf{W}}
 \newcommand{\Xmat}{\mathbf{X}}
-\newcommand{\Qmat}{\mathbf{Q}}
+\newcommand{\Ymat}{\mathbf{Y}}
+\newcommand{\Zmat}{\mathbf{Z}}
+\newcommand{\Sigmamat}{\boldsymbol{\Sigma}}
+\newcommand{\identity}{\Imat}
 \newcommand{\thetavec}{\boldsymbol{\theta}}
 \newcommand{\phivec}{\boldsymbol{\phi}}
 \newcommand{\muvec}{\boldsymbol{\mu}}
 \newcommand{\sigmavec}{\boldsymbol{\sigma}}
 \newcommand{\jacobian}{\mathbf{J}}
+\newcommand{\ind}{\perp\!\!\!\!\perp}
+\newcommand{\bigoh}{\text{O}}
 \\)
 
 tags
-: [Causality]({{<relref "causality.md#" >}})
+: [Causality]({{< relref "causality.md" >}})
 
 source
 : <https://arxiv.org/abs/1911.10500>
@@ -78,7 +106,7 @@ authors
 year
 : 2019
 
-    This paper is going through the arguments on why [Causality]({{<relref "causality.md#" >}}) is important for machine learning. I'll only go into detail on a few.
+    This paper is going through the arguments on why [Causality]({{< relref "causality.md" >}}) is important for machine learning. I'll only go into detail on a few.
 
 
 ## ML disregards information that animals rely on heavily {#ml-disregards-information-that-animals-rely-on-heavily}
@@ -91,7 +119,7 @@ The key properties that Scholkopf cites are:
 
     While it is true that the core of supervised learning research doesn't interact with these properties, there are several parts of the community which do.
 
-    To start the most obvious is [Reinforcement Learning]({{<relref "reinforcement_learning.md#" >}}). An RL agent generates its own data through interacting with its world. It must deal with domain shifts of the underlying environment as well as distributional shifts which occur from its own policy. The agent must, especially when the markov assumption isn't meet, abstract temporally and build up beliefs about its current state. While causality does change the problem specification, it doesn't do so in as satisfying a way as RL. In RL an agent builds a policy by maximizing the reward function. It is unclear where behaviour is derived in a causal AI system. In all likelihood, RL agents should be making causal assumptions about the underlying dynamcis and testing these through interventions. It is possible <sup id="cf8e9083815e9b7d8318497cd8335abc"><a href="#zhang2021" title="Zhang, Lipton, Pineda, Azizzadenesheli, Anandkumar, Itti, Pineau \&amp; Furlanello, Learning {{Causal State Representations}} of {{Partially Observable Environments}}, {arXiv:1906.10437 [cs, stat]}, v(), (2021).">zhang2021</a></sup> has something to say about this, in that we can generate causal belief states which can be explored through causal mechanisms. While this is an interesting directions, building behaviour around this type of approach seems difficult but might be done through an intrinsic mechanism.
+    To start the most obvious is [Reinforcement Learning]({{< relref "reinforcement_learning.md" >}}). An RL agent generates its own data through interacting with its world. It must deal with domain shifts of the underlying environment as well as distributional shifts which occur from its own policy. The agent must, especially when the markov assumption isn't meet, abstract temporally and build up beliefs about its current state. While causality does change the problem specification, it doesn't do so in as satisfying a way as RL. In RL an agent builds a policy by maximizing the reward function. It is unclear where behaviour is derived in a causal AI system. In all likelihood, RL agents should be making causal assumptions about the underlying dynamcis and testing these through interventions. It is possible (<a href="#citeproc_bib_item_1">Zhang et al. 2021</a>) has something to say about this, in that we can generate causal belief states which can be explored through causal mechanisms. While this is an interesting directions, building behaviour around this type of approach seems difficult but might be done through an intrinsic mechanism.
 
     Temporal forecasting is also a well established part of the ML community. While not interacting with the data streams generation process, they still generate beliefs about the process to make future predictions.
 
@@ -106,11 +134,13 @@ The IID assumption is problematic, and that is well known. Some take this an mea
 It is known that certain transformations of observations can cause issues with deep learning agents. This is seen as bad as the changes are "imperceptible to humans". While likely problematic for future applications, these issues are failing to understand how this relates back to human falability. While humans will see this and believe it is something we and other organics don't suffer, I argue it is something we suffer from as well. Not only are there many ways to fool the human eye, but the changes we make to trick humans can't interact with the human visual system as the DL adversarial attacks can. For example the imperceptible noise is often derived from directly differentiating through the model giving detailed information about the agent. These algorithms are also making changes at a different layer in the perceptual process. They aren't working in the light emitting properties, but after the first layer in the brain. I'd argue that if we could attack this part of the human perceptual process we would also be deeply fallible. A better place to test if these networks are vulnerable for robotics/RL/deployed systems on hardware would be to play with the light generation process not an intermediate representation of that.
 
 
-##  {#}
+##  {#d41d8c}
 
 
 ## References {#references}
 
 
-# Bibliography
-<a id="zhang2021"></a>[zhang2021] Zhang, Lipton, Pineda, Azizzadenesheli, Anandkumar, Itti, Pineau & Furlanello, Learning Causal State Representations of Partially Observable Environments, <i>arXiv:1906.10437 [cs, stat]</i>,  (2021). [↩](#cf8e9083815e9b7d8318497cd8335abc)
+
+<style>.csl-entry{text-indent: -1.5em; margin-left: 1.5em;}</style><div class="csl-bib-body">
+  <div class="csl-entry"><a id="citeproc_bib_item_1"></a>Zhang, Amy, Zachary C. Lipton, Luis Pineda, Kamyar Azizzadenesheli, Anima Anandkumar, Laurent Itti, Joelle Pineau, and Tommaso Furlanello. 2021. “Learning Causal State Representations of Partially Observable Environments.” <i>arXiv:1906.10437 [Cs, Stat]</i>. <a href="https://arxiv.org/abs/1906.10437">https://arxiv.org/abs/1906.10437</a>.</div>
+</div>

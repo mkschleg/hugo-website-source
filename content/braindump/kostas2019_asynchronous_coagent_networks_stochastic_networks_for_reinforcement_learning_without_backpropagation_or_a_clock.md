@@ -1,7 +1,7 @@
 +++
 title = "kostas2019: Asynchronous Coagent Networks: Stochastic Networks for Reinforcement Learning without Backpropagation or a Clock"
 author = ["Matthew Schlegel"]
-lastmod = 2021-09-13T14:17:24-06:00
+lastmod = 2022-10-27T20:19:39-06:00
 slug = "kostas2019"
 draft = false
 notetype = "paper"
@@ -15,7 +15,11 @@ notetype = "paper"
 \newcommand{\transition}{P}
 \newcommand{\reals}{\mathbb{R}}
 \newcommand{\naturals}{\mathbb{N}}
+\newcommand{\complexs}{\mathbb{C}}
+\newcommand{\field}{\mathbb{F}}
+\newcommand{\numfield}{\mathbb{F}}
 \newcommand{\expected}{\mathbb{E}}
+\newcommand{\var}{\mathbb{V}}
 \newcommand{\by}{\times}
 \newcommand{\partialderiv}[2]{\frac{\partial #1}{\partial #2}}
 \newcommand{\defineq}{\stackrel{{\tiny\mbox{def}}}{=}}
@@ -31,15 +35,21 @@ notetype = "paper"
 \newcommand{\cvec}{\mathbf{c}}
 \newcommand{\dvec}{\mathbf{d}}
 \newcommand{\evec}{\mathbf{e}}
+\newcommand{\fvec}{\mathbf{f}}
 \newcommand{\gvec}{\mathbf{g}}
 \newcommand{\hvec}{\mathbf{h}}
+\newcommand{\ivec}{\mathbf{i}}
+\newcommand{\jvec}{\mathbf{j}}
+\newcommand{\kvec}{\mathbf{k}}
 \newcommand{\lvec}{\mathbf{l}}
 \newcommand{\mvec}{\mathbf{m}}
 \newcommand{\nvec}{\mathbf{n}}
+\newcommand{\ovec}{\mathbf{o}}
 \newcommand{\pvec}{\mathbf{p}}
 \newcommand{\qvec}{\mathbf{q}}
 \newcommand{\rvec}{\mathbf{r}}
 \newcommand{\svec}{\mathbf{s}}
+\newcommand{\tvec}{\mathbf{t}}
 \newcommand{\uvec}{\mathbf{u}}
 \newcommand{\vvec}{\mathbf{v}}
 \newcommand{\wvec}{\mathbf{w}}
@@ -52,28 +62,45 @@ notetype = "paper"
 \newcommand{\Dmat}{\mathbf{D}}
 \newcommand{\Emat}{\mathbf{E}}
 \newcommand{\Fmat}{\mathbf{F}}
+\newcommand{\Gmat}{\mathbf{G}}
+\newcommand{\Hmat}{\mathbf{H}}
 \newcommand{\Imat}{\mathbf{I}}
+\newcommand{\Jmat}{\mathbf{J}}
+\newcommand{\Kmat}{\mathbf{K}}
+\newcommand{\Lmat}{\mathbf{L}}
+\newcommand{\Mmat}{\mathbf{M}}
+\newcommand{\Nmat}{\mathbf{N}}
+\newcommand{\Omat}{\mathbf{O}}
 \newcommand{\Pmat}{\mathbf{P}}
+\newcommand{\Qmat}{\mathbf{Q}}
+\newcommand{\Rmat}{\mathbf{R}}
+\newcommand{\Smat}{\mathbf{S}}
+\newcommand{\Tmat}{\mathbf{T}}
 \newcommand{\Umat}{\mathbf{U}}
 \newcommand{\Vmat}{\mathbf{V}}
 \newcommand{\Wmat}{\mathbf{W}}
 \newcommand{\Xmat}{\mathbf{X}}
-\newcommand{\Qmat}{\mathbf{Q}}
+\newcommand{\Ymat}{\mathbf{Y}}
+\newcommand{\Zmat}{\mathbf{Z}}
+\newcommand{\Sigmamat}{\boldsymbol{\Sigma}}
+\newcommand{\identity}{\Imat}
 \newcommand{\thetavec}{\boldsymbol{\theta}}
 \newcommand{\phivec}{\boldsymbol{\phi}}
 \newcommand{\muvec}{\boldsymbol{\mu}}
 \newcommand{\sigmavec}{\boldsymbol{\sigma}}
 \newcommand{\jacobian}{\mathbf{J}}
+\newcommand{\ind}{\perp\!\!\!\!\perp}
+\newcommand{\bigoh}{\text{O}}
 \\)
 
 tags
-: [Reinforcement Learning]({{<relref "reinforcement_learning.md#" >}}), [Representation]({{<relref "representation.md#" >}})
+: [Reinforcement Learning]({{< relref "reinforcement_learning.md" >}}), [Representation]({{< relref "representation.md" >}})
 
 source
 : [paper](http://all.cs.umass.edu/pubs/2019/Kostas%20et%20al%20-%20Asynchronous%20Coagent%20Networks.pdf)
 
 authors
-: Kostas, J., Nota, C., & Thomas, P. S.
+: Kostas, J., Nota, C., &amp; Thomas, P. S.
 
 year
 : 2019
@@ -84,7 +111,7 @@ Some literature connected to this work is:
 
 -   _stochastic computation graphs_ - proposed to describe networks with a mixture of stochastic and deterministic nodes, with supervised, unsupervised, and RL applications.
 -   _Stochastic neural networks_ - A type of ANN which builds in random variations to the network, either through a stochastic transfer function, or stochastic weights.
--   Multi-agent RL - <sup id="c8f8e458d9201e6e5e6e0a1d32d26c11"><a href="#liu2014" title="Liu, Singh, Lewis \&amp; Qin, Optimal {{Rewards}} for {{Cooperative Agents}}, {IEEE Transactions on Autonomous Mental Development}, v(), (2014).">liu2014</a></sup>: showed that multi-agent systems sometimes learn more quickly when agents are given individualized rewards.
+-   Multi-agent RL - (<a href="#citeproc_bib_item_1">Liu et al. 2014</a>): showed that multi-agent systems sometimes learn more quickly when agents are given individualized rewards.
 
 
 ## Background {#background}
@@ -121,7 +148,7 @@ If we were to simpley implement an unbiased policy gradient algorithm (say REINF
 
 What would happen if all coagents updated according to the local policy gradient updates?
 
-**Coagent policy gradient theorm (CPGT)**: If \\(\theta\\) is fixed and all coagents update their parameters following unbiased estimates of [eqn:kostas2019:local-policy-gradient](#eqn:kostas2019:local-policy-gradient) then the entire network will follow an unbiased estimator of \\(\nabla J(\theta)\\), or the _global policy gradient_.
+**Coagent policy gradient theorm (CPGT)**: If \\(\theta\\) is fixed and all coagents update their parameters following unbiased estimates of <eqn:kostas2019:local-policy-gradient> then the entire network will follow an unbiased estimator of \\(\nabla J(\theta)\\), or the _global policy gradient_.
 
 
 ### Conjugate Markov Decision Process (CoMDP) {#conjugate-markov-decision-process--comdp}
@@ -166,5 +193,7 @@ They provide some empirical evidence on a toy problem that the gradient estimate
 ## References {#references}
 
 
-# Bibliography
-<a id="liu2014"></a>[liu2014] Liu, Singh, Lewis & Qin, Optimal Rewards for Cooperative Agents, <i>IEEE Transactions on Autonomous Mental Development</i>,  (2014). [↩](#c8f8e458d9201e6e5e6e0a1d32d26c11)
+
+<style>.csl-entry{text-indent: -1.5em; margin-left: 1.5em;}</style><div class="csl-bib-body">
+  <div class="csl-entry"><a id="citeproc_bib_item_1"></a>Liu, Bingyao, Satinder Singh, Richard L. Lewis, and Shiyin Qin. 2014. “Optimal Rewards for Cooperative Agents.” <i>IEEE Transactions on Autonomous Mental Development</i>.</div>
+</div>

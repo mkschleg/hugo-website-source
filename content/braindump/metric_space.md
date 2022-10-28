@@ -1,7 +1,7 @@
 +++
 title = "Metric Space"
 author = ["Matthew Schlegel"]
-lastmod = 2021-09-13T14:17:28-06:00
+lastmod = 2022-10-27T20:20:01-06:00
 slug = "metric_space"
 draft = false
 notetype = "note"
@@ -15,7 +15,11 @@ notetype = "note"
 \newcommand{\transition}{P}
 \newcommand{\reals}{\mathbb{R}}
 \newcommand{\naturals}{\mathbb{N}}
+\newcommand{\complexs}{\mathbb{C}}
+\newcommand{\field}{\mathbb{F}}
+\newcommand{\numfield}{\mathbb{F}}
 \newcommand{\expected}{\mathbb{E}}
+\newcommand{\var}{\mathbb{V}}
 \newcommand{\by}{\times}
 \newcommand{\partialderiv}[2]{\frac{\partial #1}{\partial #2}}
 \newcommand{\defineq}{\stackrel{{\tiny\mbox{def}}}{=}}
@@ -31,15 +35,21 @@ notetype = "note"
 \newcommand{\cvec}{\mathbf{c}}
 \newcommand{\dvec}{\mathbf{d}}
 \newcommand{\evec}{\mathbf{e}}
+\newcommand{\fvec}{\mathbf{f}}
 \newcommand{\gvec}{\mathbf{g}}
 \newcommand{\hvec}{\mathbf{h}}
+\newcommand{\ivec}{\mathbf{i}}
+\newcommand{\jvec}{\mathbf{j}}
+\newcommand{\kvec}{\mathbf{k}}
 \newcommand{\lvec}{\mathbf{l}}
 \newcommand{\mvec}{\mathbf{m}}
 \newcommand{\nvec}{\mathbf{n}}
+\newcommand{\ovec}{\mathbf{o}}
 \newcommand{\pvec}{\mathbf{p}}
 \newcommand{\qvec}{\mathbf{q}}
 \newcommand{\rvec}{\mathbf{r}}
 \newcommand{\svec}{\mathbf{s}}
+\newcommand{\tvec}{\mathbf{t}}
 \newcommand{\uvec}{\mathbf{u}}
 \newcommand{\vvec}{\mathbf{v}}
 \newcommand{\wvec}{\mathbf{w}}
@@ -52,27 +62,44 @@ notetype = "note"
 \newcommand{\Dmat}{\mathbf{D}}
 \newcommand{\Emat}{\mathbf{E}}
 \newcommand{\Fmat}{\mathbf{F}}
+\newcommand{\Gmat}{\mathbf{G}}
+\newcommand{\Hmat}{\mathbf{H}}
 \newcommand{\Imat}{\mathbf{I}}
+\newcommand{\Jmat}{\mathbf{J}}
+\newcommand{\Kmat}{\mathbf{K}}
+\newcommand{\Lmat}{\mathbf{L}}
+\newcommand{\Mmat}{\mathbf{M}}
+\newcommand{\Nmat}{\mathbf{N}}
+\newcommand{\Omat}{\mathbf{O}}
 \newcommand{\Pmat}{\mathbf{P}}
+\newcommand{\Qmat}{\mathbf{Q}}
+\newcommand{\Rmat}{\mathbf{R}}
+\newcommand{\Smat}{\mathbf{S}}
+\newcommand{\Tmat}{\mathbf{T}}
 \newcommand{\Umat}{\mathbf{U}}
 \newcommand{\Vmat}{\mathbf{V}}
 \newcommand{\Wmat}{\mathbf{W}}
 \newcommand{\Xmat}{\mathbf{X}}
-\newcommand{\Qmat}{\mathbf{Q}}
+\newcommand{\Ymat}{\mathbf{Y}}
+\newcommand{\Zmat}{\mathbf{Z}}
+\newcommand{\Sigmamat}{\boldsymbol{\Sigma}}
+\newcommand{\identity}{\Imat}
 \newcommand{\thetavec}{\boldsymbol{\theta}}
 \newcommand{\phivec}{\boldsymbol{\phi}}
 \newcommand{\muvec}{\boldsymbol{\mu}}
 \newcommand{\sigmavec}{\boldsymbol{\sigma}}
 \newcommand{\jacobian}{\mathbf{J}}
+\newcommand{\ind}{\perp\!\!\!\!\perp}
+\newcommand{\bigoh}{\text{O}}
 \\)
 
 tags
-: [Math]({{<relref "math.md#" >}}), [Linear Algebra]({{<relref "linear_algebra.md#" >}})
+: [Math]({{< relref "math.md" >}}), [Linear Algebra]({{< relref "linear_algebra.md" >}})
 
 source
-: <https://en.wikipedia.org/wiki/Metric%5Fspace>
+: <https://en.wikipedia.org/wiki/Metric_space>
 
-A metric space is an [Inner Product Space]({{<relref "inner_product_space.md#" >}}) which is equipped with a metric or distance function. Although, I'm unsure we need an inner product space to construct a metric space, this is how you construct a metric space from an inner product space.
+A metric space is an [Inner Product Space]({{< relref "inner_product_space.md" >}}) which is equipped with a metric or distance function. Although, I'm unsure we need an inner product space to construct a metric space, this is how you construct a metric space from an inner product space.
 
 Given the norm of the strict inner product space \\(\\| \cdot \\|\\), we can define the associated metric or distance
 
@@ -84,4 +111,4 @@ The metric must have the following characteristics:
 2.  Symmetry: \\(d(\uvec, \vvec) = d(\vvec, \uvec)\\)
 3.  Triangle inequality: \\(d(\uvec, \kvec) \leq d(\uvec, \vvec) + d(\vvec, \kvec)\\)
 
-It can also be said that a metric space has a derived [Topology]({{<relref "topology.md#" >}}) w/ a [Subbasis]({{<relref "subbasis.md#" >}}) given by the set of open balls.
+It can also be said that a metric space has a derived [Topology]({{< relref "topology.md" >}}) w/ a [Subbasis]({{< relref "subbasis.md" >}}) given by the set of open balls.

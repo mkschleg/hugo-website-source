@@ -1,8 +1,9 @@
 +++
 title = "Reinforcement Learning"
 author = ["Matthew Schlegel"]
-lastmod = 2021-11-04T11:55:13-06:00
+lastmod = 2022-10-27T20:20:36-06:00
 slug = "reinforcement_learning"
+tags = ["Reinforcement-Learning"]
 draft = false
 notetype = "topic"
 +++
@@ -16,22 +17,22 @@ Some major categories of reinforcement learning:
 ## Successor Representations {#successor-representations}
 
 
-### <span class="org-todo todo TODO">TODO</span> <sup id="da81c8e9386ff07aa776a411128efae2"><a href="#barreto2018" title="Barreto, Borsa, Quan, Schaul, Silver, Hessel, Mankowitz, Zidek \&amp; Munos, Transfer in {{Deep Reinforcement Learning Using Successor Features}} and {{Generalised Policy Improvement}}, in in: {International {{Conference}} on {{Machine Learning}}}, edited by {PMLR} (2018)">barreto2018</a></sup> {#}
+### <span class="org-todo todo TODO">TODO</span> (<a href="#citeproc_bib_item_1">Barreto, Borsa, et al. 2018</a>) {#b01b2b}
 
 
-### <span class="org-todo todo TODO">TODO</span> <sup id="813e971e001858d86ea75b9ad2d70bc3"><a href="#barreto2018a" title="Barreto, Dabney, Munos, Hunt, Schaul, van Hasselt \&amp; Silver, Successor {{Features}} for {{Transfer}} in {{Reinforcement Learning}}, {arXiv:1606.05312 [cs]}, v(), (2018).">barreto2018a</a></sup> {#}
+### <span class="org-todo todo TODO">TODO</span> (<a href="#citeproc_bib_item_2">Barreto, Dabney, et al. 2018</a>) {#89e7f4}
 
 
-### <span class="org-todo todo TODO">TODO</span> <sup id="34f151fecd8ce7f40e89ef12308af51f"><a href="#lehnert2017" title="Lehnert, Tellex \&amp; Littman, Advantages and {{Limitations}} of Using {{Successor Features}} for {{Transfer}} in {{Reinforcement Learning}}, {arXiv:1708.00102 [cs, stat]}, v(), (2017).">lehnert2017</a></sup> {#}
+### <span class="org-todo todo TODO">TODO</span> (<a href="#citeproc_bib_item_5">Lehnert, Tellex, and Littman 2017</a>) {#c71cbb}
 
 
-### <span class="org-todo todo TODO">TODO</span> <sup id="a37106786377f78270708deef8c6a71a"><a href="#borsa2018" title="Borsa, Barreto, Quan, Mankowitz, Munos, van Hasselt, Silver \&amp; Schaul, Universal {{Successor Features Approximators}}, {arXiv:1812.07626 [cs, stat]}, v(), (2018).">borsa2018</a></sup> {#}
+### <span class="org-todo todo TODO">TODO</span> (<a href="#citeproc_bib_item_3">Borsa et al. 2018</a>) {#3de7db}
 
 
-### <span class="org-todo todo TODO">TODO</span> <sup id="f2239e4a4becab1de7985291eecfa790"><a href="#hansen2020" title="Hansen, Dabney, Barreto, Van de Wiele, Warde-Farley \&amp; Mnih, Fast {{Task Inference}} with {{Variational Intrinsic Successor Features}}, {arXiv:1906.05030 [cs, stat]}, v(), (2020).">hansen2020</a></sup> {#}
+### <span class="org-todo todo TODO">TODO</span> (<a href="#citeproc_bib_item_4">Hansen et al. 2020</a>) {#dc52fb}
 
 
-### <span class="org-todo todo TODO">TODO</span> <sup id="64f3aab36f25709eb06e90ccc4763262"><a href="#sherstan2018" title="Sherstan, Machado \&amp; Pilarski, Accelerating {{Learning}} in {{Constructive Predictive Frameworks}} with the {{Successor Representation}}, {arXiv:1803.09001 [cs, stat]}, v(), (2018).">sherstan2018</a></sup> {#}
+### <span class="org-todo todo TODO">TODO</span> (<a href="#citeproc_bib_item_6">Sherstan, Machado, and Pilarski 2018</a>) {#39da36}
 
 
 ## Reading {#reading}
@@ -39,24 +40,19 @@ Some major categories of reinforcement learning:
 
 ### Textbooks: {#textbooks}
 
--   [Reinforcement Learning: An Introduction](http://www.incompleteideas.net/book/the-book-2nd.html) <sup id="5a0669b0762614b466036f7acb283805"><a href="#sutton2018" title="Sutton \&amp; Barto, Reinforcement Learning: An Introduction, {The MIT Press} (2018).">sutton2018</a></sup>
+-   [Reinforcement Learning: An Introduction](http://www.incompleteideas.net/book/the-book-2nd.html) (<a href="#citeproc_bib_item_8">Sutton and Barto 2018</a>)
 
-<sup id="0db174282c9f31b1e4da7ce4a1754a26"><a href="#sutton2020john" title="Sutton, John {{McCarthy}}'s Definition of Intelligence, {Journal of Artificial General Intelligence}, v(), (2020).">sutton2020john</a></sup>
+(<a href="#citeproc_bib_item_7">Sutton 2020</a>)
 
 
-# Bibliography
-<a id="barreto2018"></a>[barreto2018] Barreto, Borsa, Quan, Schaul, Silver, Hessel, Mankowitz, Zidek & Munos, Transfer in Deep Reinforcement Learning Using Successor Features and Generalised Policy Improvement, in in: International Conference on Machine Learning, edited by PMLR (2018) [↩](#da81c8e9386ff07aa776a411128efae2)
 
-<a id="barreto2018a"></a>[barreto2018a] Barreto, Dabney, Munos, Hunt, Schaul, van Hasselt & Silver, Successor Features for Transfer in Reinforcement Learning, <i>arXiv:1606.05312 [cs]</i>,  (2018). [↩](#813e971e001858d86ea75b9ad2d70bc3)
-
-<a id="lehnert2017"></a>[lehnert2017] Lehnert, Tellex & Littman, Advantages and Limitations of Using Successor Features for Transfer in Reinforcement Learning, <i>arXiv:1708.00102 [cs, stat]</i>,  (2017). [↩](#34f151fecd8ce7f40e89ef12308af51f)
-
-<a id="borsa2018"></a>[borsa2018] Borsa, Barreto, Quan, Mankowitz, Munos, van Hasselt, Silver & Schaul, Universal Successor Features Approximators, <i>arXiv:1812.07626 [cs, stat]</i>,  (2018). [↩](#a37106786377f78270708deef8c6a71a)
-
-<a id="hansen2020"></a>[hansen2020] Hansen, Dabney, Barreto, Van de Wiele, Warde-Farley & Mnih, Fast Task Inference with Variational Intrinsic Successor Features, <i>arXiv:1906.05030 [cs, stat]</i>,  (2020). [↩](#f2239e4a4becab1de7985291eecfa790)
-
-<a id="sherstan2018"></a>[sherstan2018] Sherstan, Machado & Pilarski, Accelerating Learning in Constructive Predictive Frameworks with the Successor Representation, <i>arXiv:1803.09001 [cs, stat]</i>,  (2018). [↩](#64f3aab36f25709eb06e90ccc4763262)
-
-<a id="sutton2018"></a>[sutton2018] Sutton & Barto, Reinforcement Learning: An Introduction, The MIT Press (2018). [↩](#5a0669b0762614b466036f7acb283805)
-
-<a id="sutton2020john"></a>[sutton2020john] Sutton, John McCarthy's Definition of Intelligence, <i>Journal of Artificial General Intelligence</i>,  (2020). [↩](#0db174282c9f31b1e4da7ce4a1754a26)
+<style>.csl-entry{text-indent: -1.5em; margin-left: 1.5em;}</style><div class="csl-bib-body">
+  <div class="csl-entry"><a id="citeproc_bib_item_1"></a>Barreto, Andre, Diana Borsa, John Quan, Tom Schaul, David Silver, Matteo Hessel, Daniel Mankowitz, Augustin Zidek, and Remi Munos. 2018. “Transfer in Deep Reinforcement Learning Using Successor Features and Generalised Policy Improvement.” In <i>International Conference on Machine Learning</i>. PMLR.</div>
+  <div class="csl-entry"><a id="citeproc_bib_item_2"></a>Barreto, André, Will Dabney, Rémi Munos, Jonathan J. Hunt, Tom Schaul, Hado van Hasselt, and David Silver. 2018. “Successor Features for Transfer in Reinforcement Learning.” <i>arXiv:1606.05312 [Cs]</i>. <a href="https://arxiv.org/abs/1606.05312">https://arxiv.org/abs/1606.05312</a>.</div>
+  <div class="csl-entry"><a id="citeproc_bib_item_3"></a>Borsa, Diana, André Barreto, John Quan, Daniel Mankowitz, Rémi Munos, Hado van Hasselt, David Silver, and Tom Schaul. 2018. “Universal Successor Features Approximators.” <i>arXiv:1812.07626 [Cs, Stat]</i>. <a href="https://arxiv.org/abs/1812.07626">https://arxiv.org/abs/1812.07626</a>.</div>
+  <div class="csl-entry"><a id="citeproc_bib_item_4"></a>Hansen, Steven, Will Dabney, Andre Barreto, Tom Van de Wiele, David Warde-Farley, and Volodymyr Mnih. 2020. “Fast Task Inference with Variational Intrinsic Successor Features.” <i>arXiv:1906.05030 [Cs, Stat]</i>. <a href="https://arxiv.org/abs/1906.05030">https://arxiv.org/abs/1906.05030</a>.</div>
+  <div class="csl-entry"><a id="citeproc_bib_item_5"></a>Lehnert, Lucas, Stefanie Tellex, and Michael L. Littman. 2017. “Advantages and Limitations of Using Successor Features for Transfer in Reinforcement Learning.” <i>arXiv:1708.00102 [Cs, Stat]</i>. <a href="https://arxiv.org/abs/1708.00102">https://arxiv.org/abs/1708.00102</a>.</div>
+  <div class="csl-entry"><a id="citeproc_bib_item_6"></a>Sherstan, Craig, Marlos C. Machado, and Patrick M. Pilarski. 2018. “Accelerating Learning in Constructive Predictive Frameworks with the Successor Representation.” <i>arXiv:1803.09001 [Cs, Stat]</i>. <a href="https://arxiv.org/abs/1803.09001">https://arxiv.org/abs/1803.09001</a>.</div>
+  <div class="csl-entry"><a id="citeproc_bib_item_7"></a>Sutton, Richard S. 2020. “John McCarthy’s Definition of Intelligence.” <i>Journal of Artificial General Intelligence</i>.</div>
+  <div class="csl-entry"><a id="citeproc_bib_item_8"></a>Sutton, Richard S., and Andrew G. Barto. 2018. <i>Reinforcement Learning: An Introduction</i>. Second edition. Adaptive Computation and Machine Learning Series. Cambridge, Massachusetts: The MIT Press.</div>
+</div>

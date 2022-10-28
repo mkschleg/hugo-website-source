@@ -1,0 +1,6 @@
+title="Investigating Action Encodings in Recurrent Neural Networks in Reinforcement Learning"
+author="Schlegel, Matthew and Tkachuk, Volodymyr and White, Adam and White, Martha"
+publication="In Progress"
+year="2022"
+url=""
+abstract="Building and maintaining state to learn policies and value functions is critical for deploying reinforcement learning (RL) agents in the real world. Recurrent neural networks (RNNs) have become a key point of interest for the state-building problem, and several large-scale reinforcement learning agents incorporate recurrent networks. While RNNs have become a mainstay in many RL applications, many choices are often under-reported and contain critical implementation details to improve performance. In this work, we discuss one axis on which RNN architectures can be (and have been) modified for use in RL. Specifically, we look at how action information can be incorporated into the state update function of a recurrent cell. We discuss several choices in using action information and empirically evaluate the resulting architectures on a set of illustrative domains. Finally, we discuss future work in developing recurrent cells and discuss challenges specific to the RL setting."

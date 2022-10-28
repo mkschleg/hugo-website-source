@@ -27,5 +27,9 @@
       {{ partial "disqus.html" . }}
     {{ end }}
 
+    {{ if (eq .Section "braindump") }}
+    {{ partial "backlinks.html" . }}
+    {{ end }}
+
   </div>
 </article>

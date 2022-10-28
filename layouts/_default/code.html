@@ -11,13 +11,22 @@
         <article class="post" itemscope itemtype="http://schema.org/Article">
           <div class="post-container">
             <h1 itemprop="name"><a href="{{ .Permalink }}">{{ .Title }}</a></h1>
-            
-            <div>
-              <h2> Open Source Libraries </h2>
-              {{ range (sort $.Site.Data.code.opensource "year" "desc")}}
-              {{ partial "code.html" . }}
-              {{ end }}
-            </div>
+                <div class="post-style" itemprop="articleBody">
+                  {{ .Description }}
+                  {{ .Content }}
+                </div>
+                <div>
+                  <h2> Project Libraries </h2>
+                  {{ range (sort $.Site.Data.code.projects "year" "desc")}}
+                  {{ partial "code.html" . }}
+                  {{ end }}
+                </div>
+                <div>
+                  <h2> Open Source Libraries </h2>
+                  {{ range (sort $.Site.Data.code.opensource "year" "desc")}}
+                  {{ partial "code.html" . }}
+                  {{ end }}
+                </div>
 
           </div>
         </article>

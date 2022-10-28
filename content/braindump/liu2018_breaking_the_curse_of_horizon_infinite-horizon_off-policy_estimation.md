@@ -1,20 +1,20 @@
 +++
 title = "liu2018: Breaking the Curse of Horizon: Infinite-Horizon Off-Policy Estimation"
 author = ["Matthew Schlegel"]
-lastmod = 2021-09-13T14:17:26-06:00
+lastmod = 2022-10-27T20:19:52-06:00
 slug = "liu2018"
 draft = false
 notetype = "paper"
 +++
 
 tags
-: [Reinforcement Learning]({{<relref "reinforcement_learning.md#" >}}), [Off-policy]({{<relref "reinforcement_learning.md#off-policy" >}})
+: [Reinforcement Learning]({{< relref "reinforcement_learning.md" >}}), [Off-policy]({{< relref "reinforcement_learning.md#off-policy" >}})
 
 source
 : [paper](http://papers.nips.cc/paper/7781-breaking-the-curse-of-horizon-infinite-horizon-off-policy-estimation)
 
 authors
-: Liu, Q., Li, L., Tang, Z., & Zhou, D.
+: Liu, Q., Li, L., Tang, Z., &amp; Zhou, D.
 
 year
 : 2018

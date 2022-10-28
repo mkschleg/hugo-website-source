@@ -1,14 +1,14 @@
 +++
 title = "Morphism"
 author = ["Matthew Schlegel"]
-lastmod = 2021-09-13T14:17:29-06:00
+lastmod = 2022-10-27T20:20:07-06:00
 slug = "morphism"
 draft = false
 notetype = "note"
 +++
 
 tags
-: [Math]({{<relref "math.md#" >}}), [Category Theory]({{<relref "category_theory.md#" >}})
+: [Math]({{< relref "math.md" >}}), [Category Theory]({{< relref "category_theory.md" >}})
 
 source
 : <https://en.wikipedia.org/wiki/Morphism>

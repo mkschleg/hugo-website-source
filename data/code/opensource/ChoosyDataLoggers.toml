@@ -1,0 +1,5 @@
+title="ChoosyDataLoggers.jl"
+author="Schlegel, Matthew"
+year="2022"
+url="https://github.com/mkschleg/ChoosyDataLoggers.jl"
+abstract="A data logger for julia which is highly configurable, stores data in an efficient manner, and can easily be turned off or on without interacting with the underlying framwork."
