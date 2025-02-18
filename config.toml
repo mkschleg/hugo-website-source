@@ -8,7 +8,7 @@ enableEmoji = true
 footnotereturnlinkcontents = "<sup>^</sup>"
 ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
 #preserveTaxonomyNames = true
-paginate = 10
+
 
 Copyright = "Copyright &#xA9; 2020 Matthew Schlegel. All Rights Reserved"
 
@@ -20,6 +20,11 @@ googleAnalytics = ""
 
 # Get last modified date for content from Git?
 enableGitInfo = false
+
+[pagination]
+  disableAliases = false
+  pagerSize = 10
+  path = 'page'
 
 [markup.goldmark.renderer]
   unsafe= true
@@ -137,7 +142,7 @@ enableGitInfo = false
     useSessionStorage = false
   [privacy.instagram]
     disable = true
-  [privacy.twitter]
+  [privacy.x]
     simple = true
   [privacy.vimeo]
     disable = true
