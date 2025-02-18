@@ -1,8 +1,8 @@
 +++
-title = "wang2017: Learning to reinforcement learn"
+title = "wang2017learning: Learning to reinforcement learn"
 author = ["Matthew Schlegel"]
-lastmod = 2022-10-27T20:21:58-06:00
-slug = "wang2017"
+lastmod = 2022-11-09T14:03:32-07:00
+slug = "wang2017learning"
 draft = false
 notetype = "paper"
 +++
@@ -84,6 +84,7 @@ notetype = "paper"
 \newcommand{\Zmat}{\mathbf{Z}}
 \newcommand{\Sigmamat}{\boldsymbol{\Sigma}}
 \newcommand{\identity}{\Imat}
+\newcommand{\epsilonvec}{\boldsymbol{\epsilon}}
 \newcommand{\thetavec}{\boldsymbol{\theta}}
 \newcommand{\phivec}{\boldsymbol{\phi}}
 \newcommand{\muvec}{\boldsymbol{\mu}}

@@ -1,8 +1,8 @@
 +++
-title = "hochreiter1997: LONG SHORT-TERM MEMORY"
+title = "hochreiter1997long: LONG SHORT-TERM MEMORY"
 author = ["Matthew Schlegel"]
-lastmod = 2022-10-27T20:19:12-06:00
-slug = "hochreiter1997"
+lastmod = 2022-11-09T14:06:01-07:00
+slug = "hochreiter1997long"
 tags = ["Recurrent", "Representation"]
 draft = false
 notetype = "paper"
@@ -85,6 +85,7 @@ notetype = "paper"
 \newcommand{\Zmat}{\mathbf{Z}}
 \newcommand{\Sigmamat}{\boldsymbol{\Sigma}}
 \newcommand{\identity}{\Imat}
+\newcommand{\epsilonvec}{\boldsymbol{\epsilon}}
 \newcommand{\thetavec}{\boldsymbol{\theta}}
 \newcommand{\phivec}{\boldsymbol{\phi}}
 \newcommand{\muvec}{\boldsymbol{\mu}}

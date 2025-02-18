@@ -1,7 +1,7 @@
 +++
 title = "Elementary Differential Equations and Boundary Value Problems"
 author = ["Matthew Schlegel"]
-lastmod = 2022-10-27T20:18:53-06:00
+lastmod = 2022-11-08T14:19:33-07:00
 slug = "elementary_differential_equations_and_boundary_value_problems"
 draft = false
 notetype = "book"

@@ -1,7 +1,7 @@
 +++
 title = "General Value Functions"
 author = ["Matthew Schlegel"]
-lastmod = 2022-10-27T20:19:02-06:00
+lastmod = 2022-11-09T14:06:09-07:00
 slug = "general_value_functions"
 draft = false
 notetype = "note"
@@ -84,6 +84,7 @@ notetype = "note"
 \newcommand{\Zmat}{\mathbf{Z}}
 \newcommand{\Sigmamat}{\boldsymbol{\Sigma}}
 \newcommand{\identity}{\Imat}
+\newcommand{\epsilonvec}{\boldsymbol{\epsilon}}
 \newcommand{\thetavec}{\boldsymbol{\theta}}
 \newcommand{\phivec}{\boldsymbol{\phi}}
 \newcommand{\muvec}{\boldsymbol{\mu}}
@@ -93,7 +94,7 @@ notetype = "note"
 \newcommand{\bigoh}{\text{O}}
 \\)
 
-General value functions (GVFs) are a generalization of value functions to predict signals other than the reward. They were introduced in (<a href="#citeproc_bib_item_3">Sutton et al. 2011</a>) and further explored in (<a href="#citeproc_bib_item_1">Modayil, White, and Sutton 2014</a>) and (<a href="#citeproc_bib_item_4">White 2015</a>), where the authors demonstrated their capabilities on a robot system (the [critterbot]({{< relref "critterbot.md" >}})). The goal of this demonstration was to show what can be learned using GVFs, and how the prediction making capabilities scale computationally.
+General value functions (GVFs) are a generalization of value functions to predict signals other than the reward. They were introduced in (<a href="#citeproc_bib_item_3">Sutton et al. 2011</a>)  and further explored in (<a href="#citeproc_bib_item_1">Modayil, White, and Sutton 2014</a>; <a href="#citeproc_bib_item_4">White 2015</a>), where the authors demonstrated their capabilities on a robot system (the [critterbot]({{< relref "critterbot.md" >}})). The goal of this demonstration was to show what can be learned using GVFs, and how the prediction making capabilities scale computationally.
 
 A GVF is defined as the expected discounted return of a cumulant:
 
@@ -128,7 +129,7 @@ General value functions are relatively new. Unfortunately, there have not been a
 
 ### General Value Function Networks (GVFNs) {#general-value-function-networks--gvfns}
 
-This work was spearheaded by me in (<a href="#citeproc_bib_item_2">Schlegel et al. 2020</a>). The main idea is to constrict the hidden state of an [RNN]({{< relref "recurrent_neural_network.md" >}}) to
+This work was spearheaded by me in (<a href="#citeproc_bib_item_2">Schlegel et al. 2021</a>). The main idea is to constrict the hidden state of an [RNN]({{< relref "recurrent_neural_network.md" >}}) to GVFs.
 
 
 ### General Value Functions for Auxiliary Tasks {#general-value-functions-for-auxiliary-tasks}
@@ -146,7 +147,7 @@ This work was spearheaded by me in (<a href="#citeproc_bib_item_2">Schlegel et a
 
 <style>.csl-entry{text-indent: -1.5em; margin-left: 1.5em;}</style><div class="csl-bib-body">
   <div class="csl-entry"><a id="citeproc_bib_item_1"></a>Modayil, Joseph, Adam White, and Richard S Sutton. 2014. “Multi-Timescale Nexting in a Reinforcement Learning Robot.” <i>Adaptive Behavior</i>.</div>
-  <div class="csl-entry"><a id="citeproc_bib_item_2"></a>Schlegel, Matthew, Andrew Jacobsen, Zaheer Abbas, Andrew Patterson, Adam White, and Martha White. 2020. “General Value Function Networks.” <i>Journal of Artificial Intelligence Research</i>. <a href="https://arxiv.org/abs/1807.06763">https://arxiv.org/abs/1807.06763</a>.</div>
+  <div class="csl-entry"><a id="citeproc_bib_item_2"></a>Schlegel, Matthew, Andrew Jacobsen, Zaheer Abbas, Andrew Patterson, Adam White, and Martha White. 2021. “General Value Function Networks.” <i>Journal of Artificial Intelligence Research</i>. <a href="https://arxiv.org/abs/1807.06763">https://arxiv.org/abs/1807.06763</a>.</div>
   <div class="csl-entry"><a id="citeproc_bib_item_3"></a>Sutton, Richard S., Joseph Modayil, Michael Delp, Thomas Degris, Patrick M. Pilarski, Adam White, and Doina Precup. 2011. “Horde: A Scalable Real-time Architecture for Learning Knowledge from Unsupervised Sensorimotor Interaction.” In <i>The 10th International Conference on Autonomous Agents and Multiagent Systems - Volume 2</i>. AAMAS ’11. Richland, SC: International Foundation for Autonomous Agents and Multiagent Systems.</div>
-  <div class="csl-entry"><a id="citeproc_bib_item_4"></a>White, Adam. 2015. “Developing a Predictive Approach to Knowledge.” <i>University of Alberta</i>.</div>
+  <div class="csl-entry"><a id="citeproc_bib_item_4"></a>White, Adam. 2015. “Developing a Predictive Approach to Knowledge.” University of Alberta.</div>
 </div>

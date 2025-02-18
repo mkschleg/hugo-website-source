@@ -1,7 +1,7 @@
 +++
 title = "Shapley Values"
 author = ["Matthew Schlegel"]
-lastmod = 2022-10-27T20:20:56-06:00
+lastmod = 2023-03-21T15:35:34-06:00
 slug = "shapley_values"
 draft = false
 notetype = "note"
@@ -84,6 +84,7 @@ notetype = "note"
 \newcommand{\Zmat}{\mathbf{Z}}
 \newcommand{\Sigmamat}{\boldsymbol{\Sigma}}
 \newcommand{\identity}{\Imat}
+\newcommand{\epsilonvec}{\boldsymbol{\epsilon}}
 \newcommand{\thetavec}{\boldsymbol{\theta}}
 \newcommand{\phivec}{\boldsymbol{\phi}}
 \newcommand{\muvec}{\boldsymbol{\mu}}
@@ -92,6 +93,9 @@ notetype = "note"
 \newcommand{\ind}{\perp\!\!\!\!\perp}
 \newcommand{\bigoh}{\text{O}}
 \\)
+
+tags
+: [Causality]({{< relref "causality.md" >}})
 
 
 ## <span class="org-todo done DONE">DONE</span> What are shapley values? {#what-are-shapley-values}
@@ -108,25 +112,25 @@ Where \\(x\_i\\) are the features and \\(\beta\_i\\) are the weights of the line
 
 for more general functions, we can't rule out interactions between different features in the function and thus must effectively marginalize over these interactions.
 
-    \begin{align\*}
+\begin{align\*}
 \phi\_j(val) &= \sum\_{S\subset\\{1, \ldots, p\\}/\\{j\\}} \frac{|S|! (p - |S| - 1)!}{p!} (val(S\cup\\{j\\}) - val(S)) \\\\
 val\_x(S) &= \int \hat{f}(\mathbf{x}) d\mathbb{P}\_{X \notin S} - \expected[\hat{f}(\mathbf{x})]
-    \end{align\*}
+\end{align\*}
 
 
-### (<a href="#citeproc_bib_item_4">Molnar, n.d.</a>) {#7c43a8}
+### (<a href="#citeproc_bib_item_5">Molnar 2021</a>) {#8d8576}
 
 
-### (NO_ITEM_DATA:lundberg) {#no-item-data-lundberg}
+### (<a href="#citeproc_bib_item_3">Lundberg and Lee 2017</a>) {#7ef989}
 
 
-### (<a href="#citeproc_bib_item_6">Singal, Michailidis, and Ng 2021</a>) {#7260c4}
+### (<a href="#citeproc_bib_item_7">Singal, Michailidis, and Ng 2021</a>) {#a5d2c0}
 
 
 ### (<a href="#citeproc_bib_item_2">Heskes et al. 2020</a>) {#54614a}
 
 
-### (<a href="#citeproc_bib_item_3">Ma and Tourani 2020</a>) {#b588ec}
+### (<a href="#citeproc_bib_item_4">Ma and Tourani 2020</a>) {#3656ee}
 
 Prove that blindly using shapley values to identify/interpret/explain a model is not appropriate. Specifically, they provde two counter examples where they show the important features aren't guaranteed to have the largest shapley value (as compared to other features), and that the sum of SVs also don't correspond directly with the intuitive assumption.
 
@@ -134,7 +138,7 @@ Prove that blindly using shapley values to identify/interpret/explain a model is
 ## <span class="org-todo done DONE">DONE</span> How do we estimate Shapley Values? {#how-do-we-estimate-shapley-values}
 
 
-### (<a href="#citeproc_bib_item_8">Strumbelj and Kononenko 2014</a>) {#5d9820}
+### (<a href="#citeproc_bib_item_9">Strumbelj and Kononenko 2014</a>) {#43fbf3}
 
 A monte carlo method which approximates the shapley value as
 
@@ -143,13 +147,13 @@ A monte carlo method which approximates the shapley value as
 where \\(x\_{+j} = (x\_1, \ldtos, x\_{j-1}, x\_j, z\_{j+1}, \ldots)\\) and \\(x\_{-j} = (x\_1, \ldtos, x\_{j-1}, z\_j, z\_{j+1}, \ldots)\\). \\(z\\) is another instance sampled from the dataset. The order of features is randomly ordered.
 
 
-### (<a href="#citeproc_bib_item_7">Song, Nelson, and Staum 2016</a>) {#0884c8}
+### (<a href="#citeproc_bib_item_8">Song, Nelson, and Staum 2016</a>) {#e1ddca}
 
 The Shapley effect results in the same value as the Shapley value, but gives a different direction for optimization. To measure the global sensitivity of a function according to a set of features you can calculate the value:
 
 \\[ v\_i = \sum\_{\mathcal{J}\subset\mathcal{k}\\\\\{i\\}} \frac{(k - |\mathcal{J}| - 1)! |\mathcal{J}|!}{k!} (c(P\_i(\pi) \cum {i}) - c(P\_i(\pi)))\\]
 
-There are two cost/value functions \\(c\\) one can consider when calculating the global sensitivity of a function wrt to a set of features. The cost measures the variance of Y caused by the uncertainty of the inputs in \\(\mathcal{J}\\). The first (considered by (<a href="#citeproc_bib_item_5">Owen 2014</a>)) is
+There are two cost/value functions \\(c\\) one can consider when calculating the global sensitivity of a function wrt to a set of features. The cost measures the variance of Y caused by the uncertainty of the inputs in \\(\mathcal{J}\\). The first (considered by (<a href="#citeproc_bib_item_6">Owen 2014</a>)) is
 
 \\[\tilde{c}(\mathcal{J}) = \text{Var}[\text{E}[Y | \mathbf{X}\_\mathcal{J}]].\\]
 
@@ -180,7 +184,7 @@ Asymetric shapley values may be what we want in the bandit case. The question is
 
 ## Recursive Shapley Values {#recursive-shapley-values}
 
-(<a href="#citeproc_bib_item_6">Singal, Michailidis, and Ng 2021</a>)
+(<a href="#citeproc_bib_item_7">Singal, Michailidis, and Ng 2021</a>)
 
 
 ## References {#references}
@@ -190,11 +194,11 @@ Asymetric shapley values may be what we want in the bandit case. The question is
 <style>.csl-entry{text-indent: -1.5em; margin-left: 1.5em;}</style><div class="csl-bib-body">
   <div class="csl-entry"><a id="citeproc_bib_item_1"></a>Frye, Christopher, Damien de Mijolla, Tom Begley, Laurence Cowton, Megan Stanley, and Ilya Feige. 2021. “Shapley Explainability on the Data Manifold.” <i>arXiv:2006.01272 [Cs, Stat]</i>. <a href="https://arxiv.org/abs/2006.01272">https://arxiv.org/abs/2006.01272</a>.</div>
   <div class="csl-entry"><a id="citeproc_bib_item_2"></a>Heskes, Tom, Evi Sijben, Ioan Gabriel Bucur, and Tom Claassen. 2020. “Causal Shapley Values: Exploiting Causal Knowledge to Explain Individual Predictions of Complex Models.” <i>arXiv:2011.01625 [Cs]</i>. <a href="https://arxiv.org/abs/2011.01625">https://arxiv.org/abs/2011.01625</a>.</div>
-  <div class="csl-entry"><a id="citeproc_bib_item_3"></a>Ma, Sisi, and Roshan Tourani. 2020. “Predictive and Causal Implications of Using Shapley Value for Model Interpretation.” In <i>Proceedings of the 2020 KDD Workshop on Causal Discovery</i>. PMLR.</div>
-  <div class="csl-entry"><a id="citeproc_bib_item_4"></a>Molnar, Christoph. n.d. <i>9.5 Shapley Values | Interpretable Machine Learning</i>.</div>
-  <div class="csl-entry"><a id="citeproc_bib_item_5"></a>Owen, Art B. 2014. “Sobol’ Indices and Shapley Value.” <i>SIAM/ASA Journal on Uncertainty Quantification</i>. Society for Industrial and Applied Mathematics.</div>
-  <div class="csl-entry"><a id="citeproc_bib_item_6"></a>Singal, Raghav, George Michailidis, and Hoiyi Ng. 2021. “Flow-Based Attribution in Graphical Models: A Recursive Shapley Approach.” SSRN Scholarly Paper. Rochester, NY: Social Science Research Network.</div>
-  <div class="csl-entry"><a id="citeproc_bib_item_7"></a>Song, Eunhye, Barry L. Nelson, and Jeremy Staum. 2016. “Shapley Effects for Global Sensitivity Analysis: Theory and Computation.” <i>SIAM/ASA Journal on Uncertainty Quantification</i>. Society for Industrial and Applied Mathematics.</div>
-  <div class="csl-entry"><a id="citeproc_bib_item_8"></a>Strumbelj, Erik, and Igor Kononenko. 2014. “Explaining Prediction Models and Individual Predictions with Feature Contributions.” <i>Knowledge and Information Systems</i>.</div>
-  <div class="csl-entry">NO_ITEM_DATA:lundberg</div>
+  <div class="csl-entry"><a id="citeproc_bib_item_3"></a>Lundberg, Scott M, and Su-In Lee. 2017. “A Unified Approach to Interpreting Model Predictions.” In <i>Proceedings of the 31st International Conference on Neural Information Processing Systems</i>.</div>
+  <div class="csl-entry"><a id="citeproc_bib_item_4"></a>Ma, Sisi, and Roshan Tourani. 2020. “Predictive and Causal Implications of Using Shapley Value for Model Interpretation.” In <i>Proceedings of the 2020 KDD Workshop on Causal Discovery</i>. PMLR.</div>
+  <div class="csl-entry"><a id="citeproc_bib_item_5"></a>Molnar, Christoph. 2021. <i>9.5 Shapley Values | Interpretable Machine Learning</i>. Accessed October 18.</div>
+  <div class="csl-entry"><a id="citeproc_bib_item_6"></a>Owen, Art B. 2014. “Sobol’ Indices and Shapley Value.” <i>SIAM/ASA Journal on Uncertainty Quantification</i>. Society for Industrial and Applied Mathematics.</div>
+  <div class="csl-entry"><a id="citeproc_bib_item_7"></a>Singal, Raghav, George Michailidis, and Hoiyi Ng. 2021. “Flow-Based Attribution in Graphical Models: A Recursive Shapley Approach.” SSRN Scholarly Paper. Rochester, NY: Social Science Research Network.</div>
+  <div class="csl-entry"><a id="citeproc_bib_item_8"></a>Song, Eunhye, Barry L. Nelson, and Jeremy Staum. 2016. “Shapley Effects for Global Sensitivity Analysis: Theory and Computation.” <i>SIAM/ASA Journal on Uncertainty Quantification</i>. Society for Industrial and Applied Mathematics.</div>
+  <div class="csl-entry"><a id="citeproc_bib_item_9"></a>Strumbelj, Erik, and Igor Kononenko. 2014. “Explaining Prediction Models and Individual Predictions with Feature Contributions.” <i>Knowledge and Information Systems</i>.</div>
 </div>

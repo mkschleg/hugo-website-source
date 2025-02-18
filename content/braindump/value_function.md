@@ -1,7 +1,7 @@
 +++
 title = "Value Function"
 author = ["Matthew Schlegel"]
-lastmod = 2022-10-27T20:21:53-06:00
+lastmod = 2022-11-08T14:23:50-07:00
 slug = "value_function"
 draft = false
 notetype = "note"

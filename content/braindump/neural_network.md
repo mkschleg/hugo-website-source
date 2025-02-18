@@ -1,11 +1,11 @@
 +++
 title = "Neural Network"
 author = ["Matthew Schlegel"]
-lastmod = 2022-10-28T13:55:00-06:00
+lastmod = 2023-03-21T12:02:33-06:00
 slug = "neural_network"
 draft = false
-notetype = "topic"
+notetype = "note"
 +++
 
 tags
-: [Machine Learning]({{< relref "machine_learning.md" >}})
+: [Machine Learning]({{< relref "machine_learning.md" >}}), [Deep Learning]({{< relref "deep_learning.md" >}})

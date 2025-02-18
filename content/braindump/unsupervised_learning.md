@@ -1,7 +1,7 @@
 +++
 title = "Unsupervised Learning"
 author = ["Matthew Schlegel"]
-lastmod = 2022-10-27T20:21:52-06:00
+lastmod = 2022-11-08T14:23:49-07:00
 slug = "unsupervised_learning"
 draft = false
 notetype = "note"
@@ -84,6 +84,7 @@ notetype = "note"
 \newcommand{\Zmat}{\mathbf{Z}}
 \newcommand{\Sigmamat}{\boldsymbol{\Sigma}}
 \newcommand{\identity}{\Imat}
+\newcommand{\epsilonvec}{\boldsymbol{\epsilon}}
 \newcommand{\thetavec}{\boldsymbol{\theta}}
 \newcommand{\phivec}{\boldsymbol{\phi}}
 \newcommand{\muvec}{\boldsymbol{\mu}}

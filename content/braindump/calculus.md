@@ -1,10 +1,10 @@
 +++
 title = "Calculus"
 author = ["Matthew Schlegel"]
-lastmod = 2022-10-27T20:18:25-06:00
+lastmod = 2023-03-20T11:45:15-06:00
 slug = "calculus"
 draft = false
-notetype = "topic"
+notetype = "note"
 +++
 
 <div class="ox-hugo-toc toc">
@@ -114,6 +114,7 @@ notetype = "topic"
 \newcommand{\Zmat}{\mathbf{Z}}
 \newcommand{\Sigmamat}{\boldsymbol{\Sigma}}
 \newcommand{\identity}{\Imat}
+\newcommand{\epsilonvec}{\boldsymbol{\epsilon}}
 \newcommand{\thetavec}{\boldsymbol{\theta}}
 \newcommand{\phivec}{\boldsymbol{\phi}}
 \newcommand{\muvec}{\boldsymbol{\mu}}

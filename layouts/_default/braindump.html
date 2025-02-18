@@ -21,19 +21,30 @@
 
           <p> My current zettle. Comments and opinions are my own. No guarantees on correctness. </p>
           
-          <h2> Topics </h2>
+          <h2> Research Topics </h2>
           <!-- {{ $paginator := .Paginate .Data.Pages }} -->
           {{ range .Pages.ByTitle  }}
-          {{ if eq .Params.notetype "topic" }}
+          {{ if eq .Params.notetype "research-topic" }}
           <div class="braindump-note">
             <h3><a href="{{ .Permalink }}">{{ .Title }}</a></h3>
           </div>
           {{ end }}
           {{ end }}
 
-          <h2> Notes </h2>
+          <h2> Misc Topics </h2>
+          <!-- {{ $paginator := .Paginate .Data.Pages }} -->
           {{ range .Pages.ByTitle  }}
-          {{ if eq .Params.notetype "note" }}
+          {{ if eq .Params.notetype "misc-topic" }}
+          <div class="braindump-note">
+            <h3><a href="{{ .Permalink }}">{{ .Title }}</a></h3>
+          </div>
+          {{ end }}
+          {{ end }}
+          
+          <h2> Workflow Ideas </h2>
+          <!-- {{ $paginator := .Paginate .Data.Pages }} -->
+          {{ range .Pages.ByTitle  }}
+          {{ if eq .Params.notetype "workflow-topic" }}
           <div class="braindump-note">
             <h3><a href="{{ .Permalink }}">{{ .Title }}</a></h3>
           </div>
@@ -49,23 +60,25 @@
           {{ end }}
           {{ end }}
 
-          <h2> Papers </h2>
-          {{ range .Pages.ByTitle  }}
-          {{ if eq .Params.notetype "paper" }}
-          <div class="braindump-note">
-            <h3><a href="{{ .Permalink }}">{{ .Title }}</a></h3>
+          <h2> Graph </h2>
+          <div id="main-graph">
+            <svg id="note-graph" class="rounded-lg">
+              <defs>
+                <filter x="0" y="0" width="1" height="1" id="solid">
+                  <feflood flood-color="#000000" flood-opacity=".9"></feflood>
+                  <fecomposite in="SourceGraphic" operator="xor"></fecomposite>
+                </filter>
+              </defs>
+              <rect id="base_rect" width="100%" height="100%" class="fill-slate-100 dark:fill-neutral-700"></rect></svg>
           </div>
-          {{ end }}
-          {{ end }}
 
-          <h2> Websites </h2>
-          {{ range .Pages.ByTitle  }}
-          {{ if eq .Params.notetype "website" }}
-          <div class="braindump-note">
-            <h3><a href="{{ .Permalink }}">{{ .Title }}</a></h3>
+          <h2> Index </h2>
+          <div id="braindumb-index-search-controls">
+            <input type="text" id="myInput" onkeyup="search_notes()" placeholder="Search for names..">
+            <input type="checkbox" id="search-check-tags" name="tags" onclick="search_notes()">
+            <label for="tags"> Tags</label>
           </div>
-          {{ end }}
-          {{ end }}
+          {{ partial "notes_list.html" }}
 
         </div>
       </article>
@@ -81,3 +94,7 @@
 </div>
 {{ partial "footer_container.html" . }}
 {{ partial "footer.html" . }}
+
+<script defer src="/js/index_search.js"></script>
+<script defer src="https://d3js.org/d3.v7.min.js"></script>
+<script defer src="/js/graph.js"></script>

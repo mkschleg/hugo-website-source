@@ -1,7 +1,7 @@
 +++
 title = "Mountain Car"
 author = ["Matthew Schlegel"]
-lastmod = 2022-10-27T20:20:08-06:00
+lastmod = 2022-11-09T14:05:11-07:00
 slug = "mountain_car"
 tags = ["Reinforcement-Learning", "Environments"]
 draft = false
@@ -85,6 +85,7 @@ notetype = "note"
 \newcommand{\Zmat}{\mathbf{Z}}
 \newcommand{\Sigmamat}{\boldsymbol{\Sigma}}
 \newcommand{\identity}{\Imat}
+\newcommand{\epsilonvec}{\boldsymbol{\epsilon}}
 \newcommand{\thetavec}{\boldsymbol{\theta}}
 \newcommand{\phivec}{\boldsymbol{\phi}}
 \newcommand{\muvec}{\boldsymbol{\mu}}
@@ -94,7 +95,7 @@ notetype = "note"
 \newcommand{\bigoh}{\text{O}}
 \\)
 
-A simple environment first introduced in (<a href="#citeproc_bib_item_1">Sutton 1996</a>). It is a representation of a car stuck inbetween two hills and needs to get over the hill in front of it. The dynamics of the system are encapsulated as a differential equation:
+A simple environment first introduced to [Reinforcement Learning]({{< relref "reinforcement_learning.md" >}}) in (<a href="#citeproc_bib_item_1">Sutton 1996</a>). It is a representation of a car stuck inbetween two hills and needs to get over the hill in front of it. The dynamics of the system are encapsulated as a differential equation:
 
 \\[\dot{x} = \dot{x} + 0.001 a - 0.0025 cos(3x)\\]
 

@@ -1,8 +1,8 @@
 +++
-title = "james2004: Learning and Discovery of Predictive State Representations in Dynamical Systems with Reset"
+title = "james2004learning: Learning and Discovery of Predictive State Representations in Dynamical Systems with Reset"
 author = ["Matthew Schlegel"]
-lastmod = 2022-10-27T20:19:32-06:00
-slug = "james2004"
+lastmod = 2022-11-09T14:05:44-07:00
+slug = "james2004learning"
 draft = false
 notetype = "paper"
 +++
@@ -84,6 +84,7 @@ notetype = "paper"
 \newcommand{\Zmat}{\mathbf{Z}}
 \newcommand{\Sigmamat}{\boldsymbol{\Sigma}}
 \newcommand{\identity}{\Imat}
+\newcommand{\epsilonvec}{\boldsymbol{\epsilon}}
 \newcommand{\thetavec}{\boldsymbol{\theta}}
 \newcommand{\phivec}{\boldsymbol{\phi}}
 \newcommand{\muvec}{\boldsymbol{\mu}}
@@ -105,7 +106,7 @@ authors
 year
 : 2004
 
-This paper provides a new algorithm for learning linear-PSRs in partially observable dynamical systems w/ reset and a new algorithm for the discovery of PSRs from data. Overall, the algorithm works better than previous attempts (i.e. (<a href="#citeproc_bib_item_2">Singh, James, and Rudary 2004</a>), (<a href="#citeproc_bib_item_1">Singh et al. 2003</a>)).
+This paper provides a new algorithm for learning linear-PSRs in partially observable dynamical systems w/ reset and a new algorithm for the discovery of PSRs from data. Overall, the algorithm works better than previous attempts (i.e. (<a href="#citeproc_bib_item_2">Singh, James, and Rudary 2004</a>; <a href="#citeproc_bib_item_1">Singh et al. 2003</a>)).
 
 While the algorithm does better than previously and the discovery algorithm is definitely a start, relying on a reset action seems to be a hard limitation in many more interesting dynamical systems. Particularly the examples used (i.e. the classic POMDP suite of experiments) had to be altered for the algorithm to work.
 

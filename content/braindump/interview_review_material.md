@@ -1,7 +1,7 @@
 +++
 title = "Interview Review Material"
 author = ["Matthew Schlegel"]
-lastmod = 2022-10-28T14:00:06-06:00
+lastmod = 2022-11-16T13:39:09-07:00
 slug = "interview_review_material"
 draft = false
 notetype = "note"
@@ -11,12 +11,15 @@ notetype = "note"
 
 <div class="heading">Table of Contents</div>
 
+- [Things left to study](#things-left-to-study)
 - [Probability](#probability)
     - [Expectations of a random variable](#expectations-of-a-random-variable)
     - [Moments of a random variable](#moments-of-a-random-variable)
     - [Basic Inequalities](#basic-inequalities)
     - [Classical convergence theorems of random variables](#classical-convergence-theorems-of-random-variables)
     - [Hypothesis testing and p-values](#hypothesis-testing-and-p-values)
+    - [Some Discrete Distributions](#some-discrete-distributions)
+    - [Some Continual Distributions](#some-continual-distributions)
     - [Questions](#questions)
 - [Calculus](#calculus)
     - [Questions](#questions)
@@ -61,8 +64,10 @@ notetype = "note"
     - [Support Vector Machines](#support-vector-machines)
     - [Kernel Methods](#kernel-methods)
     - [Artificial Neural Networks](#artificial-neural-networks)
-    - [Boosting and bagging](#boosting-and-bagging)
+    - [Boosting](#boosting)
+    - [Bagging](#bagging)
     - [Ensemble methods](#ensemble-methods)
+    - [Principle Component Analysis](#principle-component-analysis--principle-component-analysis-dot-md)
     - [Advanced Neural Network Examples](#advanced-neural-network-examples)
     - [Questions](#questions)
 - [Reinforcement Learning](#RL)
@@ -151,6 +156,7 @@ notetype = "note"
 \newcommand{\Zmat}{\mathbf{Z}}
 \newcommand{\Sigmamat}{\boldsymbol{\Sigma}}
 \newcommand{\identity}{\Imat}
+\newcommand{\epsilonvec}{\boldsymbol{\epsilon}}
 \newcommand{\thetavec}{\boldsymbol{\theta}}
 \newcommand{\phivec}{\boldsymbol{\phi}}
 \newcommand{\muvec}{\boldsymbol{\mu}}
@@ -161,6 +167,45 @@ notetype = "note"
 \\)
 
 This document is meant as a source to review material for studying for machine learning interviews. I'm hoping the construction of this document will help in reviewing the basics, and fortify the foundations of my own notebase.
+
+
+## Things left to study {#things-left-to-study}
+
+1.  Finish anki cards [hard]
+    -   Lots of ML concepts to remember still...
+    -
+2.  Deep Learning Book
+3.  Fill out the rest of the following note pages...
+4.  Go through problems in [this book](https://huyenchip.com/ml-interviews-book/) [hard]
+5.  Linear regression and its assumptions [easy] (see [Linear Regression]({{< relref "linear_regression.md" >}}))
+6.  Practice deriving MLE and MAP estimators [medium] (see [MLE]({{< relref "maximum_likelihood_estimation.md" >}}) for partial review, still need to fill out).
+7.  Backpropagation
+8.  WTF is LDA again? Linear discriminate analysis.
+9.  Read and brush up on Support Vector Machines [medium] [Support Vector Machines]({{< relref "support_vector_machines.md" >}})
+10. Naive Bayes [easy]
+11. Kernels and kernel functions
+    -   What is a RKHS again??
+    -   Kernel funcs
+12. Probability examples!!!!!
+13. XGBoost
+14. Code:
+    -   Naive Bayes
+    -   SVMs
+    -   Logistic Regression
+    -   MC for calculating pi
+    -   Linear Regression, Lasso, and Ridge regression.
+    -   EM for GMMs
+15. RL
+    -   Off-policy vs on-policy, some off-policy algs.
+    -   Exploration vs exploitation
+    -   Options and temporal abstractions
+    -   Policy Evaluation, Value Iteration, Policy Iteration oh my!
+    -   Traces
+16. Why/when does SGD converge???
+17. More on hypothesis testing and more complex tests.
+18. Graphs and Causality!!!
+19. Box-cox transformation??? - deals with skewness??
+20. Jensen's Inequality
 
 
 ## Probability {#probability}
@@ -186,7 +231,7 @@ F\_X(x) = \Prob(X \leq x)
 
 <div class="instance">
 
-(Example from (<a href="#citeproc_bib_item_2">Wasserman, n.d.</a>)) Flip a fair coin twice and let \\(X\\) be the number of heads. Then \\(\Prob(X=0)=\Prob(X=2) = \frac{1}{4}\\) and \\(\Prob(X=1) = \frac{1}{2}\\). The distribution function is
+(Example from (<a href="#citeproc_bib_item_2">Wasserman 2004</a>)) Flip a fair coin twice and let \\(X\\) be the number of heads. Then \\(\Prob(X=0)=\Prob(X=2) = \frac{1}{4}\\) and \\(\Prob(X=1) = \frac{1}{2}\\). The distribution function is
 \\[
 F\_{X}(x) = \begin{cases}
 0 \quad &x<0 \\\\
@@ -325,6 +370,82 @@ The **central limit theorem** gives us a way to reason about the variance of the
 
 ### Hypothesis testing and p-values {#hypothesis-testing-and-p-values}
 
+Hypothesis testing is at the core of empirical science, which is a core facet of todays [Machine Learning]({{< relref "machine_learning.md" >}}) research. Hypothesis testing gives us the ability to (with some certainty) measure differences or changes made by experimental interventions. For two methods, say one baseline and one new method designed by the scientist we test two hypotheses simultaneously:
+
+-   **The Null Hypothesis**: The two algorithms perform the same.
+-   **The Alternative Hypothesis**: The two algorithms do not perform the same.
+
+Our hope is that the null hypothesis can be rejected given the data collected (i.e. if the new algorithm considerably under or overperforms the baseline).
+
+
+### Some Discrete Distributions {#some-discrete-distributions}
+
+<!--list-separator-->
+
+-  Bernoulli
+
+    Bernoulli distribution is that of a biased coin flip with a probability of getting heads (or a success) set to \\(\alpha\\). For a random variable \\(X \in \\{0, 1\\}\\) we define the Bernoulli distribution as:
+    \\[X \sim \text{Bernoulli}(\alpha) \rightarrow \Prob(X=x) = \alpha^x (1-\alpha)^{1-x} \\]
+
+    where the mean is \\(\alpha\\) and variance is \\(\alpha(1-\alpha)\\).
+
+<!--list-separator-->
+
+-  Binomial
+
+    The binomial distribution is the probability of k successes in n trials of random pulls from the Bernoulli distribution.
+    \\[X\sim \text{Binomial}(\alpha, n) \rightarrow \Prob(X=k; \alpha, n) = \frac{n!}{k! (n-k)!} \alpha^k (1-\alpha)^{n-k}\\]
+
+    where the mean is \\(n\alpha\\) and the variance is \\(n\alpha(1-\alpha)\\)
+
+<!--list-separator-->
+
+-  Geometric
+
+    The geometric distribution is how many trials we need to see before we see a successful trial.
+    \\[X\sim \text{Geometric}(\alpha) \rightarrow \Prob(X=k; \alpha)=\alpha(1-\alpha)^{k-1}\\]
+
+    with mean \\(\frac{1}{\alpha}\\) and variance \\(\frac{1-\alpha}{\alpha^2}\\).
+
+<!--list-separator-->
+
+-  Poisson
+
+    The Poisson distribution is the probability of seeing k independent events in a set interval with a rate \\(\lambda\\).
+    \\[X \sim \text{Poisson}(\lambda) \rightarrow \Prob(X=k; \lambda) = \frac{\lambda^k e^{-\lambda}}{k!}\\]
+
+    where the mean and variance is \\(\lambda\\).
+
+
+### Some Continual Distributions {#some-continual-distributions}
+
+<!--list-separator-->
+
+-  Normal
+
+    The normal (or gaussian) distribution is used quite often. For mean \\(\mu\\) and variance \\(\sigma^2\\)
+
+    \\[X \sim \text{Normal}(\mu, \sigma^2) \rightarrow f\_X(x) = \frac{1}{\sqrt{2\pi\sigma^2}} e^{-\frac{(x-\mu)^2}{2\sigma^2}} \\]
+
+<!--list-separator-->
+
+-  Laplace
+
+    The Laplace distribution is like two exponentials centered on the mean.
+
+    \\[X \sim \text{Laplace}(\mu, b) \rightarrow f\_X(x) = \frac{1}{2b} e^{-\frac{\lvert x - \mu \rvert}{b}}\\]
+
+    with mean \\(\mu\\) and variance \\(2b^2\\).
+
+<!--list-separator-->
+
+-  Gamma
+
+    The gamma distribution is
+    \\[X \sim \text{Gamma}(\alpha, \beta) \rightarrow f\_X(x) = x^{\alpha-1} e^{-\beta x} \frac{\beta^\alpha}{\Gamma(\alpha)}\\]
+
+    with mean \\(\frac{\alpha}{\beta}\\) and variance \\(\frac{\alpha}{\beta^2}\\)
+
 
 ### Questions {#questions}
 
@@ -438,18 +559,37 @@ The **central limit theorem** gives us a way to reason about the variance of the
 
 -  What is the integral?
 
+    We can define an integral through a Riemannian sum:
+    \\[\int\_a^b f(x) dx = \lim\_{k\rightarrow\infty} \sum\_k f(x+k\delta x)\delta x\\]
+
+    where k is the number of sub intervals we break up range \\([a, b]\\).
+
 <!--list-separator-->
 
 -  Common integral tricks:
 
     -   By parts
+        \\[\int udv = uv - \int v du \\]
+
+        an example of \\(\int ln(x) dx\\):
+
+        \begin{align\*}
+        \int ln(x) dx = \int ln(x) 1 dx \\\\
+        u = ln(x) \quad du = \frac{1}{x} dx \\\\
+        dv = 1 dx \quad v = x \\\\
+        \int ln(x) dx = xln(x) - \int \frac{x}{x} dx \\\\
+        \int ln(x) dx = xln(x) - x + C
+        \end{align\*}
+
+    <!--listend-->
+
     -   By substitution
 
 <!--list-separator-->
 
 -  How do we estimate the value of an integral?
 
-    -   Riemman sum
+    -   Riemman sum with finite \\(k\\).
 
 <!--list-separator-->
 
@@ -493,7 +633,7 @@ A **vector space** is a set \\(V\\) along with an addition on \\(V\\) and a scal
 -   **multiplicative identity**: \\(1\vvec = \vvec \quad \forall \vvec\in V\\)
 -   **distributive properties**: \\(a(\uvec + \vvec) = a\uvec + a\vvec\\) and \\((a+b)\vvec = a\vvec + b\vvec\\) for all \\(a,b\in\numfield\\) and all \\(\uvec,\vvec \in V\\).
 
-While I've defined some basics above, there is a lot to the intricacies of vector spaces and their interactions with linear maps and transformations. In the following, we will take the above for granted and deal with details more specific to basic machine learning and deep learning taken from (<a href="#citeproc_bib_item_1">Goodfellow, Bengio, and Courville, n.d.</a>). We will primarily focus on vector spaces on the field \\(\reals\\), while most of the content translates to \\(\complexs\\).
+While I've defined some basics above, there is a lot to the intricacies of vector spaces and their interactions with linear maps and transformations. In the following, we will take the above for granted and deal with details more specific to basic machine learning and deep learning taken from (<a href="#citeproc_bib_item_1">Goodfellow, Bengio, and Courville 2016</a>). We will primarily focus on vector spaces on the field \\(\reals\\), while most of the content translates to \\(\complexs\\).
 
 A **vector** \\(\vvec \in V\\) is a element of a vector space \\(V\\). We will use the convention that all vectors are column vectors.
 \\[
@@ -561,6 +701,10 @@ Nice to think about properties of matrices in terms of their SVD decomposition.
 
 
 ### Inverse of a matrix, Pseudo inverse of a matrix {#inverse-of-a-matrix-pseudo-inverse-of-a-matrix}
+
+The inverse of a matrix is defined as
+\\[AA^\inv = I\\]
+where \\(I\\) is the identity matrix. A matrix is invertable if and only if it is not singular (i.e. its determinant is zero).
 
 
 ## Misc Math Concepts {#misc-math-concepts}
@@ -886,10 +1030,28 @@ The ability to perform well on previously unobserved inputs is called **generali
 ### Artificial Neural Networks {#artificial-neural-networks}
 
 
-### Boosting and bagging {#boosting-and-bagging}
+### Boosting {#boosting}
+
+Boosting is using subsets of samples to create an ensemble of models and then combining the models together (reduces variance).
+
+
+### Bagging {#bagging}
+
+Bagging is another ensemble method.
 
 
 ### Ensemble methods {#ensemble-methods}
+
+Combining many models together to form a better estimate:
+
+1.  Random Forests (many decision trees)
+2.  Boosting
+3.  Stacking (uses logistic regression to find the best).
+
+
+### [Principle Component Analysis]({{< relref "principle_component_analysis.md" >}}) {#principle-component-analysis--principle-component-analysis-dot-md}
+
+PCA is a [Dimensionality Reduction]({{< relref "dimensionality_reduction.md" >}}) technique that creates a linear projection operator which projects the data onto the space defined by the first k [eigenvector]({{< relref "eigendecomposition.md" >}})s of the covariance (across features) matrix. This explains the majority of the variance responsible by the features. See [PCA]({{< relref "principle_component_analysis.md" >}}) for more details.
 
 
 ### Advanced Neural Network Examples {#advanced-neural-network-examples}
@@ -973,6 +1135,6 @@ The ability to perform well on previously unobserved inputs is called **generali
 
 
 <style>.csl-entry{text-indent: -1.5em; margin-left: 1.5em;}</style><div class="csl-bib-body">
-  <div class="csl-entry"><a id="citeproc_bib_item_1"></a>Goodfellow, Ian, Yashua Bengio, and Aaron Courville. n.d. <i>Deep Learning</i>.</div>
-  <div class="csl-entry"><a id="citeproc_bib_item_2"></a>Wasserman, Larry. n.d. <i>All of Statistics: A Concise Course in Statistical Inference Brief Contents</i>.</div>
+  <div class="csl-entry"><a id="citeproc_bib_item_1"></a>Goodfellow, Ian, Yashua Bengio, and Aaron Courville. 2016. <i>Deep Learning</i>. MIT Press.</div>
+  <div class="csl-entry"><a id="citeproc_bib_item_2"></a>Wasserman, Larry. 2004. <i>All of Statistics: A Concise Course in Statistical Inference Brief Contents</i>. Springer.</div>
 </div>

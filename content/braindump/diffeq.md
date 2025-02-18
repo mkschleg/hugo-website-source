@@ -1,10 +1,10 @@
 +++
 title = "DiffEQ"
 author = ["Matthew Schlegel"]
-lastmod = 2022-10-27T20:18:45-06:00
+lastmod = 2023-03-20T11:45:37-06:00
 slug = "diffeq"
 draft = false
-notetype = "topic"
+notetype = "note"
 +++
 
 tags

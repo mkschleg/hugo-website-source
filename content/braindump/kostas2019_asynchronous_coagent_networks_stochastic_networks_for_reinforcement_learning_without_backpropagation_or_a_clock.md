@@ -1,8 +1,8 @@
 +++
-title = "kostas2019: Asynchronous Coagent Networks: Stochastic Networks for Reinforcement Learning without Backpropagation or a Clock"
+title = "kostas2019asynchronous: Asynchronous Coagent Networks: Stochastic Networks for Reinforcement Learning without Backpropagation or a Clock"
 author = ["Matthew Schlegel"]
-lastmod = 2022-10-27T20:19:39-06:00
-slug = "kostas2019"
+lastmod = 2022-11-09T14:05:37-07:00
+slug = "kostas2019asynchronous"
 draft = false
 notetype = "paper"
 +++
@@ -84,6 +84,7 @@ notetype = "paper"
 \newcommand{\Zmat}{\mathbf{Z}}
 \newcommand{\Sigmamat}{\boldsymbol{\Sigma}}
 \newcommand{\identity}{\Imat}
+\newcommand{\epsilonvec}{\boldsymbol{\epsilon}}
 \newcommand{\thetavec}{\boldsymbol{\theta}}
 \newcommand{\phivec}{\boldsymbol{\phi}}
 \newcommand{\muvec}{\boldsymbol{\mu}}

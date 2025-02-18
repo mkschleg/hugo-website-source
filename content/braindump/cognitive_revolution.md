@@ -1,8 +1,8 @@
 +++
-title = "Gradient Descent"
+title = "Cognitive Revolution"
 author = ["Matthew Schlegel"]
-lastmod = 2022-10-28T13:39:46-06:00
-slug = "gradient_descent"
+lastmod = 2023-03-21T15:12:32-06:00
+slug = "cognitive_revolution"
 draft = false
 notetype = "note"
 +++
@@ -84,6 +84,7 @@ notetype = "note"
 \newcommand{\Zmat}{\mathbf{Z}}
 \newcommand{\Sigmamat}{\boldsymbol{\Sigma}}
 \newcommand{\identity}{\Imat}
+\newcommand{\epsilonvec}{\boldsymbol{\epsilon}}
 \newcommand{\thetavec}{\boldsymbol{\theta}}
 \newcommand{\phivec}{\boldsymbol{\phi}}
 \newcommand{\muvec}{\boldsymbol{\mu}}
@@ -92,3 +93,8 @@ notetype = "note"
 \newcommand{\ind}{\perp\!\!\!\!\perp}
 \newcommand{\bigoh}{\text{O}}
 \\)
+
+tags
+: [Cognitive Science]({{< relref "cognitive_science.md" >}})
+
+The cognitive revolution was an intellectual shift in [Psychology]({{< relref "psychology.md" >}}) from [Behaviorism]({{< relref "behaviorism.md" >}}) (or the study of behavior as the primary mode for research) to a focus on internal mental processes driving behavior in humans and other organic systems (i.e. [Cognitive Science]({{< relref "cognitive_science.md" >}})). A key point is that this wasn't a move away from behavior as a key part of the research paradigm, just a rejection that all models, theories, and hypotheses must only be based on the behavior of the system.

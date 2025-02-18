@@ -1,8 +1,8 @@
 +++
-title = "chandar2019: Towards Non-saturating Recurrent Units for Modelling Long-term Dependencies"
+title = "chandar2019nonsaturating: Towards Non-saturating Recurrent Units for Modelling Long-term Dependencies"
 author = ["Matthew Schlegel"]
-lastmod = 2022-10-27T20:18:30-06:00
-slug = "chandar2019"
+lastmod = 2022-11-09T14:06:19-07:00
+slug = "chandar2019nonsaturating"
 draft = false
 notetype = "paper"
 +++

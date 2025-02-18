@@ -1,8 +1,8 @@
 +++
-title = "sutton2011: Horde: A Scalable Real-time Architecture for Learning Knowledge from Unsupervised Sensorimotor Interaction"
+title = "sutton2011horde: Horde: A Scalable Real-time Architecture for Learning Knowledge from Unsupervised Sensorimotor Interaction"
 author = ["Matthew Schlegel"]
-lastmod = 2022-10-27T20:21:16-06:00
-slug = "sutton2011"
+lastmod = 2022-11-09T14:03:42-07:00
+slug = "sutton2011horde"
 draft = false
 notetype = "paper"
 +++
@@ -24,7 +24,7 @@ This paper focuses on building world knowledge through value function prediction
 
 ## The Problem of Expressive and Learnable Knowledge {#the-problem-of-expressive-and-learnable-knowledge}
 
-They make the claim that knowledge representation is hard, which is a reasonable claim and one I agree with. They posit that prior approaches are either limited from their abstraction away from the data stream (first-order predicate logic), or lack of generality (differential equations and state-transition matrices). They argue that a class of value predictions will produce a more general form of knowledge (predictive knowledge), which will better encapsulate the agent's knowledge of the world. Several other approaches and theories of the representation of knowledge learned through the sensorimotor stream have been proposed including: (<a href="#citeproc_bib_item_3">Drescher 1991</a>), (<a href="#citeproc_bib_item_2">Cunningham 2013</a>), (<a href="#citeproc_bib_item_1">Becker 1973</a>).
+They make the claim that knowledge representation is hard, which is a reasonable claim and one I agree with. They posit that prior approaches are either limited from their abstraction away from the data stream (first-order predicate logic), or lack of generality (differential equations and state-transition matrices). They argue that a class of value predictions will produce a more general form of knowledge (predictive knowledge), which will better encapsulate the agent's knowledge of the world. Several other approaches and theories of the representation of knowledge learned through the sensorimotor stream have been proposed including: (<a href="#citeproc_bib_item_3">Drescher 1991</a>; <a href="#citeproc_bib_item_2">Cunningham 2013</a>; <a href="#citeproc_bib_item_1">Becker 1973</a>).
 
 -   (<a href="#citeproc_bib_item_3">Drescher 1991</a>) explored a simulated robot baby learning conditional probability tables for boolean events
 -   (<a href="#citeproc_bib_item_4">Ring 1997</a>) explored continual learning of a hierarchical representation of sequences

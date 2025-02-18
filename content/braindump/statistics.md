@@ -1,10 +1,10 @@
 +++
 title = "Statistics"
 author = ["Matthew Schlegel"]
-lastmod = 2022-10-27T20:21:03-06:00
+lastmod = 2023-03-21T12:08:25-06:00
 slug = "statistics"
 draft = false
-notetype = "topic"
+notetype = "misc-topic"
 +++
 
 tags

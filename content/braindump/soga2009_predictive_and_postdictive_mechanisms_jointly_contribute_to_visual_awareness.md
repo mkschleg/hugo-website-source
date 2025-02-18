@@ -1,8 +1,8 @@
 +++
-title = "soga2009: Predictive and postdictive mechanisms jointly contribute to visual awareness"
+title = "soga2009predictive: Predictive and postdictive mechanisms jointly contribute to visual awareness"
 author = ["Matthew Schlegel"]
-lastmod = 2022-10-27T20:21:00-06:00
-slug = "soga2009"
+lastmod = 2022-11-08T14:22:22-07:00
+slug = "soga2009predictive"
 draft = false
 notetype = "paper"
 +++
@@ -84,6 +84,7 @@ notetype = "paper"
 \newcommand{\Zmat}{\mathbf{Z}}
 \newcommand{\Sigmamat}{\boldsymbol{\Sigma}}
 \newcommand{\identity}{\Imat}
+\newcommand{\epsilonvec}{\boldsymbol{\epsilon}}
 \newcommand{\thetavec}{\boldsymbol{\theta}}
 \newcommand{\phivec}{\boldsymbol{\phi}}
 \newcommand{\muvec}{\boldsymbol{\mu}}

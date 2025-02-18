@@ -1,8 +1,8 @@
 +++
-title = "dayan1993: Improving Generalization for Temporal Difference Learning: The Successor Representation"
+title = "dayan1993improving: Improving Generalization for Temporal Difference Learning: The Successor Representation"
 author = ["Matthew Schlegel"]
-lastmod = 2022-10-27T20:18:41-06:00
-slug = "dayan1993"
+lastmod = 2022-11-09T14:06:12-07:00
+slug = "dayan1993improving"
 tags = ["Reinforcement-Learning", "Representation"]
 draft = false
 notetype = "paper"
@@ -85,6 +85,7 @@ notetype = "paper"
 \newcommand{\Zmat}{\mathbf{Z}}
 \newcommand{\Sigmamat}{\boldsymbol{\Sigma}}
 \newcommand{\identity}{\Imat}
+\newcommand{\epsilonvec}{\boldsymbol{\epsilon}}
 \newcommand{\thetavec}{\boldsymbol{\theta}}
 \newcommand{\phivec}{\boldsymbol{\phi}}
 \newcommand{\muvec}{\boldsymbol{\mu}}

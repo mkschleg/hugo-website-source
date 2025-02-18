@@ -1,7 +1,7 @@
 +++
 title = "Autocorrelation"
 author = ["Matthew Schlegel"]
-lastmod = 2022-10-27T20:18:09-06:00
+lastmod = 2022-11-17T14:52:44-07:00
 slug = "autocorrelation"
 draft = false
 notetype = "note"
@@ -84,6 +84,7 @@ notetype = "note"
 \newcommand{\Zmat}{\mathbf{Z}}
 \newcommand{\Sigmamat}{\boldsymbol{\Sigma}}
 \newcommand{\identity}{\Imat}
+\newcommand{\epsilonvec}{\boldsymbol{\epsilon}}
 \newcommand{\thetavec}{\boldsymbol{\theta}}
 \newcommand{\phivec}{\boldsymbol{\phi}}
 \newcommand{\muvec}{\boldsymbol{\mu}}
@@ -92,3 +93,11 @@ notetype = "note"
 \newcommand{\ind}{\perp\!\!\!\!\perp}
 \newcommand{\bigoh}{\text{O}}
 \\)
+
+tags
+: [Statistics]({{< relref "statistics.md" >}}),
+
+source
+: <https://en.wikipedia.org/wiki/Autocorrelationa>
+
+Sometimes known as serial correlation in the discrete time case, autocorrelation of a signal is the [Correlation]({{< relref "correlation.md" >}}) of a signal with a delayed copy of itself. Usually this corresponds to the Pearson correlation between values of the process at different times or time lags.

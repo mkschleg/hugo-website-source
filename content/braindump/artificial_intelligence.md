@@ -1,13 +1,14 @@
 +++
 title = "Artificial Intelligence"
 author = ["Matthew Schlegel"]
-lastmod = 2022-10-27T20:18:06-06:00
+lastmod = 2023-03-24T14:36:47-06:00
 slug = "artificial_intelligence"
 draft = false
-notetype = "topic"
+notetype = "note"
 +++
 
-[Intelligence]({{< relref "intelligence.md" >}})
+tags
+: [Intelligence]({{< relref "intelligence.md" >}})
 
 There are various forms of Artificial Intelligence, or what is thought to be artificial intelligence. It is a large field with many varying opinions. While my personal bent is towards [Reinforcement Learning]({{< relref "reinforcement_learning.md" >}}), this doesn't preclude the large probability that other studies can enlighten our approaches brining a different perspective. In this note, I hope to go through various forms of AI over the past century, touching on various notable conversations that have occurred.
 

@@ -1,8 +1,8 @@
 +++
-title = "prinz1990: A Common Coding Approach to Perception and Action"
+title = "prinz1990common: A Common Coding Approach to Perception and Action"
 author = ["Matthew Schlegel"]
-lastmod = 2022-10-27T20:20:27-06:00
-slug = "prinz1990"
+lastmod = 2022-11-08T14:21:48-07:00
+slug = "prinz1990common"
 draft = false
 notetype = "paper"
 +++
@@ -10,7 +10,7 @@ notetype = "paper"
 tags
 : [Perception]({{< relref "perception.md" >}}), [Brain]({{< relref "brain.md" >}})
 
-    In this chapter, Prinz goes over evidence suggesting a shared coding between action and perception. He lays out empirical and theoretical evidence for a shared coding, and criticism for the separate coding approach. This is more directly linked to the [Ideomotor Principle]({{< relref "ideomotor_principle.md" >}}), and is some good evidence for having perception being dependent or apart of the behavioral responses.
+In this chapter, Prinz goes over evidence suggesting a shared coding between action and perception. He lays out empirical and theoretical evidence for a shared coding, and criticism for the separate coding approach. This is more directly linked to the [Ideomotor Principle]({{< relref "ideomotor_principle.md" >}}), and is some good evidence for having perception being dependent or apart of the behavioral responses.
 
 
 ## Separate Coding {#separate-coding}
@@ -32,11 +32,9 @@ where \\(f\\) is some unknown transformation, where the couplings produced are k
 2.  The couplings may differ in strength, depending on several factors (use, importance...)
 3.  They can be read from both sides, either specifying appropriate efferent codes under given afferent conditions, or appropriate conditions for given efferent codes.
 
-The _translation_ metaphor (Welford 1960, 1968):
-This metaphor views the codes from the afferent side, asking the question "How can given afferent codes become translated into corresponding efferent codes?" This requires a translation mechanism to link the codes.
+The _translation_ metaphor (Welford 1960, 1968): This metaphor views the codes from the afferent side, asking the question "How can given afferent codes become translated into corresponding efferent codes?" This requires a translation mechanism to link the codes.
 
-The _response choice_ metaphor (Welford):
-This metaphor views from the opposite side, asking the question "How can choice of one among several efferent codes be accomplished on the basis of afferent information?"
+The _response choice_ metaphor (Welford): This metaphor views from the opposite side, asking the question "How can choice of one among several efferent codes be accomplished on the basis of afferent information?"
 
 
 ## Common Coding {#common-coding}
@@ -47,4 +45,4 @@ He first presents common coding in terms of introspection. Asking the reader to 
 
 This account suggests the reduction of intentions to cognitions: when one wants to do something, the only requirement is to think of the intended action in terms of its ultimate distal result.
 
-Taking these observations, he lays out the common coding framework. _Percept code_ stand for events-to-be-represented (or afferent codes). While _act codes_ stand for events-to-be-effected (efferent codes). (**note:** this difference is not correlated with the nature of the coded events and both can refer to purely environmental events or mixed environmental and bodily events. There is no distinction between env and bodyily events, but a distinction between event representation and event effectuation.
+Taking these observations, he lays out the common coding framework. _Percept code_ stand for events-to-be-represented (or afferent codes). While _act codes_ stand for events-to-be-effected (efferent codes). (**note:** this difference is not correlated with the nature of the coded events and both can refer to purely environmental events or mixed environmental and bodily events. There is no distinction between env and bodily events, but a distinction between event representation and event effectuation.

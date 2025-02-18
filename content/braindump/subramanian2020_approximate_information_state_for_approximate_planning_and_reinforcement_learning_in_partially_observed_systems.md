@@ -1,8 +1,8 @@
 +++
-title = "subramanian2020: Approximate information state for approximate planning and reinforcement learning in partially observed systems"
+title = "subramanian2020approximate: Approximate information state for approximate planning and reinforcement learning in partially observed systems"
 author = ["Matthew Schlegel"]
-lastmod = 2022-10-27T20:21:09-06:00
-slug = "subramanian2020"
+lastmod = 2022-11-09T14:03:48-07:00
+slug = "subramanian2020approximate"
 draft = false
 notetype = "paper"
 +++
@@ -84,6 +84,7 @@ notetype = "paper"
 \newcommand{\Zmat}{\mathbf{Z}}
 \newcommand{\Sigmamat}{\boldsymbol{\Sigma}}
 \newcommand{\identity}{\Imat}
+\newcommand{\epsilonvec}{\boldsymbol{\epsilon}}
 \newcommand{\thetavec}{\boldsymbol{\theta}}
 \newcommand{\phivec}{\boldsymbol{\phi}}
 \newcommand{\muvec}{\boldsymbol{\mu}}

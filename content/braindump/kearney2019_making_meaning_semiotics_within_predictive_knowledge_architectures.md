@@ -1,8 +1,8 @@
 +++
-title = "kearney2019: Making Meaning: Semiotics Within Predictive Knowledge Architectures"
+title = "kearney2019making: Making Meaning: Semiotics Within Predictive Knowledge Architectures"
 author = ["Matthew Schlegel"]
-lastmod = 2022-10-27T20:19:35-06:00
-slug = "kearney2019"
+lastmod = 2022-11-09T14:05:39-07:00
+slug = "kearney2019making"
 draft = false
 notetype = "paper"
 +++
@@ -84,6 +84,7 @@ notetype = "paper"
 \newcommand{\Zmat}{\mathbf{Z}}
 \newcommand{\Sigmamat}{\boldsymbol{\Sigma}}
 \newcommand{\identity}{\Imat}
+\newcommand{\epsilonvec}{\boldsymbol{\epsilon}}
 \newcommand{\thetavec}{\boldsymbol{\theta}}
 \newcommand{\phivec}{\boldsymbol{\phi}}
 \newcommand{\muvec}{\boldsymbol{\mu}}
@@ -121,5 +122,5 @@ They found _Generality_ to be lacking, and ponder on this through the rest of th
 
 
 <style>.csl-entry{text-indent: -1.5em; margin-left: 1.5em;}</style><div class="csl-bib-body">
-  <div class="csl-entry"><a id="citeproc_bib_item_1"></a>White, Adam. 2015. “Developing a Predictive Approach to Knowledge.” <i>University of Alberta</i>.</div>
+  <div class="csl-entry"><a id="citeproc_bib_item_1"></a>White, Adam. 2015. “Developing a Predictive Approach to Knowledge.” University of Alberta.</div>
 </div>

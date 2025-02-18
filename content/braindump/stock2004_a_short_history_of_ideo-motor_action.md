@@ -1,8 +1,8 @@
 +++
-title = "stock2004: A short history of ideo-motor action"
+title = "stock2004short: A short history of ideo-motor action"
 author = ["Matthew Schlegel"]
-lastmod = 2022-10-27T20:21:06-06:00
-slug = "stock2004"
+lastmod = 2022-11-08T14:22:30-07:00
+slug = "stock2004short"
 draft = false
 notetype = "paper"
 +++
@@ -84,6 +84,7 @@ notetype = "paper"
 \newcommand{\Zmat}{\mathbf{Z}}
 \newcommand{\Sigmamat}{\boldsymbol{\Sigma}}
 \newcommand{\identity}{\Imat}
+\newcommand{\epsilonvec}{\boldsymbol{\epsilon}}
 \newcommand{\thetavec}{\boldsymbol{\theta}}
 \newcommand{\phivec}{\boldsymbol{\phi}}
 \newcommand{\muvec}{\boldsymbol{\mu}}

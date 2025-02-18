@@ -1,8 +1,8 @@
 +++
-title = "chung2014: Empirical Evaluation of Gated Recurrent Neural Networks on Sequence Modeling"
+title = "chung2014empirical: Empirical Evaluation of Gated Recurrent Neural Networks on Sequence Modeling"
 author = ["Matthew Schlegel"]
-lastmod = 2022-10-27T20:18:32-06:00
-slug = "chung2014"
+lastmod = 2022-11-08T14:19:03-07:00
+slug = "chung2014empirical"
 draft = false
 notetype = "paper"
 +++
@@ -84,6 +84,7 @@ notetype = "paper"
 \newcommand{\Zmat}{\mathbf{Z}}
 \newcommand{\Sigmamat}{\boldsymbol{\Sigma}}
 \newcommand{\identity}{\Imat}
+\newcommand{\epsilonvec}{\boldsymbol{\epsilon}}
 \newcommand{\thetavec}{\boldsymbol{\theta}}
 \newcommand{\phivec}{\boldsymbol{\phi}}
 \newcommand{\muvec}{\boldsymbol{\mu}}

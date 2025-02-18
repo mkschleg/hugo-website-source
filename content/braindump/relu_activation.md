@@ -1,7 +1,7 @@
 +++
 title = "ReLU Activation"
 author = ["Matthew Schlegel"]
-lastmod = 2022-10-27T20:20:40-06:00
+lastmod = 2022-11-08T14:22:01-07:00
 slug = "relu_activation"
 draft = false
 notetype = "note"

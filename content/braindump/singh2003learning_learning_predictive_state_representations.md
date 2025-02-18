@@ -1,7 +1,7 @@
 +++
 title = "singh2003learning: Learning Predictive State Representations"
 author = ["Matthew Schlegel"]
-lastmod = 2022-10-27T20:20:59-06:00
+lastmod = 2022-11-09T14:03:54-07:00
 slug = "singh2003learning"
 draft = false
 notetype = "paper"
@@ -84,6 +84,7 @@ notetype = "paper"
 \newcommand{\Zmat}{\mathbf{Z}}
 \newcommand{\Sigmamat}{\boldsymbol{\Sigma}}
 \newcommand{\identity}{\Imat}
+\newcommand{\epsilonvec}{\boldsymbol{\epsilon}}
 \newcommand{\thetavec}{\boldsymbol{\theta}}
 \newcommand{\phivec}{\boldsymbol{\phi}}
 \newcommand{\muvec}{\boldsymbol{\mu}}

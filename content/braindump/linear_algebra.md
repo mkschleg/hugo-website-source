@@ -1,10 +1,10 @@
 +++
 title = "Linear Algebra"
 author = ["Matthew Schlegel"]
-lastmod = 2022-10-27T20:19:45-06:00
+lastmod = 2023-03-20T11:45:59-06:00
 slug = "linear_algebra"
 draft = false
-notetype = "topic"
+notetype = "note"
 +++
 
 \\( \newcommand{\states}{\mathcal{S}}
@@ -84,6 +84,7 @@ notetype = "topic"
 \newcommand{\Zmat}{\mathbf{Z}}
 \newcommand{\Sigmamat}{\boldsymbol{\Sigma}}
 \newcommand{\identity}{\Imat}
+\newcommand{\epsilonvec}{\boldsymbol{\epsilon}}
 \newcommand{\thetavec}{\boldsymbol{\theta}}
 \newcommand{\phivec}{\boldsymbol{\phi}}
 \newcommand{\muvec}{\boldsymbol{\mu}}
@@ -162,39 +163,37 @@ Notation gets a bit confusing in higher order linear algebra and tensor algebra.
 
 ### Vector operations {#vector-operations}
 
-<!--list-separator-->
 
--  Dot Product
+#### Dot Product {#dot-product}
 
-    The dot product between two vectors
-    \\[\vvec \cdot \wvec = \sum\_i \vvec\_i \wvec\_i\\]
-    and can also be thought of as
-    \\[\lVert\vvec\rVert \lVert\wvec\rVert cos(\theta)\\]
-    where \\(\theta\\) is the angle between the two vectors. The angle can be found through
-    \\[
-    \theta = \text{arccos}(\frac{\vvec \cdot \wvec}{\lVert\wvec\rVert \lVert\vvec\rVert})
-    \\]
+The dot product between two vectors
+\\[\vvec \cdot \wvec = \sum\_i \vvec\_i \wvec\_i\\]
+and can also be thought of as
+\\[\lVert\vvec\rVert \lVert\wvec\rVert cos(\theta)\\]
+where \\(\theta\\) is the angle between the two vectors. The angle can be found through
+\\[
+\theta = \text{arccos}(\frac{\vvec \cdot \wvec}{\lVert\wvec\rVert \lVert\vvec\rVert})
+\\]
 
-<!--list-separator-->
 
--  Cross Product
+#### Cross Product {#cross-product}
 
-    The cross product between two vectors in \\(\reals^3\\) under the canonical basis.
-    \\[
-    \vvec \times \wvec = \begin{bmatrix}
-    (\vvec\_2\wvec\_3 - \vvec\_3\wvec\_2) \\\\
-    (\vvec\_1\wvec\_3 - \vvec\_3\wvec\_1) \\\\
-    (\vvec\_1\wvec\_2 - \vvec\_2\wvec\_1)
-    \end{bmatrix}
-    \\]
+The cross product between two vectors in \\(\reals^3\\) under the canonical basis.
+\\[
+\vvec \times \wvec = \begin{bmatrix}
+(\vvec\_2\wvec\_3 - \vvec\_3\wvec\_2) \\\\
+(\vvec\_1\wvec\_3 - \vvec\_3\wvec\_1) \\\\
+(\vvec\_1\wvec\_2 - \vvec\_2\wvec\_1)
+\end{bmatrix}
+\\]
 
-    It can also be through of more formally as a determinant of the matrix
+It can also be through of more formally as a determinant of the matrix
 
-    \begin{vmatrix}
-    \ivec & \jvec & \kvec \\\\
-    \vvec\_1 & \vvec\_2 & \vvec \_3 \\\\
-    \wvec\_1 & \wvec\_2 & \wvec\_3
-    \end{vmatrix}
+\begin{vmatrix}
+\ivec & \jvec & \kvec \\\\
+\vvec\_1 & \vvec\_2 & \vvec \_3 \\\\
+\wvec\_1 & \wvec\_2 & \wvec\_3
+\end{vmatrix}
 
 
 ## Bases (Linear Algebra) {#bases--linear-algebra}
@@ -236,164 +235,154 @@ We can then define the equation as the **matrix form** \\(Ax = b\\)
 
 ### Matrix Operations {#matrix-operations}
 
-<!--list-separator-->
 
--  Matrix Addition
+#### Matrix Addition {#matrix-addition}
 
-    This is straightforward. We add each coefficient of the lhs to the corresponding coefficient in the rhs.
+This is straightforward. We add each coefficient of the lhs to the corresponding coefficient in the rhs.
 
-    \begin{equation}
-    \left[\begin{array}{cc}
-       {2} & {1} \\\\
-       {3} & {0} \\\\
-       {0} & {4}
-    \end{array}\right]
-    + \left[\begin{array}{cc}
-       {1} & {2} \\\\
-       {-3} & {1} \\\\
-       {1} & {2}
-    \end{array}\right]
-    = \left[\begin{array}{ll}
-       {3} & {3} \\\\
-       {0} & {1} \\\\
-       {1} & {6}
-    \end{array}\right]
-    \end{equation}
+\begin{equation}
+\left[\begin{array}{cc}
+   {2} & {1} \\\\
+   {3} & {0} \\\\
+   {0} & {4}
+\end{array}\right]
++ \left[\begin{array}{cc}
+   {1} & {2} \\\\
+   {-3} & {1} \\\\
+   {1} & {2}
+\end{array}\right]
+= \left[\begin{array}{ll}
+   {3} & {3} \\\\
+   {0} & {1} \\\\
+   {1} & {6}
+\end{array}\right]
+\end{equation}
 
-<!--list-separator-->
 
--  Matrix Product
+#### Matrix Product {#matrix-product}
 
-    The first straightforward product is the scalar product. This is straightforward and follows from the definition of addition
+The first straightforward product is the scalar product. This is straightforward and follows from the definition of addition
 
-    \\[2\Amat = \Amat + \Amat; \\{\Amat \in \mathcal{R}^{m \times n}\\}\\]
+\\[2\Amat = \Amat + \Amat; \\{\Amat \in \mathcal{R}^{m \times n}\\}\\]
 
-    We can also define a product between two matrices \\(\Amat: n \times m\\) and \\(\Bmat: m \times k\\).
+We can also define a product between two matrices \\(\Amat: n \times m\\) and \\(\Bmat: m \times k\\).
 
-    \begin{align\*}
-    \left[\begin{array}{ccc}
-      {A\_{11}} & {A\_{12}} & {A\_{13}} \\\\
-      {A\_{21}} & {A\_{22}} & {A\_{23}}
-    \end{array}\right]
-    \times \left[\begin{array}{cc}
-      {B\_{11}} & {B\_{12}} \\\\
-      {B\_{21}} & {B\_{22}} \\\\
-      {B\_{31}} & {B\_{32}}
-    \end{array}\right]
-    &= \left[\begin{array}{ll}
-      {\sum\_{i=1}^3 A\_{1i} B\_{i1}} & {\sum\_{i=1}^3 A\_{1i} B\_{i2}} \\\\
-      {\sum\_{i=1}^3 A\_{2i} B\_{i1}} & {\sum\_{i=1}^3 A\_{2i} B\_{i2}}
-    \end{array}\right]
-    \end{align\*}
+\begin{align\*}
+\left[\begin{array}{ccc}
+  {A\_{11}} & {A\_{12}} & {A\_{13}} \\\\
+  {A\_{21}} & {A\_{22}} & {A\_{23}}
+\end{array}\right]
+\times \left[\begin{array}{cc}
+  {B\_{11}} & {B\_{12}} \\\\
+  {B\_{21}} & {B\_{22}} \\\\
+  {B\_{31}} & {B\_{32}}
+\end{array}\right]
+&= \left[\begin{array}{ll}
+  {\sum\_{i=1}^3 A\_{1i} B\_{i1}} & {\sum\_{i=1}^3 A\_{1i} B\_{i2}} \\\\
+  {\sum\_{i=1}^3 A\_{2i} B\_{i1}} & {\sum\_{i=1}^3 A\_{2i} B\_{i2}}
+\end{array}\right]
+\end{align\*}
 
-    <!--list-separator-->
 
-    -  Hadamard Product
+##### Hadamard Product {#hadamard-product}
 
-        The Hadamard product is often used in machine learning. It is quite simply the element-wise produce between two matrices: \\(\Amat, \Bmat: n \times m\\).
+The Hadamard product is often used in machine learning. It is quite simply the element-wise produce between two matrices: \\(\Amat, \Bmat: n \times m\\).
 
-        \begin{align\*}
-        \begin{bmatrix}
-          {A\_{11}} & {A\_{12}} \\\\
-          {A\_{21}} & {A\_{22}} \\\\
-          {A\_{31}} & {A\_{32}}
-        \end{bmatrix}
-        \hadamard \begin{bmatrix}
-          {B\_{11}} & {B\_{12}} \\\\
-          {B\_{21}} & {B\_{22}} \\\\
-          {B\_{31}} & {B\_{32}}
-        \end{bmatrix}
-        = \begin{bmatrix}
-          {A\_{11}B\_{11}} & {A\_{12}B\_{12}} \\\\
-          {A\_{21}B\_{21}} & {A\_{22}B\_{22}} \\\\
-          {A\_{31}B\_{31}} & {A\_{32}B\_{32}}
-        \end{bmatrix}
-        \end{align\*}
+\begin{align\*}
+\begin{bmatrix}
+  {A\_{11}} & {A\_{12}} \\\\
+  {A\_{21}} & {A\_{22}} \\\\
+  {A\_{31}} & {A\_{32}}
+\end{bmatrix}
+\hadamard \begin{bmatrix}
+  {B\_{11}} & {B\_{12}} \\\\
+  {B\_{21}} & {B\_{22}} \\\\
+  {B\_{31}} & {B\_{32}}
+\end{bmatrix}
+= \begin{bmatrix}
+  {A\_{11}B\_{11}} & {A\_{12}B\_{12}} \\\\
+  {A\_{21}B\_{21}} & {A\_{22}B\_{22}} \\\\
+  {A\_{31}B\_{31}} & {A\_{32}B\_{32}}
+\end{bmatrix}
+\end{align\*}
 
-        <div class="instance">
+<div class="instance">
 
-        \begin{bmatrix}
-          {2} & {1} \\\\
-          {3} & {0} \\\\
-          {0} & {4}
-        \end{bmatrix}
+\begin{bmatrix}
+  {2} & {1} \\\\
+  {3} & {0} \\\\
+  {0} & {4}
+\end{bmatrix}
 
-        \hadamard \begin{bmatrix}
-          {1} &amp; {2} <br />
-          {-3} &amp; {1} <br />
-          {1} &amp; {2}
-        \end{bmatrix}
-        &amp;= \begin{bmatrix}
-          {2} &amp; {2} <br />
-          {-9} &amp; {0} <br />
-          {0} &amp; {8}
-        \end{bmatrix}
-        \end{align\*}
+\hadamard \begin{bmatrix}
+  {1} &amp; {2} <br />
+  {-3} &amp; {1} <br />
+  {1} &amp; {2}
+\end{bmatrix}
+&amp;= \begin{bmatrix}
+  {2} &amp; {2} <br />
+  {-9} &amp; {0} <br />
+  {0} &amp; {8}
+\end{bmatrix}
+\end{align\*}
 
-        </div>
+</div>
 
-    <!--list-separator-->
 
-    -  Kronecker Product
+##### Kronecker Product {#kronecker-product}
 
-<!--list-separator-->
 
--  Matrix Transpose
+#### Matrix Transpose {#matrix-transpose}
 
-    Transpose mirrors a matrix along its diagonal starting from the top left corner.
-    \\[[\Amat^\trans]\_{ji} = \Amat\_{ij}\\].
+Transpose mirrors a matrix along its diagonal starting from the top left corner.
+\\[[\Amat^\trans]\_{ji} = \Amat\_{ij}\\].
 
-    <!--list-separator-->
 
-    -  Conjugate Transpose
+##### Conjugate Transpose {#conjugate-transpose}
 
-        The conjugate transpose of a matrix is defined by
+The conjugate transpose of a matrix is defined by
 
-        \\[
-        \left(\Amat^H\right)\_{ij} = \left(\overbar{\Amat}\_{ji}\right)
-        \\]
+\\[
+\left(\Amat^H\right)\_{ij} = \left(\overbar{\Amat}\_{ji}\right)
+\\]
 
-<!--list-separator-->
 
--  Matrix Inverse
+#### Matrix Inverse {#matrix-inverse}
 
-    The inverse of a matrix follows from the inverse of a scalar (i.e. \\(\alpha \alpha^\inv = 1\\)). For a matrix we instead want the product of a matrix and its inverse to be the identity matrix:
+The inverse of a matrix follows from the inverse of a scalar (i.e. \\(\alpha \alpha^\inv = 1\\)). For a matrix we instead want the product of a matrix and its inverse to be the identity matrix:
 
-    \\[\Amat\Amat^\inv = \eye\\]
+\\[\Amat\Amat^\inv = \eye\\]
 
-    The inverse for a square matrix exists iff its determinant is not zero \\(\text{det}(\Amat) = |\Amat| \neq 0\\). If this condition is met, we can calculate the inverse using the adjugate
+The inverse for a square matrix exists iff its determinant is not zero \\(\text{det}(\Amat) = |\Amat| \neq 0\\). If this condition is met, we can calculate the inverse using the adjugate
 
-    \\[\Amat = \frac{1}{|\Amat|} \text{adj}(\Amat)\\].
+\\[\Amat = \frac{1}{|\Amat|} \text{adj}(\Amat)\\].
 
-    See below for the adjugate of a matrix.
+See below for the adjugate of a matrix.
 
-    <!--list-separator-->
 
-    -  Moore-penrose Inverse
+##### Moore-penrose Inverse {#moore-penrose-inverse}
 
-<!--list-separator-->
 
--  Matrix Trace
+#### Matrix Trace {#matrix-trace}
 
-    The trace of a matrix is the sum of arguments on the main diagonal.
+The trace of a matrix is the sum of arguments on the main diagonal.
 
-    \\[\text{tr}(\Amat) = \sum\_{i=1}^n a\_{ii}\\]
+\\[\text{tr}(\Amat) = \sum\_{i=1}^n a\_{ii}\\]
 
-    **Properties:**
+**Properties:**
 
-    -   \\(\text{tr}(\Amat + \Bmat) = \text{tr}(\Amat) + \text{tr}(\Bmat)\\)
-    -   \\(\text{tr}(\Amat) = \text{tr}(\Amat^\trans)\\)
-    -   \\(\text{tr}(\Amat^{\trans} \Bmat)
-               = \text{tr}(\Amat \Bmat^\trans)
-               = \text{tr}(\Bmat^{\top} \Amat)
-               = \text{tr}(\Bmat \Amat^{\top})
-               =\sum\_{i, j} \Amat\_{i j} \Bmat\_{i j}\\)
+-   \\(\text{tr}(\Amat + \Bmat) = \text{tr}(\Amat) + \text{tr}(\Bmat)\\)
+-   \\(\text{tr}(\Amat) = \text{tr}(\Amat^\trans)\\)
+-   \\(\text{tr}(\Amat^{\trans} \Bmat)
+           = \text{tr}(\Amat \Bmat^\trans)
+           = \text{tr}(\Bmat^{\top} \Amat)
+           = \text{tr}(\Bmat \Amat^{\top})
+           =\sum\_{i, j} \Amat\_{i j} \Bmat\_{i j}\\)
 
-<!--list-separator-->
 
-- <span class="org-todo todo TODO">TODO</span>  Matrix Adjugate
+#### <span class="org-todo todo TODO">TODO</span> Matrix Adjugate {#matrix-adjugate}
 
-    The adjugate of a matrix is the transpose of the cofactor matrix. The cofactor matrix is
+The adjugate of a matrix is the transpose of the cofactor matrix. The cofactor matrix is
 
 
 ### Matrix Definiteness {#matrix-definiteness}
@@ -419,86 +408,73 @@ A Matrix factorization or decomposition is a factorization of a [matrix](#matric
 
 ### Special types of matrices {#special-types-of-matrices}
 
-<!--list-separator-->
 
--  Normal Matrix
+#### Normal Matrix {#normal-matrix}
 
-    A Normal matrix is a complex square matrix which commutes with its [Conjugate Transpose](#matrix-transpose).
+A Normal matrix is a complex square matrix which commutes with its [Conjugate Transpose](#matrix-transpose).
 
-    \\[\Amat \Amat^\* = \Amat^\* \Amat\\]
+\\[\Amat \Amat^\* = \Amat^\* \Amat\\]
 
-<!--list-separator-->
 
--  Diagonal Matrix
+#### Diagonal Matrix {#diagonal-matrix}
 
-    A diagonal matrix is a matrix which only has elements on its diagonal (starting in the top left corner) and the other elements are zero. A rectangular diagonal matrix is the same.
+A diagonal matrix is a matrix which only has elements on its diagonal (starting in the top left corner) and the other elements are zero. A rectangular diagonal matrix is the same.
 
-    **Some examples:**
+**Some examples:**
 
-    \begin{bmatrix}
-    1& 0& 0 \\\\
-    0& 2& 0 \\\\
-    0& 0& 3.4
-    \end{bmatrix}
+\begin{bmatrix}
+1& 0& 0 \\\\
+0& 2& 0 \\\\
+0& 0& 3.4
+\end{bmatrix}
 
-    \begin{bmatrix}
-    1& 0 & 0 & 0 \\\\
-    0& 21& 0 & 0 \\\\
-    0& 0 & 32& 0 \\\\
-    \end{bmatrix}
+\begin{bmatrix}
+1& 0 & 0 & 0 \\\\
+0& 21& 0 & 0 \\\\
+0& 0 & 32& 0 \\\\
+\end{bmatrix}
 
-<!--list-separator-->
 
--  Triangle Matrix
+#### Triangle Matrix {#triangle-matrix}
 
-    If all entries of \\(\Amat\\) below the main diagonal are zero, \\(\Amat\\) is called an **upper triangular matrix**. Similarly, if all the entries above the diagonal are zero, the matrix is called **lower triangular matrix**.
+If all entries of \\(\Amat\\) below the main diagonal are zero, \\(\Amat\\) is called an **upper triangular matrix**. Similarly, if all the entries above the diagonal are zero, the matrix is called **lower triangular matrix**.
 
-<!--list-separator-->
 
--  Unitary Matrix
+#### Unitary Matrix {#unitary-matrix}
 
-    A complex square matrix is **unitary** if its [conjugate transpose](#matrix-transpose) is also its [inverse](#matrix-inverse).
+A complex square matrix is **unitary** if its [conjugate transpose](#matrix-transpose) is also its [inverse](#matrix-inverse).
 
-    \\[ \Umat^\* \Umat = \Umat\Umat^\* = \Umat \Umat^\inv = \Imat \\]
+\\[ \Umat^\* \Umat = \Umat\Umat^\* = \Umat \Umat^\inv = \Imat \\]
 
-    If the matrix \\(\Umat\\) is a real square matrix than it is **orthogonal** if
-    \\[ \Umat \Umat^\transpose = \Umat^\transpose \Umat = \Umat^\inv \Umat = \identity \\]
+If the matrix \\(\Umat\\) is a real square matrix than it is **orthogonal** if
+\\[ \Umat \Umat^\transpose = \Umat^\transpose \Umat = \Umat^\inv \Umat = \identity \\]
 
-<!--list-separator-->
 
--  Tridiagonal Matrix
+#### Tridiagonal Matrix {#tridiagonal-matrix}
 
-<!--list-separator-->
 
--  Block Matrix
+#### Block Matrix {#block-matrix}
 
-<!--list-separator-->
 
--  Sparse Matrix
+#### Sparse Matrix {#sparse-matrix}
 
-<!--list-separator-->
 
--  Hessenberg Matrix
+#### Hessenberg Matrix {#hessenberg-matrix}
 
-<!--list-separator-->
 
--  Hessian Matrix
+#### Hessian Matrix {#hessian-matrix}
 
-<!--list-separator-->
 
--  Vandermonde Matrix
+#### Vandermonde Matrix {#vandermonde-matrix}
 
-<!--list-separator-->
 
--  Stochastic Matrix
+#### Stochastic Matrix {#stochastic-matrix}
 
-<!--list-separator-->
 
--  Hankel Matrix
+#### Hankel Matrix {#hankel-matrix}
 
-<!--list-separator-->
 
--  (0,1) Matrix
+#### (0,1) Matrix {#0-1--matrix}
 
 
 ## Determinant {#determinant}

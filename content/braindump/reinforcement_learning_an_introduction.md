@@ -1,7 +1,7 @@
 +++
 title = "Reinforcement Learning: An Introduction"
 author = ["Matthew Schlegel"]
-lastmod = 2022-10-27T20:20:39-06:00
+lastmod = 2022-11-09T14:05:03-07:00
 slug = "reinforcement_learning_an_introduction"
 draft = false
 notetype = "book"
@@ -169,6 +169,7 @@ notetype = "book"
 \newcommand{\Zmat}{\mathbf{Z}}
 \newcommand{\Sigmamat}{\boldsymbol{\Sigma}}
 \newcommand{\identity}{\Imat}
+\newcommand{\epsilonvec}{\boldsymbol{\epsilon}}
 \newcommand{\thetavec}{\boldsymbol{\theta}}
 \newcommand{\phivec}{\boldsymbol{\phi}}
 \newcommand{\muvec}{\boldsymbol{\mu}}

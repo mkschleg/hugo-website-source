@@ -1,7 +1,7 @@
 +++
 title = "Additivity"
 author = ["Matthew Schlegel"]
-lastmod = 2022-10-27T20:18:02-06:00
+lastmod = 2023-03-24T14:36:42-06:00
 slug = "additivity"
 draft = false
 notetype = "note"
@@ -84,6 +84,7 @@ notetype = "note"
 \newcommand{\Zmat}{\mathbf{Z}}
 \newcommand{\Sigmamat}{\boldsymbol{\Sigma}}
 \newcommand{\identity}{\Imat}
+\newcommand{\epsilonvec}{\boldsymbol{\epsilon}}
 \newcommand{\thetavec}{\boldsymbol{\theta}}
 \newcommand{\phivec}{\boldsymbol{\phi}}
 \newcommand{\muvec}{\boldsymbol{\mu}}

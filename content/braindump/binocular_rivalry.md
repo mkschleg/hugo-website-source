@@ -1,7 +1,7 @@
 +++
 title = "Binocular rivalry"
 author = ["Matthew Schlegel"]
-lastmod = 2022-10-27T20:18:20-06:00
+lastmod = 2022-11-09T14:06:27-07:00
 slug = "binocular_rivalry"
 draft = false
 notetype = "note"

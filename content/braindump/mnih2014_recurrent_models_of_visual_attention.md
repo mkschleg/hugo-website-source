@@ -1,8 +1,8 @@
 +++
-title = "mnih2014: Recurrent Models of Visual Attention"
+title = "mnih2014recurrent: Recurrent Models of Visual Attention"
 author = ["Matthew Schlegel"]
-lastmod = 2022-10-27T20:20:02-06:00
-slug = "mnih2014"
+lastmod = 2022-11-09T14:05:16-07:00
+slug = "mnih2014recurrent"
 draft = false
 notetype = "paper"
 +++
@@ -84,6 +84,7 @@ notetype = "paper"
 \newcommand{\Zmat}{\mathbf{Z}}
 \newcommand{\Sigmamat}{\boldsymbol{\Sigma}}
 \newcommand{\identity}{\Imat}
+\newcommand{\epsilonvec}{\boldsymbol{\epsilon}}
 \newcommand{\thetavec}{\boldsymbol{\theta}}
 \newcommand{\phivec}{\boldsymbol{\phi}}
 \newcommand{\muvec}{\boldsymbol{\mu}}

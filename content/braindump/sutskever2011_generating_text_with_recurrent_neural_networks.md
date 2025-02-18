@@ -1,8 +1,8 @@
 +++
-title = "sutskever2011: Generating text with recurrent neural networks"
+title = "sutskever2011generating: Generating text with recurrent neural networks"
 author = ["Matthew Schlegel"]
-lastmod = 2022-10-27T20:21:14-06:00
-slug = "sutskever2011"
+lastmod = 2022-11-08T14:22:39-07:00
+slug = "sutskever2011generating"
 draft = false
 notetype = "paper"
 +++
@@ -84,6 +84,7 @@ notetype = "paper"
 \newcommand{\Zmat}{\mathbf{Z}}
 \newcommand{\Sigmamat}{\boldsymbol{\Sigma}}
 \newcommand{\identity}{\Imat}
+\newcommand{\epsilonvec}{\boldsymbol{\epsilon}}
 \newcommand{\thetavec}{\boldsymbol{\theta}}
 \newcommand{\phivec}{\boldsymbol{\phi}}
 \newcommand{\muvec}{\boldsymbol{\mu}}

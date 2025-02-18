@@ -1,8 +1,8 @@
 +++
 title = "Optimizers"
 author = ["Matthew Schlegel"]
-lastmod = 2022-10-27T20:20:14-06:00
+lastmod = 2023-03-21T12:02:54-06:00
 slug = "optimizers"
 draft = false
-notetype = "topic"
+notetype = "note"
 +++

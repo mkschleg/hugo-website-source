@@ -1,7 +1,7 @@
 +++
 title = "SVD"
 author = ["Matthew Schlegel"]
-lastmod = 2022-10-28T14:53:15-06:00
+lastmod = 2022-11-08T14:23:38-07:00
 slug = "svd"
 draft = false
 notetype = "note"
@@ -84,6 +84,7 @@ notetype = "note"
 \newcommand{\Zmat}{\mathbf{Z}}
 \newcommand{\Sigmamat}{\boldsymbol{\Sigma}}
 \newcommand{\identity}{\Imat}
+\newcommand{\epsilonvec}{\boldsymbol{\epsilon}}
 \newcommand{\thetavec}{\boldsymbol{\theta}}
 \newcommand{\phivec}{\boldsymbol{\phi}}
 \newcommand{\muvec}{\boldsymbol{\mu}}
@@ -104,6 +105,11 @@ Singular value decomposition (SVD) is a [matrix factorization]({{< relref "linea
 -   \\(\Sigmamat\\) is a \\(m\times n\\) [rectangular diagonal matrix]({{< relref "linear_algebra.md#diagonal-matrix" >}}) with non-negative real numbers on the diagonal.
 -   \\(\Vmat\\) is a  [complex unitary matrix]({{< relref "linear_algebra.md#unitary-matrix" >}}).
 
+Singular values are always positive (by convention) and are found from the two conditions:
+\\[\Mmat \vvec = \sigma \uvec \text{ and } \Mmat^\* \uvec = \sigma \vvec\\]
+
+where \\(\vvec\\) and \\(\uvec\\) are called right and left singular vectors respectively.
+
 This decomposition always exists for any complex rectangular matrix.
 
 
@@ -122,6 +128,8 @@ end
 ```
 
 ```text
+┌ Info: Precompiling Plots [91a5bcdd-55d7-5caf-9e0b-520d859cae80]
+└ @ Base loading.jl:1664
 plot_data (generic function with 1 method)
 ```
 

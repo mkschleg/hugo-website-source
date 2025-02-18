@@ -1,7 +1,7 @@
 +++
 title = "Temporal Difference Learning"
 author = ["Matthew Schlegel"]
-lastmod = 2022-10-27T20:21:43-06:00
+lastmod = 2022-11-09T14:03:37-07:00
 slug = "temporal_difference_learning"
 draft = false
 notetype = "note"

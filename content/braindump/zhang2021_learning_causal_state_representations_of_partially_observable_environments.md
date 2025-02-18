@@ -1,7 +1,7 @@
 +++
-title = "zhang2021: Learning Causal State Representations of Partially Observable Environments"
+title = "zhang2021learning: Learning Causal State Representations of Partially Observable Environments"
 author = ["Matthew Schlegel"]
-lastmod = 2022-10-27T20:22:04-06:00
+lastmod = 2022-11-09T14:03:25-07:00
 slug = "learning_causal_state_representations_of_partially_observable_environments"
 draft = false
 notetype = "paper"
@@ -84,6 +84,7 @@ notetype = "paper"
 \newcommand{\Zmat}{\mathbf{Z}}
 \newcommand{\Sigmamat}{\boldsymbol{\Sigma}}
 \newcommand{\identity}{\Imat}
+\newcommand{\epsilonvec}{\boldsymbol{\epsilon}}
 \newcommand{\thetavec}{\boldsymbol{\theta}}
 \newcommand{\phivec}{\boldsymbol{\phi}}
 \newcommand{\muvec}{\boldsymbol{\mu}}

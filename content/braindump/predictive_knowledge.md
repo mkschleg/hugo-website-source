@@ -1,7 +1,7 @@
 +++
 title = "Predictive Knowledge"
 author = ["Matthew Schlegel"]
-lastmod = 2022-10-27T20:20:23-06:00
+lastmod = 2022-11-09T14:05:09-07:00
 slug = "predictive_knowledge"
 draft = false
 notetype = "note"
@@ -84,6 +84,7 @@ notetype = "note"
 \newcommand{\Zmat}{\mathbf{Z}}
 \newcommand{\Sigmamat}{\boldsymbol{\Sigma}}
 \newcommand{\identity}{\Imat}
+\newcommand{\epsilonvec}{\boldsymbol{\epsilon}}
 \newcommand{\thetavec}{\boldsymbol{\theta}}
 \newcommand{\phivec}{\boldsymbol{\phi}}
 \newcommand{\muvec}{\boldsymbol{\mu}}

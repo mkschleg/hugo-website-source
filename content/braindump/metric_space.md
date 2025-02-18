@@ -1,7 +1,7 @@
 +++
 title = "Metric Space"
 author = ["Matthew Schlegel"]
-lastmod = 2022-10-27T20:20:01-06:00
+lastmod = 2022-11-08T14:20:56-07:00
 slug = "metric_space"
 draft = false
 notetype = "note"
@@ -84,6 +84,7 @@ notetype = "note"
 \newcommand{\Zmat}{\mathbf{Z}}
 \newcommand{\Sigmamat}{\boldsymbol{\Sigma}}
 \newcommand{\identity}{\Imat}
+\newcommand{\epsilonvec}{\boldsymbol{\epsilon}}
 \newcommand{\thetavec}{\boldsymbol{\theta}}
 \newcommand{\phivec}{\boldsymbol{\phi}}
 \newcommand{\muvec}{\boldsymbol{\mu}}

@@ -1,8 +1,8 @@
 +++
-title = "liu2018: Breaking the Curse of Horizon: Infinite-Horizon Off-Policy Estimation"
+title = "liu2018breaking: Breaking the Curse of Horizon: Infinite-Horizon Off-Policy Estimation"
 author = ["Matthew Schlegel"]
-lastmod = 2022-10-27T20:19:52-06:00
-slug = "liu2018"
+lastmod = 2022-11-08T14:20:44-07:00
+slug = "liu2018breaking"
 draft = false
 notetype = "paper"
 +++

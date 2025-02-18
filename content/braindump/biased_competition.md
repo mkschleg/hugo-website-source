@@ -1,7 +1,7 @@
 +++
 title = "Biased Competition"
 author = ["Matthew Schlegel"]
-lastmod = 2022-10-27T20:18:17-06:00
+lastmod = 2022-11-08T14:18:45-07:00
 slug = "biased_competition"
 draft = false
 notetype = "note"
@@ -84,6 +84,7 @@ notetype = "note"
 \newcommand{\Zmat}{\mathbf{Z}}
 \newcommand{\Sigmamat}{\boldsymbol{\Sigma}}
 \newcommand{\identity}{\Imat}
+\newcommand{\epsilonvec}{\boldsymbol{\epsilon}}
 \newcommand{\thetavec}{\boldsymbol{\theta}}
 \newcommand{\phivec}{\boldsymbol{\phi}}
 \newcommand{\muvec}{\boldsymbol{\mu}}

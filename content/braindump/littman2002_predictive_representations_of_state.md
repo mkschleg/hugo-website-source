@@ -1,8 +1,8 @@
 +++
-title = "littman2002: Predictive Representations of State"
+title = "littman2002predictive: Predictive Representations of State"
 author = ["Matthew Schlegel"]
-lastmod = 2022-10-27T20:19:50-06:00
-slug = "littman2002"
+lastmod = 2022-11-09T14:05:30-07:00
+slug = "littman2002predictive"
 draft = false
 notetype = "paper"
 +++
@@ -84,6 +84,7 @@ notetype = "paper"
 \newcommand{\Zmat}{\mathbf{Z}}
 \newcommand{\Sigmamat}{\boldsymbol{\Sigma}}
 \newcommand{\identity}{\Imat}
+\newcommand{\epsilonvec}{\boldsymbol{\epsilon}}
 \newcommand{\thetavec}{\boldsymbol{\theta}}
 \newcommand{\phivec}{\boldsymbol{\phi}}
 \newcommand{\muvec}{\boldsymbol{\mu}}

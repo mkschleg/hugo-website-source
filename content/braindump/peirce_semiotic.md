@@ -1,8 +1,8 @@
 +++
 title = "Peirce Semiotic"
 author = ["Matthew Schlegel"]
-lastmod = 2022-10-27T20:20:15-06:00
-slug = "peirce_semiotics"
+lastmod = 2023-03-20T14:13:17-06:00
+slug = "peirce_semiotic"
 draft = false
 notetype = "note"
 +++
@@ -84,6 +84,7 @@ notetype = "note"
 \newcommand{\Zmat}{\mathbf{Z}}
 \newcommand{\Sigmamat}{\boldsymbol{\Sigma}}
 \newcommand{\identity}{\Imat}
+\newcommand{\epsilonvec}{\boldsymbol{\epsilon}}
 \newcommand{\thetavec}{\boldsymbol{\theta}}
 \newcommand{\phivec}{\boldsymbol{\phi}}
 \newcommand{\muvec}{\boldsymbol{\mu}}
@@ -126,4 +127,13 @@ In the above example the object is the mole, while the sign-vehicle is the moleh
 ## Second Account {#second-account}
 
 
-## Third Account {#third-account}
+## Third Accoun {#third-accoun}
+
+
+## References {#references}
+
+\bibliographystyle{plainnat}
+
+<style>.csl-entry{text-indent: -1.5em; margin-left: 1.5em;}</style><div class="csl-bib-body">
+  <div class="csl-entry"><a id="citeproc_bib_item_1"></a>Project, Peirce Edition. 1998. <i>The Essential Peirce, Volume 2: Selected Philosophical Writings (1893-1913)</i>. Bloomington: Indiana University Press.</div>
+</div>

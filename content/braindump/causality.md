@@ -1,7 +1,7 @@
 +++
 title = "Causality"
 author = ["Matthew Schlegel"]
-lastmod = 2022-10-27T20:18:29-06:00
+lastmod = 2023-03-20T13:16:09-06:00
 slug = "causality"
 tags = ["Causality"]
 draft = false
@@ -85,6 +85,7 @@ notetype = "note"
 \newcommand{\Zmat}{\mathbf{Z}}
 \newcommand{\Sigmamat}{\boldsymbol{\Sigma}}
 \newcommand{\identity}{\Imat}
+\newcommand{\epsilonvec}{\boldsymbol{\epsilon}}
 \newcommand{\thetavec}{\boldsymbol{\theta}}
 \newcommand{\phivec}{\boldsymbol{\phi}}
 \newcommand{\muvec}{\boldsymbol{\mu}}
@@ -93,6 +94,9 @@ notetype = "note"
 \newcommand{\ind}{\perp\!\!\!\!\perp}
 \newcommand{\bigoh}{\text{O}}
 \\)
+
+tags
+: [Statistics]({{< relref "statistics.md" >}}), [Machine Learning]({{< relref "machine_learning.md" >}}), [AI]({{< relref "artificial_intelligence.md" >}})
 
 This note will talk about the [Statistics]({{< relref "statistics.md" >}}) and [AI]({{< relref "artificial_intelligence.md" >}}) notions of causality. This will also host as a place to link to various resources and notes on these resources.
 
@@ -117,7 +121,7 @@ If two random variables X and Y are statistically dependent, then there exists a
 
 </div>
 
-While this principle lays out a primal causal model, estimating such a model from data (especially if the data isn't [causally sufficient](#causal-sufficiency)) is extremely difficult and in many cases the model is not identifiable. While this should give us pause into the motivations of using causality in machine learning, making assumptions about the data generation process without hard assumptions on the agent's used internal [Causal Model](#causal-model) might produce powerful techniques or insights into designing algorithms. This direction might also provide groundwork for understanding when problems in perception are hopeless (<a href="#citeproc_bib_item_3">Schölkopf et al., n.d.</a>). With this in mind we will cautiously move forward.
+While this principle lays out a primal causal model, estimating such a model from data (especially if the data isn't [causally sufficient](#causal-sufficiency)) is extremely difficult and in many cases the model is not identifiable. While this should give us pause into the motivations of using causality in machine learning, making assumptions about the data generation process without hard assumptions on the agent's used internal [Causal Model](#causal-model) might produce powerful techniques or insights into designing algorithms. This direction might also provide groundwork for understanding when problems in perception are hopeless (<a href="#citeproc_bib_item_3">Scholkopf et al. 2012</a>). With this in mind we will cautiously move forward.
 
 
 ## Terms and special cases {#terms-and-special-cases}
@@ -273,6 +277,6 @@ I'm reminded of weapons of math destruction. Can we assume the underlying mechan
 <style>.csl-entry{text-indent: -1.5em; margin-left: 1.5em;}</style><div class="csl-bib-body">
   <div class="csl-entry"><a id="citeproc_bib_item_1"></a>Hoyer, Patrik, Dominik Janzing, Joris M Mooij, Jonas Peters, and Bernhard Schölkopf. 2009. “Nonlinear Causal Discovery with Additive Noise Models.” In <i>Advances in Neural Information Processing Systems</i>. Curran Associates, Inc.</div>
   <div class="csl-entry"><a id="citeproc_bib_item_2"></a>Scholkopf, Bernhard. 2019. “Causality for Machine Learning.” <i>arXiv:1911.10500 [Cs, Stat]</i>. <a href="https://arxiv.org/abs/1911.10500">https://arxiv.org/abs/1911.10500</a>.</div>
-  <div class="csl-entry"><a id="citeproc_bib_item_3"></a>Schölkopf, Bernhard, Dominik Janzing, Jonas Peters, Eleni Sgouritsa, Kun Zhang, and Joris Mooij. n.d. “On Causal and Anticausal Learning.”</div>
+  <div class="csl-entry"><a id="citeproc_bib_item_3"></a>Scholkopf, Bernhard, Dominik Janzing, Jonas Peters, Eleni Sgouritsa, Kun Zhang, and Joris M Mooij. 2012. “On Causal and Anticausal Learning.” In <i>ICML</i>.</div>
   <div class="csl-entry"><a id="citeproc_bib_item_4"></a>Zhang, Amy, Zachary C. Lipton, Luis Pineda, Kamyar Azizzadenesheli, Anima Anandkumar, Laurent Itti, Joelle Pineau, and Tommaso Furlanello. 2021. “Learning Causal State Representations of Partially Observable Environments.” <i>arXiv:1906.10437 [Cs, Stat]</i>. <a href="https://arxiv.org/abs/1906.10437">https://arxiv.org/abs/1906.10437</a>.</div>
 </div>

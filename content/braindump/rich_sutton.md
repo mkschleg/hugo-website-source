@@ -1,7 +1,7 @@
 +++
 title = "Rich Sutton"
 author = ["Matthew Schlegel"]
-lastmod = 2022-10-27T20:20:44-06:00
+lastmod = 2022-11-08T14:22:05-07:00
 slug = "rich_sutton"
 draft = false
 notetype = "note"

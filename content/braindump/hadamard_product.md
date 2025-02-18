@@ -1,7 +1,7 @@
 +++
 title = "Hadamard product"
 author = ["Matthew Schlegel"]
-lastmod = 2022-10-27T20:26:45-06:00
+lastmod = 2022-11-08T14:19:51-07:00
 slug = "hadamard_product"
 draft = false
 notetype = "note"

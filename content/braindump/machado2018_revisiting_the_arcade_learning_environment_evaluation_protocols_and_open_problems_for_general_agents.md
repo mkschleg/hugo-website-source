@@ -1,8 +1,8 @@
 +++
-title = "machado2018: Revisiting the Arcade Learning Environment: Evaluation Protocols and Open Problems for General Agents"
+title = "machado2018revisiting: Revisiting the Arcade Learning Environment: Evaluation Protocols and Open Problems for General Agents"
 author = ["Matthew Schlegel"]
-lastmod = 2022-10-27T20:19:54-06:00
-slug = "machado2018"
+lastmod = 2022-11-09T14:05:20-07:00
+slug = "machado2018revisiting"
 draft = false
 notetype = "paper"
 +++
@@ -84,6 +84,7 @@ notetype = "paper"
 \newcommand{\Zmat}{\mathbf{Z}}
 \newcommand{\Sigmamat}{\boldsymbol{\Sigma}}
 \newcommand{\identity}{\Imat}
+\newcommand{\epsilonvec}{\boldsymbol{\epsilon}}
 \newcommand{\thetavec}{\boldsymbol{\theta}}
 \newcommand{\phivec}{\boldsymbol{\phi}}
 \newcommand{\muvec}{\boldsymbol{\mu}}

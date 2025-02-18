@@ -1,10 +1,10 @@
 +++
 title = "Representation"
 author = ["Matthew Schlegel"]
-lastmod = 2022-10-27T20:20:41-06:00
+lastmod = 2023-03-21T12:06:47-06:00
 slug = "representation"
 draft = false
-notetype = "topic"
+notetype = "note"
 +++
 
 tags

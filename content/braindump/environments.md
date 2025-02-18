@@ -1,7 +1,7 @@
 +++
 title = "Environments"
 author = ["Matthew Schlegel"]
-lastmod = 2022-10-27T20:18:55-06:00
+lastmod = 2022-11-08T14:19:37-07:00
 slug = "environments"
 tags = ["Reinforcement-Learning"]
 draft = false
@@ -85,6 +85,7 @@ notetype = "note"
 \newcommand{\Zmat}{\mathbf{Z}}
 \newcommand{\Sigmamat}{\boldsymbol{\Sigma}}
 \newcommand{\identity}{\Imat}
+\newcommand{\epsilonvec}{\boldsymbol{\epsilon}}
 \newcommand{\thetavec}{\boldsymbol{\theta}}
 \newcommand{\phivec}{\boldsymbol{\phi}}
 \newcommand{\muvec}{\boldsymbol{\mu}}

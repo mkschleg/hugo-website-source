@@ -1,8 +1,8 @@
 +++
-title = "mohamed2019: Monte Carlo Gradient Estimation in Machine Learning"
+title = "mohamed2019monte: Monte Carlo Gradient Estimation in Machine Learning"
 author = ["Matthew Schlegel"]
-lastmod = 2022-10-27T20:20:05-06:00
-slug = "mohamed2019"
+lastmod = 2022-11-08T14:21:02-07:00
+slug = "mohamed2019monte"
 draft = false
 notetype = "paper"
 +++
@@ -84,6 +84,7 @@ notetype = "paper"
 \newcommand{\Zmat}{\mathbf{Z}}
 \newcommand{\Sigmamat}{\boldsymbol{\Sigma}}
 \newcommand{\identity}{\Imat}
+\newcommand{\epsilonvec}{\boldsymbol{\epsilon}}
 \newcommand{\thetavec}{\boldsymbol{\theta}}
 \newcommand{\phivec}{\boldsymbol{\phi}}
 \newcommand{\muvec}{\boldsymbol{\mu}}
@@ -238,8 +239,8 @@ The structure of the analysis problem <eq:mohamed2019:grad_mva> directly suggest
 
 The paper then goes into some intuitive exploration of a simple problem
 \\[
-  \eta=\nabla\_{\theta} \int \mathcal{N}\left(x | \mu, \sigma^{2}\right) f(x ; k) d x ; \quad \theta \in\\{\mu, \sigma\\} ; \quad f \in\left\\{(x-k)^{2}, \exp \left(-k x^{2}\right), \cos (k x)\right\\}
-  \\].
+\eta=\nabla\_{\theta} \int \mathcal{N}\left(x | \mu, \sigma^{2}\right) f(x ; k) d x ; \quad \theta \in\\{\mu, \sigma\\} ; \quad f \in\left\\{(x-k)^{2}, \exp \left(-k x^{2}\right), \cos (k x)\right\\}
+\\].
 
 In all they find that a universal ordering is difficult to determine (and in many cases impossible). They suggest three criteria on which to judge the estimators:
 

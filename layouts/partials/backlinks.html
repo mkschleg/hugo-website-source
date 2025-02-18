@@ -1,3 +1,5 @@
+
+
 {{ $re := $.File.BaseFileName }}
 {{ $backlinks := slice }}
 {{ range .Site.AllPages }}
@@ -8,7 +10,7 @@
 
 {{ if gt (len $backlinks) 0 }}
   <div class="bl-section">
-    <h4>Links to this note</h4>
+    <h4>Links to this note:</h4>
     <div class="backlinks">
       <ul>
        {{ range $backlinks }}

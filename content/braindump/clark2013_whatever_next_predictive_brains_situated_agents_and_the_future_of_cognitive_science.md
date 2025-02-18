@@ -1,8 +1,8 @@
 +++
-title = "clark2013: Whatever next? Predictive brains, situated agents, and the future of cognitive science"
+title = "clark2013whatever: Whatever next? Predictive brains, situated agents, and the future of cognitive science"
 author = ["Matthew Schlegel"]
-lastmod = 2022-10-27T20:18:33-06:00
-slug = "clark2013"
+lastmod = 2022-11-09T14:06:17-07:00
+slug = "clark2013whatever"
 draft = false
 notetype = "paper"
 +++
@@ -47,7 +47,7 @@ Such a scheme as predictive coding suggests the backward connections from V2 to 
 
 ### Dynamic predictive coding by the retina {#dynamic-predictive-coding-by-the-retina}
 
-<a href="#citeproc_bib_item_3">Hosoya, Baccus, and Meister</a> 's <a href="#citeproc_bib_item_3">2005</a> account of dynamic predictive coding moves context center states. The neural circuits predict, on the basis of local image characteristics, the likely image characteristics of nearby spots in space and time. The encoded value is not the raw image data, but the residual or departures from the predictable structure. The saves bandwidth and highlights the "news-worthy" aspects of the incoming signal. Hosoya predicted that, in the interestes of efficient, adaptively potent, encoding, the behavior of the [retinal ganglion cell]({{< relref "visual_system.md" >}}) should vary as a result of adaptation to the current scene or context, exhibiting what they term "dynamic predictive coding".
+<a href="#citeproc_bib_item_3">Hosoya, Baccus, and Meister</a>'s (<a href="#citeproc_bib_item_3">2005</a>) account of dynamic predictive coding moves context center states. The neural circuits predict, on the basis of local image characteristics, the likely image characteristics of nearby spots in space and time. The encoded value is not the raw image data, but the residual or departures from the predictable structure. The saves bandwidth and highlights the "news-worthy" aspects of the incoming signal. Hosoya predicted that, in the interestes of efficient, adaptively potent, encoding, the behavior of the [retinal ganglion cell]({{< relref "visual_system.md" >}}) should vary as a result of adaptation to the current scene or context, exhibiting what they term "dynamic predictive coding".
 
 
 ### [Binocular rivalry]({{< relref "binocular_rivalry.md" >}}) {#binocular-rivalry--binocular-rivalry-dot-md}

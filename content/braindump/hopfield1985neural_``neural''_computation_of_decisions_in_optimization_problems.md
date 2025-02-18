@@ -1,7 +1,7 @@
 +++
 title = "hopfield1985neural: ``Neural'' computation of decisions in optimization problems"
 author = ["Matthew Schlegel"]
-lastmod = 2022-10-27T20:19:16-06:00
+lastmod = 2022-11-09T14:05:58-07:00
 slug = "hopfield1985neural"
 draft = false
 notetype = "paper"
@@ -84,6 +84,7 @@ notetype = "paper"
 \newcommand{\Zmat}{\mathbf{Z}}
 \newcommand{\Sigmamat}{\boldsymbol{\Sigma}}
 \newcommand{\identity}{\Imat}
+\newcommand{\epsilonvec}{\boldsymbol{\epsilon}}
 \newcommand{\thetavec}{\boldsymbol{\theta}}
 \newcommand{\phivec}{\boldsymbol{\phi}}
 \newcommand{\muvec}{\boldsymbol{\mu}}

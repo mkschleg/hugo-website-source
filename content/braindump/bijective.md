@@ -1,7 +1,7 @@
 +++
 title = "Bijective"
 author = ["Matthew Schlegel"]
-lastmod = 2022-10-27T20:18:18-06:00
+lastmod = 2022-11-08T14:18:46-07:00
 slug = "bijective"
 draft = false
 notetype = "note"

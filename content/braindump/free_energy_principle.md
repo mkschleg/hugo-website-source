@@ -1,7 +1,7 @@
 +++
 title = "Free-Energy Principle"
 author = ["Matthew Schlegel"]
-lastmod = 2022-10-27T20:18:58-06:00
+lastmod = 2022-11-08T14:19:39-07:00
 slug = "free_energy_principle"
 draft = false
 notetype = "note"

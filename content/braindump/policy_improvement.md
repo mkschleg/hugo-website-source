@@ -1,7 +1,7 @@
 +++
 title = "Policy Improvement"
 author = ["Matthew Schlegel"]
-lastmod = 2022-10-27T20:20:19-06:00
+lastmod = 2022-11-08T14:21:20-07:00
 slug = "policy_improvement"
 tags = ["Reinforcement-Learning", "Core"]
 draft = false
@@ -85,6 +85,7 @@ notetype = "note"
 \newcommand{\Zmat}{\mathbf{Z}}
 \newcommand{\Sigmamat}{\boldsymbol{\Sigma}}
 \newcommand{\identity}{\Imat}
+\newcommand{\epsilonvec}{\boldsymbol{\epsilon}}
 \newcommand{\thetavec}{\boldsymbol{\theta}}
 \newcommand{\phivec}{\boldsymbol{\phi}}
 \newcommand{\muvec}{\boldsymbol{\mu}}

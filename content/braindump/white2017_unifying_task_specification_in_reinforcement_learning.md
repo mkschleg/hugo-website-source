@@ -1,7 +1,7 @@
 +++
-title = "white2017: Unifying Task Specification in Reinforcement Learning"
+title = "white2017unifying: Unifying Task Specification in Reinforcement Learning"
 author = ["Matthew Schlegel"]
-lastmod = 2022-10-27T20:22:01-06:00
+lastmod = 2022-11-08T14:23:59-07:00
 slug = "white2017"
 draft = false
 notetype = "paper"
@@ -84,6 +84,7 @@ notetype = "paper"
 \newcommand{\Zmat}{\mathbf{Z}}
 \newcommand{\Sigmamat}{\boldsymbol{\Sigma}}
 \newcommand{\identity}{\Imat}
+\newcommand{\epsilonvec}{\boldsymbol{\epsilon}}
 \newcommand{\thetavec}{\boldsymbol{\theta}}
 \newcommand{\phivec}{\boldsymbol{\phi}}
 \newcommand{\muvec}{\boldsymbol{\mu}}

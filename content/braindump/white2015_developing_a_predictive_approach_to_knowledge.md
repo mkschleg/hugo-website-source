@@ -1,8 +1,8 @@
 +++
-title = "white2015: Developing a predictive approach to knowledge"
+title = "white2015developing: Developing a predictive approach to knowledge"
 author = ["Matthew Schlegel"]
-lastmod = 2022-10-27T20:21:59-06:00
-slug = "white2015"
+lastmod = 2022-11-09T14:03:30-07:00
+slug = "white2015developing"
 draft = false
 notetype = "paper"
 +++

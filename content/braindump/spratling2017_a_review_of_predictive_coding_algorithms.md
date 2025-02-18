@@ -1,7 +1,7 @@
 +++
-title = "spratling2017: A review of predictive coding algorithms"
+title = "spratling2017review: A review of predictive coding algorithms"
 author = ["Matthew Schlegel"]
-lastmod = 2022-10-27T20:21:02-06:00
+lastmod = 2022-11-09T14:03:51-07:00
 slug = "spratling2017"
 draft = false
 notetype = "paper"
@@ -84,6 +84,7 @@ notetype = "paper"
 \newcommand{\Zmat}{\mathbf{Z}}
 \newcommand{\Sigmamat}{\boldsymbol{\Sigma}}
 \newcommand{\identity}{\Imat}
+\newcommand{\epsilonvec}{\boldsymbol{\epsilon}}
 \newcommand{\thetavec}{\boldsymbol{\theta}}
 \newcommand{\phivec}{\boldsymbol{\phi}}
 \newcommand{\muvec}{\boldsymbol{\mu}}
@@ -147,9 +148,9 @@ If only the residual error is transmitted, then the receiver (in the case of the
 
 ## Predictive Coding in the Cortex: Rao and Ballard {#predictive-coding-in-the-cortex-rao-and-ballard}
 
-(<a href="#citeproc_bib_item_1">Rao and Ballard 1999</a>) 's model for cortical function proposes the cortex is built of several layers of predictive coding networks. Each layer implements the predictive coding algorithm described above for spatial inputs (as far as I can tell) instead of time-series inputs, although both could be used. The output of each cortical region is the residual error. The feed forward connections are believed to transmit these errors while the cortical feedback connections are predicted "causes". This hypothesizes that cortical feedback connections act to suppress information which is predicted by higher-level cortical region.
+(<a href="#citeproc_bib_item_1">Rao and Ballard 1999</a>)'s model for cortical function proposes the cortex is built of several layers of predictive coding networks. Each layer implements the predictive coding algorithm described above for spatial inputs (as far as I can tell) instead of time-series inputs, although both could be used. The output of each cortical region is the residual error. The feed forward connections are believed to transmit these errors while the cortical feedback connections are predicted "causes". This hypothesizes that cortical feedback connections act to suppress information which is predicted by higher-level cortical region.
 
-The linear version of (<a href="#citeproc_bib_item_1">Rao and Ballard 1999</a>) 's algorithm is:
+The linear version of (<a href="#citeproc_bib_item_1">Rao and Ballard 1999</a>)'s algorithm is:
 
 \begin{align\*}
 \yvec^{Si} &\leftarrow \nu \yvec^{Si} + \mu \Wmat^{Si} \evec^{Si-1} - \eta \evec^{Si} \\\\
@@ -161,7 +162,7 @@ where \\(\nu\\), \\(\eta\\), and \\(\mu\\) are non-negative parameters and \\(\W
 
 ## Predictive Coding in the Cortex: PredCoding/Biased Competation - DIM {#predictive-coding-in-the-cortex-predcoding-biased-competation-dim}
 
-This is a reformulation of (<a href="#citeproc_bib_item_1">Rao and Ballard 1999</a>) 's PC model to be compatible w/ [Biased Competition]({{< relref "biased_competition.md" >}}) theories of cortical function. Specifically,
+This is a reformulation of (<a href="#citeproc_bib_item_1">Rao and Ballard 1999</a>)'s PC model to be compatible w/ [Biased Competition]({{< relref "biased_competition.md" >}}) theories of cortical function. Specifically,
 
 \begin{align\*}
 \evec &= \xvec \oslash (\epsilon\_2 + \Vmat \yvec) \\\\

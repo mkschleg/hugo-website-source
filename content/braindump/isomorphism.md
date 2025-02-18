@@ -1,7 +1,7 @@
 +++
 title = "Isomorphism"
 author = ["Matthew Schlegel"]
-lastmod = 2022-10-27T20:19:30-06:00
+lastmod = 2022-11-08T14:20:18-07:00
 slug = "isomorph"
 draft = false
 notetype = "note"

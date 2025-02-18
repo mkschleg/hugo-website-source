@@ -1,8 +1,8 @@
 +++
-title = "badia2020: Agent57: Outperforming the Atari Human Benchmark"
+title = "badia2020agent57: Agent57: Outperforming the Atari Human Benchmark"
 author = ["Matthew Schlegel"]
-lastmod = 2022-10-27T20:18:13-06:00
-slug = "badia2020"
+lastmod = 2022-11-09T14:06:32-07:00
+slug = "badia2020agent57"
 draft = false
 notetype = "paper"
 +++
@@ -84,6 +84,7 @@ notetype = "paper"
 \newcommand{\Zmat}{\mathbf{Z}}
 \newcommand{\Sigmamat}{\boldsymbol{\Sigma}}
 \newcommand{\identity}{\Imat}
+\newcommand{\epsilonvec}{\boldsymbol{\epsilon}}
 \newcommand{\thetavec}{\boldsymbol{\theta}}
 \newcommand{\phivec}{\boldsymbol{\phi}}
 \newcommand{\muvec}{\boldsymbol{\mu}}

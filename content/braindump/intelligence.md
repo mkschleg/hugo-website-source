@@ -1,8 +1,8 @@
 +++
 title = "Intelligence"
 author = ["Matthew Schlegel"]
-lastmod = 2022-10-27T20:19:27-06:00
+lastmod = 2023-03-21T12:01:20-06:00
 slug = "intelligence"
 draft = false
-notetype = "topic"
+notetype = "note"
 +++

@@ -1,7 +1,7 @@
 +++
 title = "Probability via Expectations"
 author = ["Matthew Schlegel"]
-lastmod = 2022-10-27T20:20:30-06:00
+lastmod = 2022-11-08T14:21:51-07:00
 slug = "probability_via_expectations"
 draft = false
 notetype = "book"
@@ -84,6 +84,7 @@ notetype = "book"
 \newcommand{\Zmat}{\mathbf{Z}}
 \newcommand{\Sigmamat}{\boldsymbol{\Sigma}}
 \newcommand{\identity}{\Imat}
+\newcommand{\epsilonvec}{\boldsymbol{\epsilon}}
 \newcommand{\thetavec}{\boldsymbol{\theta}}
 \newcommand{\phivec}{\boldsymbol{\phi}}
 \newcommand{\muvec}{\boldsymbol{\mu}}

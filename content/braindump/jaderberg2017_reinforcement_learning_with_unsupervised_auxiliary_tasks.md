@@ -1,8 +1,8 @@
 +++
-title = "jaderberg2017: Reinforcement Learning with Unsupervised Auxiliary Tasks"
+title = "jaderberg2017reinforcement: Reinforcement Learning with Unsupervised Auxiliary Tasks"
 author = ["Matthew Schlegel"]
-lastmod = 2022-10-27T20:19:31-06:00
-slug = "jaderberg2017"
+lastmod = 2022-11-09T14:05:47-07:00
+slug = "jaderberg2017reinforcement"
 draft = false
 notetype = "paper"
 +++

@@ -1,8 +1,8 @@
 +++
-title = "veeriah2019: Discovery of Useful Questions as Auxiliary Tasks"
+title = "veeriah2019discovery: Discovery of Useful Questions as Auxiliary Tasks"
 author = ["Matthew Schlegel"]
-lastmod = 2022-10-27T20:21:56-06:00
-slug = "veeriah2019"
+lastmod = 2022-11-09T14:03:35-07:00
+slug = "veeriah2019discovery"
 draft = false
 notetype = "paper"
 +++
@@ -84,6 +84,7 @@ notetype = "paper"
 \newcommand{\Zmat}{\mathbf{Z}}
 \newcommand{\Sigmamat}{\boldsymbol{\Sigma}}
 \newcommand{\identity}{\Imat}
+\newcommand{\epsilonvec}{\boldsymbol{\epsilon}}
 \newcommand{\thetavec}{\boldsymbol{\theta}}
 \newcommand{\phivec}{\boldsymbol{\phi}}
 \newcommand{\muvec}{\boldsymbol{\mu}}

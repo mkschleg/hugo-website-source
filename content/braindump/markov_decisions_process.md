@@ -1,7 +1,7 @@
 +++
 title = "Markov Decisions Process"
 author = ["Matthew Schlegel"]
-lastmod = 2022-10-27T20:19:57-06:00
+lastmod = 2022-11-08T14:20:50-07:00
 slug = "markov_decisions_process"
 tags = ["Math"]
 draft = false
@@ -85,6 +85,7 @@ notetype = "note"
 \newcommand{\Zmat}{\mathbf{Z}}
 \newcommand{\Sigmamat}{\boldsymbol{\Sigma}}
 \newcommand{\identity}{\Imat}
+\newcommand{\epsilonvec}{\boldsymbol{\epsilon}}
 \newcommand{\thetavec}{\boldsymbol{\theta}}
 \newcommand{\phivec}{\boldsymbol{\phi}}
 \newcommand{\muvec}{\boldsymbol{\mu}}

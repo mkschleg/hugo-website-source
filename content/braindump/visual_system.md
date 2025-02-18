@@ -1,7 +1,7 @@
 +++
 title = "Visual System"
 author = ["Matthew Schlegel"]
-lastmod = 2022-10-27T20:21:57-06:00
+lastmod = 2022-11-08T14:23:55-07:00
 slug = "visual_system_"
 draft = false
 notetype = "note"

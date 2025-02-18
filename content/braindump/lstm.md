@@ -1,7 +1,7 @@
 +++
 title = "LSTM"
 author = ["Matthew Schlegel"]
-lastmod = 2022-10-27T20:19:53-06:00
+lastmod = 2022-11-11T10:53:21-07:00
 slug = "lstm"
 tags = ["Recurrent", "Representation"]
 draft = false
@@ -23,5 +23,5 @@ The architecture is made up of several gates: 2 Input Gates, a Forget Gate, and 
 
 
 <style>.csl-entry{text-indent: -1.5em; margin-left: 1.5em;}</style><div class="csl-bib-body">
-  <div class="csl-entry"><a id="citeproc_bib_item_1"></a>Hochreiter, Sepp, and J Urgen Schmidhuber. 1997. “LONG SHORT-TERM MEMORY.” <i>Neural Computation</i>.</div>
+  <div class="csl-entry"><a id="citeproc_bib_item_1"></a>Hochreiter, Sepp, and J Urgen Schmidhuber. 1997. “Long Short-Term Memory.” <i>Neural Computation</i>.</div>
 </div>

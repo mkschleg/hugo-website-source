@@ -1,8 +1,8 @@
 +++
-title = "huang2011: Predictive Coding"
+title = "huang2011predictive: Predictive Coding"
 author = ["Matthew Schlegel"]
-lastmod = 2022-10-27T20:19:19-06:00
-slug = "huang2011"
+lastmod = 2022-11-09T14:05:56-07:00
+slug = "huang2011predictive"
 draft = false
 notetype = "paper"
 +++
@@ -84,6 +84,7 @@ notetype = "paper"
 \newcommand{\Zmat}{\mathbf{Z}}
 \newcommand{\Sigmamat}{\boldsymbol{\Sigma}}
 \newcommand{\identity}{\Imat}
+\newcommand{\epsilonvec}{\boldsymbol{\epsilon}}
 \newcommand{\thetavec}{\boldsymbol{\theta}}
 \newcommand{\phivec}{\boldsymbol{\phi}}
 \newcommand{\muvec}{\boldsymbol{\mu}}
@@ -132,7 +133,7 @@ The main difference here is the "neighboring" intensities from the spatial predi
 
 ## Predictive Coding in the Nervous System {#predictive-coding-in-the-nervous-system}
 
-(<a href="#citeproc_bib_item_1">Hosoya, Baccus, and Meister 2005</a>) describes how the retina encodes information through predictive coding, and that there are several phenomenon which are accurately described by a predictive coding scheme. There are not only spatial correlates but also temporal correlates.
+(<a href="#citeproc_bib_item_1">Hosoya, Baccus, and Meister 2005</a>)  describes how the retina encodes information through predictive coding, and that there are several phenomenon which are accurately described by a predictive coding scheme. There are not only spatial correlates but also temporal correlates.
 
 "An efficient visual encoder should learn the statistical regularities of the input image and adapt its encoding strategy accordingly."
 

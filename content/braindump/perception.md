@@ -1,8 +1,16 @@
 +++
 title = "Perception"
 author = ["Matthew Schlegel"]
-lastmod = 2022-10-27T20:20:17-06:00
+lastmod = 2023-03-21T12:04:00-06:00
 slug = "perception"
 draft = false
-notetype = "topic"
+notetype = "research-topic"
 +++
+
+## Projects {#projects}
+
+
+## Questions {#questions}
+
+
+## Literature {#literature}

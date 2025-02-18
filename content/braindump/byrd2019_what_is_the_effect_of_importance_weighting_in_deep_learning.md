@@ -1,8 +1,8 @@
 +++
-title = "byrd2019: What is the Effect of Importance Weighting in Deep Learning?"
+title = "byrd2019what: What is the Effect of Importance Weighting in Deep Learning?"
 author = ["Matthew Schlegel"]
-lastmod = 2022-10-27T20:18:23-06:00
-slug = "byrd2019"
+lastmod = 2022-11-08T14:18:52-07:00
+slug = "byrd2019what"
 draft = false
 notetype = "paper"
 +++
@@ -84,6 +84,7 @@ notetype = "paper"
 \newcommand{\Zmat}{\mathbf{Z}}
 \newcommand{\Sigmamat}{\boldsymbol{\Sigma}}
 \newcommand{\identity}{\Imat}
+\newcommand{\epsilonvec}{\boldsymbol{\epsilon}}
 \newcommand{\thetavec}{\boldsymbol{\theta}}
 \newcommand{\phivec}{\boldsymbol{\phi}}
 \newcommand{\muvec}{\boldsymbol{\mu}}

@@ -1,7 +1,7 @@
 +++
 title = "Afferent Codes"
 author = ["Matthew Schlegel"]
-lastmod = 2022-10-27T20:18:03-06:00
+lastmod = 2023-03-24T14:36:44-06:00
 slug = "afferent_codes"
 draft = false
 notetype = "note"

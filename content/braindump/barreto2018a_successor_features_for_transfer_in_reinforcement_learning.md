@@ -1,8 +1,8 @@
 +++
-title = "barreto2018a: Successor Features for Transfer in Reinforcement Learning"
+title = "barreto2018successor: Successor Features for Transfer in Reinforcement Learning"
 author = ["Matthew Schlegel"]
-lastmod = 2022-10-27T20:18:14-06:00
-slug = "barreto2018a"
+lastmod = 2022-11-09T14:06:29-07:00
+slug = "barreto2018successor"
 tags = ["Reinforcement-Learning", "Representation"]
 draft = false
 notetype = "paper"
@@ -85,6 +85,7 @@ notetype = "paper"
 \newcommand{\Zmat}{\mathbf{Z}}
 \newcommand{\Sigmamat}{\boldsymbol{\Sigma}}
 \newcommand{\identity}{\Imat}
+\newcommand{\epsilonvec}{\boldsymbol{\epsilon}}
 \newcommand{\thetavec}{\boldsymbol{\theta}}
 \newcommand{\phivec}{\boldsymbol{\phi}}
 \newcommand{\muvec}{\boldsymbol{\mu}}

@@ -1,7 +1,7 @@
 +++
 title = "Hypothesis"
 author = ["Matthew Schlegel"]
-lastmod = 2022-10-27T20:19:20-06:00
+lastmod = 2022-11-08T14:20:05-07:00
 slug = "hypothesis"
 draft = false
 notetype = "note"
@@ -84,6 +84,7 @@ notetype = "note"
 \newcommand{\Zmat}{\mathbf{Z}}
 \newcommand{\Sigmamat}{\boldsymbol{\Sigma}}
 \newcommand{\identity}{\Imat}
+\newcommand{\epsilonvec}{\boldsymbol{\epsilon}}
 \newcommand{\thetavec}{\boldsymbol{\theta}}
 \newcommand{\phivec}{\boldsymbol{\phi}}
 \newcommand{\muvec}{\boldsymbol{\mu}}

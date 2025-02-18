@@ -1,8 +1,8 @@
 +++
-title = "rao1999: Predictive coding in the visual cortex: a functional interpretation of some extra-classical receptive-field effects"
+title = "rao1999predictive: Predictive coding in the visual cortex: a functional interpretation of some extra-classical receptive-field effects"
 author = ["Matthew Schlegel"]
-lastmod = 2022-10-27T20:20:34-06:00
-slug = "rao1999"
+lastmod = 2022-11-08T14:21:55-07:00
+slug = "rao1999predictive"
 draft = false
 notetype = "paper"
 +++
@@ -84,6 +84,7 @@ notetype = "paper"
 \newcommand{\Zmat}{\mathbf{Z}}
 \newcommand{\Sigmamat}{\boldsymbol{\Sigma}}
 \newcommand{\identity}{\Imat}
+\newcommand{\epsilonvec}{\boldsymbol{\epsilon}}
 \newcommand{\thetavec}{\boldsymbol{\theta}}
 \newcommand{\phivec}{\boldsymbol{\phi}}
 \newcommand{\muvec}{\boldsymbol{\mu}}

@@ -1,8 +1,8 @@
 +++
-title = "vanhasselt2015: Learning to Predict Independent of Span"
+title = "vanhasselt2015learning: Learning to Predict Independent of Span"
 author = ["Matthew Schlegel"]
-lastmod = 2022-10-27T20:21:55-06:00
-slug = "vanhasselt2015"
+lastmod = 2022-11-08T14:23:52-07:00
+slug = "vanhasselt2015learning"
 draft = false
 notetype = "paper"
 +++
@@ -84,6 +84,7 @@ notetype = "paper"
 \newcommand{\Zmat}{\mathbf{Z}}
 \newcommand{\Sigmamat}{\boldsymbol{\Sigma}}
 \newcommand{\identity}{\Imat}
+\newcommand{\epsilonvec}{\boldsymbol{\epsilon}}
 \newcommand{\thetavec}{\boldsymbol{\theta}}
 \newcommand{\phivec}{\boldsymbol{\phi}}
 \newcommand{\muvec}{\boldsymbol{\mu}}

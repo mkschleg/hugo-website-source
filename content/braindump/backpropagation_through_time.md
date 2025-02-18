@@ -1,7 +1,7 @@
 +++
 title = "Backpropagation Through Time"
 author = ["Matthew Schlegel"]
-lastmod = 2022-10-27T20:18:11-06:00
+lastmod = 2022-11-09T14:06:34-07:00
 slug = "backpropagation_through_time"
 draft = false
 notetype = "note"
@@ -84,6 +84,7 @@ notetype = "note"
 \newcommand{\Zmat}{\mathbf{Z}}
 \newcommand{\Sigmamat}{\boldsymbol{\Sigma}}
 \newcommand{\identity}{\Imat}
+\newcommand{\epsilonvec}{\boldsymbol{\epsilon}}
 \newcommand{\thetavec}{\boldsymbol{\theta}}
 \newcommand{\phivec}{\boldsymbol{\phi}}
 \newcommand{\muvec}{\boldsymbol{\mu}}

@@ -1,7 +1,7 @@
 +++
 title = "Bellman Equation"
 author = ["Matthew Schlegel"]
-lastmod = 2022-10-27T20:18:16-06:00
+lastmod = 2022-12-08T14:00:09-07:00
 slug = "bellman_equation"
 draft = false
 notetype = "note"
@@ -84,6 +84,7 @@ notetype = "note"
 \newcommand{\Zmat}{\mathbf{Z}}
 \newcommand{\Sigmamat}{\boldsymbol{\Sigma}}
 \newcommand{\identity}{\Imat}
+\newcommand{\epsilonvec}{\boldsymbol{\epsilon}}
 \newcommand{\thetavec}{\boldsymbol{\theta}}
 \newcommand{\phivec}{\boldsymbol{\phi}}
 \newcommand{\muvec}{\boldsymbol{\mu}}
@@ -92,3 +93,27 @@ notetype = "note"
 \newcommand{\ind}{\perp\!\!\!\!\perp}
 \newcommand{\bigoh}{\text{O}}
 \\)
+
+tags
+: [Control Theory]({{< relref "control_theory.md" >}}), [Reinforcement Learning]({{< relref "reinforcement_learning.md" >}})
+
+source
+: [wikipedia](https://en.wikipedia.org/wiki/Bellman_equation), [Reinforcement Learning: An Introduction]({{< relref "reinforcement_learning_an_introduction.md" >}})
+
+The Bellman equation, named after [Richard Ernest Bellman]({{< relref "richard_ernest_bellman.md" >}}), is a necessary condition for the optimality associated with the mathematical [Optimization]({{< relref "optimization.md" >}}) method known as [Dynamic Programming]({{< relref "dynamic_programming.md" >}}).
+
+-   necessary in that this condition needs to hold to be able to apply [Dynamic Programming]({{< relref "dynamic_programming.md" >}}).
+
+In a [Markov Decisions Process]({{< relref "markov_decisions_process.md" >}}), the Bellman equation is a recursion for expected rewards.
+\\[
+V^\pi(s) = R(s, \pi(s)) + \gamma \sum\_{s^\prime} P(s^\prime | s, \pi(s)) V^\pi(s^\prime)
+\\]
+
+
+## Bellman Optimality Equation {#bellman-optimality-equation}
+
+The bellman equation can be defined for the optimal policy as well:
+\\[
+V^{\pi\*}(s) = \max\_a \left\\{R(s, a) + \gamma \sum\_{s^\prime} P(s^\prime | s, a) V^\pi(s^\prime)\right\\}
+\\]
+where we replace the policy in the previous example with the greedy policy \\(\pi\*\\).

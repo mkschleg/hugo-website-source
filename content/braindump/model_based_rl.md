@@ -1,7 +1,7 @@
 +++
 title = "Model-based RL"
 author = ["Matthew Schlegel"]
-lastmod = 2022-10-27T20:20:04-06:00
+lastmod = 2022-11-09T14:05:14-07:00
 slug = "model_based_rl"
 draft = false
 notetype = "note"
@@ -84,6 +84,7 @@ notetype = "note"
 \newcommand{\Zmat}{\mathbf{Z}}
 \newcommand{\Sigmamat}{\boldsymbol{\Sigma}}
 \newcommand{\identity}{\Imat}
+\newcommand{\epsilonvec}{\boldsymbol{\epsilon}}
 \newcommand{\thetavec}{\boldsymbol{\theta}}
 \newcommand{\phivec}{\boldsymbol{\phi}}
 \newcommand{\muvec}{\boldsymbol{\mu}}
@@ -96,14 +97,14 @@ notetype = "note"
 tags
 : [Reinforcement Learning]({{< relref "reinforcement_learning.md" >}})
 
-Model-based reinforcement learning is the combination of planning and reinforcement learning. An agent constructs a world model which is used to simulate expected experience. This, in theory, can be significantly more sample efficient than model-free reinforcement learning as an agent can learn behaviours through interacting with the internal world model while avoid the, potentially, costly data collection from the real environment. While there are many model-based approaches which have shown promise with known models (<a href="#citeproc_bib_item_14">Silver et al. 2016</a>) (<a href="#citeproc_bib_item_15">Silver et al. 2017</a>), approaches with learned models have only recently become competitive with model-free approaches (<a href="#citeproc_bib_item_13">Schrittwieser et al. 2020</a>) (<a href="#citeproc_bib_item_5">Hafner et al. 2021</a>). This is because of several failure modes which can occur when learning a model leading to samples which do not represent the real world.
+Model-based reinforcement learning is the combination of planning and reinforcement learning. An agent constructs a world model which is used to simulate expected experience. This, in theory, can be significantly more sample efficient than model-free reinforcement learning as an agent can learn behaviours through interacting with the internal world model while avoid the, potentially, costly data collection from the real environment. While there are many model-based approaches which have shown promise with known models (<a href="#citeproc_bib_item_14">Silver et al. 2016</a>, <a href="#citeproc_bib_item_15">2017</a>) approaches with learned models have only recently become competitive with model-free approaches (<a href="#citeproc_bib_item_13">Schrittwieser et al. 2020</a>; <a href="#citeproc_bib_item_5">Hafner et al. 2021</a>). This is because of several failure modes which can occur when learning a model leading to samples which do not represent the real world.
 
 In the below section, I will go over the general approach to MBRL, and then discuss some of the considerations which need to be made when building a world model.
 
 
 ## Background {#background}
 
-   For a more detailed explanation of mbrl please see (<a href="#citeproc_bib_item_10">Moerland, Broekens, and Jonker 2021</a>) or chapter 8 of (<a href="#citeproc_bib_item_16">Sutton and Barto 2018</a>). We focus on the problem of learning an optimal policy for a Markov decision process, from on-policy interaction.
+For a more detailed explanation of mbrl please see (<a href="#citeproc_bib_item_10">Moerland, Broekens, and Jonker 2021</a>) or chapter 8 of (<a href="#citeproc_bib_item_16">Sutton and Barto 2018</a>). We focus on the problem of learning an optimal policy for a Markov decision process, from on-policy interaction.
 A Markov decision process consists of \\((\states, \actions, \transition, \rewards,\gamma)\\) where
 \\(\states\\) is the set of states;
 \\(\actions\\) is the set of actions;
@@ -154,7 +155,7 @@ There have been several ways to deal with partial observability:
 
 ### Non-stationarity {#non-stationarity}
 
-When the graph of the mdp change over time. This can be changes in the transition dynamics or in the reward function. If the agent trusts its model when the environment changes this could lead to the agent learning wrong policies (see (<a href="#citeproc_bib_item_16">Sutton and Barto 2018</a>) section 8).
+When the graph of the mdp change over time. This can be changes in the transition dynamics or in the reward function. If the agent trusts its model when the environment changes this could lead to the agent learning wrong policies (see (<a href="#citeproc_bib_item_16">Sutton and Barto 2018</a>) chapter 8).
 
 
 ### Multi-step prediction {#multi-step-prediction}
@@ -176,7 +177,7 @@ Representations are important for all parts of a ML/RL system. This is no differ
 Much like state abstraction, we can have representations/abstractions which span the temporal axis of an MDP.
 
 
-## State of the Art in MBRL: (<a href="#citeproc_bib_item_4">Hafner et al. 2020</a>), (<a href="#citeproc_bib_item_5">Hafner et al. 2021</a>) {#state-of-the-art-in-mbrl}
+## State of the Art in MBRL: (<a href="#citeproc_bib_item_4">Hafner et al. 2020</a>, <a href="#citeproc_bib_item_5">2021</a>) {#state-of-the-art-in-mbrl}
 
 The so called DreamerV1 and DreamerV2 architectures use a latent distribution model to reach human performance on the Atari domain for the first time for a MB approach.
 
@@ -223,3 +224,24 @@ While principally a model-free approach to learning policy gradients, this paper
 
 
 ### (<a href="#citeproc_bib_item_8">Luczkow 2021</a>) {#e347b1}
+
+
+
+<style>.csl-entry{text-indent: -1.5em; margin-left: 1.5em;}</style><div class="csl-bib-body">
+  <div class="csl-entry"><a id="citeproc_bib_item_1"></a>Abbas, Zaheer, Samuel Sokota, Erin Talvitie, and Martha White. 2020. “Selective Dyna-Style Planning Under Limited Model Capacity.” In <i>Proceedings of the 37th International Conference on Machine Learning</i>. PMLR.</div>
+  <div class="csl-entry"><a id="citeproc_bib_item_2"></a>Gasse, Maxime, Damien Grasset, Guillaume Gaudron, and Pierre-Yves Oudeyer. 2021. “Causal Reinforcement Learning Using Observational and Interventional Data.” <i>arXiv:2106.14421 [Cs]</i>. <a href="https://arxiv.org/abs/2106.14421">https://arxiv.org/abs/2106.14421</a>.</div>
+  <div class="csl-entry"><a id="citeproc_bib_item_3"></a>Goyal, Anirudh, Alex Lamb, Phanideep Gampa, Philippe Beaudoin, Sergey Levine, Charles Blundell, Yoshua Bengio, and Michael Mozer. 2020. “Object Files and Schemata: Factorizing Declarative and Procedural Knowledge in Dynamical Systems.” <i>arXiv:2006.16225 [Cs, Stat]</i>. <a href="https://arxiv.org/abs/2006.16225">https://arxiv.org/abs/2006.16225</a>.</div>
+  <div class="csl-entry"><a id="citeproc_bib_item_4"></a>Hafner, Danijar, Timothy Lillicrap, Jimmy Ba, and Mohammad Norouzi. 2020. “Dream to Control: Learning Behaviors by Latent Imagination.” <i>arXiv:1912.01603 [Cs]</i>. <a href="https://arxiv.org/abs/1912.01603">https://arxiv.org/abs/1912.01603</a>.</div>
+  <div class="csl-entry"><a id="citeproc_bib_item_5"></a>Hafner, Danijar, Timothy Lillicrap, Mohammad Norouzi, and Jimmy Ba. 2021. “Mastering Atari with Discrete World Models.” <i>arXiv:2010.02193 [Cs, Stat]</i>. <a href="https://arxiv.org/abs/2010.02193">https://arxiv.org/abs/2010.02193</a>.</div>
+  <div class="csl-entry"><a id="citeproc_bib_item_6"></a>Ke, Nan Rosemary, Aniket Didolkar, Sarthak Mittal, Anirudh Goyal, Guillaume Lajoie, Stefan Bauer, Danilo Rezende, Yoshua Bengio, Michael Mozer, and Christopher Pal. 2021. “Systematic Evaluation of Causal Discovery in Visual Model Based Reinforcement Learning.” <i>arXiv:2107.00848 [Cs, Stat]</i>. <a href="https://arxiv.org/abs/2107.00848">https://arxiv.org/abs/2107.00848</a>.</div>
+  <div class="csl-entry"><a id="citeproc_bib_item_7"></a>Kipf, Thomas, Elise van der Pol, and Max Welling. 2020. “Contrastive Learning of Structured World Models.” <i>arXiv:1911.12247 [Cs, Stat]</i>. <a href="https://arxiv.org/abs/1911.12247">https://arxiv.org/abs/1911.12247</a>.</div>
+  <div class="csl-entry"><a id="citeproc_bib_item_8"></a>Luczkow, Vincent. 2021. “Structural Causal Models for Reinforcement Learning.” M.Sc., Canada: McGill University (Canada).</div>
+  <div class="csl-entry"><a id="citeproc_bib_item_9"></a>Mesnard, Thomas, Théophane Weber, Fabio Viola, Shantanu Thakoor, Alaa Saade, Anna Harutyunyan, Will Dabney, et al. 2020. “Counterfactual Credit Assignment in Model-Free Reinforcement Learning.” <i>arXiv:2011.09464 [Cs]</i>. <a href="https://arxiv.org/abs/2011.09464">https://arxiv.org/abs/2011.09464</a>.</div>
+  <div class="csl-entry"><a id="citeproc_bib_item_10"></a>Moerland, Thomas M., Joost Broekens, and Catholijn M. Jonker. 2021. “Model-Based Reinforcement Learning: A Survey.” <i>arXiv:2006.16712 [Cs, Stat]</i>. <a href="https://arxiv.org/abs/2006.16712">https://arxiv.org/abs/2006.16712</a>.</div>
+  <div class="csl-entry"><a id="citeproc_bib_item_11"></a>Oh, Junhyuk, Xiaoxiao Guo, Honglak Lee, Richard L Lewis, and Satinder Singh. 2015. “Action-Conditional Video Prediction Using Deep Networks in Atari Games.” In <i>Advances in Neural Information Processing Systems 28</i>, edited by C. Cortes, N. D. Lawrence, D. D. Lee, M. Sugiyama, and R. Garnett. Curran Associates, Inc.</div>
+  <div class="csl-entry"><a id="citeproc_bib_item_12"></a>Rezende, Danilo J., Ivo Danihelka, George Papamakarios, Nan Rosemary Ke, Ray Jiang, Theophane Weber, Karol Gregor, et al. 2020. “Causally Correct Partial Models for Reinforcement Learning.” <i>arXiv:2002.02836 [Cs, Stat]</i>. <a href="https://arxiv.org/abs/2002.02836">https://arxiv.org/abs/2002.02836</a>.</div>
+  <div class="csl-entry"><a id="citeproc_bib_item_13"></a>Schrittwieser, Julian, Ioannis Antonoglou, Thomas Hubert, Karen Simonyan, Laurent Sifre, Simon Schmitt, Arthur Guez, et al. 2020. “Mastering Atari, Go, Chess and Shogi by Planning with a Learned Model.” <i>Nature</i>. Nature Publishing Group.</div>
+  <div class="csl-entry"><a id="citeproc_bib_item_14"></a>Silver, David, Aja Huang, Chris J. Maddison, Arthur Guez, Laurent Sifre, George van den Driessche, Julian Schrittwieser, et al. 2016. “Mastering the Game of Go with Deep Neural Networks and Tree Search.” <i>Nature</i>.</div>
+  <div class="csl-entry"><a id="citeproc_bib_item_15"></a>Silver, David, Julian Schrittwieser, Karen Simonyan, Ioannis Antonoglou, Aja Huang, Arthur Guez, Thomas Hubert, et al. 2017. “Mastering the Game of Go without Human Knowledge.” <i>Nature</i>.</div>
+  <div class="csl-entry"><a id="citeproc_bib_item_16"></a>Sutton, Richard S., and Andrew G. Barto. 2018. <i>Reinforcement Learning: An Introduction</i>. Second edition. Adaptive Computation and Machine Learning Series. Cambridge, Massachusetts: The MIT Press.</div>
+</div>

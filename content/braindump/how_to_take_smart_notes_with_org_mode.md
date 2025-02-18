@@ -1,7 +1,7 @@
 +++
 title = "How to Take Smart Notes with Org-mode"
 author = ["Matthew Schlegel"]
-lastmod = 2022-10-27T20:19:17-06:00
+lastmod = 2022-11-08T14:20:02-07:00
 slug = "how_to_take_smart_notes_with_org_mode"
 draft = false
 notetype = "website"

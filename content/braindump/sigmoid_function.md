@@ -1,7 +1,7 @@
 +++
 title = "Sigmoid Function"
 author = ["Matthew Schlegel"]
-lastmod = 2022-10-28T13:05:02-06:00
+lastmod = 2022-11-08T14:22:18-07:00
 slug = "sigmoid_function"
 draft = false
 notetype = "note"
@@ -84,6 +84,7 @@ notetype = "note"
 \newcommand{\Zmat}{\mathbf{Z}}
 \newcommand{\Sigmamat}{\boldsymbol{\Sigma}}
 \newcommand{\identity}{\Imat}
+\newcommand{\epsilonvec}{\boldsymbol{\epsilon}}
 \newcommand{\thetavec}{\boldsymbol{\theta}}
 \newcommand{\phivec}{\boldsymbol{\phi}}
 \newcommand{\muvec}{\boldsymbol{\mu}}
