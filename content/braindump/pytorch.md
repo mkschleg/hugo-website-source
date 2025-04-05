@@ -1,7 +1,7 @@
 +++
 title = "Pytorch"
 author = ["Matthew Schlegel"]
-lastmod = 2023-08-25T22:27:05-04:00
+lastmod = 2025-02-21T10:28:55-07:00
 slug = "pytorch"
 draft = false
 notetype = "note"

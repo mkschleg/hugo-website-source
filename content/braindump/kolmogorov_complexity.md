@@ -1,7 +1,7 @@
 +++
 title = "Kolmogorov Complexity"
 author = ["Matthew Schlegel"]
-lastmod = 2022-11-08T14:20:28-07:00
+lastmod = 2025-02-21T10:28:07-07:00
 slug = "kolmogorov_complexity"
 tags = ["Math"]
 draft = false

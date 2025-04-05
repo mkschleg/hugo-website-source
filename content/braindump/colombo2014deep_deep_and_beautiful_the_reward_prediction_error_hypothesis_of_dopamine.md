@@ -1,7 +1,7 @@
 +++
 title = "colombo2014deep: Deep and beautiful. The reward prediction error hypothesis of dopamine"
 author = ["Matthew Schlegel"]
-lastmod = 2023-03-20T15:34:57-06:00
+lastmod = 2025-02-21T10:25:58-07:00
 slug = "colombo2014deep"
 draft = false
 notetype = "paper"

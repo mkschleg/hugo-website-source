@@ -1,7 +1,7 @@
 +++
 title = "Predictive Processing"
 author = ["Matthew Schlegel"]
-lastmod = 2023-03-21T12:05:52-06:00
+lastmod = 2025-02-21T10:28:48-07:00
 slug = "predictive_processing"
 draft = false
 notetype = "research-topic"
@@ -32,8 +32,8 @@ Other takes on predictive processing can be found by accounts:
 
 
 <style>.csl-entry{text-indent: -1.5em; margin-left: 1.5em;}</style><div class="csl-bib-body">
-  <div class="csl-entry"><a id="citeproc_bib_item_1"></a>Clark, Andy. 2013. “Whatever next? Predictive Brains, Situated Agents, and the Future of Cognitive Science.” <i>Behavioral and Brain Sciences</i>.</div>
-  <div class="csl-entry"><a id="citeproc_bib_item_2"></a>Kearney, Alex, and Oliver Oxton. 2019. “Making Meaning: Semiotics Within Predictive Knowledge Architectures.” arXiv. <a href="https://arxiv.org/abs/1904.09023">https://arxiv.org/abs/1904.09023</a>.</div>
-  <div class="csl-entry"><a id="citeproc_bib_item_3"></a>Rao, Rajesh P. N., and Dana H. Ballard. 1999. “Predictive Coding in the Visual Cortex: A Functional Interpretation of Some Extra-Classical Receptive-Field Effects.” <i>Nature Neuroscience</i>.</div>
+  <div class="csl-entry"><a id="citeproc_bib_item_1"></a>Clark, Andy. 2013. “Whatever next? Predictive Brains, Situated Agents, and the Future of Cognitive Science.” <i>Behavioral and Brain Sciences</i> 36 (3): 181–204. doi:<a href="https://doi.org/10.1017/S0140525X12000477">10.1017/S0140525X12000477</a>.</div>
+  <div class="csl-entry"><a id="citeproc_bib_item_2"></a>Kearney, Alex, and Oliver Oxton. 2019. “Making Meaning: Semiotics Within Predictive Knowledge Architectures.” arXiv. doi:<a href="https://doi.org/10.48550/arXiv.1904.09023">10.48550/arXiv.1904.09023</a>.</div>
+  <div class="csl-entry"><a id="citeproc_bib_item_3"></a>Rao, Rajesh P. N., and Dana H. Ballard. 1999. “Predictive Coding in the Visual Cortex: A Functional Interpretation of Some Extra-Classical Receptive-Field Effects.” <i>Nature Neuroscience</i> 2 (1): 79. doi:<a href="https://doi.org/10.1038/4580">10.1038/4580</a>.</div>
   <div class="csl-entry"><a id="citeproc_bib_item_4"></a>White, Adam. 2015. “Developing a Predictive Approach to Knowledge.” University of Alberta.</div>
 </div>

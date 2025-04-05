@@ -1,7 +1,7 @@
 +++
 title = "Probability Inequalities"
 author = ["Matthew Schlegel"]
-lastmod = 2023-08-08T13:20:08-06:00
+lastmod = 2025-02-21T10:28:51-07:00
 slug = "probability_inequalities"
 draft = false
 notetype = "note"
@@ -99,5 +99,5 @@ tags
 
 <!--listend-->
 
--   [Markov's Inequality]({{< relref "markov_s_inequality.md" >}})
+-   [Markov's Inequality]({{< relref "markov_s_inequality.sync-conflict-20240810-100717-257GVZN.md" >}})
 -   [Hoeffding Inequality]({{< relref "hoeffding_inequality.md" >}})

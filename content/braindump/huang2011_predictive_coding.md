@@ -1,7 +1,7 @@
 +++
 title = "huang2011predictive: Predictive Coding"
 author = ["Matthew Schlegel"]
-lastmod = 2022-11-09T14:05:56-07:00
+lastmod = 2025-02-21T10:27:36-07:00
 slug = "huang2011predictive"
 draft = false
 notetype = "paper"
@@ -147,6 +147,6 @@ Finally, it was suggested by (<a href="#citeproc_bib_item_2">Rao and Ballard 199
 
 
 <style>.csl-entry{text-indent: -1.5em; margin-left: 1.5em;}</style><div class="csl-bib-body">
-  <div class="csl-entry"><a id="citeproc_bib_item_1"></a>Hosoya, Toshihiko, Stephen A. Baccus, and Markus Meister. 2005. “Dynamic Predictive Coding by the Retina.” <i>Nature</i>.</div>
-  <div class="csl-entry"><a id="citeproc_bib_item_2"></a>Rao, Rajesh P. N., and Dana H. Ballard. 1999. “Predictive Coding in the Visual Cortex: A Functional Interpretation of Some Extra-Classical Receptive-Field Effects.” <i>Nature Neuroscience</i>.</div>
+  <div class="csl-entry"><a id="citeproc_bib_item_1"></a>Hosoya, Toshihiko, Stephen A. Baccus, and Markus Meister. 2005. “Dynamic Predictive Coding by the Retina.” <i>Nature</i> 436 (7047): 71–77. doi:<a href="https://doi.org/10.1038/nature03689">10.1038/nature03689</a>.</div>
+  <div class="csl-entry"><a id="citeproc_bib_item_2"></a>Rao, Rajesh P. N., and Dana H. Ballard. 1999. “Predictive Coding in the Visual Cortex: A Functional Interpretation of Some Extra-Classical Receptive-Field Effects.” <i>Nature Neuroscience</i> 2 (1): 79. doi:<a href="https://doi.org/10.1038/4580">10.1038/4580</a>.</div>
 </div>

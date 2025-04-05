@@ -1,7 +1,7 @@
 +++
 title = "Deep Learning"
 author = ["Matthew Schlegel"]
-lastmod = 2023-03-21T12:01:51-06:00
+lastmod = 2025-02-21T10:26:10-07:00
 slug = "deep_learning"
 draft = false
 notetype = "misc-topic"

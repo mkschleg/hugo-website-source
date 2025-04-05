@@ -1,7 +1,7 @@
 +++
 title = "hochreiter1997long: LONG SHORT-TERM MEMORY"
 author = ["Matthew Schlegel"]
-lastmod = 2022-11-09T14:06:01-07:00
+lastmod = 2025-02-21T10:27:16-07:00
 slug = "hochreiter1997long"
 tags = ["Recurrent", "Representation"]
 draft = false

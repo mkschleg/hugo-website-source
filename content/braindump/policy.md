@@ -1,7 +1,7 @@
 +++
 title = "Policy"
 author = ["Matthew Schlegel"]
-lastmod = 2023-03-21T11:51:30-06:00
+lastmod = 2025-02-21T10:28:45-07:00
 slug = "policy"
 draft = false
 notetype = "note"

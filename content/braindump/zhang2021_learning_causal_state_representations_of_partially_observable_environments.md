@@ -1,7 +1,7 @@
 +++
 title = "zhang2021learning: Learning Causal State Representations of Partially Observable Environments"
 author = ["Matthew Schlegel"]
-lastmod = 2022-11-09T14:03:25-07:00
+lastmod = 2025-02-21T10:30:30-07:00
 slug = "learning_causal_state_representations_of_partially_observable_environments"
 draft = false
 notetype = "paper"

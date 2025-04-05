@@ -1,7 +1,7 @@
 +++
 title = "Neuroscience"
 author = ["Matthew Schlegel"]
-lastmod = 2023-03-21T12:02:46-06:00
+lastmod = 2025-02-21T10:28:33-07:00
 slug = "neuroscience"
 draft = false
 notetype = "misc-topic"

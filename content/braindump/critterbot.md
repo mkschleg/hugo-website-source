@@ -1,7 +1,7 @@
 +++
 title = "Critterbot"
 author = ["Matthew Schlegel"]
-lastmod = 2022-11-09T14:06:14-07:00
+lastmod = 2025-02-21T10:26:03-07:00
 slug = "critterbot"
 draft = false
 notetype = "note"
@@ -102,5 +102,5 @@ The critterbot was first developed for (<a href="#citeproc_bib_item_1">Sutton et
 
 
 <style>.csl-entry{text-indent: -1.5em; margin-left: 1.5em;}</style><div class="csl-bib-body">
-  <div class="csl-entry"><a id="citeproc_bib_item_1"></a>Sutton, Richard S., Joseph Modayil, Michael Delp, Thomas Degris, Patrick M. Pilarski, Adam White, and Doina Precup. 2011. “Horde: A Scalable Real-time Architecture for Learning Knowledge from Unsupervised Sensorimotor Interaction.” In <i>The 10th International Conference on Autonomous Agents and Multiagent Systems - Volume 2</i>. AAMAS ’11. Richland, SC: International Foundation for Autonomous Agents and Multiagent Systems.</div>
+  <div class="csl-entry"><a id="citeproc_bib_item_1"></a>Sutton, Richard, Joseph Modayil, Michael Delp, Thomas Degris, Patrick M. Pilarski, Adam White, and Doina Precup. 2011. “Horde: A Scalable Real-time Architecture for Learning Knowledge from Unsupervised Sensorimotor Interaction.” In <i>The 10th International Conference on Autonomous Agents and Multiagent Systems - Volume 2</i>, 761–68. International Foundation for Autonomous Agents and Multiagent Systems.</div>
 </div>

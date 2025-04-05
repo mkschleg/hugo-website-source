@@ -1,7 +1,7 @@
 +++
 title = "Developmental Reinforcement Learning"
 author = ["Matthew Schlegel"]
-lastmod = 2023-03-21T12:51:31-06:00
+lastmod = 2025-02-21T10:26:13-07:00
 slug = "developmental_reinforcement_learning"
 draft = false
 notetype = "note"

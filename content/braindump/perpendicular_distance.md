@@ -1,7 +1,7 @@
 +++
 title = "Perpendicular Distance"
 author = ["Matthew Schlegel"]
-lastmod = 2022-11-08T14:21:17-07:00
+lastmod = 2025-02-21T10:28:44-07:00
 slug = "perpendicular_distance"
 draft = false
 notetype = "note"

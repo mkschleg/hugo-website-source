@@ -1,7 +1,7 @@
 +++
 title = "Gradient Descent"
 author = ["Matthew Schlegel"]
-lastmod = 2022-11-08T14:19:48-07:00
+lastmod = 2025-02-21T10:26:49-07:00
 slug = "gradient_descent"
 draft = false
 notetype = "note"

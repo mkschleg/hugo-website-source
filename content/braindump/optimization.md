@@ -1,7 +1,7 @@
 +++
 title = "Optimization"
 author = ["Matthew Schlegel"]
-lastmod = 2022-11-08T14:21:10-07:00
+lastmod = 2025-02-21T10:28:39-07:00
 slug = "optimization"
 draft = false
 notetype = "note"

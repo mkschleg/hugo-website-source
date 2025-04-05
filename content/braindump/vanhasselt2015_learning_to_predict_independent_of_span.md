@@ -1,7 +1,7 @@
 +++
 title = "vanhasselt2015learning: Learning to Predict Independent of Span"
 author = ["Matthew Schlegel"]
-lastmod = 2022-11-08T14:23:52-07:00
+lastmod = 2025-02-21T10:29:55-07:00
 slug = "vanhasselt2015learning"
 draft = false
 notetype = "paper"

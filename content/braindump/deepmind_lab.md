@@ -1,7 +1,7 @@
 +++
 title = "DeepMind Lab"
 author = ["Matthew Schlegel"]
-lastmod = 2022-11-08T14:19:20-07:00
+lastmod = 2025-02-21T10:26:12-07:00
 slug = "deepmind_lab"
 draft = false
 notetype = "note"

@@ -1,7 +1,7 @@
 +++
 title = "stock2004short: A short history of ideo-motor action"
 author = ["Matthew Schlegel"]
-lastmod = 2022-11-08T14:22:30-07:00
+lastmod = 2025-02-21T10:29:18-07:00
 slug = "stock2004short"
 draft = false
 notetype = "paper"

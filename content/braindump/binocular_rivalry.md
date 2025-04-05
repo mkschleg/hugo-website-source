@@ -1,7 +1,7 @@
 +++
 title = "Binocular rivalry"
 author = ["Matthew Schlegel"]
-lastmod = 2022-11-09T14:06:27-07:00
+lastmod = 2025-02-21T10:25:42-07:00
 slug = "binocular_rivalry"
 draft = false
 notetype = "note"
@@ -23,5 +23,5 @@ Discovered by Porta in 1593 (<a href="#citeproc_bib_item_1">Wade 1996</a>). The 
 
 
 <style>.csl-entry{text-indent: -1.5em; margin-left: 1.5em;}</style><div class="csl-bib-body">
-  <div class="csl-entry"><a id="citeproc_bib_item_1"></a>Wade, Nicholas J. 1996. “Descriptions of Visual Phenomena from Aristotle to Wheatstone.” <i>Perception</i>. SAGE Publications Ltd STM.</div>
+  <div class="csl-entry"><a id="citeproc_bib_item_1"></a>Wade, Nicholas J. 1996. “Descriptions of Visual Phenomena from Aristotle to Wheatstone.” <i>Perception</i> 25 (10). SAGE Publications Ltd STM: 1137–75. doi:<a href="https://doi.org/10.1068/p251137">10.1068/p251137</a>.</div>
 </div>

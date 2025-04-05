@@ -1,7 +1,7 @@
 +++
 title = "gonzalez-soto2019reinforcement: Reinforcement Learning is not a Causal problem"
 author = ["Matthew Schlegel"]
-lastmod = 2022-11-09T14:06:06-07:00
+lastmod = 2025-02-21T10:26:27-07:00
 slug = "reinforcement_learning_is_not_a_causal_problem"
 tags = ["Causality"]
 draft = false

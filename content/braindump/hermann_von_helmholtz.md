@@ -1,7 +1,7 @@
 +++
 title = "Hermann von Helmholtz"
 author = ["Matthew Schlegel"]
-lastmod = 2022-11-08T14:19:52-07:00
+lastmod = 2025-02-21T10:27:03-07:00
 slug = "hermann_von_helmholtz"
 draft = false
 notetype = "note"

@@ -1,7 +1,7 @@
 +++
 title = "littman2002predictive: Predictive Representations of State"
 author = ["Matthew Schlegel"]
-lastmod = 2022-11-09T14:05:30-07:00
+lastmod = 2025-02-21T10:28:18-07:00
 slug = "littman2002predictive"
 draft = false
 notetype = "paper"

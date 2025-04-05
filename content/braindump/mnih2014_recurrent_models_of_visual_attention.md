@@ -1,7 +1,7 @@
 +++
 title = "mnih2014recurrent: Recurrent Models of Visual Attention"
 author = ["Matthew Schlegel"]
-lastmod = 2022-11-09T14:05:16-07:00
+lastmod = 2025-02-21T10:28:28-07:00
 slug = "mnih2014recurrent"
 draft = false
 notetype = "paper"
@@ -144,5 +144,5 @@ The network is trained through the REINFORCE algorithm with a baseline of the av
 
 
 <style>.csl-entry{text-indent: -1.5em; margin-left: 1.5em;}</style><div class="csl-bib-body">
-  <div class="csl-entry"><a id="citeproc_bib_item_1"></a>Sutton, Richard S, David A. McAllester, Satinder P. Singh, and Yishay Mansour. 2000. “Policy Gradient Methods for Reinforcement Learning with Function Approximation.” In <i>Advances in Neural Information Processing Systems 12</i>, edited by S. A. Solla, T. K. Leen, and K. Müller. MIT Press.</div>
+  <div class="csl-entry"><a id="citeproc_bib_item_1"></a>Sutton, Richard S, David A. McAllester, Satinder P. Singh, and Yishay Mansour. 2000. “Policy Gradient Methods for Reinforcement Learning with Function Approximation.” In <i>Advances in Neural Information Processing Systems 12</i>, edited by S. A. Solla, T. K. Leen, and K. Müller, 1057–63. MIT Press.</div>
 </div>

@@ -1,7 +1,7 @@
 +++
 title = "kearney2019making: Making Meaning: Semiotics Within Predictive Knowledge Architectures"
 author = ["Matthew Schlegel"]
-lastmod = 2022-11-09T14:05:39-07:00
+lastmod = 2025-02-21T10:28:05-07:00
 slug = "kearney2019making"
 draft = false
 notetype = "paper"

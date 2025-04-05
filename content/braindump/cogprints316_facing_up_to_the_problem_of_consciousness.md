@@ -1,7 +1,7 @@
 +++
 title = "cogprints316: Facing Up to the Problem of Consciousness"
 author = ["Matthew Schlegel"]
-lastmod = 2023-03-20T12:39:36-06:00
+lastmod = 2025-02-21T10:25:58-07:00
 slug = "cogprints316"
 draft = false
 notetype = "paper"

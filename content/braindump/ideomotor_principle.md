@@ -1,7 +1,7 @@
 +++
 title = "Ideomotor Principle"
 author = ["Matthew Schlegel"]
-lastmod = 2022-11-08T14:20:07-07:00
+lastmod = 2025-02-21T10:27:42-07:00
 slug = "ideomotor_principle"
 draft = false
 notetype = "note"

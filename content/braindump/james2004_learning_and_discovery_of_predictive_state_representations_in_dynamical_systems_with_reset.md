@@ -1,7 +1,7 @@
 +++
 title = "james2004learning: Learning and Discovery of Predictive State Representations in Dynamical Systems with Reset"
 author = ["Matthew Schlegel"]
-lastmod = 2022-11-09T14:05:44-07:00
+lastmod = 2025-02-21T10:28:02-07:00
 slug = "james2004learning"
 draft = false
 notetype = "paper"
@@ -116,6 +116,6 @@ While the algorithm does better than previously and the discovery algorithm is d
 
 
 <style>.csl-entry{text-indent: -1.5em; margin-left: 1.5em;}</style><div class="csl-bib-body">
-  <div class="csl-entry"><a id="citeproc_bib_item_1"></a>Singh, Satinder P, Michael L Littman, Nicholas K Jong, David Pardoe, and Peter Stone. 2003. “Learning Predictive State Representations.” In <i>Proceedings of the 20th International Conference on Machine Learning (ICML-03)</i>.</div>
-  <div class="csl-entry"><a id="citeproc_bib_item_2"></a>Singh, Satinder, Michael R. James, and Matthew R. Rudary. 2004. “Predictive State Representations: A New Theory for Modeling Dynamical Systems.” In <i>Proceedings of the 20th Conference on Uncertainty in Artificial Intelligence</i>. UAI ’04. Arlington, Virginia, United States: AUAI Press.</div>
+  <div class="csl-entry"><a id="citeproc_bib_item_1"></a>Singh, Satinder P, Michael L Littman, Nicholas K Jong, David Pardoe, and Peter Stone. 2003. “Learning Predictive State Representations.” In <i>Proceedings of the 20th International Conference on Machine Learning (ICML-03)</i>, 712–19.</div>
+  <div class="csl-entry"><a id="citeproc_bib_item_2"></a>Singh, Satinder, Michael James, and Matthew R. Rudary. 2004. “Predictive State Representations: A New Theory for Modeling Dynamical Systems.” In <i>Proceedings of the 20th Conference on Uncertainty in Artificial Intelligence</i>, 512–19.</div>
 </div>

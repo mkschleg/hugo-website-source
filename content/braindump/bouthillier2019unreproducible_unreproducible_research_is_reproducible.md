@@ -1,7 +1,7 @@
 +++
 title = "bouthillier2019unreproducible: Unreproducible Research is Reproducible"
 author = ["Matthew Schlegel"]
-lastmod = 2023-03-21T11:58:59-06:00
+lastmod = 2025-02-21T10:25:44-07:00
 slug = "bouthillier2019unreproducible"
 draft = false
 notetype = "paper"
@@ -197,6 +197,6 @@ A too large proportion of the research devoted to exploratory research increases
 
 
 <style>.csl-entry{text-indent: -1.5em; margin-left: 1.5em;}</style><div class="csl-bib-body">
-  <div class="csl-entry"><a id="citeproc_bib_item_1"></a>Goodman, Steven N., Daniele Fanelli, and John P. A. Ioannidis. 2016. <a href="https://www.ncbi.nlm.nih.gov/pubmed/27252173">“What Does Research Reproducibility Mean?</a>” <i>Science Translational Medicine</i>.</div>
-  <div class="csl-entry"><a id="citeproc_bib_item_2"></a>Li, Liam, Kevin Jamieson, Afshin Rostamizadeh, Ekaterina Gonina, Moritz Hardt, Benjamin Recht, and Ameet Talwalkar. 2018. “Massively Parallel Hyperparameter Tuning.” <i>arXiv:1810.05934 [Cs, Stat]</i>. <a href="https://arxiv.org/abs/1810.05934">https://arxiv.org/abs/1810.05934</a>.</div>
+  <div class="csl-entry"><a id="citeproc_bib_item_1"></a>Goodman, Steven N., Daniele Fanelli, and John P. A. Ioannidis. 2016. “What Does Research Reproducibility Mean?” <i>Science Translational Medicine</i> 8 (341): 341ps12-341ps12. doi:<a href="https://doi.org/10.1126/scitranslmed.aaf5027">10.1126/scitranslmed.aaf5027</a>.</div>
+  <div class="csl-entry"><a id="citeproc_bib_item_2"></a>Li, Liam, Kevin Jamieson, Afshin Rostamizadeh, Ekaterina Gonina, Moritz Hardt, Benjamin Recht, and Ameet Talwalkar. 2018. “Massively Parallel Hyperparameter Tuning.”</div>
 </div>

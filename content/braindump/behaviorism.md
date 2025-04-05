@@ -1,7 +1,7 @@
 +++
 title = "Behaviorism"
 author = ["Matthew Schlegel"]
-lastmod = 2023-03-20T12:03:31-06:00
+lastmod = 2025-02-21T10:25:39-07:00
 slug = "behaviorism"
 draft = false
 notetype = "note"

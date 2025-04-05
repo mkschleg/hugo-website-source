@@ -1,7 +1,7 @@
 +++
 title = "Linear Algebra and its Applications"
 author = ["Matthew Schlegel"]
-lastmod = 2022-11-08T14:20:38-07:00
+lastmod = 2025-02-21T10:28:14-07:00
 slug = "linear_algebra_and_its_applications"
 draft = false
 notetype = "book"

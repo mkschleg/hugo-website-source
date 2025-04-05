@@ -1,7 +1,7 @@
 +++
 title = "Injective"
 author = ["Matthew Schlegel"]
-lastmod = 2022-11-08T14:20:09-07:00
+lastmod = 2025-02-21T10:27:53-07:00
 slug = "injective"
 draft = false
 notetype = "note"

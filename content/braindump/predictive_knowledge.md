@@ -1,7 +1,7 @@
 +++
 title = "Predictive Knowledge"
 author = ["Matthew Schlegel"]
-lastmod = 2022-11-09T14:05:09-07:00
+lastmod = 2025-02-21T10:28:47-07:00
 slug = "predictive_knowledge"
 draft = false
 notetype = "note"

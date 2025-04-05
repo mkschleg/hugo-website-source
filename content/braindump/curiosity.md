@@ -1,7 +1,7 @@
 +++
 title = "Curiosity"
 author = ["Matthew Schlegel"]
-lastmod = 2023-08-02T16:33:08-06:00
+lastmod = 2025-02-21T10:26:04-07:00
 slug = "curiosity"
 draft = false
 notetype = "research-topic"
@@ -152,6 +152,6 @@ The idea here would be to use playfulness (which I believe is partially driven b
 
 
 <style>.csl-entry{text-indent: -1.5em; margin-left: 1.5em;}</style><div class="csl-bib-body">
-  <div class="csl-entry"><a id="citeproc_bib_item_1"></a>McLeod, Matthew, Chunlok Lo, Matthew Schlegel, Andrew Jacobsen, Raksha Kumaraswamy, Martha White, and Adam White. 2021. “Continual Auxiliary Task Learning.” In <i>Advances in Neural Information Processing Systems</i>. Curran Associates, Inc.</div>
-  <div class="csl-entry"><a id="citeproc_bib_item_2"></a>Schwarzer, Max, Nitarshan Rajkumar, Michael Noukhovitch, Ankesh Anand, Laurent Charlin, R Devon Hjelm, Philip Bachman, and Aaron C Courville. 2021. “Pretraining Representations for Data-Efficient Reinforcement Learning.” In <i>Advances in Neural Information Processing Systems</i>. Curran Associates, Inc.</div>
+  <div class="csl-entry"><a id="citeproc_bib_item_1"></a>McLeod, Matthew, Chunlok Lo, Matthew Schlegel, Andrew Jacobsen, Raksha Kumaraswamy, Martha White, and Adam White. 2021. “Continual Auxiliary Task Learning.” In <i>Advances in Neural Information Processing Systems</i>, 34:12549–62. Curran Associates, Inc.</div>
+  <div class="csl-entry"><a id="citeproc_bib_item_2"></a>Schwarzer, Max, Nitarshan Rajkumar, Michael Noukhovitch, Ankesh Anand, Laurent Charlin, R Devon Hjelm, Philip Bachman, and Aaron C Courville. 2021. “Pretraining Representations for Data-Efficient Reinforcement Learning.” In <i>Advances in Neural Information Processing Systems</i>, 34:12686–99. Curran Associates, Inc.</div>
 </div>

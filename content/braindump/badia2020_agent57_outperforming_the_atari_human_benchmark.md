@@ -1,7 +1,7 @@
 +++
 title = "badia2020agent57: Agent57: Outperforming the Atari Human Benchmark"
 author = ["Matthew Schlegel"]
-lastmod = 2022-11-09T14:06:32-07:00
+lastmod = 2025-02-21T10:25:36-07:00
 slug = "badia2020agent57"
 draft = false
 notetype = "paper"
@@ -146,5 +146,5 @@ Exploration strategies have several approaches.
 
 
 <style>.csl-entry{text-indent: -1.5em; margin-left: 1.5em;}</style><div class="csl-bib-body">
-  <div class="csl-entry"><a id="citeproc_bib_item_1"></a>Badia, Adrià, Pablo Sprechmann, Alex Vitvitskyi, Daniel Guo, Bilal Piot, Steven Kapturowski, Olivier Tieleman, et al. 2019. “Never Give Up: Learning Directed Exploration Strategies.” In <i>International Conference on Learning Representations</i>.</div>
+  <div class="csl-entry"><a id="citeproc_bib_item_1"></a>Badia, Adrià, Pablo Sprechmann, Alex Vitvitskyi, Daniel Guo, Bilal Piot, Steven Kapturowski, Olivier Tieleman, et al. 2019. “Never Give Up: Learning Directed Exploration Strategies.”</div>
 </div>

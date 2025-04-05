@@ -1,7 +1,7 @@
 +++
 title = "GPT3"
 author = ["Matthew Schlegel"]
-lastmod = 2023-03-22T11:48:19-06:00
+lastmod = 2025-02-21T10:26:40-07:00
 slug = "gpt3"
 draft = false
 notetype = "note"

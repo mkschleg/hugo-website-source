@@ -1,7 +1,7 @@
 +++
 title = "Reinforcement Learning in the Brain"
 author = ["Matthew Schlegel"]
-lastmod = 2023-03-21T12:24:31-06:00
+lastmod = 2025-02-21T10:29:00-07:00
 slug = "reinforcement_learning_in_the_brain"
 draft = false
 notetype = "research-topic"
@@ -110,6 +110,6 @@ There are several lines of research focused on reinforcement learning in the bra
 
 
 <style>.csl-entry{text-indent: -1.5em; margin-left: 1.5em;}</style><div class="csl-bib-body">
-  <div class="csl-entry"><a id="citeproc_bib_item_1"></a>Colombo, Matteo. 2014. “Deep and Beautiful. The Reward Prediction Error Hypothesis of Dopamine.” <i>Studies in History and Philosophy of Science Part c: Studies in History and Philosophy of Biological and Biomedical Sciences</i>.</div>
-  <div class="csl-entry"><a id="citeproc_bib_item_2"></a>Niv, Yael. 2009. “Reinforcement Learning in the Brain.” <i>Journal of Mathematical Psychology</i>, Special Issue: Dynamic Decision Making, .</div>
+  <div class="csl-entry"><a id="citeproc_bib_item_1"></a>Colombo, Matteo. 2014. “Deep and Beautiful. The Reward Prediction Error Hypothesis of Dopamine.” <i>Studies in History and Philosophy of Science Part c: Studies in History and Philosophy of Biological and Biomedical Sciences</i> 45 (March): 57–67. doi:<a href="https://doi.org/10.1016/j.shpsc.2013.10.006">10.1016/j.shpsc.2013.10.006</a>.</div>
+  <div class="csl-entry"><a id="citeproc_bib_item_2"></a>Niv, Yael. 2009. “Reinforcement Learning in the Brain.” <i>Journal of Mathematical Psychology</i>, Special Issue: Dynamic Decision Making, 53 (3): 139–54. doi:<a href="https://doi.org/10.1016/j.jmp.2008.12.005">10.1016/j.jmp.2008.12.005</a>.</div>
 </div>

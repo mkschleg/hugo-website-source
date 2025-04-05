@@ -1,7 +1,7 @@
 +++
 title = "Cauchy Criterion"
 author = ["Matthew Schlegel"]
-lastmod = 2022-11-08T14:18:57-07:00
+lastmod = 2025-02-21T10:25:49-07:00
 slug = "cauchy_criterion"
 draft = false
 notetype = "note"

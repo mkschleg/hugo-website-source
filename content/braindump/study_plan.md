@@ -1,7 +1,7 @@
 +++
 title = "Study Plan"
 author = ["Matthew Schlegel"]
-lastmod = 2023-08-24T10:50:35-04:00
+lastmod = 2025-02-21T10:29:19-07:00
 slug = "inbox"
 tags = ["STUDY"]
 draft = false
@@ -125,5 +125,5 @@ This file manages my inbox for [Org Roam]({{< relref "org_roam.md" >}}) files. T
 
 
 <style>.csl-entry{text-indent: -1.5em; margin-left: 1.5em;}</style><div class="csl-bib-body">
-  <div class="csl-entry"><a id="citeproc_bib_item_1"></a>Weng, Lilian. 2021. “How to Train Really Large Models on Many GPUs? | Lil’Log.” https://lilianweng.github.io/posts/2021-09-25-train-large/.</div>
+  <div class="csl-entry"><a id="citeproc_bib_item_1"></a>Weng, Lilian. 2021. “How to Train Really Large Models on Many GPUs? | Lil’Log.”</div>
 </div>

@@ -1,7 +1,7 @@
 +++
 title = "Stationary Point"
 author = ["Matthew Schlegel"]
-lastmod = 2022-11-08T14:22:25-07:00
+lastmod = 2025-02-21T10:29:15-07:00
 slug = "stationary_point"
 draft = false
 notetype = "note"

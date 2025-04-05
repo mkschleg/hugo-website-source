@@ -1,7 +1,7 @@
 +++
 title = "Maximum Likelihood Estimation"
 author = ["Matthew Schlegel"]
-lastmod = 2022-11-09T14:05:18-07:00
+lastmod = 2025-02-21T10:28:25-07:00
 slug = "maximum_likelihood_estimation"
 draft = false
 notetype = "note"
@@ -126,5 +126,5 @@ This corresponds exactly with minimizing the [Cross-Entropy]({{< relref "cross_e
 
 <style>.csl-entry{text-indent: -1.5em; margin-left: 1.5em;}</style><div class="csl-bib-body">
   <div class="csl-entry"><a id="citeproc_bib_item_1"></a>Goodfellow, Ian, Yashua Bengio, and Aaron Courville. 2016. <i>Deep Learning</i>. MIT Press.</div>
-  <div class="csl-entry"><a id="citeproc_bib_item_2"></a>Wasserman, Larry. 2004. <i>All of Statistics: A Concise Course in Statistical Inference Brief Contents</i>. Springer.</div>
+  <div class="csl-entry"><a id="citeproc_bib_item_2"></a>Wasserman, Larry. 2004. <i>All of Statistics: A Concise Course in Statistical Inference Brief Contents</i>. Vol. 26. Springer.</div>
 </div>

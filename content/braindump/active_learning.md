@@ -1,7 +1,7 @@
 +++
 title = "Active Learning"
 author = ["Matthew Schlegel"]
-lastmod = 2023-03-24T14:36:38-06:00
+lastmod = 2025-02-21T10:25:27-07:00
 slug = "active_learning"
 draft = false
 notetype = "note"

@@ -1,7 +1,7 @@
 +++
 title = "Brain"
 author = ["Matthew Schlegel"]
-lastmod = 2023-03-21T10:55:59-06:00
+lastmod = 2025-02-21T10:25:45-07:00
 slug = "brain"
 draft = false
 notetype = "note"

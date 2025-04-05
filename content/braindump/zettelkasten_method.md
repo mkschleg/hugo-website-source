@@ -1,7 +1,7 @@
 +++
 title = "Zettelkasten method"
 author = ["Matthew Schlegel"]
-lastmod = 2022-11-08T14:24:02-07:00
+lastmod = 2025-02-21T10:30:26-07:00
 slug = "zettelkasten_method"
 draft = false
 notetype = "note"

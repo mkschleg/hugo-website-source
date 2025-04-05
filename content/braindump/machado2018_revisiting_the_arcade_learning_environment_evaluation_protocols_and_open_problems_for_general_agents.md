@@ -1,7 +1,7 @@
 +++
 title = "machado2018revisiting: Revisiting the Arcade Learning Environment: Evaluation Protocols and Open Problems for General Agents"
 author = ["Matthew Schlegel"]
-lastmod = 2022-11-09T14:05:20-07:00
+lastmod = 2025-02-21T10:28:20-07:00
 slug = "machado2018revisiting"
 draft = false
 notetype = "paper"

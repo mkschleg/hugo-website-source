@@ -1,7 +1,7 @@
 +++
 title = "Partially Ordered Set"
 author = ["Matthew Schlegel"]
-lastmod = 2023-03-20T12:59:01-06:00
+lastmod = 2025-02-21T10:28:41-07:00
 slug = "partially_ordered_set"
 draft = false
 notetype = "note"

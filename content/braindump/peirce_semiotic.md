@@ -1,7 +1,7 @@
 +++
 title = "Peirce Semiotic"
 author = ["Matthew Schlegel"]
-lastmod = 2023-03-20T14:13:17-06:00
+lastmod = 2025-02-21T10:28:42-07:00
 slug = "peirce_semiotic"
 draft = false
 notetype = "note"
@@ -127,12 +127,12 @@ In the above example the object is the mole, while the sign-vehicle is the moleh
 ## Second Account {#second-account}
 
 
-## Third Accoun {#third-accoun}
+## Third Account {#third-account}
 
 
 ## References {#references}
 
-\bibliographystyle{plainnat}
+
 
 <style>.csl-entry{text-indent: -1.5em; margin-left: 1.5em;}</style><div class="csl-bib-body">
   <div class="csl-entry"><a id="citeproc_bib_item_1"></a>Project, Peirce Edition. 1998. <i>The Essential Peirce, Volume 2: Selected Philosophical Writings (1893-1913)</i>. Bloomington: Indiana University Press.</div>

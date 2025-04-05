@@ -1,7 +1,7 @@
 +++
 title = "Neurotransmitter"
 author = ["Matthew Schlegel"]
-lastmod = 2023-01-31T12:27:01-07:00
+lastmod = 2025-02-21T10:28:34-07:00
 slug = "neurotransmitter"
 draft = false
 notetype = "note"

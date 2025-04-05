@@ -1,7 +1,7 @@
 +++
 title = "Bellman Equation"
 author = ["Matthew Schlegel"]
-lastmod = 2022-12-08T14:00:09-07:00
+lastmod = 2025-02-21T10:25:40-07:00
 slug = "bellman_equation"
 draft = false
 notetype = "note"

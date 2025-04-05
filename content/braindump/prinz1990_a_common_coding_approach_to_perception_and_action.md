@@ -1,7 +1,7 @@
 +++
 title = "prinz1990common: A Common Coding Approach to Perception and Action"
 author = ["Matthew Schlegel"]
-lastmod = 2022-11-08T14:21:48-07:00
+lastmod = 2025-02-21T10:28:50-07:00
 slug = "prinz1990common"
 draft = false
 notetype = "paper"

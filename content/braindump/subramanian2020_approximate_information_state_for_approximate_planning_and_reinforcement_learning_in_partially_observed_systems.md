@@ -1,7 +1,7 @@
 +++
 title = "subramanian2020approximate: Approximate information state for approximate planning and reinforcement learning in partially observed systems"
 author = ["Matthew Schlegel"]
-lastmod = 2022-11-09T14:03:48-07:00
+lastmod = 2025-02-21T10:29:20-07:00
 slug = "subramanian2020approximate"
 draft = false
 notetype = "paper"

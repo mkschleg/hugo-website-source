@@ -1,7 +1,7 @@
 +++
 title = "Incentive Salience"
 author = ["Matthew Schlegel"]
-lastmod = 2023-03-22T10:38:24-06:00
+lastmod = 2025-02-21T10:27:49-07:00
 slug = "incentive_salience"
 draft = false
 notetype = "note"
@@ -102,6 +102,6 @@ Incentive Salience is an alternative to the [Reward Prediction-Error Hypothesis 
 
 
 <style>.csl-entry{text-indent: -1.5em; margin-left: 1.5em;}</style><div class="csl-bib-body">
-  <div class="csl-entry"><a id="citeproc_bib_item_1"></a>Colombo, Matteo. 2014. “Deep and Beautiful. The Reward Prediction Error Hypothesis of Dopamine.” <i>Studies in History and Philosophy of Science Part c: Studies in History and Philosophy of Biological and Biomedical Sciences</i>.</div>
-  <div class="csl-entry"><a id="citeproc_bib_item_2"></a>Zhang, Jun, Kent C. Berridge, Amy J. Tindell, Kyle S. Smith, and J. Wayne Aldridge. 2009. “A Neural Computational Model of Incentive Salience.” <i>Plos Computational Biology</i>. Public Library of Science.</div>
+  <div class="csl-entry"><a id="citeproc_bib_item_1"></a>Colombo, Matteo. 2014. “Deep and Beautiful. The Reward Prediction Error Hypothesis of Dopamine.” <i>Studies in History and Philosophy of Science Part c: Studies in History and Philosophy of Biological and Biomedical Sciences</i> 45 (March): 57–67. doi:<a href="https://doi.org/10.1016/j.shpsc.2013.10.006">10.1016/j.shpsc.2013.10.006</a>.</div>
+  <div class="csl-entry"><a id="citeproc_bib_item_2"></a>Zhang, Jun, Kent C. Berridge, Amy J. Tindell, Kyle S. Smith, and J. Wayne Aldridge. 2009. “A Neural Computational Model of Incentive Salience.” <i>PLOS Computational Biology</i> 5 (7). Public Library of Science: e1000437. doi:<a href="https://doi.org/10.1371/journal.pcbi.1000437">10.1371/journal.pcbi.1000437</a>.</div>
 </div>

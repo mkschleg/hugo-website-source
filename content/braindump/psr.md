@@ -1,7 +1,7 @@
 +++
 title = "PSR"
 author = ["Matthew Schlegel"]
-lastmod = 2023-03-21T12:06:12-06:00
+lastmod = 2025-02-21T10:28:53-07:00
 slug = "psr"
 draft = false
 notetype = "note"

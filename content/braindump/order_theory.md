@@ -1,7 +1,7 @@
 +++
 title = "Order Theory"
 author = ["Matthew Schlegel"]
-lastmod = 2023-03-20T12:59:13-06:00
+lastmod = 2025-02-21T10:28:40-07:00
 slug = "order_theory"
 draft = false
 notetype = "note"

@@ -1,7 +1,7 @@
 +++
 title = "kostas2019asynchronous: Asynchronous Coagent Networks: Stochastic Networks for Reinforcement Learning without Backpropagation or a Clock"
 author = ["Matthew Schlegel"]
-lastmod = 2022-11-09T14:05:37-07:00
+lastmod = 2025-02-21T10:28:08-07:00
 slug = "kostas2019asynchronous"
 draft = false
 notetype = "paper"
@@ -196,5 +196,5 @@ They provide some empirical evidence on a toy problem that the gradient estimate
 
 
 <style>.csl-entry{text-indent: -1.5em; margin-left: 1.5em;}</style><div class="csl-bib-body">
-  <div class="csl-entry"><a id="citeproc_bib_item_1"></a>Liu, Bingyao, Satinder Singh, Richard L. Lewis, and Shiyin Qin. 2014. “Optimal Rewards for Cooperative Agents.” <i>IEEE Transactions on Autonomous Mental Development</i>.</div>
+  <div class="csl-entry"><a id="citeproc_bib_item_1"></a>Liu, Bingyao, Satinder Singh, Richard L. Lewis, and Shiyin Qin. 2014. “Optimal Rewards for Cooperative Agents.” <i>IEEE Transactions on Autonomous Mental Development</i> 6 (4): 286–97. doi:<a href="https://doi.org/10.1109/TAMD.2014.2362682">10.1109/TAMD.2014.2362682</a>.</div>
 </div>

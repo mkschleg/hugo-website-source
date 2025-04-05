@@ -1,7 +1,7 @@
 +++
 title = "Behavior-Suite"
 author = ["Matthew Schlegel"]
-lastmod = 2022-11-08T14:18:42-07:00
+lastmod = 2025-02-21T10:25:37-07:00
 slug = "behavior_suite"
 draft = false
 notetype = "note"

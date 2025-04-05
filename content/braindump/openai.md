@@ -1,7 +1,7 @@
 +++
 title = "OpenAI"
 author = ["Matthew Schlegel"]
-lastmod = 2023-03-22T11:51:28-06:00
+lastmod = 2025-02-21T10:28:38-07:00
 slug = "openai"
 draft = false
 notetype = "note"

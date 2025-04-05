@@ -1,7 +1,7 @@
 +++
 title = "russell2004history: History of Western Philosophy"
 author = ["Matthew Schlegel"]
-lastmod = 2023-03-20T12:50:01-06:00
+lastmod = 2025-02-21T10:29:07-07:00
 slug = "russell2004history"
 draft = false
 notetype = "paper"

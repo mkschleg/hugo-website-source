@@ -1,7 +1,7 @@
 +++
 title = "white2017unifying: Unifying Task Specification in Reinforcement Learning"
 author = ["Matthew Schlegel"]
-lastmod = 2022-11-08T14:23:59-07:00
+lastmod = 2025-02-21T10:30:19-07:00
 slug = "white2017"
 draft = false
 notetype = "paper"

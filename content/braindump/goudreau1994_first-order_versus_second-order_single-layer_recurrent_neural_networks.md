@@ -1,7 +1,7 @@
 +++
 title = "goudreau1994firstorder: First-order versus second-order single-layer recurrent neural networks"
 author = ["Matthew Schlegel"]
-lastmod = 2022-11-08T14:19:47-07:00
+lastmod = 2025-02-21T10:26:35-07:00
 slug = "goudreau1994firstorder"
 draft = false
 notetype = "paper"

@@ -1,7 +1,7 @@
 +++
 title = "chandar2019nonsaturating: Towards Non-saturating Recurrent Units for Modelling Long-term Dependencies"
 author = ["Matthew Schlegel"]
-lastmod = 2022-11-09T14:06:19-07:00
+lastmod = 2025-02-21T10:25:51-07:00
 slug = "chandar2019nonsaturating"
 draft = false
 notetype = "paper"
@@ -29,5 +29,5 @@ While the claim of the vanishing gradient problem isn't as fully explored as in 
 
 
 <style>.csl-entry{text-indent: -1.5em; margin-left: 1.5em;}</style><div class="csl-bib-body">
-  <div class="csl-entry"><a id="citeproc_bib_item_1"></a>Wu, Yuhuai, Saizheng Zhang, Ying Zhang, Yoshua Bengio, and Russ R Salakhutdinov. 2016. “On Multiplicative Integration with Recurrent Neural Networks.” In <i>Advances in Neural Information Processing Systems 29</i>, edited by D. D. Lee, M. Sugiyama, U. V. Luxburg, I. Guyon, and R. Garnett. Curran Associates, Inc.</div>
+  <div class="csl-entry"><a id="citeproc_bib_item_1"></a>Wu, Yuhuai, Saizheng Zhang, Ying Zhang, Yoshua Bengio, and Russ R Salakhutdinov. 2016. “On Multiplicative Integration with Recurrent Neural Networks.” In <i>Advances in Neural Information Processing Systems 29</i>, edited by D. D. Lee, M. Sugiyama, U. V. Luxburg, I. Guyon, and R. Garnett, 2856–64.</div>
 </div>

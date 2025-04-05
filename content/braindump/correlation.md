@@ -1,7 +1,7 @@
 +++
 title = "Correlation"
 author = ["Matthew Schlegel"]
-lastmod = 2022-11-16T13:49:33-07:00
+lastmod = 2025-02-21T10:26:03-07:00
 slug = "correlation"
 draft = false
 notetype = "note"
@@ -98,4 +98,4 @@ The correlation/dependence is any statistical relationship between two random va
 
 The most common measure of dependence is the Pearson product-moment correlation coefficient (PPMCC).
 
-\\[\rho\_{X,Y} = \text{corr}(X, Y) = \frac{\text{cov}(X,Y)}{\sigma\_X \sigma\_Y}= \frac{\expected[(X-\mu\_X)(Y-\mu\_Y)]}{\sigma\_X \sigma\_Y}\\]
+\\[\rho\_{X,Y} = \text{corr}(X, Y) = \frac{\text{cov}(X,Y)}{\sigma\_X \sigma\_Y}= \frac{\expected[(X-\mu\_X)(Y-\mu\_Y)]}{\sigma\_X \sigma\_Y}.\\]

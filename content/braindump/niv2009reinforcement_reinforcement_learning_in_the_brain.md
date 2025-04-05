@@ -1,7 +1,7 @@
 +++
 title = "niv2009reinforcement: Reinforcement learning in the brain"
 author = ["Matthew Schlegel"]
-lastmod = 2023-01-31T13:54:29-07:00
+lastmod = 2025-02-21T10:28:34-07:00
 slug = "niv2009reinforcement"
 draft = false
 notetype = "paper"
@@ -159,12 +159,12 @@ While the reward prediction error hypothesis is precise, there are many open que
 
 
 <style>.csl-entry{text-indent: -1.5em; margin-left: 1.5em;}</style><div class="csl-bib-body">
-  <div class="csl-entry"><a id="citeproc_bib_item_1"></a>Barto, A. G., R. S. Sutton, and C. J. C. H. Watkins. 1989. “Sequential Decision Problems and Neural Networks.” In <i>Advances in Neural Information Processing Systems</i>. Morgan-Kaufmann.</div>
-  <div class="csl-entry"><a id="citeproc_bib_item_2"></a>Kakade, Sham, and Peter Dayan. 2002. “Dopamine: Generalization and Bonuses.” <i>Neural Networks</i>.</div>
-  <div class="csl-entry"><a id="citeproc_bib_item_3"></a>Mirenowicz, Jacques, and Wolfram Schultz. 1996. “Preferential Activation of Midbrain Dopamine Neurons by Appetitive Rather than Aversive Stimuli.” <i>Nature</i>. Nature Publishing Group.</div>
-  <div class="csl-entry"><a id="citeproc_bib_item_4"></a>Schultz, Wolfram. 1998. “Predictive Reward Signal of Dopamine Neurons.” <i>Journal of Neurophysiology</i>. American Physiological Society.</div>
-  <div class="csl-entry"><a id="citeproc_bib_item_5"></a>Tobler, Philippe N., Anthony Dickinson, and Wolfram Schultz. 2003. <a href="https://www.ncbi.nlm.nih.gov/pubmed/14614099">“Coding of Predicted Reward Omission by Dopamine Neurons in a Conditioned Inhibition Paradigm.</a>” <i>Journal of Neuroscience</i>. Society for Neuroscience.</div>
-  <div class="csl-entry"><a id="citeproc_bib_item_6"></a>Ungless, Mark A., Peter J. Magill, and J. Paul Bolam. 2004. “Uniform Inhibition of Dopamine Neurons in the Ventral Tegmental Area by Aversive Stimuli.” <i>Science</i>. American Association for the Advancement of Science.</div>
-  <div class="csl-entry"><a id="citeproc_bib_item_7"></a>Werbos, P. 1977. “Advanced Forecasting Methods for Global Crisis Warning and Models of Intelligence.” <i>General System Yearbook</i>.</div>
-  <div class="csl-entry"><a id="citeproc_bib_item_8"></a>Wittmann, Bianca C., Nathaniel D. Daw, Ben Seymour, and Raymond J. Dolan. 2008. “Striatal Activity Underlies Novelty-Based Choice in Humans.” <i>Neuron</i>.</div>
+  <div class="csl-entry"><a id="citeproc_bib_item_1"></a>Barto, A. G., R. S. Sutton, and C. J. C. H. Watkins. 1989. “Sequential Decision Problems and Neural Networks.” In <i>Advances in Neural Information Processing Systems</i>. Vol. 2. Morgan-Kaufmann.</div>
+  <div class="csl-entry"><a id="citeproc_bib_item_2"></a>Kakade, Sham, and Peter Dayan. 2002. “Dopamine: Generalization and Bonuses.” <i>Neural Networks</i> 15 (4): 549–59. doi:<a href="https://doi.org/10.1016/S0893-6080(02)00048-5">10.1016/S0893-6080(02)00048-5</a>.</div>
+  <div class="csl-entry"><a id="citeproc_bib_item_3"></a>Mirenowicz, Jacques, and Wolfram Schultz. 1996. “Preferential Activation of Midbrain Dopamine Neurons by Appetitive Rather than Aversive Stimuli.” <i>Nature</i> 379 (6564, 6564). Nature Publishing Group: 449–51. doi:<a href="https://doi.org/10.1038/379449a0">10.1038/379449a0</a>.</div>
+  <div class="csl-entry"><a id="citeproc_bib_item_4"></a>Schultz, Wolfram. 1998. “Predictive Reward Signal of Dopamine Neurons.” <i>Journal of Neurophysiology</i> 80 (1). American Physiological Society: 1–27. doi:<a href="https://doi.org/10.1152/jn.1998.80.1.1">10.1152/jn.1998.80.1.1</a>.</div>
+  <div class="csl-entry"><a id="citeproc_bib_item_5"></a>Tobler, Philippe N., Anthony Dickinson, and Wolfram Schultz. 2003. “Coding of Predicted Reward Omission by Dopamine Neurons in a Conditioned Inhibition Paradigm.” <i>Journal of Neuroscience</i> 23 (32). Society for Neuroscience: 10402–10. doi:<a href="https://doi.org/10.1523/JNEUROSCI.23-32-10402.2003">10.1523/JNEUROSCI.23-32-10402.2003</a>.</div>
+  <div class="csl-entry"><a id="citeproc_bib_item_6"></a>Ungless, Mark A., Peter J. Magill, and J. Paul Bolam. 2004. “Uniform Inhibition of Dopamine Neurons in the Ventral Tegmental Area by Aversive Stimuli.” <i>Science</i> 303 (5666). American Association for the Advancement of Science: 2040–42. doi:<a href="https://doi.org/10.1126/science.1093360">10.1126/science.1093360</a>.</div>
+  <div class="csl-entry"><a id="citeproc_bib_item_7"></a>Werbos, P. 1977. “Advanced Forecasting Methods for Global Crisis Warning and Models of Intelligence.” <i>General System Yearbook</i>, 25–38.</div>
+  <div class="csl-entry"><a id="citeproc_bib_item_8"></a>Wittmann, Bianca C., Nathaniel D. Daw, Ben Seymour, and Raymond J. Dolan. 2008. “Striatal Activity Underlies Novelty-Based Choice in Humans.” <i>Neuron</i> 58 (6): 967–73. doi:<a href="https://doi.org/10.1016/j.neuron.2008.04.027">10.1016/j.neuron.2008.04.027</a>.</div>
 </div>

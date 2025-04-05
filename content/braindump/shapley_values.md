@@ -1,7 +1,7 @@
 +++
 title = "Shapley Values"
 author = ["Matthew Schlegel"]
-lastmod = 2023-03-21T15:35:34-06:00
+lastmod = 2025-02-21T10:29:11-07:00
 slug = "shapley_values"
 draft = false
 notetype = "note"
@@ -118,7 +118,7 @@ val\_x(S) &= \int \hat{f}(\mathbf{x}) d\mathbb{P}\_{X \notin S} - \expected[\hat
 \end{align\*}
 
 
-### (<a href="#citeproc_bib_item_5">Molnar 2021</a>) {#8d8576}
+### (<a href="#citeproc_bib_item_5">Molnar, n.d.</a>) {#707749}
 
 
 ### (<a href="#citeproc_bib_item_3">Lundberg and Lee 2017</a>) {#7ef989}
@@ -192,13 +192,13 @@ Asymetric shapley values may be what we want in the bandit case. The question is
 
 
 <style>.csl-entry{text-indent: -1.5em; margin-left: 1.5em;}</style><div class="csl-bib-body">
-  <div class="csl-entry"><a id="citeproc_bib_item_1"></a>Frye, Christopher, Damien de Mijolla, Tom Begley, Laurence Cowton, Megan Stanley, and Ilya Feige. 2021. “Shapley Explainability on the Data Manifold.” <i>arXiv:2006.01272 [Cs, Stat]</i>. <a href="https://arxiv.org/abs/2006.01272">https://arxiv.org/abs/2006.01272</a>.</div>
-  <div class="csl-entry"><a id="citeproc_bib_item_2"></a>Heskes, Tom, Evi Sijben, Ioan Gabriel Bucur, and Tom Claassen. 2020. “Causal Shapley Values: Exploiting Causal Knowledge to Explain Individual Predictions of Complex Models.” <i>arXiv:2011.01625 [Cs]</i>. <a href="https://arxiv.org/abs/2011.01625">https://arxiv.org/abs/2011.01625</a>.</div>
-  <div class="csl-entry"><a id="citeproc_bib_item_3"></a>Lundberg, Scott M, and Su-In Lee. 2017. “A Unified Approach to Interpreting Model Predictions.” In <i>Proceedings of the 31st International Conference on Neural Information Processing Systems</i>.</div>
-  <div class="csl-entry"><a id="citeproc_bib_item_4"></a>Ma, Sisi, and Roshan Tourani. 2020. “Predictive and Causal Implications of Using Shapley Value for Model Interpretation.” In <i>Proceedings of the 2020 KDD Workshop on Causal Discovery</i>. PMLR.</div>
-  <div class="csl-entry"><a id="citeproc_bib_item_5"></a>Molnar, Christoph. 2021. <i>9.5 Shapley Values | Interpretable Machine Learning</i>. Accessed October 18.</div>
-  <div class="csl-entry"><a id="citeproc_bib_item_6"></a>Owen, Art B. 2014. “Sobol’ Indices and Shapley Value.” <i>SIAM/ASA Journal on Uncertainty Quantification</i>. Society for Industrial and Applied Mathematics.</div>
-  <div class="csl-entry"><a id="citeproc_bib_item_7"></a>Singal, Raghav, George Michailidis, and Hoiyi Ng. 2021. “Flow-Based Attribution in Graphical Models: A Recursive Shapley Approach.” SSRN Scholarly Paper. Rochester, NY: Social Science Research Network.</div>
-  <div class="csl-entry"><a id="citeproc_bib_item_8"></a>Song, Eunhye, Barry L. Nelson, and Jeremy Staum. 2016. “Shapley Effects for Global Sensitivity Analysis: Theory and Computation.” <i>SIAM/ASA Journal on Uncertainty Quantification</i>. Society for Industrial and Applied Mathematics.</div>
-  <div class="csl-entry"><a id="citeproc_bib_item_9"></a>Strumbelj, Erik, and Igor Kononenko. 2014. “Explaining Prediction Models and Individual Predictions with Feature Contributions.” <i>Knowledge and Information Systems</i>.</div>
+  <div class="csl-entry"><a id="citeproc_bib_item_1"></a>Frye, Christopher, Damien de Mijolla, Tom Begley, Laurence Cowton, Megan Stanley, and Ilya Feige. 2021. “Shapley Explainability on the Data Manifold.”</div>
+  <div class="csl-entry"><a id="citeproc_bib_item_2"></a>Heskes, Tom, Evi Sijben, Ioan Gabriel Bucur, and Tom Claassen. 2020. “Causal Shapley Values: Exploiting Causal Knowledge to Explain Individual Predictions of Complex Models.”</div>
+  <div class="csl-entry"><a id="citeproc_bib_item_3"></a>Lundberg, Scott M, and Su-In Lee. 2017. “A Unified Approach to Interpreting Model Predictions.” In <i>Proceedings of the 31st International Conference on Neural Information Processing Systems</i>, 4768–77.</div>
+  <div class="csl-entry"><a id="citeproc_bib_item_4"></a>Ma, Sisi, and Roshan Tourani. 2020. “Predictive and Causal Implications of Using Shapley Value for Model Interpretation.” In <i>Proceedings of the 2020 KDD Workshop on Causal Discovery</i>, 23–38. PMLR.</div>
+  <div class="csl-entry"><a id="citeproc_bib_item_5"></a>Molnar, Christoph. n.d. <i>9.5 Shapley Values | Interpretable Machine Learning</i>.</div>
+  <div class="csl-entry"><a id="citeproc_bib_item_6"></a>Owen, Art B. 2014. “Sobol’ Indices and Shapley Value.” <i>SIAM/ASA Journal on Uncertainty Quantification</i> 2 (1). Society for Industrial and Applied Mathematics: 245–51. doi:<a href="https://doi.org/10.1137/130936233">10.1137/130936233</a>.</div>
+  <div class="csl-entry"><a id="citeproc_bib_item_7"></a>Singal, Raghav, George Michailidis, and Hoiyi Ng. 2021. “Flow-Based Attribution in Graphical Models: A Recursive Shapley Approach.” SSRN Scholarly Paper ID 3845526. Rochester, NY: Social Science Research Network. doi:<a href="https://doi.org/10.2139/ssrn.3845526">10.2139/ssrn.3845526</a>.</div>
+  <div class="csl-entry"><a id="citeproc_bib_item_8"></a>Song, Eunhye, Barry L. Nelson, and Jeremy Staum. 2016. “Shapley Effects for Global Sensitivity Analysis: Theory and Computation.” <i>SIAM/ASA Journal on Uncertainty Quantification</i> 4 (1). Society for Industrial and Applied Mathematics: 1060–83. doi:<a href="https://doi.org/10.1137/15M1048070">10.1137/15M1048070</a>.</div>
+  <div class="csl-entry"><a id="citeproc_bib_item_9"></a>Strumbelj, Erik, and Igor Kononenko. 2014. “Explaining Prediction Models and Individual Predictions with Feature Contributions.” <i>Knowledge and Information Systems</i> 41 (3): 647–65. doi:<a href="https://doi.org/10.1007/s10115-013-0679-x">10.1007/s10115-013-0679-x</a>.</div>
 </div>

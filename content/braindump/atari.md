@@ -1,7 +1,7 @@
 +++
 title = "Atari"
 author = ["Matthew Schlegel"]
-lastmod = 2022-11-09T14:06:36-07:00
+lastmod = 2025-02-21T10:25:32-07:00
 slug = "atari"
 draft = false
 notetype = "note"
@@ -102,7 +102,7 @@ The set of atari games used heavily in [Deep Reinforcement Learning]({{< relref 
 
 
 <style>.csl-entry{text-indent: -1.5em; margin-left: 1.5em;}</style><div class="csl-bib-body">
-  <div class="csl-entry"><a id="citeproc_bib_item_1"></a>Bellemare, M. G., Y. Naddaf, J. Veness, and M. Bowling. 2013. “The Arcade Learning Environment: An Evaluation Platform for General Agents.” <i>Journal of Artificial Intelligence Research</i>.</div>
-  <div class="csl-entry"><a id="citeproc_bib_item_2"></a>Machado, Marlos C., Marc G. Bellemare, Erik Talvitie, Joel Veness, Matthew Hausknecht, and Michael Bowling. 2018. “Revisiting the Arcade Learning Environment: Evaluation Protocols and Open Problems for General Agents.” <i>Journal of Artificial Intelligence Research</i>.</div>
-  <div class="csl-entry"><a id="citeproc_bib_item_3"></a>Mnih, Volodymyr, Koray Kavukcuoglu, David Silver, Andrei A. Rusu, Joel Veness, Marc G. Bellemare, Alex Graves, et al. 2015. “Human-Level Control through Deep Reinforcement Learning.” <i>Nature</i>.</div>
+  <div class="csl-entry"><a id="citeproc_bib_item_1"></a>Bellemare, M. G., Y. Naddaf, J. Veness, and M. Bowling. 2013. “The Arcade Learning Environment: An Evaluation Platform for General Agents.” <i>Journal of Artificial Intelligence Research</i> 47 (June): 253–79. doi:<a href="https://doi.org/10.1613/jair.3912">10.1613/jair.3912</a>.</div>
+  <div class="csl-entry"><a id="citeproc_bib_item_2"></a>Machado, Marlos C., Marc G. Bellemare, Erik Talvitie, Joel Veness, Matthew Hausknecht, and Michael Bowling. 2018. “Revisiting the Arcade Learning Environment: Evaluation Protocols and Open Problems for General Agents.” <i>Journal of Artificial Intelligence Research</i> 61 (March): 523–62. doi:<a href="https://doi.org/10.1613/jair.5699">10.1613/jair.5699</a>.</div>
+  <div class="csl-entry"><a id="citeproc_bib_item_3"></a>Mnih, Volodymyr, Koray Kavukcuoglu, David Silver, Andrei A. Rusu, Joel Veness, Marc G. Bellemare, Alex Graves, et al. 2015. “Human-Level Control through Deep Reinforcement Learning.” <i>Nature</i> 518 (7540): 529–33. doi:<a href="https://doi.org/10.1038/nature14236">10.1038/nature14236</a>.</div>
 </div>

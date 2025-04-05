@@ -1,7 +1,7 @@
 +++
 title = "Upperbound 2023"
 author = ["Matthew Schlegel"]
-lastmod = 2023-05-26T16:36:09-06:00
+lastmod = 2025-02-21T10:29:49-07:00
 slug = "upperbound_2023"
 draft = false
 notetype = "note"

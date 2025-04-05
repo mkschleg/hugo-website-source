@@ -1,7 +1,7 @@
 +++
 title = "Hilbert Space"
 author = ["Matthew Schlegel"]
-lastmod = 2022-11-08T14:19:55-07:00
+lastmod = 2025-02-21T10:27:12-07:00
 slug = "hilbert_space"
 draft = false
 notetype = "note"

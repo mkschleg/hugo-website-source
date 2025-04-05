@@ -1,7 +1,7 @@
 +++
 title = "hopfield1985neural: ``Neural'' computation of decisions in optimization problems"
 author = ["Matthew Schlegel"]
-lastmod = 2022-11-09T14:05:58-07:00
+lastmod = 2025-02-21T10:27:28-07:00
 slug = "hopfield1985neural"
 draft = false
 notetype = "paper"

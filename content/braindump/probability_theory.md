@@ -1,7 +1,7 @@
 +++
 title = "Probability Theory"
 author = ["Matthew Schlegel"]
-lastmod = 2023-08-08T13:30:27-06:00
+lastmod = 2025-02-21T10:28:52-07:00
 slug = "probability_theory"
 draft = false
 notetype = "note"
@@ -290,5 +290,5 @@ From the definition, these properties ensure that:
 
 <style>.csl-entry{text-indent: -1.5em; margin-left: 1.5em;}</style><div class="csl-bib-body">
   <div class="csl-entry"><a id="citeproc_bib_item_1"></a>Ross, Sheldon M., and Erol A. Pekoz. 2007. <i>A Second Course in Probability</i>. Boston: www.ProbabilityBookstore.com.</div>
-  <div class="csl-entry"><a id="citeproc_bib_item_2"></a>Wasserman, Larry. 2004. <i>All of Statistics: A Concise Course in Statistical Inference Brief Contents</i>. Springer.</div>
+  <div class="csl-entry"><a id="citeproc_bib_item_2"></a>Wasserman, Larry. 2004. <i>All of Statistics: A Concise Course in Statistical Inference Brief Contents</i>. Vol. 26. Springer.</div>
 </div>

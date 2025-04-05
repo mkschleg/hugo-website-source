@@ -1,7 +1,7 @@
 +++
 title = "Richard Ernest Bellman"
 author = ["Matthew Schlegel"]
-lastmod = 2022-11-08T14:22:07-07:00
+lastmod = 2025-02-21T10:29:04-07:00
 slug = "richard_ernest_bellman"
 draft = false
 notetype = "note"

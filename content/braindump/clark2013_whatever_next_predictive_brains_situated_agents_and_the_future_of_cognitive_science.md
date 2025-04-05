@@ -1,7 +1,7 @@
 +++
 title = "clark2013whatever: Whatever next? Predictive brains, situated agents, and the future of cognitive science"
 author = ["Matthew Schlegel"]
-lastmod = 2022-11-09T14:06:17-07:00
+lastmod = 2025-02-21T10:25:55-07:00
 slug = "clark2013whatever"
 draft = false
 notetype = "paper"
@@ -113,9 +113,9 @@ This goes into details about the brain encoding predictions as probability distr
 
 
 <style>.csl-entry{text-indent: -1.5em; margin-left: 1.5em;}</style><div class="csl-bib-body">
-  <div class="csl-entry"><a id="citeproc_bib_item_1"></a>Brown, Harriet, Karl J. Friston, and Sven Bestmann. 2011. “Active Inference, Attention, and Motor Preparation.” <i>Frontiers in Psychology</i>. Frontiers.</div>
-  <div class="csl-entry"><a id="citeproc_bib_item_2"></a>Friston, Karl. 2010. “The Free-Energy Principle: A Unified Brain Theory?” <i>Nature Reviews Neuroscience</i>.</div>
-  <div class="csl-entry"><a id="citeproc_bib_item_3"></a>Hosoya, Toshihiko, Stephen A. Baccus, and Markus Meister. 2005. “Dynamic Predictive Coding by the Retina.” <i>Nature</i>.</div>
-  <div class="csl-entry"><a id="citeproc_bib_item_4"></a>Neal, Radford M., and Geoffrey E. Hinton. 1998. “A View of the Em Algorithm That Justifies Incremental, Sparse, and Other Variants.” In <i>Learning in Graphical Models</i>, edited by Michael I. Jordan. NATO ASI Series. Dordrecht: Springer Netherlands.</div>
-  <div class="csl-entry"><a id="citeproc_bib_item_5"></a>Rao, Rajesh P. N., and Dana H. Ballard. 1999. “Predictive Coding in the Visual Cortex: A Functional Interpretation of Some Extra-Classical Receptive-Field Effects.” <i>Nature Neuroscience</i>.</div>
+  <div class="csl-entry"><a id="citeproc_bib_item_1"></a>Brown, Harriet, Karl J. Friston, and Sven Bestmann. 2011. “Active Inference, Attention, and Motor Preparation.” <i>Frontiers in Psychology</i> 2. Frontiers. doi:<a href="https://doi.org/10.3389/fpsyg.2011.00218">10.3389/fpsyg.2011.00218</a>.</div>
+  <div class="csl-entry"><a id="citeproc_bib_item_2"></a>Friston, Karl. 2010. “The Free-Energy Principle: A Unified Brain Theory?” <i>Nature Reviews Neuroscience</i> 11 (2): 127–38. doi:<a href="https://doi.org/10.1038/nrn2787">10.1038/nrn2787</a>.</div>
+  <div class="csl-entry"><a id="citeproc_bib_item_3"></a>Hosoya, Toshihiko, Stephen A. Baccus, and Markus Meister. 2005. “Dynamic Predictive Coding by the Retina.” <i>Nature</i> 436 (7047): 71–77. doi:<a href="https://doi.org/10.1038/nature03689">10.1038/nature03689</a>.</div>
+  <div class="csl-entry"><a id="citeproc_bib_item_4"></a>Neal, Radford M., and Geoffrey E. Hinton. 1998. “A View of the Em Algorithm That Justifies Incremental, Sparse, and Other Variants.” In <i>Learning in Graphical Models</i>, edited by Michael I. Jordan, 355–68. NATO ASI Series. Dordrecht: Springer Netherlands. doi:<a href="https://doi.org/10.1007/978-94-011-5014-9_12">10.1007/978-94-011-5014-9_12</a>.</div>
+  <div class="csl-entry"><a id="citeproc_bib_item_5"></a>Rao, Rajesh P. N., and Dana H. Ballard. 1999. “Predictive Coding in the Visual Cortex: A Functional Interpretation of Some Extra-Classical Receptive-Field Effects.” <i>Nature Neuroscience</i> 2 (1): 79. doi:<a href="https://doi.org/10.1038/4580">10.1038/4580</a>.</div>
 </div>

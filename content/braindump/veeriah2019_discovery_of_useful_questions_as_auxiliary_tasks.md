@@ -1,7 +1,7 @@
 +++
 title = "veeriah2019discovery: Discovery of Useful Questions as Auxiliary Tasks"
 author = ["Matthew Schlegel"]
-lastmod = 2022-11-09T14:03:35-07:00
+lastmod = 2025-02-21T10:29:59-07:00
 slug = "veeriah2019discovery"
 draft = false
 notetype = "paper"
@@ -155,7 +155,7 @@ They show the usual minor improvements or similar results to previous experiment
 
 
 <style>.csl-entry{text-indent: -1.5em; margin-left: 1.5em;}</style><div class="csl-bib-body">
-  <div class="csl-entry"><a id="citeproc_bib_item_1"></a>Jaderberg, Max, Volodymyr Mnih, Wojciech Marian Czarnecki, Tom Schaul, Joel Z Leibo, David Silver, and Koray Kavukcuoglu. 2017. “Reinforcement Learning with Unsupervised Auxiliary Tasks.” <i>International Conference on Representation Learning</i>.</div>
+  <div class="csl-entry"><a id="citeproc_bib_item_1"></a>Jaderberg, Max, Volodymyr Mnih, Wojciech Marian Czarnecki, Tom Schaul, Joel Z Leibo, David Silver, and Koray Kavukcuoglu. 2017. “Reinforcement Learning with Unsupervised Auxiliary Tasks.” <i>International Conference on Representation Learning</i>, 17.</div>
   <div class="csl-entry"><a id="citeproc_bib_item_2"></a>Watkins, Christopher John Cornish Hellaby. 1989. “Learning from Delayed Rewards.” King’s College, Cambridge.</div>
-  <div class="csl-entry"><a id="citeproc_bib_item_3"></a>Williams, Ronald J. 1992. “Simple Statistical Gradient-Following Algorithms for Connectionist Reinforcement Learning.” In <i>Reinforcement Learning</i>. The Springer International Series in Engineering and Computer Science. Springer, Boston, MA.</div>
+  <div class="csl-entry"><a id="citeproc_bib_item_3"></a>Williams, Ronald J. 1992. “Simple Statistical Gradient-Following Algorithms for Connectionist Reinforcement Learning.” In <i>Reinforcement Learning</i>, 5–32. The Springer International Series in Engineering and Computer Science. Springer, Boston, MA. doi:<a href="https://doi.org/10.1007/978-1-4615-3618-5_2">10.1007/978-1-4615-3618-5_2</a>.</div>
 </div>

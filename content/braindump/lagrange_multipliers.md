@@ -1,7 +1,7 @@
 +++
 title = "Lagrange multipliers"
 author = ["Matthew Schlegel"]
-lastmod = 2022-11-09T14:05:35-07:00
+lastmod = 2025-02-21T10:28:09-07:00
 slug = "lagrange_multipliers"
 draft = false
 notetype = "note"

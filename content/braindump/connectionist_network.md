@@ -1,7 +1,7 @@
 +++
 title = "Connectionist Network"
 author = ["Matthew Schlegel"]
-lastmod = 2023-03-21T11:40:46-06:00
+lastmod = 2025-02-21T10:26:00-07:00
 slug = "connectionist_network"
 draft = false
 notetype = "note"

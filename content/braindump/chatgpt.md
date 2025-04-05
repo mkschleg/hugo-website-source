@@ -1,7 +1,7 @@
 +++
 title = "ChatGPT"
 author = ["Matthew Schlegel"]
-lastmod = 2023-03-22T11:47:47-06:00
+lastmod = 2025-02-21T10:25:53-07:00
 slug = "chatgpt"
 draft = false
 notetype = "note"

@@ -1,7 +1,7 @@
 +++
 title = "Notes for Students"
 author = ["Matthew Schlegel"]
-lastmod = 2023-09-06T10:04:31-06:00
+lastmod = 2025-02-21T10:28:36-07:00
 slug = "notes_for_students"
 draft = false
 notetype = "misc-topic"

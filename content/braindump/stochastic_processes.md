@@ -1,7 +1,7 @@
 +++
 title = "Stochastic Processes"
 author = ["Matthew Schlegel"]
-lastmod = 2022-11-08T14:22:28-07:00
+lastmod = 2025-02-21T10:29:17-07:00
 slug = "stochastic_processes"
 tags = ["Math"]
 draft = false

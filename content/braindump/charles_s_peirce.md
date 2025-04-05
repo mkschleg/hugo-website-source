@@ -1,7 +1,7 @@
 +++
 title = "Charles S. Peirce"
 author = ["Matthew Schlegel"]
-lastmod = 2022-11-08T14:19:01-07:00
+lastmod = 2025-02-21T10:25:52-07:00
 slug = "charles_s_peirce"
 draft = false
 notetype = "note"

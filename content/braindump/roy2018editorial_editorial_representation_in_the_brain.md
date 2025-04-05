@@ -1,7 +1,7 @@
 +++
 title = "roy2018editorial: Editorial: Representation in the Brain"
 author = ["Matthew Schlegel"]
-lastmod = 2023-03-20T12:38:13-06:00
+lastmod = 2025-02-21T10:29:06-07:00
 slug = "roy2018editorial"
 draft = false
 notetype = "paper"

@@ -1,7 +1,7 @@
 +++
 title = "henderson2018deep: Deep Reinforcement Learning That Matters"
 author = ["Matthew Schlegel"]
-lastmod = 2023-03-21T11:26:50-06:00
+lastmod = 2025-02-21T10:27:00-07:00
 slug = "henderson2018deep"
 draft = false
 notetype = "paper"
@@ -171,7 +171,7 @@ _Are commonly used baseline implementations comparable?_
 
 
 <style>.csl-entry{text-indent: -1.5em; margin-left: 1.5em;}</style><div class="csl-bib-body">
-  <div class="csl-entry"><a id="citeproc_bib_item_1"></a>Duan, Yan, Xi Chen, Rein Houthooft, John Schulman, and Pieter Abbeel. 2016. “Benchmarking Deep Reinforcement Learning for Continuous Control.” In <i>International Conference on Machine Learning</i>.</div>
-  <div class="csl-entry"><a id="citeproc_bib_item_2"></a>Machado, Marlos C., Marc G. Bellemare, Erik Talvitie, Joel Veness, Matthew Hausknecht, and Michael Bowling. 2018. “Revisiting the Arcade Learning Environment: Evaluation Protocols and Open Problems for General Agents.” <i>Journal of Artificial Intelligence Research</i>.</div>
-  <div class="csl-entry"><a id="citeproc_bib_item_3"></a>Whiteson, S., B. Tanner, M. E. Taylor, and P. Stone. 2011. “Protecting against Evaluation Overfitting in Empirical Reinforcement Learning.” In <i>2011 IEEE Symposium on Adaptive Dynamic Programming and Reinforcement Learning (ADPRL)</i>.</div>
+  <div class="csl-entry"><a id="citeproc_bib_item_1"></a>Duan, Yan, Xi Chen, Rein Houthooft, John Schulman, and Pieter Abbeel. 2016. “Benchmarking Deep Reinforcement Learning for Continuous Control.” In <i>International Conference on Machine Learning</i>, 1329–38.</div>
+  <div class="csl-entry"><a id="citeproc_bib_item_2"></a>Machado, Marlos C., Marc G. Bellemare, Erik Talvitie, Joel Veness, Matthew Hausknecht, and Michael Bowling. 2018. “Revisiting the Arcade Learning Environment: Evaluation Protocols and Open Problems for General Agents.” <i>Journal of Artificial Intelligence Research</i> 61 (March): 523–62. doi:<a href="https://doi.org/10.1613/jair.5699">10.1613/jair.5699</a>.</div>
+  <div class="csl-entry"><a id="citeproc_bib_item_3"></a>Whiteson, S., B. Tanner, M. E. Taylor, and P. Stone. 2011. “Protecting against Evaluation Overfitting in Empirical Reinforcement Learning.” In <i>2011 IEEE Symposium on Adaptive Dynamic Programming and Reinforcement Learning (ADPRL)</i>, 120–27. doi:<a href="https://doi.org/10.1109/ADPRL.2011.5967363">10.1109/ADPRL.2011.5967363</a>.</div>
 </div>

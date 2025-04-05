@@ -1,7 +1,7 @@
 +++
 title = "goodman2016what: What Does Research Reproducibility Mean?"
 author = ["Matthew Schlegel"]
-lastmod = 2023-03-21T11:23:50-06:00
+lastmod = 2025-02-21T10:26:31-07:00
 slug = "goodman2016what"
 draft = false
 notetype = "paper"

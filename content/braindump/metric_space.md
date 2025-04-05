@@ -1,7 +1,7 @@
 +++
 title = "Metric Space"
 author = ["Matthew Schlegel"]
-lastmod = 2022-11-08T14:20:56-07:00
+lastmod = 2025-02-21T10:28:27-07:00
 slug = "metric_space"
 draft = false
 notetype = "note"

@@ -1,7 +1,7 @@
 +++
 title = "byrd2019what: What is the Effect of Importance Weighting in Deep Learning?"
 author = ["Matthew Schlegel"]
-lastmod = 2022-11-08T14:18:52-07:00
+lastmod = 2025-02-21T10:25:47-07:00
 slug = "byrd2019what"
 draft = false
 notetype = "paper"

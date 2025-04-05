@@ -1,7 +1,7 @@
 +++
 title = "Hypothesis"
 author = ["Matthew Schlegel"]
-lastmod = 2022-11-08T14:20:05-07:00
+lastmod = 2025-02-21T10:27:39-07:00
 slug = "hypothesis"
 draft = false
 notetype = "note"

@@ -1,7 +1,7 @@
 +++
 title = "Dopamine"
 author = ["Matthew Schlegel"]
-lastmod = 2023-01-31T12:29:52-07:00
+lastmod = 2025-02-21T10:26:16-07:00
 slug = "dopamine"
 draft = false
 notetype = "note"
@@ -100,4 +100,4 @@ tags
 source
 : <https://my.clevelandclinic.org/health/articles/22581-dopamine>
 
-Dopamine is a [Neurotransmitter]({{< relref "neurotransmitter.md" >}}). There are several theories on the role of dopamine, but one of the most well tested and precise hypothesis is the [Reward Prediction Hypothesis of Dopamine]({{< relref "reinforcement_learning_in_the_brain.md#reward-prediction-hypothesis-of-dopamine" >}}).
+Dopamine is a [Neurotransmitter]({{< relref "neurotransmitter.md" >}}). There are several theories on the role of dopamine, but one of the most well tested and precise hypothesis is the [Reward Prediction Hypothesis of Dopamine]({{< relref "reinforcement_learning_in_the_brain.md#reward-prediction-error-hypothesis-of-dopamine" >}}).

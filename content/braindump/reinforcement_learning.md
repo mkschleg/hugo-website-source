@@ -1,7 +1,7 @@
 +++
 title = "Reinforcement Learning"
 author = ["Matthew Schlegel"]
-lastmod = 2023-07-07T13:15:33-06:00
+lastmod = 2025-02-28T11:38:54-07:00
 slug = "reinforcement_learning"
 tags = ["Reinforcement-Learning"]
 draft = false

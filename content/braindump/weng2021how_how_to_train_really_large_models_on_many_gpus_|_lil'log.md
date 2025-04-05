@@ -1,7 +1,7 @@
 +++
 title = "weng2021how: How to Train Really Large Models on Many GPUs? | Lil'Log"
 author = ["Matthew Schlegel"]
-lastmod = 2023-08-25T22:17:05-04:00
+lastmod = 2025-02-21T10:30:12-07:00
 slug = "weng2021how"
 draft = false
 notetype = "paper"
@@ -165,9 +165,9 @@ A mixture of weak models results in a strong model (<a href="#citeproc_bib_item_
 
 
 <style>.csl-entry{text-indent: -1.5em; margin-left: 1.5em;}</style><div class="csl-bib-body">
-  <div class="csl-entry"><a id="citeproc_bib_item_1"></a>Cui, Henggang, Hao Zhang, Gregory R. Ganger, Phillip B. Gibbons, and Eric P. Xing. 2016. “GeePS: Scalable Deep Learning on Distributed GPUs with a GPU-specialized Parameter Server.” In <i>Proceedings of the Eleventh European Conference on Computer Systems</i>. EuroSys ’16. New York, NY, USA: Association for Computing Machinery.</div>
-  <div class="csl-entry"><a id="citeproc_bib_item_2"></a>Huang, Yanping, Youlong Cheng, Ankur Bapna, Orhan Firat, Dehao Chen, Mia Chen, HyoukJoong Lee, et al. 2019. “GPipe: Efficient Training of Giant Neural Networks Using Pipeline Parallelism.” In <i>Advances in Neural Information Processing Systems</i>. Curran Associates, Inc.</div>
-  <div class="csl-entry"><a id="citeproc_bib_item_3"></a>Narayanan, Deepak, Aaron Harlap, Amar Phanishayee, Vivek Seshadri, Nikhil R. Devanur, Gregory R. Ganger, Phillip B. Gibbons, and Matei Zaharia. 2019. “PipeDream: Generalized Pipeline Parallelism for DNN Training.” In <i>Proceedings of the 27th ACM Symposium on Operating Systems Principles</i>. SOSP ’19. New York, NY, USA: Association for Computing Machinery.</div>
-  <div class="csl-entry"><a id="citeproc_bib_item_4"></a>Narayanan, Deepak, Amar Phanishayee, Kaiyu Shi, Xie Chen, and Matei Zaharia. 2021. “Memory-Efficient Pipeline-Parallel DNN Training.” In <i>Proceedings of the 38th International Conference on Machine Learning</i>. PMLR.</div>
-  <div class="csl-entry"><a id="citeproc_bib_item_5"></a>Shazeer, Noam, Azalia Mirhoseini, Krzysztof Maziarz, Andy Davis, Quoc Le, Geoffrey Hinton, and Jeff Dean. 2017. “Outrageously Large Neural Networks: The Sparsely-Gated Mixture-of-Experts Layer.” <i>arXiv:1701.06538 [Cs, Stat]</i>. <a href="https://arxiv.org/abs/1701.06538">https://arxiv.org/abs/1701.06538</a>.</div>
+  <div class="csl-entry"><a id="citeproc_bib_item_1"></a>Cui, Henggang, Hao Zhang, Gregory R. Ganger, Phillip B. Gibbons, and Eric P. Xing. 2016. “GeePS: Scalable Deep Learning on Distributed GPUs with a GPU-specialized Parameter Server.” In <i>Proceedings of the Eleventh European Conference on Computer Systems</i>, 1–16. EuroSys ’16. New York, NY, USA: Association for Computing Machinery. doi:<a href="https://doi.org/10.1145/2901318.2901323">10.1145/2901318.2901323</a>.</div>
+  <div class="csl-entry"><a id="citeproc_bib_item_2"></a>Huang, Yanping, Youlong Cheng, Ankur Bapna, Orhan Firat, Dehao Chen, Mia Chen, HyoukJoong Lee, et al. 2019. “GPipe: Efficient Training of Giant Neural Networks Using Pipeline Parallelism.” In <i>Advances in Neural Information Processing Systems</i>. Vol. 32. Curran Associates, Inc.</div>
+  <div class="csl-entry"><a id="citeproc_bib_item_3"></a>Narayanan, Deepak, Aaron Harlap, Amar Phanishayee, Vivek Seshadri, Nikhil R. Devanur, Gregory R. Ganger, Phillip B. Gibbons, and Matei Zaharia. 2019. “PipeDream: Generalized Pipeline Parallelism for DNN Training.” In <i>Proceedings of the 27th ACM Symposium on Operating Systems Principles</i>, 1–15. SOSP ’19. New York, NY, USA: Association for Computing Machinery. doi:<a href="https://doi.org/10.1145/3341301.3359646">10.1145/3341301.3359646</a>.</div>
+  <div class="csl-entry"><a id="citeproc_bib_item_4"></a>Narayanan, Deepak, Amar Phanishayee, Kaiyu Shi, Xie Chen, and Matei Zaharia. 2021. “Memory-Efficient Pipeline-Parallel DNN Training.” In <i>Proceedings of the 38th International Conference on Machine Learning</i>, 7937–47. PMLR.</div>
+  <div class="csl-entry"><a id="citeproc_bib_item_5"></a>Shazeer, Noam, Azalia Mirhoseini, Krzysztof Maziarz, Andy Davis, Quoc Le, Geoffrey Hinton, and Jeff Dean. 2017. “Outrageously Large Neural Networks: The Sparsely-Gated Mixture-of-Experts Layer.”</div>
 </div>

@@ -1,7 +1,7 @@
 +++
 title = "Deep Reinforcement Learning"
 author = ["Matthew Schlegel"]
-lastmod = 2023-03-21T12:01:09-06:00
+lastmod = 2025-02-21T10:26:11-07:00
 slug = "deep_reinforcement_learning"
 draft = false
 notetype = "note"
@@ -18,10 +18,10 @@ Deep reinforcement learning is [Reinforcement Learning]({{< relref "reinforcemen
 
 
 <style>.csl-entry{text-indent: -1.5em; margin-left: 1.5em;}</style><div class="csl-bib-body">
-  <div class="csl-entry"><a id="citeproc_bib_item_1"></a>Bakker, Bram. 2002. “Reinforcement Learning with Long Short-Term Memory.” In <i>Advances in Neural Information Processing Systems 14</i>, edited by T. G. Dietterich, S. Becker, and Z. Ghahramani. MIT Press.</div>
-  <div class="csl-entry"><a id="citeproc_bib_item_2"></a>Liu, Ruishan, and James Zou. 2017. “The Effects of Memory Replay in Reinforcement Learning.” <i>arXiv:1710.06574 [Cs, Stat]</i>. <a href="https://arxiv.org/abs/1710.06574">https://arxiv.org/abs/1710.06574</a>.</div>
-  <div class="csl-entry"><a id="citeproc_bib_item_3"></a>Mnih, Volodymyr, Koray Kavukcuoglu, David Silver, Andrei A. Rusu, Joel Veness, Marc G. Bellemare, Alex Graves, et al. 2015. “Human-Level Control through Deep Reinforcement Learning.” <i>Nature</i>.</div>
-  <div class="csl-entry"><a id="citeproc_bib_item_4"></a>Rummery, Gavin A, and Mahesan Niranjan. 1994. <i>On-Line Q-learning Using Connectionist Systems</i>. University of Cambridge, Department of Engineering Cambridge, UK.</div>
-  <div class="csl-entry"><a id="citeproc_bib_item_5"></a>Tesauro, Gerald. 1994. “TD-Gammon, a Self-Teaching Backgammon Program, Achieves Master-Level Play.” <i>Neural Computation</i>.</div>
-  <div class="csl-entry"><a id="citeproc_bib_item_6"></a>Williams, Ronald J. 1992. “Simple Statistical Gradient-Following Algorithms for Connectionist Reinforcement Learning.” In <i>Reinforcement Learning</i>. The Springer International Series in Engineering and Computer Science. Springer, Boston, MA.</div>
+  <div class="csl-entry"><a id="citeproc_bib_item_1"></a>Bakker, Bram. 2002. “Reinforcement Learning with Long Short-Term Memory.” In <i>Advances in Neural Information Processing Systems 14</i>, 1475–82. MIT Press.</div>
+  <div class="csl-entry"><a id="citeproc_bib_item_2"></a>Liu, Ruishan, and James Zou. 2017. “The Effects of Memory Replay in Reinforcement Learning.”</div>
+  <div class="csl-entry"><a id="citeproc_bib_item_3"></a>Mnih, Volodymyr, Koray Kavukcuoglu, David Silver, Andrei A. Rusu, Joel Veness, Marc G. Bellemare, Alex Graves, et al. 2015. “Human-Level Control through Deep Reinforcement Learning.” <i>Nature</i> 518 (7540): 529–33. doi:<a href="https://doi.org/10.1038/nature14236">10.1038/nature14236</a>.</div>
+  <div class="csl-entry"><a id="citeproc_bib_item_4"></a>Rummery, Gavin A, and Mahesan Niranjan. 1994. <i>On-Line Q-learning Using Connectionist Systems</i>. Vol. 37. University of Cambridge, Department of Engineering Cambridge, UK.</div>
+  <div class="csl-entry"><a id="citeproc_bib_item_5"></a>Tesauro, Gerald. 1994. “TD-Gammon, a Self-Teaching Backgammon Program, Achieves Master-Level Play.” <i>Neural Computation</i> 6: 215–19.</div>
+  <div class="csl-entry"><a id="citeproc_bib_item_6"></a>Williams, Ronald J. 1992. “Simple Statistical Gradient-Following Algorithms for Connectionist Reinforcement Learning.” In <i>Reinforcement Learning</i>, 5–32. The Springer International Series in Engineering and Computer Science. Springer, Boston, MA. doi:<a href="https://doi.org/10.1007/978-1-4615-3618-5_2">10.1007/978-1-4615-3618-5_2</a>.</div>
 </div>

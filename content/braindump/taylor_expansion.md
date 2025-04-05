@@ -1,7 +1,7 @@
 +++
 title = "Taylor Series Expansion"
 author = ["Matthew Schlegel"]
-lastmod = 2022-11-08T14:23:41-07:00
+lastmod = 2025-02-21T10:29:26-07:00
 slug = "taylor_series_expansion"
 draft = false
 notetype = "note"

@@ -1,7 +1,7 @@
 +++
 title = "Representation"
 author = ["Matthew Schlegel"]
-lastmod = 2023-03-21T12:06:47-06:00
+lastmod = 2025-02-21T10:29:01-07:00
 slug = "representation"
 draft = false
 notetype = "note"

@@ -1,7 +1,7 @@
 +++
 title = "sutton1988learning: Learning to predict by the methods of temporal differences"
 author = ["Matthew Schlegel"]
-lastmod = 2022-11-08T14:20:34-07:00
+lastmod = 2025-02-21T10:28:12-07:00
 slug = "sutton1988learning"
 draft = false
 notetype = "paper"

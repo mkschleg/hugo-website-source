@@ -1,7 +1,7 @@
 +++
 title = "Infimum and Supremum"
 author = ["Matthew Schlegel"]
-lastmod = 2023-03-20T12:58:42-06:00
+lastmod = 2025-02-21T10:27:51-07:00
 slug = "infimum_and_supremum"
 draft = false
 notetype = "note"

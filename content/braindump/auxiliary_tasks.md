@@ -1,7 +1,7 @@
 +++
 title = "Auxiliary Tasks"
 author = ["Matthew Schlegel"]
-lastmod = 2022-11-08T14:45:19-07:00
+lastmod = 2025-02-21T10:25:34-07:00
 slug = "auxiliary_tasks"
 draft = false
 notetype = "note"

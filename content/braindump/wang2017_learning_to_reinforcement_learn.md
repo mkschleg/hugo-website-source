@@ -1,7 +1,7 @@
 +++
 title = "wang2017learning: Learning to reinforcement learn"
 author = ["Matthew Schlegel"]
-lastmod = 2022-11-09T14:03:32-07:00
+lastmod = 2025-02-21T10:30:07-07:00
 slug = "wang2017learning"
 draft = false
 notetype = "paper"

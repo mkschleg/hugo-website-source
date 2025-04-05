@@ -1,7 +1,7 @@
 +++
 title = "Linear Regression"
 author = ["Matthew Schlegel"]
-lastmod = 2022-11-10T16:45:22-07:00
+lastmod = 2025-02-21T10:28:16-07:00
 slug = "linear_regression"
 draft = false
 notetype = "note"

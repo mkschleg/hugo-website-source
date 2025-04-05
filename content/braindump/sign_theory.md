@@ -1,7 +1,7 @@
 +++
 title = "Helmholtz Sign Theory"
 author = ["Matthew Schlegel"]
-lastmod = 2022-11-08T14:22:20-07:00
+lastmod = 2025-02-21T10:29:12-07:00
 slug = "helmholtz_sign_theory"
 draft = false
 notetype = "note"

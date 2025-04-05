@@ -1,7 +1,7 @@
 +++
 title = "Backpropagation"
 author = ["Matthew Schlegel"]
-lastmod = 2022-11-08T14:18:36-07:00
+lastmod = 2025-02-21T10:25:34-07:00
 slug = "backpropagation"
 draft = false
 notetype = "note"

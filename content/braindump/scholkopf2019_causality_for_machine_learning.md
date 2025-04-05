@@ -1,7 +1,7 @@
 +++
 title = "scholkopf2019causality: Causality for Machine Learning"
 author = ["Matthew Schlegel"]
-lastmod = 2022-11-09T14:05:00-07:00
+lastmod = 2025-02-21T10:29:08-07:00
 slug = "causality_for_machine_learning"
 tags = ["Causality"]
 draft = false
@@ -140,5 +140,5 @@ It is known that certain transformations of observations can cause issues with d
 
 
 <style>.csl-entry{text-indent: -1.5em; margin-left: 1.5em;}</style><div class="csl-bib-body">
-  <div class="csl-entry"><a id="citeproc_bib_item_1"></a>Zhang, Amy, Zachary C. Lipton, Luis Pineda, Kamyar Azizzadenesheli, Anima Anandkumar, Laurent Itti, Joelle Pineau, and Tommaso Furlanello. 2021. “Learning Causal State Representations of Partially Observable Environments.” <i>arXiv:1906.10437 [Cs, Stat]</i>. <a href="https://arxiv.org/abs/1906.10437">https://arxiv.org/abs/1906.10437</a>.</div>
+  <div class="csl-entry"><a id="citeproc_bib_item_1"></a>Zhang, Amy, Zachary C. Lipton, Luis Pineda, Kamyar Azizzadenesheli, Anima Anandkumar, Laurent Itti, Joelle Pineau, and Tommaso Furlanello. 2021. “Learning Causal State Representations of Partially Observable Environments.”</div>
 </div>

@@ -1,7 +1,7 @@
 +++
 title = "Psychology"
 author = ["Matthew Schlegel"]
-lastmod = 2023-03-20T12:03:12-06:00
+lastmod = 2025-02-21T10:28:54-07:00
 slug = "psychology"
 draft = false
 notetype = "note"

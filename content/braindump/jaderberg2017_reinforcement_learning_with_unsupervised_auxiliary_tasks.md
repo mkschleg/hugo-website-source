@@ -1,7 +1,7 @@
 +++
 title = "jaderberg2017reinforcement: Reinforcement Learning with Unsupervised Auxiliary Tasks"
 author = ["Matthew Schlegel"]
-lastmod = 2022-11-09T14:05:47-07:00
+lastmod = 2025-02-21T10:28:01-07:00
 slug = "jaderberg2017reinforcement"
 draft = false
 notetype = "paper"
@@ -58,5 +58,5 @@ They use a set of other baselines which are all ablation studies on the UNREAL a
 
 
 <style>.csl-entry{text-indent: -1.5em; margin-left: 1.5em;}</style><div class="csl-bib-body">
-  <div class="csl-entry"><a id="citeproc_bib_item_1"></a>Mnih, Volodymyr, Adria Puigdomenech Badia, Mehdi Mirza, Alex Graves, Timothy Lillicrap, Tim Harley, David Silver, and Koray Kavukcuoglu. 2016. “Asynchronous Methods for Deep Reinforcement Learning.” In <i>International Conference on Machine Learning</i>.</div>
+  <div class="csl-entry"><a id="citeproc_bib_item_1"></a>Mnih, Volodymyr, Adria Puigdomenech Badia, Mehdi Mirza, Alex Graves, Timothy Lillicrap, Tim Harley, David Silver, and Koray Kavukcuoglu. 2016. “Asynchronous Methods for Deep Reinforcement Learning.” In <i>International Conference on Machine Learning</i>, 1928–37.</div>
 </div>

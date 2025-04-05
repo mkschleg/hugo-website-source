@@ -1,7 +1,7 @@
 +++
 title = "Artificial Intelligence"
 author = ["Matthew Schlegel"]
-lastmod = 2023-03-24T14:36:47-06:00
+lastmod = 2025-02-21T10:25:31-07:00
 slug = "artificial_intelligence"
 draft = false
 notetype = "note"

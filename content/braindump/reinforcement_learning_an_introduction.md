@@ -1,7 +1,7 @@
 +++
 title = "Reinforcement Learning: An Introduction"
 author = ["Matthew Schlegel"]
-lastmod = 2022-11-09T14:05:03-07:00
+lastmod = 2025-02-21T10:29:00-07:00
 slug = "reinforcement_learning_an_introduction"
 draft = false
 notetype = "book"
@@ -1202,11 +1202,11 @@ We can parameterize the policy according to the parameters of a distribution, or
 
 
 <style>.csl-entry{text-indent: -1.5em; margin-left: 1.5em;}</style><div class="csl-bib-body">
-  <div class="csl-entry"><a id="citeproc_bib_item_1"></a>François-Lavet, Vincent, Peter Henderson, Riashat Islam, Marc G. Bellemare, and Joelle Pineau. 2018. “An Introduction to Deep Reinforcement Learning.” <i>Foundations and Trends in Machine Learning</i>.</div>
+  <div class="csl-entry"><a id="citeproc_bib_item_1"></a>François-Lavet, Vincent, Peter Henderson, Riashat Islam, Marc G. Bellemare, and Joelle Pineau. 2018. “An Introduction to Deep Reinforcement Learning.” <i>Foundations and Trends® in Machine Learning</i> 11 (3-4): 219–354. doi:<a href="https://doi.org/10.1561/2200000071">10.1561/2200000071</a>.</div>
   <div class="csl-entry"><a id="citeproc_bib_item_2"></a>Konidaris, George, Sarah Osentoski, and Philip Thomas. 2011. “Value Function Approximation in Reinforcement Learning Using the Fourier Basis.” In <i>Twenty-Fifth AAAI Conference on Artificial Intelligence</i>.</div>
-  <div class="csl-entry"><a id="citeproc_bib_item_3"></a>Singh, Satinder P., and Richard S. Sutton. 1996. “Reinforcement Learning with Replacing Eligibility Traces.” <i>Machine Learning</i>.</div>
-  <div class="csl-entry"><a id="citeproc_bib_item_4"></a>Sutton, Richard S. 1988. “Learning to Predict by the Methods of Temporal Differences.” <i>Machine Learning</i>.</div>
-  <div class="csl-entry"><a id="citeproc_bib_item_5"></a>Sutton, Richard S., and Andrew G. Barto. 2018. <i>Reinforcement Learning: An Introduction</i>. Second edition. Adaptive Computation and Machine Learning Series. Cambridge, Massachusetts: The MIT Press.</div>
-  <div class="csl-entry"><a id="citeproc_bib_item_6"></a>Tesauro, Gerald. 1994. “TD-Gammon, a Self-Teaching Backgammon Program, Achieves Master-Level Play.” <i>Neural Computation</i>.</div>
-  <div class="csl-entry"><a id="citeproc_bib_item_7"></a>Williams, Ronald J. 1992. “Simple Statistical Gradient-Following Algorithms for Connectionist Reinforcement Learning.” In <i>Reinforcement Learning</i>. The Springer International Series in Engineering and Computer Science. Springer, Boston, MA.</div>
+  <div class="csl-entry"><a id="citeproc_bib_item_3"></a>Singh, Satinder, and Richard Sutton. 1996. “Reinforcement Learning with Replacing Eligibility Traces.” <i>Machine Learning</i> 22 (1): 123–58. doi:<a href="https://doi.org/10.1023/A:1018012322525">10.1023/A:1018012322525</a>.</div>
+  <div class="csl-entry"><a id="citeproc_bib_item_4"></a>Sutton, Richard. 1988. “Learning to Predict by the Methods of Temporal Differences.” <i>Machine Learning</i> 3 (1): 9–44. doi:<a href="https://doi.org/10.1007/BF00115009">10.1007/BF00115009</a>.</div>
+  <div class="csl-entry"><a id="citeproc_bib_item_5"></a>Sutton, Richard, and Andrew G. Barto. 2018. <i>Reinforcement Learning: An Introduction</i>. Second edition. Adaptive Computation and Machine Learning Series. Cambridge, Massachusetts: The MIT Press.</div>
+  <div class="csl-entry"><a id="citeproc_bib_item_6"></a>Tesauro, Gerald. 1994. “TD-Gammon, a Self-Teaching Backgammon Program, Achieves Master-Level Play.” <i>Neural Computation</i> 6: 215–19.</div>
+  <div class="csl-entry"><a id="citeproc_bib_item_7"></a>Williams, Ronald J. 1992. “Simple Statistical Gradient-Following Algorithms for Connectionist Reinforcement Learning.” In <i>Reinforcement Learning</i>, 5–32. The Springer International Series in Engineering and Computer Science. Springer, Boston, MA. doi:<a href="https://doi.org/10.1007/978-1-4615-3618-5_2">10.1007/978-1-4615-3618-5_2</a>.</div>
 </div>

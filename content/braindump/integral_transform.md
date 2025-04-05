@@ -1,7 +1,7 @@
 +++
 title = "Integral Transform"
 author = ["Matthew Schlegel"]
-lastmod = 2022-11-08T14:20:12-07:00
+lastmod = 2025-02-21T10:27:55-07:00
 slug = "integral_transform"
 draft = false
 notetype = "note"

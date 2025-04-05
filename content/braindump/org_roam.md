@@ -1,7 +1,7 @@
 +++
 title = "Org Roam"
 author = ["Matthew Schlegel"]
-lastmod = 2023-08-02T16:34:08-06:00
+lastmod = 2025-02-21T10:28:41-07:00
 slug = "org_roam"
 draft = false
 notetype = "note"

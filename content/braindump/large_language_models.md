@@ -1,7 +1,7 @@
 +++
 title = "Large Language Models"
 author = ["Matthew Schlegel"]
-lastmod = 2023-03-22T11:51:56-06:00
+lastmod = 2025-02-21T10:28:11-07:00
 slug = "large_language_models"
 draft = false
 notetype = "note"

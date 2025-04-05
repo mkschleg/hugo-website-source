@@ -1,7 +1,7 @@
 +++
 title = "Bootstrapping (statistics)"
 author = ["Matthew Schlegel"]
-lastmod = 2023-03-21T11:59:41-06:00
+lastmod = 2025-02-21T10:25:43-07:00
 slug = "bootstrapping_statistics"
 draft = false
 notetype = "note"

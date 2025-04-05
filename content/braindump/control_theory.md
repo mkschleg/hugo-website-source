@@ -1,7 +1,7 @@
 +++
 title = "Control Theory"
 author = ["Matthew Schlegel"]
-lastmod = 2022-11-08T14:19:12-07:00
+lastmod = 2025-02-21T10:26:01-07:00
 slug = "control_theory"
 draft = false
 notetype = "note"

@@ -1,7 +1,7 @@
 +++
 title = "Linear Algebra"
 author = ["Matthew Schlegel"]
-lastmod = 2023-03-20T11:45:59-06:00
+lastmod = 2025-02-21T10:28:13-07:00
 slug = "linear_algebra"
 draft = false
 notetype = "note"

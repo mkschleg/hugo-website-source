@@ -1,7 +1,7 @@
 +++
 title = "POMDP"
 author = ["Matthew Schlegel"]
-lastmod = 2022-11-08T14:21:21-07:00
+lastmod = 2025-02-21T10:28:46-07:00
 slug = "pomdp"
 draft = false
 notetype = "note"

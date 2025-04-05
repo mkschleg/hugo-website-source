@@ -1,7 +1,7 @@
 +++
 title = "singh2003learning: Learning Predictive State Representations"
 author = ["Matthew Schlegel"]
-lastmod = 2022-11-09T14:03:54-07:00
+lastmod = 2025-02-21T10:29:13-07:00
 slug = "singh2003learning"
 draft = false
 notetype = "paper"

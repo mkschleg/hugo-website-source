@@ -1,7 +1,7 @@
 +++
 title = "synofzik2013experience: The experience of agency: an interplay between prediction and postdiction"
 author = ["Matthew Schlegel"]
-lastmod = 2022-11-08T14:23:40-07:00
+lastmod = 2025-02-21T10:29:26-07:00
 slug = "synofzik2013experience"
 draft = false
 notetype = "paper"

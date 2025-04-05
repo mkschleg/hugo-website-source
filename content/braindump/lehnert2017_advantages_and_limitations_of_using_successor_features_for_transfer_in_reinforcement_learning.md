@@ -1,7 +1,7 @@
 +++
 title = "lehnert2017advantages: Advantages and Limitations of using Successor Features for Transfer in Reinforcement Learning"
 author = ["Matthew Schlegel"]
-lastmod = 2022-11-09T14:05:32-07:00
+lastmod = 2025-02-21T10:28:12-07:00
 slug = "lehnert2017"
 tags = ["Reinforcement-Learning", "Representation", "SFs"]
 draft = false

@@ -1,7 +1,7 @@
 +++
 title = "Homogeneity"
 author = ["Matthew Schlegel"]
-lastmod = 2022-11-08T14:19:59-07:00
+lastmod = 2025-02-21T10:27:24-07:00
 slug = "homogeneity"
 draft = false
 notetype = "note"

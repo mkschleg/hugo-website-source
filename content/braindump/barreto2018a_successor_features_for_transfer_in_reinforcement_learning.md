@@ -1,7 +1,7 @@
 +++
 title = "barreto2018successor: Successor Features for Transfer in Reinforcement Learning"
 author = ["Matthew Schlegel"]
-lastmod = 2022-11-09T14:06:29-07:00
+lastmod = 2025-02-21T10:25:37-07:00
 slug = "barreto2018successor"
 tags = ["Reinforcement-Learning", "Representation"]
 draft = false
@@ -147,5 +147,5 @@ This is then applied to transfer when using successor features.
 
 
 <style>.csl-entry{text-indent: -1.5em; margin-left: 1.5em;}</style><div class="csl-bib-body">
-  <div class="csl-entry"><a id="citeproc_bib_item_1"></a>Dayan, Peter. 1993. “Improving Generalization for Temporal Difference Learning: The Successor Representation.” <i>Neural Computation</i>. MIT Press.</div>
+  <div class="csl-entry"><a id="citeproc_bib_item_1"></a>Dayan, Peter. 1993. “Improving Generalization for Temporal Difference Learning: The Successor Representation.” <i>Neural Computation</i> 5 (4). MIT Press: 613–24. doi:<a href="https://doi.org/10.1162/neco.1993.5.4.613">10.1162/neco.1993.5.4.613</a>.</div>
 </div>

@@ -1,7 +1,7 @@
 +++
 title = "white2015developing: Developing a predictive approach to knowledge"
 author = ["Matthew Schlegel"]
-lastmod = 2022-11-09T14:03:30-07:00
+lastmod = 2025-02-21T10:30:15-07:00
 slug = "white2015developing"
 draft = false
 notetype = "paper"
@@ -104,6 +104,6 @@ This chapter describes how a policy can be changed based on the agents demons.
 
 
 <style>.csl-entry{text-indent: -1.5em; margin-left: 1.5em;}</style><div class="csl-bib-body">
-  <div class="csl-entry"><a id="citeproc_bib_item_1"></a>Hasselt, Hado van, and Richard S. Sutton. 2015. “Learning to Predict Independent of Span.” <i>arXiv:1508.04582 [Cs]</i>. <a href="https://arxiv.org/abs/1508.04582">https://arxiv.org/abs/1508.04582</a>.</div>
-  <div class="csl-entry"><a id="citeproc_bib_item_2"></a>Modayil, Joseph, Adam White, and Richard S Sutton. 2014. “Multi-Timescale Nexting in a Reinforcement Learning Robot.” <i>Adaptive Behavior</i>.</div>
+  <div class="csl-entry"><a id="citeproc_bib_item_1"></a>Hasselt, Hado van, and Richard Sutton. 2015. “Learning to Predict Independent of Span.”</div>
+  <div class="csl-entry"><a id="citeproc_bib_item_2"></a>Modayil, Joseph, Adam White, and Richard Sutton. 2014. “Multi-Timescale Nexting in a Reinforcement Learning Robot.” <i>Adaptive Behavior</i> 22 (2): 146–60. doi:<a href="https://doi.org/10.1177/1059712313511648">10.1177/1059712313511648</a>.</div>
 </div>

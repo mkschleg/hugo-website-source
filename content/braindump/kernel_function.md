@@ -1,7 +1,7 @@
 +++
 title = "Kernel Function"
 author = ["Matthew Schlegel"]
-lastmod = 2022-11-08T14:20:25-07:00
+lastmod = 2025-02-21T10:28:06-07:00
 slug = "kernel_function"
 draft = false
 notetype = "note"

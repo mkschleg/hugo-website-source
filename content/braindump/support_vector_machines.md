@@ -1,7 +1,7 @@
 +++
 title = "Support Vector Machines"
 author = ["Matthew Schlegel"]
-lastmod = 2022-11-09T14:03:45-07:00
+lastmod = 2025-02-21T10:29:22-07:00
 slug = "support_vector_machines"
 draft = false
 notetype = "note"

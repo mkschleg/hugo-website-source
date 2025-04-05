@@ -1,7 +1,7 @@
 +++
 title = "schwarzer2021pretraining: Pretraining Representations for Data-Efficient Reinforcement Learning"
 author = ["Matthew Schlegel"]
-lastmod = 2023-08-02T16:34:36-06:00
+lastmod = 2025-02-21T10:29:08-07:00
 slug = "schwarzer2021pretraining"
 draft = false
 notetype = "paper"
@@ -132,6 +132,6 @@ As I'm working on extensions to the (<a href="#citeproc_bib_item_1">McLeod et al
 
 
 <style>.csl-entry{text-indent: -1.5em; margin-left: 1.5em;}</style><div class="csl-bib-body">
-  <div class="csl-entry"><a id="citeproc_bib_item_1"></a>McLeod, Matthew, Chunlok Lo, Matthew Schlegel, Andrew Jacobsen, Raksha Kumaraswamy, Martha White, and Adam White. 2021. “Continual Auxiliary Task Learning.” In <i>Advances in Neural Information Processing Systems</i>. Curran Associates, Inc.</div>
-  <div class="csl-entry"><a id="citeproc_bib_item_2"></a>Schwarzer, Max, Ankesh Anand, Rishab Goel, R. Devon Hjelm, Aaron Courville, and Philip Bachman. 2021. “Data-Efficient Reinforcement Learning with Self-Predictive Representations.” arXiv. <a href="https://arxiv.org/abs/2007.05929">https://arxiv.org/abs/2007.05929</a>.</div>
+  <div class="csl-entry"><a id="citeproc_bib_item_1"></a>McLeod, Matthew, Chunlok Lo, Matthew Schlegel, Andrew Jacobsen, Raksha Kumaraswamy, Martha White, and Adam White. 2021. “Continual Auxiliary Task Learning.” In <i>Advances in Neural Information Processing Systems</i>, 34:12549–62. Curran Associates, Inc.</div>
+  <div class="csl-entry"><a id="citeproc_bib_item_2"></a>Schwarzer, Max, Ankesh Anand, Rishab Goel, R. Devon Hjelm, Aaron Courville, and Philip Bachman. 2021. “Data-Efficient Reinforcement Learning with Self-Predictive Representations.” May 20. doi:<a href="https://doi.org/10.48550/arXiv.2007.05929">10.48550/arXiv.2007.05929</a>.</div>
 </div>

@@ -1,7 +1,7 @@
 +++
 title = "Neural Network"
 author = ["Matthew Schlegel"]
-lastmod = 2023-03-21T12:02:33-06:00
+lastmod = 2025-02-21T10:28:32-07:00
 slug = "neural_network"
 draft = false
 notetype = "note"

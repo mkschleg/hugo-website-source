@@ -1,7 +1,7 @@
 +++
 title = "Dirac Delta Function"
 author = ["Matthew Schlegel"]
-lastmod = 2022-11-08T14:19:25-07:00
+lastmod = 2025-02-21T10:26:15-07:00
 slug = "dirac_delta_function"
 draft = false
 notetype = "note"

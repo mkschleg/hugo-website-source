@@ -1,7 +1,7 @@
 +++
 title = "Zuckerman Institute"
 author = ["Matthew Schlegel"]
-lastmod = 2023-04-17T10:38:11-06:00
+lastmod = 2025-02-21T10:30:33-07:00
 slug = "zuckerman_institute"
 draft = false
 notetype = "note"

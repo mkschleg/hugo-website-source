@@ -1,7 +1,7 @@
 +++
 title = "Linear Map"
 author = ["Matthew Schlegel"]
-lastmod = 2022-11-08T14:20:40-07:00
+lastmod = 2025-02-21T10:28:15-07:00
 slug = "linear_map"
 draft = false
 notetype = "note"

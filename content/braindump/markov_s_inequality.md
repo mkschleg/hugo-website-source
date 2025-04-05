@@ -1,7 +1,7 @@
 +++
 title = "Markov's Inequality"
 author = ["Matthew Schlegel"]
-lastmod = 2023-08-08T13:13:02-06:00
+lastmod = 2025-02-21T10:28:23-07:00
 slug = "markov_s_inequality"
 draft = false
 notetype = "note"
@@ -101,11 +101,5 @@ tags
 
 Let \\(Z \geq 0\\) be a non-negative random variable. Then for all \\(t \geq 0\\),
 \\[\Prob\left(Z\geqt\right) \geq \frac{\expected[Z]}{t}. \\]
-
-</div>
-
-<div class="proof">
-
-
 
 </div>

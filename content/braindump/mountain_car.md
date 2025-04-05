@@ -1,7 +1,7 @@
 +++
 title = "Mountain Car"
 author = ["Matthew Schlegel"]
-lastmod = 2022-11-09T14:05:11-07:00
+lastmod = 2025-02-21T10:28:31-07:00
 slug = "mountain_car"
 tags = ["Reinforcement-Learning", "Environments"]
 draft = false
@@ -107,5 +107,5 @@ with conditions that \\(x \in [-0.5, 1.2]\\) and \\(\dot{x} \in [-0.07, 0.07]\\)
 
 
 <style>.csl-entry{text-indent: -1.5em; margin-left: 1.5em;}</style><div class="csl-bib-body">
-  <div class="csl-entry"><a id="citeproc_bib_item_1"></a>Sutton, Richard S. 1996. “Generalization in Reinforcement Learning: Successful Examples Using Sparse Coarse Coding.” In <i>Advances in Neural Information Processing Systems 8</i>, edited by D. S. Touretzky, M. C. Mozer, and M. E. Hasselmo. MIT Press.</div>
+  <div class="csl-entry"><a id="citeproc_bib_item_1"></a>Sutton, Richard S. 1996. “Generalization in Reinforcement Learning: Successful Examples Using Sparse Coarse Coding.” In <i>Advances in Neural Information Processing Systems 8</i>, edited by D. S. Touretzky, M. C. Mozer, and M. E. Hasselmo, 1038–44. MIT Press.</div>
 </div>

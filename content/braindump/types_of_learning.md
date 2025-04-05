@@ -1,7 +1,7 @@
 +++
 title = "Types of Learning"
 author = ["Matthew Schlegel"]
-lastmod = 2022-11-08T14:23:48-07:00
+lastmod = 2025-02-21T10:29:43-07:00
 slug = "types_of_learning"
 draft = false
 notetype = "note"

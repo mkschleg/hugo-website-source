@@ -1,7 +1,7 @@
 +++
 title = "sutton2011horde: Horde: A Scalable Real-time Architecture for Learning Knowledge from Unsupervised Sensorimotor Interaction"
 author = ["Matthew Schlegel"]
-lastmod = 2022-11-09T14:03:42-07:00
+lastmod = 2025-02-21T10:29:24-07:00
 slug = "sutton2011horde"
 draft = false
 notetype = "paper"
@@ -94,8 +94,8 @@ They show they can learn a policy to maximize a signal.
 
 
 <style>.csl-entry{text-indent: -1.5em; margin-left: 1.5em;}</style><div class="csl-bib-body">
-  <div class="csl-entry"><a id="citeproc_bib_item_1"></a>Becker, JD. 1973. “A Model for the Encoding of Experiential Information. Computer Models of Thought and Language. RC Schank and KM Colby.” San Francisco, WH Freeman: 454 p.</div>
+  <div class="csl-entry"><a id="citeproc_bib_item_1"></a>Becker, Joseph D. 1973. “A Model for the Encoding of Experiential Information.” <i>Computer Models of Thought and Language</i>. Freeman San Francisco, 396–434.</div>
   <div class="csl-entry"><a id="citeproc_bib_item_2"></a>Cunningham, Michael. 2013. <i>Intelligence: Its Organization and Development</i>. Elsevier.</div>
   <div class="csl-entry"><a id="citeproc_bib_item_3"></a>Drescher, Gary L. 1991. <i>Made-Up Minds : A Constructivist Approach to Artificial Intelligence</i>. Artificial Intelligence. Cambridge, Mass: The MIT Press.</div>
-  <div class="csl-entry"><a id="citeproc_bib_item_4"></a>Ring, Mark B. 1997. “CHILD: A First Step Towards Continual Learning.” <i>Machine Learning</i>.</div>
+  <div class="csl-entry"><a id="citeproc_bib_item_4"></a>Ring, Mark. 1997. “CHILD: A First Step Towards Continual Learning.” <i>Machine Learning</i> 28 (1): 77–104. doi:<a href="https://doi.org/10.1023/A:1007331723572">10.1023/A:1007331723572</a>.</div>
 </div>

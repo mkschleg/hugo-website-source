@@ -1,7 +1,7 @@
 +++
 title = "rao1999predictive: Predictive coding in the visual cortex: a functional interpretation of some extra-classical receptive-field effects"
 author = ["Matthew Schlegel"]
-lastmod = 2022-11-08T14:21:55-07:00
+lastmod = 2025-02-21T10:28:56-07:00
 slug = "rao1999predictive"
 draft = false
 notetype = "paper"
@@ -118,7 +118,7 @@ First, there is a curious property of neurons which respond optimally to line se
 
 Each level in the hierarchical model network attempts to predict the responses at the next lower level via feedback connections. The error between the prediction and the actual response is then sent back to the higher level via feedforward connections.
 
-{{< figure src="/ox-hugo/predictive_coding.png" caption="<span class=\"figure-number\">Figure 1: </span>General Architecture of the hierarchical predictive coding model." >}}
+{{< figure src="~/Documents/Research/notes/images/predictive_coding/predictive_coding.png" caption="<span class=\"figure-number\">Figure 1: </span>General Architecture of the hierarchical predictive coding model." >}}
 
 The prediction and error mechanisms occur concurrently throughout the hierarchy (top-down information influences bottom-up). Lower levels operate on smaller spatial (and possibly temporal scales) regions of th image, and the effective RF size of units increases progressively until the highest level's RF spans the totality of the image. Like all models, the underlying assumption is that the external environment generates natural signals hierarchically via interacting hidden physical causes (partial observability). The goal of the visual system is to optimally estimate the hidden variable at each scale of the input image.
 

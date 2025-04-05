@@ -1,7 +1,7 @@
 +++
 title = "Autocorrelation"
 author = ["Matthew Schlegel"]
-lastmod = 2022-11-17T14:52:44-07:00
+lastmod = 2025-02-21T10:25:33-07:00
 slug = "autocorrelation"
 draft = false
 notetype = "note"

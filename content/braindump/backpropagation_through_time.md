@@ -1,7 +1,7 @@
 +++
 title = "Backpropagation Through Time"
 author = ["Matthew Schlegel"]
-lastmod = 2022-11-09T14:06:34-07:00
+lastmod = 2025-02-21T10:25:35-07:00
 slug = "backpropagation_through_time"
 draft = false
 notetype = "note"

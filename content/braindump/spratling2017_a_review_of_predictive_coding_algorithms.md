@@ -1,7 +1,7 @@
 +++
 title = "spratling2017review: A review of predictive coding algorithms"
 author = ["Matthew Schlegel"]
-lastmod = 2022-11-09T14:03:51-07:00
+lastmod = 2025-02-21T10:29:14-07:00
 slug = "spratling2017"
 draft = false
 notetype = "paper"
@@ -187,6 +187,6 @@ This scheme is similar to (<a href="#citeproc_bib_item_1">Rao and Ballard 1999</
 
 
 <style>.csl-entry{text-indent: -1.5em; margin-left: 1.5em;}</style><div class="csl-bib-body">
-  <div class="csl-entry"><a id="citeproc_bib_item_1"></a>Rao, Rajesh P. N., and Dana H. Ballard. 1999. “Predictive Coding in the Visual Cortex: A Functional Interpretation of Some Extra-Classical Receptive-Field Effects.” <i>Nature Neuroscience</i>.</div>
-  <div class="csl-entry"><a id="citeproc_bib_item_2"></a>Srinivasan, Mandyam Veerambudi, Simon Barry Laughlin, A. Dubs, and George Adrian Horridge. 1982. “Predictive Coding: A Fresh View of Inhibition in the Retina.” <i>Proceedings of the Royal Society of London. Series B. Biological Sciences</i>. Royal Society.</div>
+  <div class="csl-entry"><a id="citeproc_bib_item_1"></a>Rao, Rajesh P. N., and Dana H. Ballard. 1999. “Predictive Coding in the Visual Cortex: A Functional Interpretation of Some Extra-Classical Receptive-Field Effects.” <i>Nature Neuroscience</i> 2 (1): 79. doi:<a href="https://doi.org/10.1038/4580">10.1038/4580</a>.</div>
+  <div class="csl-entry"><a id="citeproc_bib_item_2"></a>Srinivasan, Mandyam Veerambudi, Simon Barry Laughlin, A. Dubs, and George Adrian Horridge. 1982. “Predictive Coding: A Fresh View of Inhibition in the Retina.” <i>Proceedings of the Royal Society of London. Series B. Biological Sciences</i> 216 (1205). Royal Society: 427–59. doi:<a href="https://doi.org/10.1098/rspb.1982.0085">10.1098/rspb.1982.0085</a>.</div>
 </div>

@@ -1,7 +1,7 @@
 +++
 title = "John Hopfield"
 author = ["Matthew Schlegel"]
-lastmod = 2022-11-09T14:05:41-07:00
+lastmod = 2025-02-21T10:28:03-07:00
 slug = "john_hopfield"
 draft = false
 notetype = "note"
@@ -108,5 +108,5 @@ source
 
 
 <style>.csl-entry{text-indent: -1.5em; margin-left: 1.5em;}</style><div class="csl-bib-body">
-  <div class="csl-entry"><a id="citeproc_bib_item_1"></a>Hopfield, John J, and David W Tank. 1985. “``Neural’’ Computation of Decisions in Optimization Problems.” <i>Biological Cybernetics</i>. Springer.</div>
+  <div class="csl-entry"><a id="citeproc_bib_item_1"></a>Hopfield, John J, and David W Tank. 1985. “‘Neural’ Computation of Decisions in Optimization Problems.” <i>Biological Cybernetics</i> 52 (3). Springer: 141–52.</div>
 </div>

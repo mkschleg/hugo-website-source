@@ -1,7 +1,7 @@
 +++
 title = "Off-policy Reinforcement Learning"
 author = ["Matthew Schlegel"]
-lastmod = 2023-03-21T11:50:29-06:00
+lastmod = 2025-02-21T10:28:36-07:00
 slug = "off_policy_reinforcement_learning"
 draft = false
 notetype = "note"

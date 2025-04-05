@@ -1,7 +1,7 @@
 +++
 title = "dayan1993improving: Improving Generalization for Temporal Difference Learning: The Successor Representation"
 author = ["Matthew Schlegel"]
-lastmod = 2022-11-09T14:06:12-07:00
+lastmod = 2025-02-21T10:26:10-07:00
 slug = "dayan1993improving"
 tags = ["Reinforcement-Learning", "Representation"]
 draft = false

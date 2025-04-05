@@ -1,7 +1,7 @@
 +++
 title = "Cross-Entropy"
 author = ["Matthew Schlegel"]
-lastmod = 2022-11-08T14:19:16-07:00
+lastmod = 2025-02-21T10:26:04-07:00
 slug = "cross_entropy"
 draft = false
 notetype = "note"

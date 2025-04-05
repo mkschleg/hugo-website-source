@@ -1,7 +1,7 @@
 +++
 title = "Pretraining for Reinforcement Learning"
 author = ["Matthew Schlegel"]
-lastmod = 2023-08-02T16:32:12-06:00
+lastmod = 2025-02-21T10:28:50-07:00
 slug = "pretraining_for_reinforcement_learning"
 draft = false
 notetype = "research-topic"

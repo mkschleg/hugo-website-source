@@ -1,7 +1,7 @@
 +++
 title = "chung2014empirical: Empirical Evaluation of Gated Recurrent Neural Networks on Sequence Modeling"
 author = ["Matthew Schlegel"]
-lastmod = 2022-11-08T14:19:03-07:00
+lastmod = 2025-02-21T10:25:54-07:00
 slug = "chung2014empirical"
 draft = false
 notetype = "paper"
@@ -106,7 +106,7 @@ authors
 year
 : 2014
 
-This paper does an empirical evaluation of several recurrent gates including [LSTM]({{< relref "lstm.md" >}})s (<a href="#citeproc_bib_item_2">Hochreiter and Urgen Schmidhuber 1997</a>), [GRU]({{< relref "lstm.md" >}}) (<a href="#citeproc_bib_item_1">Cho et al. 2014</a>), and Vanilla [RNN]({{< relref "recurrent_neural_network.md" >}})s. The paper also provides descriptions for the different cells tested and a nice high level description of the generative model employed by RNNs.
+This paper does an empirical evaluation of several recurrent gates including [LSTM]({{< relref "lstm.md" >}})s (<a href="#citeproc_bib_item_2">Hochreiter and Schmidhuber 1997</a>), [GRU]({{< relref "lstm.md" >}}) (<a href="#citeproc_bib_item_1">Cho et al. 2014</a>), and Vanilla [RNN]({{< relref "recurrent_neural_network.md" >}})s. The paper also provides descriptions for the different cells tested and a nice high level description of the generative model employed by RNNs.
 
 **Results**
 

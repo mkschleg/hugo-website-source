@@ -1,7 +1,7 @@
 +++
 title = "Markov Decisions Process"
 author = ["Matthew Schlegel"]
-lastmod = 2022-11-08T14:20:50-07:00
+lastmod = 2025-02-21T10:28:22-07:00
 slug = "markov_decisions_process"
 tags = ["Math"]
 draft = false

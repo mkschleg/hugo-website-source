@@ -1,7 +1,7 @@
 +++
 title = "wu2016multiplicative: On Multiplicative Integration with Recurrent Neural Networks"
 author = ["Matthew Schlegel"]
-lastmod = 2022-11-08T14:24:01-07:00
+lastmod = 2025-02-21T10:30:22-07:00
 slug = "wu2016multiplicative"
 draft = false
 notetype = "paper"

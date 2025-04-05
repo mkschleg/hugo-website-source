@@ -1,8 +1,9 @@
 +++
 title = "Current Learning Objectives"
 author = ["Matthew Schlegel"]
-lastmod = 2023-08-08T13:15:03-06:00
+lastmod = 2025-04-04T12:49:32-06:00
 slug = "current_learning_objectives"
+tags = ["CLO"]
 draft = false
 notetype = "research-topic"
 +++
@@ -100,6 +101,21 @@ This note serves as a place for me to track my current learning objectives. It i
 ## Projects {#projects}
 
 
+### <span class="org-todo todo TODO_LO">TODO-LO</span> [Power Systems Control]({{< relref "power_systems_control.md" >}}) <span class="tag"><span class="POWER">POWER</span></span> {#power-systems-control--power-systems-control-dot-md}
+
+<!--list-separator-->
+
+- <span class="org-todo todo TODO">TODO</span>  Take basic framework learned through writing the grant and implant in notes. <span class="tag"><span class="_write">@write</span></span>
+
+<!--list-separator-->
+
+- <span class="org-todo todo TODO">TODO</span>  Tie different parts of the problem space to reinforcement learning needs <span class="tag"><span class="_think">@think</span></span>
+
+<!--list-separator-->
+
+- <span class="org-todo todo TODO">TODO</span>  Input literature notes of papers already taken <span class="tag"><span class="_write">@write</span></span>
+
+
 ### [Incentive Salience]({{< relref "incentive_salience.md" >}}) {#incentive-salience--incentive-salience-dot-md}
 
 This is an alternative to [RPEH]({{< relref "reinforcement_learning_in_the_brain.md#reward-prediction-error-hypothesis-of-dopamine" >}}), and could potentially explain some data better.
@@ -135,27 +151,34 @@ This is an alternative to [RPEH]({{< relref "reinforcement_learning_in_the_brain
 
     <!--list-separator-->
 
-    - <span class="org-todo todo TODO">TODO</span>  (<a href="#citeproc_bib_item_5">Xie et al. 2022</a>) <span class="tag"><span class="READ">READ</span></span>
+    -  CANCELLED (<a href="#citeproc_bib_item_8">Xie et al. 2022</a>) <span class="tag"><span class="READ">READ</span><span class="CANCELLED">CANCELLED</span></span>
 
     <!--list-separator-->
 
-    - <span class="org-todo todo TODO">TODO</span>  (<a href="#citeproc_bib_item_1">Balestriero et al. 2023</a>) <span class="tag"><span class="READ">READ</span></span>
+    -  CANCELLED (<a href="#citeproc_bib_item_1">Balestriero et al. 2023</a>) <span class="tag"><span class="READ">READ</span><span class="CANCELLED">CANCELLED</span></span>
 
     <!--list-separator-->
 
-    - <span class="org-todo todo TODO">TODO</span>  [schwarzer2021pretraining: Pretraining Representations for Data-Efficient Reinforcement Learning]({{< relref "schwarzer2021pretraining_pretraining_representations_for_data-efficient_reinforcement_learning.md" >}}) <span class="tag"><span class="READ">READ</span></span>
+    -  CANCELLED [schwarzer2021pretraining: Pretraining Representations for Data-Efficient Reinforcement Learning]({{< relref "schwarzer2021pretraining_pretraining_representations_for_data-efficient_reinforcement_learning.md" >}}) <span class="tag"><span class="READ">READ</span><span class="CANCELLED">CANCELLED</span></span>
 
     <!--list-separator-->
 
-    - <span class="org-todo todo TODO">TODO</span>  (<a href="#citeproc_bib_item_4">Sontakke et al. 2021</a>) <span class="tag"><span class="READ">READ</span></span>
+    -  CANCELLED (<a href="#citeproc_bib_item_6">Sontakke et al. 2021</a>) <span class="tag"><span class="READ">READ</span><span class="CANCELLED">CANCELLED</span></span>
 
     <!--list-separator-->
 
-    - <span class="org-todo todo TODO">TODO</span>  (<a href="#citeproc_bib_item_3">Pathak et al. 2017</a>) <span class="tag"><span class="READ">READ</span></span>
+    -  CANCELLED (<a href="#citeproc_bib_item_5">Pathak et al. 2017</a>) <span class="tag"><span class="READ">READ</span><span class="CANCELLED">CANCELLED</span></span>
 
     <!--list-separator-->
 
-    - <span class="org-todo todo TODO">TODO</span>  (<a href="#citeproc_bib_item_2">Berlyne 1960</a>) <span class="tag"><span class="READ">READ</span></span>
+    -  CANCELLED (<a href="#citeproc_bib_item_2">Berlyne 1960</a>) <span class="tag"><span class="READ">READ</span><span class="CANCELLED">CANCELLED</span></span>
+
+
+### <span class="org-todo todo TODO_LO">TODO-LO</span> Neural Operators {#neural-operators}
+
+Neural operators focus on mapping infinite dimensional (or functional) spaces between each other. Might be related to kernel methods in mapping between infinite dimensional feature spaces to various other spaces.
+
+-   (<a href="#citeproc_bib_item_3">Kovachki et al. 2024</a>)
 
 
 ## Topics {#topics}
@@ -166,87 +189,35 @@ This is an alternative to [RPEH]({{< relref "reinforcement_learning_in_the_brain
 While [niv2009reinforcement: Reinforcement learning in the brain]({{< relref "niv2009reinforcement_reinforcement_learning_in_the_brain.md" >}}) is a good start, there is much more to do and learn here. Really the focus should be on the [Reward Prediction-Error Hypothesis of Dopamine]({{< relref "reinforcement_learning_in_the_brain.md#reward-prediction-error-hypothesis-of-dopamine" >}}) and how it applies more or less generally. This also relates to [Incentive Salience]({{< relref "incentive_salience.md" >}}) and where these two hypotheses differ/merge on similar explanations.
 
 
-### Transformers {#transformers}
-
-
-### Self-Supervised Learning Objectives {#self-supervised-learning-objectives}
+### [Transformer]({{< relref "transformer.md" >}}) {#transformer--transformer-dot-md}
 
 
 ### Offline Reinforcement Learning {#offline-reinforcement-learning}
 
 
-## Unorganized Topics {#unorganized-topics}
-
-
-### <span class="org-todo todo TODO">TODO</span> Banach Spaces and Convergence {#banach-spaces-and-convergence}
-
-
-### <span class="org-todo todo TODO">TODO</span> [Pretraining for Reinforcement Learning]({{< relref "pretraining_for_reinforcement_learning.md" >}}) {#pretraining-for-reinforcement-learning--pretraining-for-reinforcement-learning-dot-md}
-
-
-### <span class="org-todo todo TODO">TODO</span> Basic Inequalities <code>[0/3]</code> {#basic-inequalities}
+### Learning Large Models {#learning-large-models}
 
 <!--list-separator-->
 
-- <span class="org-todo todo TODO">TODO</span>  [Hoeffding Inequality]({{< relref "hoeffding_inequality.md" >}})
-
-<!--list-separator-->
-
-- <span class="org-todo todo TODO">TODO</span>  [Markov's Inequality]({{< relref "markov_s_inequality.md" >}})
-
-<!--list-separator-->
-
-- <span class="org-todo todo TODO">TODO</span>  Chebyshev
+- <span class="org-todo todo TODO">TODO</span>  (<a href="#citeproc_bib_item_7">Weng 2021</a>)
 
 
-### <span class="org-todo todo TODO">TODO</span> Bayesian Vs Frequentists {#bayesian-vs-frequentists}
+## <span class="org-todo todo TODO">TODO</span> Unorganized Topics <code>[0/11]</code> {#unorganized-topics}
 
 
 ### <span class="org-todo todo TODO">TODO</span> [colombo2014deep: Deep and beautiful. The reward prediction error hypothesis of dopamine]({{< relref "colombo2014deep_deep_and_beautiful_the_reward_prediction_error_hypothesis_of_dopamine.md" >}}) {#colombo2014deep-deep-and-beautiful-dot-the-reward-prediction-error-hypothesis-of-dopamine--colombo2014deep-deep-and-beautiful-the-reward-prediction-error-hypothesis-of-dopamine-dot-md}
 
 
-### <span class="org-todo todo TODO">TODO</span> (<a href="#citeproc_bib_item_6">Zhang et al. 2009</a>) {#795aeb}
+### <span class="org-todo todo TODO">TODO</span> (<a href="#citeproc_bib_item_9">Zhang et al. 2009</a>) {#62b20f}
 
 
-### <span class="org-todo todo TODO">TODO</span> [Neurotransmitter]({{< relref "neurotransmitter.md" >}}) {#neurotransmitter--neurotransmitter-dot-md}
-
-
-### <span class="org-todo todo TODO">TODO</span> [Dopaminergic Neurons]({{< relref "dopaminergic_neurons.md" >}}) {#dopaminergic-neurons--dopaminergic-neurons-dot-md}
-
-
-### <span class="org-todo todo TODO">TODO</span> [Dopamine]({{< relref "dopamine.md" >}}) {#dopamine--dopamine-dot-md}
-
-
-### <span class="org-todo todo IN_PROGRESS">IN-PROGRESS</span> [niv2009reinforcement: Reinforcement learning in the brain]({{< relref "niv2009reinforcement_reinforcement_learning_in_the_brain.md" >}}) {#niv2009reinforcement-reinforcement-learning-in-the-brain--niv2009reinforcement-reinforcement-learning-in-the-brain-dot-md}
-
-
-### <span class="org-todo todo IN_PROGRESS">IN-PROGRESS</span> Recurrent Neural Networks {#recurrent-neural-networks}
-
-<!--list-separator-->
-
-- <span class="org-todo todo TODO">TODO</span>  GRU
+### <span class="org-todo todo TODO">TODO</span> (<a href="#citeproc_bib_item_4">Orvieto et al. 2023</a>) {#74efb0}
 
 
 ### <span class="org-todo todo TODO">TODO</span> Actor-critic algorithms {#actor-critic-algorithms}
 
 
 ### <span class="org-todo todo TODO">TODO</span> Policy Gradient Methods {#policy-gradient-methods}
-
-
-### <span class="org-todo todo TODO">TODO</span> Derive the [Bellman Equation]({{< relref "bellman_equation.md" >}}) for general decision problems. {#derive-the-bellman-equation--bellman-equation-dot-md--for-general-decision-problems-dot}
-
-
-### <span class="org-todo todo TODO">TODO</span> [Value Function]({{< relref "value_function.md" >}}) {#value-function--value-function-dot-md}
-
-
-### <span class="org-todo todo TODO">TODO</span> [Dynamic Programming]({{< relref "dynamic_programming.md" >}}) {#dynamic-programming--dynamic-programming-dot-md}
-
-
-### <span class="org-todo todo TODO">TODO</span> [Backpropagation]({{< relref "backpropagation.md" >}}) {#backpropagation--backpropagation-dot-md}
-
-<!--list-separator-->
-
-- <span class="org-todo todo TODO">TODO</span>  [Backpropagation Through Time]({{< relref "backpropagation_through_time.md" >}})
 
 
 ### <span class="org-todo todo TODO">TODO</span> Spiking neural networks {#spiking-neural-networks}
@@ -264,13 +235,70 @@ While [niv2009reinforcement: Reinforcement learning in the brain]({{< relref "ni
 ### <span class="org-todo todo TODO">TODO</span> Free-Energy Principle {#free-energy-principle}
 
 
-### <span class="org-todo todo TODO">TODO</span> Neuron {#neuron}
+### <span class="org-todo todo TODO">TODO</span> Cerebellum {#cerebellum}
+
+
+### <span class="org-todo todo TODO">TODO</span> Neuro/Psych background reading. <span class="tag"><span class="RESOURCE">RESOURCE</span></span> {#neuro-psych-background-reading-dot}
+
+<https://docs.google.com/document/d/111-4SPQ1kEg_yrMfud_26rK7fBHpol59iDnZ9BYuzNc/edit>
+
+
+## Basic Notes {#basic-notes}
 
 
 ### <span class="org-todo todo TODO">TODO</span> Integral [Calculus]({{< relref "calculus.md" >}}) {#integral-calculus--calculus-dot-md}
 
 
-### <span class="org-todo todo TODO">TODO</span> Cerebellum {#cerebellum}
+### <span class="org-todo todo TODO">TODO</span> Derive the [Bellman Equation]({{< relref "bellman_equation.md" >}}) for general decision problems. {#derive-the-bellman-equation--bellman-equation-dot-md--for-general-decision-problems-dot}
+
+
+### <span class="org-todo todo TODO">TODO</span> [Value Function]({{< relref "value_function.md" >}}) {#value-function--value-function-dot-md}
+
+
+### <span class="org-todo todo TODO">TODO</span> [Dynamic Programming]({{< relref "dynamic_programming.md" >}}) {#dynamic-programming--dynamic-programming-dot-md}
+
+
+### <span class="org-todo todo TODO">TODO</span> [Backpropagation]({{< relref "backpropagation.md" >}}) {#backpropagation--backpropagation-dot-md}
+
+
+### <span class="org-todo todo TODO">TODO</span> [Backpropagation Through Time]({{< relref "backpropagation_through_time.md" >}}) {#backpropagation-through-time--backpropagation-through-time-dot-md}
+
+
+### <span class="org-todo todo IN_PROGRESS">IN-PROGRESS</span> Recurrent Neural Networks {#recurrent-neural-networks}
+
+<!--list-separator-->
+
+- <span class="org-todo todo TODO">TODO</span>  GRU
+
+
+### <span class="org-todo todo TODO">TODO</span> [Neurotransmitter]({{< relref "neurotransmitter.md" >}}) {#neurotransmitter--neurotransmitter-dot-md}
+
+
+### <span class="org-todo todo TODO">TODO</span> [Dopaminergic Neurons]({{< relref "dopaminergic_neurons.md" >}}) {#dopaminergic-neurons--dopaminergic-neurons-dot-md}
+
+
+### <span class="org-todo todo TODO">TODO</span> [Dopamine]({{< relref "dopamine.md" >}}) {#dopamine--dopamine-dot-md}
+
+
+### <span class="org-todo todo IN_PROGRESS">IN-PROGRESS</span> Basic Inequalities <code>[2/3]</code> {#basic-inequalities}
+
+<!--list-separator-->
+
+- <span class="org-todo done DONE">DONE</span>  [Hoeffding Inequality]({{< relref "hoeffding_inequality.md" >}})
+
+<!--list-separator-->
+
+- <span class="org-todo done DONE">DONE</span>  [Markov's Inequality]({{< relref "markov_s_inequality.md" >}})
+
+<!--list-separator-->
+
+- <span class="org-todo todo IN_PROGRESS">IN-PROGRESS</span>  Chebyshev
+
+
+### <span class="org-todo todo TODO">TODO</span> Banach Spaces and Convergence {#banach-spaces-and-convergence}
+
+
+### <span class="org-todo todo TODO">TODO</span> Bayesian Vs Frequentists {#bayesian-vs-frequentists}
 
 
 ### <span class="org-todo todo TODO">TODO</span> Moment Generating Function {#moment-generating-function}
@@ -285,9 +313,7 @@ While [niv2009reinforcement: Reinforcement learning in the brain]({{< relref "ni
 ### <span class="org-todo todo TODO">TODO</span> Kernel Functions {#kernel-functions}
 
 
-### <span class="org-todo todo TODO">TODO</span> Neuro/Psych background reading. <span class="tag"><span class="RESOURCE">RESOURCE</span></span> {#neuro-psych-background-reading-dot}
-
-<https://docs.google.com/document/d/111-4SPQ1kEg_yrMfud_26rK7fBHpol59iDnZ9BYuzNc/edit>
+### <span class="org-todo todo TODO">TODO</span> Neuron {#neuron}
 
 
 ## Questions {#questions}
@@ -298,3 +324,9 @@ While [niv2009reinforcement: Reinforcement learning in the brain]({{< relref "ni
 -   <https://arxiv.org/pdf/2204.09560.pdf>
 -   <https://proceedings.mlr.press/v162/nikishin22a.html>
 -
+
+
+## Archive {#archive}
+
+
+### <span class="org-todo done DONE">DONE</span> [niv2009reinforcement: Reinforcement learning in the brain]({{< relref "niv2009reinforcement_reinforcement_learning_in_the_brain.md" >}}) {#niv2009reinforcement-reinforcement-learning-in-the-brain--niv2009reinforcement-reinforcement-learning-in-the-brain-dot-md}

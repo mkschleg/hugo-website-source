@@ -1,7 +1,7 @@
 +++
 title = "soga2009predictive: Predictive and postdictive mechanisms jointly contribute to visual awareness"
 author = ["Matthew Schlegel"]
-lastmod = 2022-11-08T14:22:22-07:00
+lastmod = 2025-02-21T10:29:14-07:00
 slug = "soga2009predictive"
 draft = false
 notetype = "paper"

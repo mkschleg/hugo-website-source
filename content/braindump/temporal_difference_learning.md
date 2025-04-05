@@ -1,7 +1,7 @@
 +++
 title = "Temporal Difference Learning"
 author = ["Matthew Schlegel"]
-lastmod = 2022-11-09T14:03:37-07:00
+lastmod = 2025-02-21T10:29:28-07:00
 slug = "temporal_difference_learning"
 draft = false
 notetype = "note"
@@ -17,5 +17,5 @@ This is a method for learning [Value Function]({{< relref "value_function.md" >}
 
 
 <style>.csl-entry{text-indent: -1.5em; margin-left: 1.5em;}</style><div class="csl-bib-body">
-  <div class="csl-entry"><a id="citeproc_bib_item_1"></a>Sutton, Richard S. 1988. “Learning to Predict by the Methods of Temporal Differences.” <i>Machine Learning</i>.</div>
+  <div class="csl-entry"><a id="citeproc_bib_item_1"></a>Sutton, Richard. 1988. “Learning to Predict by the Methods of Temporal Differences.” <i>Machine Learning</i> 3 (1): 9–44. doi:<a href="https://doi.org/10.1007/BF00115009">10.1007/BF00115009</a>.</div>
 </div>

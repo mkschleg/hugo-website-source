@@ -1,7 +1,7 @@
 +++
 title = "sternberg2016cognitive: Cognitive Psychology"
 author = ["Matthew Schlegel"]
-lastmod = 2023-03-20T12:12:17-06:00
+lastmod = 2025-02-21T10:29:16-07:00
 slug = "sternberg2016cognitive"
 draft = false
 notetype = "book"
@@ -613,8 +613,8 @@ Again, not of interest for me. Discussing neruonal attributes that may lead to a
 <style>.csl-entry{text-indent: -1.5em; margin-left: 1.5em;}</style><div class="csl-bib-body">
   <div class="csl-entry"><a id="citeproc_bib_item_1"></a>Mangun, GR, Michael S Gazzaniga, and RB Ivry. 2002. <i>Cognitive Neuroscience: The Biology of the Mind</i>. Norton &#38; Company.</div>
   <div class="csl-entry"><a id="citeproc_bib_item_2"></a>Sternberg, Robert J, and Karin Sternberg. 2016. <i>Cognitive Psychology</i>. Nelson Education.</div>
-  <div class="csl-entry">NO_ITEM_DATA:legg2007b</div>
-  <div class="csl-entry">NO_ITEM_DATA:legg2007</div>
-  <div class="csl-entry">NO_ITEM_DATA:carroll1993</div>
   <div class="csl-entry">NO_ITEM_DATA:stuss2011</div>
+  <div class="csl-entry">NO_ITEM_DATA:carroll1993</div>
+  <div class="csl-entry">NO_ITEM_DATA:legg2007</div>
+  <div class="csl-entry">NO_ITEM_DATA:legg2007b</div>
 </div>
