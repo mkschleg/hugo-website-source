@@ -1,10 +1,10 @@
 +++
-title = "kovachki2024neural: Neural Operator: Learning Maps Between Function Spaces"
+title = "Partial Differential Equations"
 author = ["Matthew Schlegel"]
-lastmod = 2025-04-14T11:50:47-06:00
-slug = "kovachki2024neural"
+lastmod = 2025-04-14T11:49:36-06:00
+slug = "partial_differential_equations"
 draft = false
-notetype = "paper"
+notetype = "note"
 +++
 
 \\( \newcommand{\states}{\mathcal{S}}
@@ -94,49 +94,36 @@ notetype = "paper"
 \newcommand{\bigoh}{\text{O}}
 \\)
 
-tags
-:
+A partial differential equation represents the change of some quantity with respect to time and space. These are often massively complex and require iterative approaches to solve (such as [Computational Fluid Dynamics]({{< relref "computational_fluid_dynamics.md" >}}), [Newton-Raphson Method]({{< relref "newton_raphson_method.md" >}})).
 
 
-source
-: <http://arxiv.org/abs/2108.08481>
-
-authors
-: Kovachki, N., Li, Z., Liu, B., Azizzadenesheli, K., Bhattacharya, K., Stuart, A., &amp; Anandkumar, A.
-
-year
-: 2024
-
-Neural operators are designed to learn general solutions for maps between two function spaces and to be discretization-invariant. Current data-driven solutions using neural networks are not discretization invariant and often require new networks/datasets/training for different levels of discretization. Neural operators describe a process to estimate these maps with the following properties:
-
-1.  acts on any discretization of the input function, i.e. accepts any set of points in the input domain,
-2.  can be evaluated at any point of the output domain
-3.  converges toa  continuum operator as the discretization is refined. (Converging to a continuum operator means that as the discretization is refined, the function more closely estimates the true continuous function).
+## Boundary Conditions {#boundary-conditions}
 
 
-## Generic Parametric PDEs {#generic-parametric-pdes}
+### Periodic Boundary Conditions {#periodic-boundary-conditions}
 
-This paper considers the generic form of PDEs as
-
-\begin{align}
-(L\_a u)(x) &= f(x), &x \in D \\\\
-u(x) &= 0, &x \in \partial D
-\end{align}
-
-Where \\(u(x)\\) is the solution function, \\(f(x)\\) is the function we get sampled data from, \\(L\_a\\) is the mapping from the banach space of \\(u\\) to its dual space.
+These boundary conditions constitute a small unit from an infinite system. Consider a system with governing dynamics as a sinusoidal. The time boundary condition can be \\(t\in[0, 2\pi]\\) to represent the entire time domain of the system.
 
 
-## PDE Examples {#pde-examples}
-
--   [Poisson Equation (PDE)]({{< relref "partial_differential_equations.md#poisson-equation--pde" >}})
--   [Darcy Flow]({{< relref "partial_differential_equations.md#darcy-flow" >}})
--   [Burgers Equations]({{< relref "partial_differential_equations.md#burgers-equations" >}})
--   [Navier-Stokes]({{< relref "partial_differential_equations.md#navier-stokes" >}})
+## Examples {#examples}
 
 
-## References {#references}
+### Heat Equation {#heat-equation}
 
 
+### Navier-Stokes {#navier-stokes}
 
-<style>.csl-entry{text-indent: -1.5em; margin-left: 1.5em;}</style><div class="csl-bib-body">
-</div>
+
+### Effective conductance in a non-homogeneous media {#effective-conductance-in-a-non-homogeneous-media}
+
+
+### Nonlinear Schrodinger Equation {#nonlinear-schrodinger-equation}
+
+
+### Darcy Flow {#darcy-flow}
+
+
+### Burgers Equations {#burgers-equations}
+
+
+### Poisson Equation (PDE) {#poisson-equation--pde}

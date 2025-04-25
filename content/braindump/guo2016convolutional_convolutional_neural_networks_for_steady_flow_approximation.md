@@ -1,8 +1,8 @@
 +++
-title = "kovachki2024neural: Neural Operator: Learning Maps Between Function Spaces"
+title = "guo2016convolutional: Convolutional Neural Networks for Steady Flow Approximation"
 author = ["Matthew Schlegel"]
-lastmod = 2025-04-14T11:50:47-06:00
-slug = "kovachki2024neural"
+lastmod = 2025-04-11T10:55:28-06:00
+slug = "guo2016convolutional"
 draft = false
 notetype = "paper"
 +++
@@ -95,43 +95,39 @@ notetype = "paper"
 \\)
 
 tags
-:
-
+: [Data Driven PDE Solvers]({{< relref "data_driven_pde_solvers.md" >}}), [Neural Network]({{< relref "neural_network.md" >}}), [Machine Learning]({{< relref "machine_learning.md" >}}), [Supervised Learning]({{< relref "supervised_learning.md" >}})
 
 source
-: <http://arxiv.org/abs/2108.08481>
+: <https://dl.acm.org/doi/10.1145/2939672.2939738>
 
 authors
-: Kovachki, N., Li, Z., Liu, B., Azizzadenesheli, K., Bhattacharya, K., Stuart, A., &amp; Anandkumar, A.
+: Guo, X., Li, W., &amp; Iorio, F.
 
 year
-: 2024
+: 2016
 
-Neural operators are designed to learn general solutions for maps between two function spaces and to be discretization-invariant. Current data-driven solutions using neural networks are not discretization invariant and often require new networks/datasets/training for different levels of discretization. Neural operators describe a process to estimate these maps with the following properties:
+This paper proposes a [Convolutional Neural Network]({{< relref "convolutional_neural_network.md" >}}) approach for approximating the laminar flow of a fluid around a geometry.
 
-1.  acts on any discretization of the input function, i.e. accepts any set of points in the input domain,
-2.  can be evaluated at any point of the output domain
-3.  converges toa  continuum operator as the discretization is refined. (Converging to a continuum operator means that as the discretization is refined, the function more closely estimates the true continuous function).
+**Input:**
+The paper defines its input space based on the distance of a point (discretized from the real space) to a defined geometry with a sign determining if it is inside or outside the boundary (negative if inside, positive if outside, and zero if on the boundary).
+see the following example:
+
+{{< figure src="/ox-hugo/2025-04-11_10-38-46_Screenshot 2025-04-11 at 10.38.41 AM.png" caption="<span class=\"figure-number\">Figure 1: </span>A discrete Signed Distance Function representation of a circle shape in a 23x14 Cartesian grid. Notation by me." >}}
+
+In the above your can see how the geometry is defined by the white boundary, and the SDF is calculated based on the perpendicular distance to this point.
+
+**Architecture:**
+
+The input is then passed through a number of convolutional encoders, and then decoded into a CFD velocity field component (i.e. different outputs for each spacial component). The full details can be seen in the paper.
+
+**Data**
+
+The data is generated using [Lattice Boltzmann Method]({{< relref "lattice_boltzmann_method.md" >}}) using the geometry of the system. The output of the [LCB]({{< relref "lattice_boltzmann_method.md" >}}) simulation is used as the targets of the network w/ the SDF described above as the input.
 
 
-## Generic Parametric PDEs {#generic-parametric-pdes}
+## Results {#results}
 
-This paper considers the generic form of PDEs as
-
-\begin{align}
-(L\_a u)(x) &= f(x), &x \in D \\\\
-u(x) &= 0, &x \in \partial D
-\end{align}
-
-Where \\(u(x)\\) is the solution function, \\(f(x)\\) is the function we get sampled data from, \\(L\_a\\) is the mapping from the banach space of \\(u\\) to its dual space.
-
-
-## PDE Examples {#pde-examples}
-
--   [Poisson Equation (PDE)]({{< relref "partial_differential_equations.md#poisson-equation--pde" >}})
--   [Darcy Flow]({{< relref "partial_differential_equations.md#darcy-flow" >}})
--   [Burgers Equations]({{< relref "partial_differential_equations.md#burgers-equations" >}})
--   [Navier-Stokes]({{< relref "partial_differential_equations.md#navier-stokes" >}})
+They show they can get significantly faster inference time for [CFD]({{< relref "computational_fluid_dynamics.md" >}}) with generic geometries as compared to [LCB]({{< relref "lattice_boltzmann_method.md" >}}), with reasonable error.
 
 
 ## References {#references}

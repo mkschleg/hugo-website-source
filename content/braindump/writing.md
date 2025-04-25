@@ -1,10 +1,10 @@
 +++
-title = "kovachki2024neural: Neural Operator: Learning Maps Between Function Spaces"
+title = "Writing"
 author = ["Matthew Schlegel"]
-lastmod = 2025-04-14T11:50:47-06:00
-slug = "kovachki2024neural"
+lastmod = 2025-04-22T10:34:35-06:00
+slug = "writing"
 draft = false
-notetype = "paper"
+notetype = "misc-topic"
 +++
 
 \\( \newcommand{\states}{\mathcal{S}}
@@ -94,49 +94,21 @@ notetype = "paper"
 \newcommand{\bigoh}{\text{O}}
 \\)
 
-tags
-:
+Writing is hard and requires lots of work and vigilance. Below are some thoughts on the writing process:
 
 
-source
-: <http://arxiv.org/abs/2108.08481>
+## Paper Editing Checklist {#paper-editing-checklist}
 
-authors
-: Kovachki, N., Li, Z., Liu, B., Azizzadenesheli, K., Bhattacharya, K., Stuart, A., &amp; Anandkumar, A.
-
-year
-: 2024
-
-Neural operators are designed to learn general solutions for maps between two function spaces and to be discretization-invariant. Current data-driven solutions using neural networks are not discretization invariant and often require new networks/datasets/training for different levels of discretization. Neural operators describe a process to estimate these maps with the following properties:
-
-1.  acts on any discretization of the input function, i.e. accepts any set of points in the input domain,
-2.  can be evaluated at any point of the output domain
-3.  converges toa  continuum operator as the discretization is refined. (Converging to a continuum operator means that as the discretization is refined, the function more closely estimates the true continuous function).
+-   Check all the citations for correctness and consistency.
+    -   All arxiv/preprint papers should be checked to ensure they have not been published.
+    -   Either all papers need doi, or no papers should have doi.
+    -   Decide whether you want a URL in your citation (look to other papers in the publication for guidance).
+    -   Ensure all venues are consistent (i.e. use either ICML or International Conference of Machine Learning, not both). Make consistent for all venues (i.e. either ICML and NeurIPS **or** International Conference of Machine Learning and Neural Information Processing systems).
+-   Ensure figures are of high quality and the captions provide all relevant information. Figures should be self-contained (i.e. you should get enough information from captions to determine what is being showed, but the analysis can be in the main text).
+-   Follow a reproducibility checklist to ensure you have all the relevant
 
 
-## Generic Parametric PDEs {#generic-parametric-pdes}
-
-This paper considers the generic form of PDEs as
-
-\begin{align}
-(L\_a u)(x) &= f(x), &x \in D \\\\
-u(x) &= 0, &x \in \partial D
-\end{align}
-
-Where \\(u(x)\\) is the solution function, \\(f(x)\\) is the function we get sampled data from, \\(L\_a\\) is the mapping from the banach space of \\(u\\) to its dual space.
+## Preparing a Code Base for Publication {#preparing-a-code-base-for-publication}
 
 
-## PDE Examples {#pde-examples}
-
--   [Poisson Equation (PDE)]({{< relref "partial_differential_equations.md#poisson-equation--pde" >}})
--   [Darcy Flow]({{< relref "partial_differential_equations.md#darcy-flow" >}})
--   [Burgers Equations]({{< relref "partial_differential_equations.md#burgers-equations" >}})
--   [Navier-Stokes]({{< relref "partial_differential_equations.md#navier-stokes" >}})
-
-
-## References {#references}
-
-
-
-<style>.csl-entry{text-indent: -1.5em; margin-left: 1.5em;}</style><div class="csl-bib-body">
-</div>
+## Using ChatGPT {#using-chatgpt}

@@ -1,10 +1,10 @@
 +++
-title = "kovachki2024neural: Neural Operator: Learning Maps Between Function Spaces"
+title = "Paper Editing Checklist"
 author = ["Matthew Schlegel"]
-lastmod = 2025-04-14T11:50:47-06:00
-slug = "kovachki2024neural"
+lastmod = 2025-04-22T10:28:31-06:00
+slug = "paper_editing_checklist"
 draft = false
-notetype = "paper"
+notetype = "note"
 +++
 
 \\( \newcommand{\states}{\mathcal{S}}
@@ -95,48 +95,4 @@ notetype = "paper"
 \\)
 
 tags
-:
-
-
-source
-: <http://arxiv.org/abs/2108.08481>
-
-authors
-: Kovachki, N., Li, Z., Liu, B., Azizzadenesheli, K., Bhattacharya, K., Stuart, A., &amp; Anandkumar, A.
-
-year
-: 2024
-
-Neural operators are designed to learn general solutions for maps between two function spaces and to be discretization-invariant. Current data-driven solutions using neural networks are not discretization invariant and often require new networks/datasets/training for different levels of discretization. Neural operators describe a process to estimate these maps with the following properties:
-
-1.  acts on any discretization of the input function, i.e. accepts any set of points in the input domain,
-2.  can be evaluated at any point of the output domain
-3.  converges toa  continuum operator as the discretization is refined. (Converging to a continuum operator means that as the discretization is refined, the function more closely estimates the true continuous function).
-
-
-## Generic Parametric PDEs {#generic-parametric-pdes}
-
-This paper considers the generic form of PDEs as
-
-\begin{align}
-(L\_a u)(x) &= f(x), &x \in D \\\\
-u(x) &= 0, &x \in \partial D
-\end{align}
-
-Where \\(u(x)\\) is the solution function, \\(f(x)\\) is the function we get sampled data from, \\(L\_a\\) is the mapping from the banach space of \\(u\\) to its dual space.
-
-
-## PDE Examples {#pde-examples}
-
--   [Poisson Equation (PDE)]({{< relref "partial_differential_equations.md#poisson-equation--pde" >}})
--   [Darcy Flow]({{< relref "partial_differential_equations.md#darcy-flow" >}})
--   [Burgers Equations]({{< relref "partial_differential_equations.md#burgers-equations" >}})
--   [Navier-Stokes]({{< relref "partial_differential_equations.md#navier-stokes" >}})
-
-
-## References {#references}
-
-
-
-<style>.csl-entry{text-indent: -1.5em; margin-left: 1.5em;}</style><div class="csl-bib-body">
-</div>
+: [Writing]({{< relref "writing.md" >}})
