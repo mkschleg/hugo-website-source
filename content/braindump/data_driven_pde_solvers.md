@@ -1,7 +1,7 @@
 +++
-title = "Data Driven PDE Solvers"
+title = "Data Driven PDE Solvers for Power Systems"
 author = ["Matthew Schlegel"]
-lastmod = 2025-04-25T11:12:04-06:00
+lastmod = 2025-04-25T11:26:41-06:00
 slug = "data_driven_pde_solvers"
 tags = ["DDPDE"]
 draft = false
